@@ -1,0 +1,13 @@
+"Sample","Parameter","Number"
+"EDTA","n",1
+"EDTA","Temp.",25.09
+"EDTA","K",23802.64
+"EDTA","dG",-5.97
+"EDTA","dH",3.06
+"EDTA","dS",0.36
+"Competator","n",1
+"Competator","Temp.",25.09
+"Competator","K",0.09
+"Competator","dG",1.45
+"Competator","dH",55.28
+"Competator","dS",2.15

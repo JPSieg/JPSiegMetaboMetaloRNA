@@ -1,0 +1,294 @@
+Species,Metabolites,Concentration,Kd.app,MCM,Exp.biol.effect,Source,Notes
+Mammal iBMK,L-Glutamic acid,63.8,31.769958476476,0.98853551433152,31.4057322428342,Calculated in this work,
+Mammal iBMK,L-Glutamine,17.2,28154.0681991003,0.000305456647006,8.5998472716765,Calculated in this work,
+Mammal iBMK,L-Aspartic acid,14.9,135.37098730892,0.054831426101744,7.42258428694913,Calculated in this work,
+Mammal iBMK,UDP-GlcNAC,8.97,9.12,0.466216216216216,4.25189189189189,"(1) Yamagami, R.; Huang, R.; Bevilacqua, P. C. Cellular Concentrations of Nucleotide Diphosphate-Chelated Magnesium Ions Accelerate Catalysis by RNA and DNA Enzymes. Biochemistry 2019, 58 (38), 3971–3979. https://doi.org/10.1021/acs.biochem.9b00578.",
+Mammal iBMK,L-Alanine,6.98,2606.35559634375,0.001338777646485,3.48933061117676,Calculated in this work,
+Mammal iBMK,L-Threonine,6.69,1384.45334162341,0.002415243820473,3.34379237808976,Calculated in this work,
+Mammal iBMK,Pyruvic acid,5.88,92.0264786160451,0.031774688110633,2.92411265594468,Calculated in this work,
+Mammal iBMK,L-Serine,4.86,8696.53307761895,0.000279405629289,2.42986029718536,Calculated in this work,
+Mammal iBMK,ATP,4.67,0.054990588360802,4.20727855385181,0.231360723074095,ITC in this work,
+Mammal iBMK,L-Glycine,3.71,2606.35559634375,0.000711585253361,1.85464420737332,Predicted from chemical structure,Use Alanine
+Mammal iBMK,Glutathione,3.09,21.5408017490723,0.070097268583482,1.50995136570826,Calculated in this work,
+Mammal iBMK,N-ACN-L-aspartic acid,2.9,135.37098730892,0.010671888301682,1.44466405584916,Calculated in this work,Use Aspartic acid
+Mammal iBMK,Phenylpyruvic acid,1.77,92.0264786160451,0.009564829584323,0.880217585207838,Predicted from chemical structure,Use Pyruvic acid
+Mammal iBMK,L-Isoleucine,1.76,2358.37156877443,0.000373059734005,0.879813470132997,Calculated in this work,
+Mammal iBMK,L-Leucine,1.76,2583.30226661498,0.000340583337731,0.879829708331135,Calculated in this work,
+Mammal iBMK,UTP,1.76,0.175462380107136,1.3028112681278,0.2285943659361,Calculated in this work,
+Mammal iBMK,diOH-ACN-P,1.63,22.33868,0.035685074619024,0.797157462690488,Predicted from chemical structure,Use Glycerol 1-P
+Mammal iBMK,UDP-glucose,1.53,3.3,0.201315789473684,0.664342105263158,"(1) Yamagami, R.; Huang, R.; Bevilacqua, P. C. Cellular Concentrations of Nucleotide Diphosphate-Chelated Magnesium Ions Accelerate Catalysis by RNA and DNA Enzymes. Biochemistry 2019, 58 (38), 3971–3979. https://doi.org/10.1021/acs.biochem.9b00578.",
+Mammal iBMK,"Fructose 1,6-BP",1.52,9.19344563913953,0.078403493277078,0.720798253361461,Calculated in this work,
+Mammal iBMK,L-Valine,1.51,5650.99269245976,0.000133593024195,0.754933203487903,Calculated in this work,
+Mammal iBMK,(S)-Malic acid,1.39,26.2268782657612,0.026003785144273,0.681998107427863,Calculated in this work,
+Mammal iBMK,L-Proline,1.23,2606.35559634375,0.000235916404753,0.614882041797623,Predicted from chemical structure,Use Alanine
+Mammal iBMK,L-Tyrosine,0.938,2608356.63080939,1.79806666219233E-07,0.468999910096667,Calculated in this work,
+Mammal iBMK,CTP,0.897,0.183246682639748,0.656424701935184,0.120287649032408,Calculated in this work,
+Mammal iBMK,L-Phenylalanine,0.84,2606.35559634375,0.00016111364227,0.419919443178865,Predicted from chemical structure,Use Alanine
+Mammal iBMK,a-ketoglutarate,0.797,0.014092295263046,0.775152640239627,0.010923679880187,Calculated in this work,
+Mammal iBMK,dihydro-orotate,0.735,376.0592,0.000975942162613,0.367012028918693,Predicted from chemical structure,Use Benzoic acid
+Mammal iBMK,GTP,0.677,0.151154745711938,0.519845708303795,0.078577145848103,Calculated in this work,
+Mammal iBMK,Glucose 6-P,0.675,5.1475268569119,0.059760671981035,0.307619664009482,Calculated in this work,
+Mammal iBMK,L-Methionine,0.639,2606.35559634375,0.000122561449299,0.319438719275351,Predicted from chemical structure,Use Alanine
+Mammal iBMK,Citric acid,0.584,0.589541640253015,0.268002606979015,0.157998696510493,Calculated in this work,
+Mammal iBMK,ADP,0.569,1.011565,0.188215524969154,0.190392237515423,Calculated in this work,
+Mammal iBMK,L-Lysine,0.506,10776895.4570164,2.3476147585454E-08,0.252999988261926,Calculated in this work,
+Mammal iBMK,NAD,0.502,9.12,0.026091476091476,0.237954261954262,Predicted from chemical structure,Use UDP-GlcNAC
+Mammal iBMK,3-P-serine,0.44,9.03710746015706,0.023067790828518,0.208466104585741,Predicted from chemical structure,Use P-enolpyruvate
+Mammal iBMK,L-Histidine,0.41,6.4613418681309,0.029448345431574,0.190275827284213,Calculated in this work,
+Mammal iBMK,Fumarate,0.387,444.679347275411,0.000434656282202,0.193282671858899,Calculated in this work,
+Mammal iBMK,3-P-D-glyceric acid,0.375,7.81732818719628,0.022543297051647,0.176228351474177,Calculated in this work,
+Mammal iBMK,Succinic acid,0.352,77.7956234436837,0.002247890651597,0.174876054674202,Calculated in this work,
+Mammal iBMK,L-Arginine,0.255,2534.971360026,5.02865076727558E-05,0.127474856746164,Calculated in this work,
+Mammal iBMK,"2,3-P-glycerate",0.237,7.77712690296629,0.01431656194102,0.11134171902949,Calculated in this work,
+Mammal iBMK,L-Asparagine,0.215,14753.2718321045,7.2862723663706E-06,0.107496356863817,Calculated in this work,
+Mammal iBMK,Gluconic acid,0.211,231.2014,0.000455327417098,0.105272336291451,Calculated in this work,
+Mammal iBMK,L-Tryptophan,0.18,2606.35559634375,3.45243519150925E-05,0.089982737824043,Predicted from chemical structure,Use Alanine
+Mammal iBMK,glyceraldehyde-3-P,0.141,22.33868,0.003086868417965,0.068956565791018,Predicted from chemical structure,Use Glycerol 1-P
+Mammal iBMK,UDP,0.133,1.13655906154618,0.040634036108158,0.046182981945921,Calculated in this work,
+Mammal iBMK,UDP-glucuronate,0.0975,9.12,0.005067567567568,0.046216216216216,Predicted from chemical structure,Use UDP-GlcNAC
+Mammal iBMK,Fructose 6-P,0.0969,40.806558548807,0.001172937221162,0.047863531389419,Calculated in this work,
+Mammal iBMK,L-Cysteine,0.084,8696.53307761895,4.82923309882347E-06,0.041997585383451,Predicted from chemical structure,Use Serine
+Mammal iBMK,Rib-5-P,0.0783,39.9575232092223,0.000967681580445,0.038666159209777,Calculated in this work,
+Mammal iBMK,NADH,0.075,9.12,0.003898128898129,0.035550935550936,Predicted from chemical structure,Use UDP-GlcNAC
+Mammal iBMK,methylmalonic acid,0.0726,26.2268782657612,0.001358183310413,0.035620908344793,Predicted from chemical structure,Use malic acid
+Mammal iBMK,NADPH,0.0654,9.12,0.003399168399168,0.031000415800416,Predicted from chemical structure,Use UDP-GlcNAC
+Mammal iBMK,ac-serine,0.0572,8696.53307761895,3.28847777681789E-06,0.028598355761112,Predicted from chemical structure,Use Serine
+Mammal iBMK,AMP,0.0423,22.2013063502775,0.00093166444581,0.020684167777095,Calculated in this work,
+Mammal iBMK,dCMP,0.0371,41.2122282718472,0.000444713715103,0.018327643142449,Predicted from chemical structure,Use CMP
+Mammal iBMK,xylulose-5-phosphate,0.0315,39.9575232092223,0.000389297187535,0.015555351406232,Predicted from chemical structure,Use Ribose 5-P
+Mammal iBMK,GDP,0.0302,0.670546366038115,0.012899958889376,0.008650020555312,Calculated in this work,
+Mammal iBMK,xylulose-5-phosphate,0.0299,39.9575232092223,0.000369523362137,0.014765238318932,Predicted from chemical structure,Use Ribose 5-P
+Mammal iBMK,acetyl-CoA,0.0288,9.12,0.001496881496882,0.013651559251559,Predicted from chemical structure,Use UDP-GlcNAC
+Mammal iBMK,NADP,0.0284,9.12,0.001476091476091,0.013461954261954,Predicted from chemical structure,Use UDP-GlcNAC
+Mammal iBMK,Rib-5-P,0.0284,39.9575232092223,0.000350985400826,0.014024507299587,Calculated in this work,
+Mammal iBMK,GMP,0.0181,26.91742,0.000330082115677,0.008884958942162,Calculated in this work,
+Mammal iBMK,sedoheptulose-7-phosphate,0.0181,39.9575232092223,0.000223691399822,0.008938154300089,Predicted from chemical structure,Use Ribose 5-P
+Mammal iBMK,Oxidized glutathione,0.018,21.5408017490723,0.000408333603399,0.008795833198301,Predicted from chemical structure,Use Glutahione
+Mammal iBMK,dAMP,0.0168,22.2013063502775,0.00037002275862,0.00821498862069,Predicted from chemical structure,Use AMP
+Mammal iBMK,6-P-gluconic acid,0.0165,9.03710746015706,0.000865042156069,0.007817478921965,Predicted from chemical structure,Use P-enolpyruvate
+Mammal iBMK,sedoheptulose-7-phosphate,0.0151,39.9575232092223,0.0001866154772,0.0074566922614,Predicted from chemical structure,Use Ribose 5-P
+Mammal iBMK,UMP,0.0145,41.2122282718472,0.00017380994256,0.00716309502872,Predicted from chemical structure,Use CMP
+Mammal iBMK,IMP,0.0123,22.2013063502775,0.000270909519704,0.006014545240148,Predicted from chemical structure,Use AMP
+Mammal iBMK,CMP,0.0118,41.2122282718472,0.000141445332566,0.005829277333717,Calculated in this work,
+Mammal iBMK,dTMP,0.0118,41.2122282718472,0.000141445332566,0.005829277333717,Predicted from chemical structure,Use CMP
+Mammal iBMK,P-enolpyruvate,0.0116,9.03710746015706,0.000608150849115,0.005495924575442,Calculated in this work,
+Mammal iBMK,Aconitic acid,0.011,0.589541640253015,0.005047994309536,0.002976002845232,Predicted from chemical structure,Use citric acid
+Mammal iBMK,erythrose-P,0.0103,39.9575232092223,0.000127294001004,0.005086352999498,Predicted from chemical structure,Use Ribose 5-P
+Mammal iBMK,D-dgluconic acid,0.00949,231.2014,2.04789440201915E-05,0.00473476052799,Predicted from chemical structure,Use Gluconic acid
+Mammal iBMK,Orotic acid,0.00841,376.0592,1.1166902840244E-05,0.00419941654858,Predicted from chemical structure,Use Benzoic acid
+Mammal iBMK,"N-ACN-glucosamine-1,6-P",0.00747,9.19344563913953,0.00038531190446,0.00354234404777,Predicted from chemical structure,"Use fructose 1,6-P"
+Mammal iBMK,FAD,0.0056,9.12,0.00029106029106,0.00265446985447,Predicted from chemical structure,Use UDP-GlcNAC
+Mammal iBMK,ribulose-5-P,0.00527,39.9575232092223,6.51300374067227E-05,0.002602434981297,Predicted from chemical structure,Use Ribose 5-P
+Mammal iBMK,malonyl-CoA,0.00495,9.12,0.000257276507277,0.002346361746362,Predicted from chemical structure,Use UDP-GlcNAC
+Mammal iBMK,D-dgluconic acid,0.00277,231.2014,5.97752106806433E-06,0.001382011239466,Predicted from chemical structure,Use Gluconic acid
+Mammal iBMK,Thymidine,0.00264,,,,,
+Mammal iBMK,"1,3-P-glycerate",0.00224,7.77712690296629,0.000135312652945,0.001052343673528,Predicted from chemical structure,"Use 2,3-P-glycerate"
+Mammal iBMK,dCDP,0.00182,1.13655906154618,0.000556044704638,0.000631977647681,Predicted from chemical structure,Use UDP
+Mammal iBMK,Guanosine,0.00135,,,,,
+Mammal iBMK,Inosine,0.00133,,,,,
+Mammal iBMK,dATP,0.000974,0.054990588360802,0.000877492357913,4.82538210437192E-05,Predicted from chemical structure,Use ATP
+Mammal iBMK,S-adenosyl-L-homocysteine,0.000571,8696.53307761895,3.28272868979548E-08,0.000285483586357,Predicted from chemical structure,Use Serine
+Mammal iBMK,cyclic-AMP,0.00013,22.2013063502775,2.86327134646176E-06,6.35683643267691E-05,Predicted from chemical structure,Use AMP
+Yeast,L-Glutamic acid,39.1,31.769958476476,0.605826623986872,19.2470866880066,Calculated in this work,
+Yeast,L-Glutamine,35.5,28154.0681991003,0.000630448312135,17.7496847758439,Calculated in this work,
+Yeast,Citrulline,27,2741.24980310482,0.004923862850181,13.4975380685749,Calculated in this work,
+Yeast,L-Alanine,22.3,2606.35559634375,0.00427718359837,11.1478614082008,Calculated in this work,
+Yeast,L-Arginine,21.8,2534.971360026,0.004299003401043,10.8978504982995,Calculated in this work,
+Yeast,Pyruvic acid,9.4,92.0264786160451,0.050796270108835,4.67460186494558,Calculated in this work,
+Yeast,Trehalose,8.4,,,,,
+Yeast,L-Threonine,6.69,1384.45334162341,0.002415243820473,3.34379237808976,Calculated in this work,
+Yeast,L-Aspartic acid,6.29,135.37098730892,0.023146957730199,3.1334265211349,Calculated in this work,
+Yeast,L-Asparagine,5.69,14753.2718321045,0.000192832045417,2.84490358397729,Calculated in this work,
+Yeast,Glucose 6-P,5.31,5.1475268569119,0.470117286250812,2.41994135687459,Calculated in this work,
+Yeast,L-Lysine,5.16,10776895.4570164,2.39401030713326E-07,2.57999988029948,Calculated in this work,
+Yeast,CoA,4.9,9.12,0.254677754677755,2.32266112266112,Predicted from chemical structure,Use UDP-GlcNAC
+Yeast,Ornithine,4.49,10776895.4570164,2.08316013159464E-07,2.24499989584199,Predicted from chemical structure,Use Lysine
+Yeast,Glutathione,4.3,21.5408017490723,0.097546360811965,2.10122681959402,Calculated in this work,
+Yeast,"Fructose 1,6-BP",4,9.19344563913953,0.206324982308101,1.89683750884595,Calculated in this work,
+Yeast,L-Serine,3.87,8696.53307761895,0.000222489667767,1.93488875516612,Calculated in this work,
+Yeast,L-Valine,2.5,5650.99269245976,0.000221180503634,1.24988940974818,Calculated in this work,
+Yeast,NAD,2.44,9.12,0.126819126819127,1.15659043659044,Predicted from chemical structure,Use UDP-GlcNAC
+Yeast,Fructose 6-P,2.37,40.806558548807,0.028687938226561,1.17065603088672,Calculated in this work,
+Yeast,ATP,1.93,0.103428575668501,1.59919506452099,0.165402467739503,Calculated in this work,
+Yeast,Citric acid,1.49,0.589541640253015,0.683773774655363,0.403113112672318,Calculated in this work,
+Yeast,L-Proline,1.36,2606.35559634375,0.000260850658914,0.679869574670543,Predicted from chemical structure,Use Alanine
+Yeast,UDP-GlcNAC,1.02,9.12,0.053014553014553,0.483492723492723,"(1) Yamagami, R.; Huang, R.; Bevilacqua, P. C. Cellular Concentrations of Nucleotide Diphosphate-Chelated Magnesium Ions Accelerate Catalysis by RNA and DNA Enzymes. Biochemistry 2019, 58 (38), 3971–3979. https://doi.org/10.1021/acs.biochem.9b00578.",
+Yeast,(S)-Malic acid,0.925,26.2268782657612,0.017304677164355,0.453847661417823,Calculated in this work,
+Yeast,a-ketoglutarate,0.848,0.014092295263046,0.824754628510921,0.01162268574454,Calculated in this work,
+Yeast,diOH-ACN-P,0.823,22.33868,0.018017678780035,0.402491160609983,Predicted from chemical structure,Use Glycerol 1-P
+Yeast,Succinic acid,0.635,77.7956234436837,0.004055143647057,0.315472428176472,Calculated in this work,
+Yeast,3-P-D-glyceric acid,0.578,7.81732818719628,0.034746735188938,0.271626632405531,Calculated in this work,
+Yeast,UTP,0.494,0.175462380107136,0.365675435485871,0.064162282257064,Calculated in this work,
+Yeast,ADP,0.488,1.011565,0.161422102258256,0.163288948870872,Calculated in this work,
+Yeast,sedoheptulose-7-phosphate,0.361,39.9575232092223,0.004461469355565,0.178269265322218,Predicted from chemical structure,Use Ribose 5-P
+Yeast,L-Isoleucine,0.353,2358.37156877443,7.4823912559047E-05,0.17646258804372,Calculated in this work,
+Yeast,L-Leucine,0.353,2583.30226661498,6.83101808062237E-05,0.176465844909597,Calculated in this work,
+Yeast,Glycerol,0.281,,,,,
+Yeast,L-Phenylalanine,0.273,2606.35559634375,5.23619337378903E-05,0.136473819033131,Predicted from chemical structure,Use Alanine
+Yeast,UDP-glucose,0.268,3.3,0.035263157894737,0.116368421052632,"(1) Yamagami, R.; Huang, R.; Bevilacqua, P. C. Cellular Concentrations of Nucleotide Diphosphate-Chelated Magnesium Ions Accelerate Catalysis by RNA and DNA Enzymes. Biochemistry 2019, 58 (38), 3971–3979. https://doi.org/10.1021/acs.biochem.9b00578.",
+Yeast,CTP,0.249,0.183246682639748,0.182218228296389,0.033390885851806,Calculated in this work,
+Yeast,L-Tyrosine,0.248,2608356.63080939,4.75395023692641E-08,0.123999976230249,Calculated in this work,
+Yeast,GTP,0.247,0.151154745711938,0.189663057534767,0.028668471232616,Calculated in this work,
+Yeast,xylulose-5-phosphate,0.246,39.9575232092223,0.003040225655039,0.121479887172481,Predicted from chemical structure,Use Ribose 5-P
+Yeast,6-P-gluconic acid,0.243,9.03710746015706,0.012739711753022,0.115130144123489,Predicted from chemical structure,Use P-enolpyruvate
+Yeast,N-ACN-ornithine,0.229,10776895.4570164,1.06245806266185E-08,0.11449999468771,Predicted from chemical structure,Use Lysine
+Yeast,NADPH,0.221,9.12,0.011486486486487,0.104756756756757,Predicted from chemical structure,Use UDP-GlcNAC
+Yeast,L-Methionine,0.191,2606.35559634375,3.66341734210148E-05,0.09548168291329,Predicted from chemical structure,Use Alanine
+Yeast,NADP,0.183,9.12,0.009511434511435,0.086744282744283,Predicted from chemical structure,Use UDP-GlcNAC
+Yeast,Rib-5-P,0.152,39.9575232092223,0.001878513412869,0.075060743293565,Calculated in this work,
+Yeast,"N-ACN-glucosamine-1,6-P",0.15,9.19344563913953,0.007737186836554,0.071131406581723,Predicted from chemical structure,"Use fructose 1,6-P"
+Yeast,Fumarate,0.124,444.679347275411,0.00013926971316,0.06193036514342,Calculated in this work,
+Yeast,ribulose-5-P,0.122,39.9575232092223,0.001507754186645,0.060246122906677,Predicted from chemical structure,Use Ribose 5-P
+Yeast,Fumarate,0.121,444.679347275411,0.000135900284616,0.060432049857692,Calculated in this work,
+Yeast,glyceraldehyde-3-P,0.118,22.33868,0.002583336690212,0.057708331654894,Predicted from chemical structure,Use Glycerol 1-P
+Yeast,NADH,0.107,9.12,0.005561330561331,0.050719334719335,Predicted from chemical structure,Use UDP-GlcNAC
+Yeast,Oxidized glutathione,0.0973,21.5408017490723,0.002207269978373,0.047546365010814,Predicted from chemical structure,Use Glutahione
+Yeast,Gluconic acid,0.0951,231.2014,0.000205221030171,0.047447389484915,Calculated in this work,
+Yeast,AMP,0.0812,22.2013063502775,0.001788443333328,0.039705778333336,Calculated in this work,
+Yeast,L-Tryptophan,0.0555,2606.35559634375,1.06450085071535E-05,0.027744677495746,Predicted from chemical structure,Use Alanine
+Yeast,pRpp,0.047,1.011565,0.01554680083225,0.015726599583875,Predicted from chemical structure,Use ADP
+Yeast,acetyl-CoA,0.0436,9.12,0.002266112266112,0.020666943866944,Predicted from chemical structure,Use UDP-GlcNAC
+Yeast,GDP,0.0421,0.670546366038115,0.017983055272938,0.012058472363531,Calculated in this work,
+Yeast,IMP,0.038,22.2013063502775,0.000836956239735,0.018581521880133,Predicted from chemical structure,Use AMP
+Yeast,UDP,0.0368,1.13655906154618,0.011243101720152,0.012778449139924,Calculated in this work,
+Yeast,"2,3-P-glycerate",0.0361,7.77712690296629,0.002180708380046,0.016959645809977,Calculated in this work,
+Yeast,FAD,0.0353,9.12,0.001834719334719,0.01673264033264,Predicted from chemical structure,Use UDP-GlcNAC
+Yeast,P-enolpyruvate,0.0291,9.03710746015706,0.001525619802522,0.013787190098739,Calculated in this work,
+Yeast,hydroxyisocaproic acid,0.0268,136.142,9.80664802915648E-05,0.013350966759854,Predicted from chemical structure,Use Lactic acid
+Yeast,D-dgluconic acid,0.0238,231.2014,5.13592062887838E-05,0.011874320396856,Predicted from chemical structure,Use Gluconic acid
+Yeast,erythrose-P,0.0146,39.9575232092223,0.000180436156762,0.007209781921619,Predicted from chemical structure,Use Ribose 5-P
+Yeast,UMP,0.0145,41.2122282718472,0.00017380994256,0.00716309502872,Predicted from chemical structure,Use CMP
+Yeast,GMP,0.0102,26.91742,0.000186013125962,0.005006993437019,Calculated in this work,
+Yeast,dATP,0.00978,0.054990588360802,0.008810960226268,0.000484519886866,Predicted from chemical structure,Use ATP
+Yeast,Inosine,0.00612,,,,,
+Yeast,Isocitrate,0.00579,4.49273918479593,0.000579842025158,0.002605078987421,Calculated in this work,
+Yeast,Taurine,0.00564,,,,,
+Yeast,CMP,0.00518,41.2122282718472,6.20921036181629E-05,0.002558953948191,Calculated in this work,
+Yeast,"1,3-P-glycerate",0.00491,7.77712690296629,0.00029660050266,0.00230669974867,Predicted from chemical structure,"Use 2,3-P-glycerate"
+Yeast,dCTP,0.00446,0.183246682639748,0.003263828506835,0.000598085746583,Calculated in this work,
+Yeast,Thymidine,0.00345,,,,,
+Yeast,Oxaloacetate,0.000501,128.208327526487,1.94626101367411E-06,0.000249526869493,Calculated in this work,
+Yeast,cyclic-AMP,0.0004,22.2013063502775,8.81006568142081E-06,0.000195594967159,Predicted from chemical structure,Use AMP
+E.coli,L-Glutamic acid,96,31.769958476476,5.68552668294651,180.628946634107,Calculated in this work,
+E.coli,Glutathione,16.6,21.5408017490723,1.41031730158929,30.3793653968214,Calculated in this work,
+E.coli,"Fructose 1,6-BP",15.2,9.19344563913953,2.71587507368615,24.9682498526277,Calculated in this work,
+E.coli,ATP,9.63,0.103428575668501,9.15647919914699,0.947041601706029,Calculated in this work,
+E.coli,UDP-GlcNAC,9.24,9.12,1.66187050359712,15.1562589928058,"(1) Yamagami, R.; Huang, R.; Bevilacqua, P. C. Cellular Concentrations of Nucleotide Diphosphate-Chelated Magnesium Ions Accelerate Catalysis by RNA and DNA Enzymes. Biochemistry 2019, 58 (38), 3971–3979. https://doi.org/10.1021/acs.biochem.9b00578.",
+E.coli,UTP,8.29,0.175462380107136,7.62136829007518,1.33726341984964,Calculated in this work,
+E.coli,Glucose 6-P,7.88,5.1475268569119,2.20495848641122,11.3500830271776,Calculated in this work,
+E.coli,GTP,4.87,0.151154745711938,4.52780071699421,0.68439856601159,Calculated in this work,
+E.coli,dTTP,4.62,0.162533348322743,4.27276647879975,0.6944670424005,Calculated in this work,
+E.coli,L-Aspartic acid,4.23,135.37098730892,0.061585056391676,8.33682988721665,Calculated in this work,
+E.coli,L-Valine,4.02,5650.99269245976,0.001422255509144,8.03715548898171,Calculated in this work,
+E.coli,L-Glutamine,3.81,28154.0681991003,0.000270634377858,7.61945873124428,Calculated in this work,
+E.coli,6-P-gluconic acid,3.77,9.03710746015706,0.683150003496723,6.17369999300655,Predicted from chemical structure,Use P-enolpyruvate
+E.coli,Pyruvic acid,3.66,92.0264786160451,0.077850410945315,7.16429917810937,Calculated in this work,
+E.coli,diOH-ACN-P,3.06,22.33868,0.25145159885417,5.61709680229166,Predicted from chemical structure,Use Glycerol 1-P
+E.coli,CTP,2.73,0.183246682639748,2.50086261136481,0.458274777270379,Calculated in this work,
+E.coli,L-Alanine,2.55,2606.35559634375,0.001955254876731,5.09608949024654,Calculated in this work,
+E.coli,NAD,2.55,9.12,0.45863309352518,4.18273381294964,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,Fructose 6-P,2.52,40.806558548807,0.117738967365328,4.80452206526934,Calculated in this work,
+E.coli,UDP-glucose,2.5,3.3,0.943396226415094,3.11320754716981,"(1) Yamagami, R.; Huang, R.; Bevilacqua, P. C. Cellular Concentrations of Nucleotide Diphosphate-Chelated Magnesium Ions Accelerate Catalysis by RNA and DNA Enzymes. Biochemistry 2019, 58 (38), 3971–3979. https://doi.org/10.1021/acs.biochem.9b00578.",
+E.coli,Oxidized glutathione,2.37,21.5408017490723,0.201352530407627,4.33729493918475,Predicted from chemical structure,Use Glutahione
+E.coli,uridine,2.09,,,,,
+E.coli,Citric acid,1.96,0.589541640253015,1.5137814117625,0.892437176474991,Calculated in this work,
+E.coli,UDP,1.79,1.13655906154618,1.14137815668461,1.29724368663077,Calculated in this work,
+E.coli,(S)-Malic acid,1.68,26.2268782657612,0.119035479884279,3.12192904023144,Calculated in this work,
+E.coli,3-P-D-glyceric acid,1.54,7.81732818719628,0.313730980697673,2.45253803860465,Calculated in this work,
+E.coli,Glyceric acid,1.41,159.939223608981,0.017413940471946,2.78517211905611,Calculated in this work,
+E.coli,CoA,1.37,9.12,0.246402877697842,2.24719424460432,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,Citrulline,1.35,2741.24980310482,0.000984234099623,2.69803153180075,Calculated in this work,
+E.coli,L-Threonine,1.26,1384.45334162341,0.001817587310258,2.51636482537948,Calculated in this work,
+E.coli,Glucoseamine-6-P,1.15,5.1475268569119,0.321789626823972,1.65642074635206,Predicted from chemical structure,Use Glucose 6-P
+E.coli,L-Serine,1.13,8696.53307761895,0.000259813922627,2.25948037215474,Calculated in this work,
+E.coli,acetylphosphate,1.07,22.33868,0.087925885873844,1.96414822825231,Predicted from chemical structure,Use Glycerol 1-P
+E.coli,Gluconolactone,1.04,,,,,
+E.coli,sedoheptulose-7-phosphate,0.882,39.9575232092223,0.042042519793263,1.67991496041348,Predicted from chemical structure,Use Ribose 5-P
+E.coli,Rib-5-P,0.787,39.9575232092223,0.037514130473127,1.49897173905375,Calculated in this work,
+E.coli,GDP,0.676,0.670546366038115,0.506263443763292,0.339473112473417,Calculated in this work,
+E.coli,acetyl-CoA,0.606,9.12,0.108992805755396,0.994014388489209,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,carb-aspartate,0.59,26.2268782657612,0.041804126864122,1.09639174627176,Predicted from chemical structure,Use malic acid
+E.coli,L-Arginine,0.569,2534.971360026,0.000448566356692,1.13710286728661,Calculated in this work,
+E.coli,Succinic acid,0.569,77.7956234436837,0.014261433784062,1.10947713243188,Calculated in this work,
+E.coli,UDP-glucuronate,0.566,9.12,0.101798561151079,0.928402877697842,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,ADP,0.555,1.011565,0.368579127463628,0.372841745072745,Calculated in this work,
+E.coli,L-Asparagine,0.511,14753.2718321045,6.92633800060758E-05,1.02186147323999,Calculated in this work,
+E.coli,a-ketoglutarate,0.443,0.014092295263046,0.439900396860555,0.00619920627889,Calculated in this work,
+E.coli,L-Lysine,0.405,10776895.4570164,7.51607782509466E-08,0.809999849678444,Calculated in this work,
+E.coli,L-Proline,0.385,2606.35559634375,0.000295205148055,0.769409589703889,Predicted from chemical structure,Use Alanine
+E.coli,dTDP,0.378,1.13655906154618,0.241028459903231,0.273943080193538,Predicted from chemical structure,Use UDP
+E.coli,Homocysteine,0.37,1715.66042224781,0.000430818566007,0.739138362867986,Calculated in this work,
+E.coli,CMP,0.36,41.2122282718472,0.016661950304217,0.686676099391566,Calculated in this work,
+E.coli,deoxyrib-5-P,0.303,39.9575232092223,0.014443178568434,0.577113642863133,Predicted from chemical structure,Use Ribose 5-P
+E.coli,Fumarate,0.288,444.679347275411,0.001289515630202,0.573420968739596,Calculated in this work,
+E.coli,AMP,0.281,22.2013063502775,0.023221886945518,0.515556226108963,Calculated in this work,
+E.coli,IMP,0.272,22.2013063502775,0.022478125441925,0.49904374911615,Predicted from chemical structure,Use AMP
+E.coli,glyceraldehyde-3-P,0.271,22.33868,0.022269079506366,0.497461840987268,Predicted from chemical structure,Use Glycerol 1-P
+E.coli,pRpp,0.258,1.011565,0.171339486280389,0.173321027439222,Predicted from chemical structure,Use ADP
+E.coli,succinyl-CoA,0.233,9.12,0.041906474820144,0.382187050359712,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,ITP,0.205,0.054990588360802,0.199514295745288,0.010971408509424,Predicted from chemical structure,Use ATP
+E.coli,Guanine,0.188,,,,,
+E.coli,P-enolpyruvate,0.184,9.03710746015706,0.03334206913618,0.301315861727641,Calculated in this work,
+E.coli,S-adenosyl-L-methionine,0.184,2606.35559634375,0.000141085057772,0.367717829884456,Predicted from chemical structure,Use Alanine
+E.coli,xylulose-5-phosphate,0.181,39.9575232092223,0.008627773336259,0.344744453327482,Predicted from chemical structure,Use Ribose 5-P
+E.coli,FAD,0.173,9.12,0.031115107913669,0.283769784172662,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,L-Isoleucine,0.152,2358.37156877443,0.000128793281542,0.303742413436917,Calculated in this work,
+E.coli,L-Leucine,0.152,2583.30226661498,0.000117587797731,0.303764824404538,Calculated in this work,
+E.coli,L-Methionine,0.145,2606.35559634375,0.000111181159657,0.289777637680685,Predicted from chemical structure,Use Alanine
+E.coli,"2,3-dihydroxybenzoic acid",0.138,494.590262279167,0.000555790197603,0.274888419604793,Calculated in this work,
+E.coli,NADPH,0.121,9.12,0.021762589928058,0.198474820143885,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,Fumarate,0.115,444.679347275411,0.000514910755115,0.228970178489769,Calculated in this work,
+E.coli,ribulose-5-P,0.112,39.9575232092223,0.00533873267216,0.213322534655679,Predicted from chemical structure,Use Ribose 5-P
+E.coli,D-dgluconic acid,0.0918,231.2014,0.000787302306075,0.182025395387849,Predicted from chemical structure,Use Gluconic acid
+E.coli,Phenylpyruvic acid,0.0898,92.0264786160451,0.001910100246691,0.175779799506618,Predicted from chemical structure,Use Pyruvic acid
+E.coli,NADH,0.0836,9.12,0.015035971223022,0.137128057553957,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,"2,3-P-glycerate",0.0829,7.77712690296629,0.016957947017104,0.131884105965793,Calculated in this work,
+E.coli,"N-ACN-glucosamine-1,6-P",0.0819,9.19344563913953,0.014633563719401,0.134532872561198,Predicted from chemical structure,"Use fructose 1,6-P"
+E.coli,L-Histidine,0.0676,6.4613418681309,0.01597855306015,0.1032428938797,Calculated in this work,
+E.coli,Flavin,0.0537,,,,,
+E.coli,4-OH-benzoate,0.0522,376.0592,0.000276147227736,0.103847705544528,Predicted from chemical structure,Use Benzoic acid
+E.coli,dGMP,0.0507,26.91742,0.003506536890221,0.094386926219559,Predicted from chemical structure,Use GMP
+E.coli,erythrose-P,0.049,39.9575232092223,0.00233569554407,0.09332860891186,Predicted from chemical structure,Use Ribose 5-P
+E.coli,Glycerol,0.049,,,,,
+E.coli,N-ACN-ornithine,0.0433,10776895.4570164,8.03570789695306E-09,0.086599983928584,Predicted from chemical structure,Use Lysine
+E.coli,Gluconic acid,0.0416,231.2014,0.000356773158309,0.082486453683383,Calculated in this work,
+E.coli,Isocitrate,0.0367,4.49273918479593,0.011304935853866,0.050790128292268,Calculated in this work,
+E.coli,malonyl-CoA,0.0354,9.12,0.00636690647482,0.05806618705036,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,cyclic-AMP,0.0352,22.2013063502775,0.00290893388072,0.064582132238561,Predicted from chemical structure,Use AMP
+E.coli,dCTP,0.0345,0.183246682639748,0.031604307726039,0.005791384547922,Predicted from chemical structure,Use CTP
+E.coli,L-Tyrosine,0.0289,2608356.63080939,2.21595294900319E-08,0.057799955680941,Calculated in this work,
+E.coli,IDP,0.0238,1.011565,0.015805735556098,0.015988528887804,Predicted from chemical structure,Use ADP
+E.coli,GMP,0.0237,26.91742,0.001639150380636,0.044121699238729,Calculated in this work,
+E.coli,acetoacetyl-CoA,0.0218,9.12,0.003920863309353,0.035758273381295,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,riboflavin,0.019,,,,,
+E.coli,L-Phenylalanine,0.0182,2606.35559634375,1.39551524535318E-05,0.036372089695093,Predicted from chemical structure,Use Alanine
+E.coli,"1,3-P-glycerate",0.0165,7.77712690296629,0.003375224677711,0.026249550644579,Predicted from chemical structure,"Use 2,3-P-glycerate"
+E.coli,Aconitic acid,0.0161,0.589541640253015,0.012434633025192,0.007330733949616,Predicted from chemical structure,Use citric acid
+E.coli,dATP,0.0155,0.054990588360802,0.015085227239278,0.000829545521444,Predicted from chemical structure,Use ATP
+E.coli,Cytosine,0.0141,,,,,
+E.coli,Shikimate,0.0141,376.0592,7.4591492549315E-05,0.028050817014901,Predicted from chemical structure,Use Benzoic acid
+E.coli,histidinol,0.0128,,,,,
+E.coli,L-Tryptophan,0.0121,2606.35559634375,9.2778760817437E-06,0.024181444247837,Predicted from chemical structure,Use Alanine
+E.coli,dihydro-orotate,0.0119,376.0592,6.29531036409113E-05,0.023674093792718,Predicted from chemical structure,Use Benzoic acid
+E.coli,Quinolinate,0.0115,139.489002663691,0.000162556803476,0.022674886393048,Calculated in this work,
+E.coli,Ornithine,0.0101,10776895.4570164,1.87437990206064E-09,0.02019999625124,Predicted from chemical structure,Use Lysine
+E.coli,dAMP,0.00884,22.2013063502775,0.000730539076863,0.016218921846275,Predicted from chemical structure,Use AMP
+E.coli,AMPS,0.00663,70.6430978306031,0.000182536268359,0.012894927463283,Calculated in this work,
+E.coli,myo-inositol,0.00572,,,,,
+E.coli,propionyl-CoA,0.00532,9.12,0.000956834532374,0.008726330935252,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,ADP-glucose,0.00427,3.3,0.001611320754717,0.005317358490566,Use UDP-Glucose,
+E.coli,Anthranilate,0.00348,775.264633969601,8.95447920286079E-06,0.006942091041594,Calculated in this work,
+E.coli,deoxyadenosine,0.00282,,,,,
+E.coli,Cytidine,0.00259,,,,,
+E.coli,NADP,0.00208,9.12,0.000374100719424,0.003411798561151,Predicted from chemical structure,Use UDP-GlcNAC
+E.coli,Guanosine,0.00162,,,,,
+E.coli,Adenine,0.00147,,,,,
+E.coli,deoxyguanosine,0.000522,,,,,
+E.coli,Oxaloacetate,0.000487,128.208327526487,7.4803203335967E-06,0.000959039359333,Calculated in this work,
+E.coli,Adenosine,0.000131,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,W,,

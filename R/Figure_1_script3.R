@@ -258,26 +258,26 @@ colnames(df.model.NTPCM) = c('Conc.Mg', "Mg.free")
 
 Figure_1BE = analyze.HQS(df.HQS %>% filter(Metabolites == "NTPCM"),
                          df.model.NTPCM,
-                         viridis(n =  7)[1],
+                         viridis(n =  7)[3],
                          Labels = c("B", "E"))
 
 #WMCM
-df.model.NTPCM = df.AC.model %>% select(Mg.T, Mg.free.NTP)
+df.model.NTPCM = df.AC.model %>% select(Mg.T, Mg.free.WMCM)
 colnames(df.model.NTPCM) = c('Conc.Mg', "Mg.free")
 
 Figure_1CF = analyze.HQS(df.HQS %>% filter(Metabolites == "NTPCM"),
                          df.model.NTPCM,
-                         viridis(n =  7)[3],
-                         labels = c("C", "F"))
+                         viridis(n =  7)[1],
+                         Labels = c("C", "F"))
 
 #Ecoli80
-df.model.NTPCM = df.AC.model %>% select(Mg.T, Mg.free.NTP)
+df.model.NTPCM = df.AC.model %>% select(Mg.T, Mg.free)
 colnames(df.model.NTPCM) = c('Conc.Mg', "Mg.free")
 
 Figure_1DG = analyze.HQS(df.HQS %>% filter(Metabolites == "NTPCM"),
                          df.model.NTPCM,
                          viridis(n =  7)[6],
-                         labels = c("D", "G"))
+                         Labels = c("D", "G"))
 
 
 ####Figure 1 H####
@@ -295,7 +295,7 @@ quantiles_95 <- function(x) {
   r
 }
 
-Figure_1I = ggplot(df.conc.m, aes(x = MCM,
+Figure_1H = ggplot(df.conc.m, aes(x = MCM,
                       y = MCM.conc,
                       fill = MCM)) +
   geom_violin() +
@@ -309,7 +309,7 @@ Figure_1I = ggplot(df.conc.m, aes(x = MCM,
   ylab("[Metabolites] (mM)") +
   coord_flip()
 
-####Make Figure_1J####
+####Make Figure_1I####
 
 head(df.AC.model)
 
@@ -335,7 +335,7 @@ df.Mg.T$MCM = factor(df.Mg.T$MCM,
                        levels = c("NTPCM","WMCM", "Ecoli80"),
                        labels = c("Strong", "Weak", "Ecoli80"))
 
-Figure_1J = ggplot(df.conc.m, aes(x = MCM,
+Figure_1I = ggplot(df.conc.m, aes(x = MCM,
                                   y = Mg.T,
                                   fill = MCM)) +
   geom_violin() +
@@ -349,6 +349,11 @@ Figure_1J = ggplot(df.conc.m, aes(x = MCM,
   ylab("[Mg Total] (mM) for 2 mM Mg Free") +
   coord_flip()
 
-Figure_1A
-Figure_1I
-Figure_1J
+
+Figure_1BCDEFG = plot_grid(Figure_1BE, Figure_1CF, Figure_1DG, nrow = 1)
+
+Figure_1HI = plot_grid(Figure_1H, Figure_1I, nrow = 1, labels = c("H", "I"))
+
+Figure_1ABCDEFG = plot_grid(Figure_1A, Figure_1BCDEFG, Figure_1HI, labels = "A", ncol = 1, rel_heights = c(0.5,2,1))
+
+ggsave("Figures/Figure_1/Figure_1ABCDEFG.png", Figure_1ABCDEFG, width = 3.3, height = 4.3, units = "in", scale = 3)

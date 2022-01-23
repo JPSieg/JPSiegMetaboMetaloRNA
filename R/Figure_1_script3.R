@@ -354,6 +354,6 @@ Figure_1BCDEFG = plot_grid(Figure_1BE, Figure_1CF, Figure_1DG, nrow = 1)
 
 Figure_1HI = plot_grid(Figure_1H, Figure_1I, nrow = 1, labels = c("H", "I"))
 
-Figure_1ABCDEFG = plot_grid(Figure_1A, Figure_1BCDEFG, Figure_1HI, labels = "A", ncol = 1, rel_heights = c(0.5,2,1))
+Figure_1ABCDEFGHI = plot_grid(Figure_1A, Figure_1BCDEFG, Figure_1HI, labels = "A", ncol = 1, rel_heights = c(0.5,2,1))
 
-ggsave("Figures/Figure_1/Figure_1ABCDEFG.png", Figure_1ABCDEFG, width = 3.3, height = 4.3, units = "in", scale = 3)
+ggsave("Figures/Figure_1/Figure_1ABCDEFGHI.png", Figure_1ABCDEFG, width = 3.3, height = 4.3, units = "in", scale = 3)

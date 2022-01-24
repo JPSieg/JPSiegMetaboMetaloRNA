@@ -1,4 +1,3 @@
-setwd("~/Jacob/Research/Manuscripts/JPSiegMetaboMetaloRNA/Figures/Figure_1")
 
 ####Load dependent packages####
 
@@ -7,15 +6,68 @@ library(cowplot)
 library(viridis)
 library(ggrepel)
 library(scales)
+library(MuMIn)
 devtools::load_all("~/Jacob/R_packages/MetaboMgITC2")
 
 options(scipen=10000)
 
+####Functions####
+find.Mg.total = function(fit,
+                         Mg.total.start = c(1:100),
+                         Free.Mg.mM = 2.75){
+  terms = c()
+
+  for(i in length(fit$coefficients):1){
+    terms[i] = paste(fit$coefficients[i], "*(Mg.total)^(", i - 1, ")", sep = "")
+    if (i == length(fit$coefficients)){
+      formula.text = paste(terms[i], sep = "")
+    }else{
+      formula.text = paste(formula.text, terms[i], sep = "+")
+    }
+  }
+
+  first.recursion = TRUE
+  Go = TRUE
+  while(Go){
+    if (first.recursion){
+      Mg.free = c()
+      for (i in 1:length(Mg.total.start)){
+        Mg.total = Mg.total.start[i]
+        formula.text.rec = gsub("Mg.total", Mg.total, formula.text)
+        formula.text.rec = gsub("NA", 0, formula.text.rec)
+        Mg.free[i] = eval(parse(text = formula.text.rec))
+        first.recursion = FALSE
+      }
+    }else{
+      Mg.free.error = abs(Mg.free - Free.Mg.mM)
+      if(min(Mg.free.error) <= 0.0001){
+        output = Mg.total.start[which.min(Mg.free.error)]
+        Go = FALSE
+      }else{
+        best.Mg.total = Mg.total.start[which.min(Mg.free.error)]
+        Mg.total.start = seq(best.Mg.total - min(Mg.free.error), best.Mg.total + min(Mg.free.error), length.out = 100)
+        Mg.free = c()
+        for (i in 1:length(Mg.total.start)){
+          Mg.total = Mg.total.start[i]
+          formula.text.rec = gsub("Mg.total", Mg.total, formula.text)
+          formula.text.rec = gsub("NA", 0, formula.text.rec)
+          Mg.free[i] = eval(parse(text = formula.text.rec))
+          first.recursion = FALSE
+        }
+      }
+    }
+  }
+  print(output)
+  output = output
+}
+
+
+
 ####Load in data####
 
-list.files()
+list.files("Figures")
 
-E.coli <- read.csv("Top_15_E.coli_metabolites_edited.csv")
+E.coli <- read.csv("Figures/Figure_1/Top_15_E.coli_metabolites_edited.csv")
 
 head(E.coli)
 
@@ -49,7 +101,7 @@ df.total =  data.frame("Metabolites" = c("103 metabolites"),
                        "Concentration" = c(243 - sum(E.coli$Concentration)),
                        "Metabolites.sum" = c(243),
                        "Kd" = c(0),
-                       "Mg.binding.strength" = c("Other"),
+                       "Mg.binding.strength" = c("other"),
                        "Edited" = c(NA),
                        "Sum.concentration" = c(243))
 
@@ -57,193 +109,251 @@ E.coli = bind_rows(E.coli, df.total)
 
 ####Make Figure 1A####
 
+E.coli$Mg.binding.strength = factor(E.coli$Mg.binding.strength,
+       levels = c("other", "strong", "weak"),
+       labels = c("other", "strong", "weak"))
+
 Figure_1A = ggplot(E.coli, aes(x = "", y = Concentration, fill = Mg.binding.strength, label = Metabolites)) +
   geom_bar(width = 1, stat = "identity", color = "black") +
-  geom_text(mapping = aes(y = Sum.concentration), nudge_y = -3, color = "white", size = 3) +
-  scale_fill_manual(values = viridis(n =  7, direction = -1)[c(2,4,6)]) +
-  theme_minimal()+
-  theme(axis.line.y = element_line(colour = 'black', size = 1.5),
-        axis.line.x = element_blank(),
-        axis.ticks = element_line(colour = "black", size = 1.5),
-        axis.text.x = element_text(color = "Black", size = 8,
+  #geom_text(mapping = aes(y = Sum.concentration), nudge_y = -3, color = "white", size = 3) +
+  scale_fill_manual(values = viridis(n =  7)[c(7, 3, 1)]) +
+  theme_classic()+
+  theme(axis.line.x = element_line(colour = 'black'),
+        axis.line.y = element_blank(),
+        axis.ticks = element_line(colour = "black"),
+        axis.text.y = element_text(color = "Black", size = 8,
                                    angle = 45, hjust = 1, vjust = 1),
-        legend.position = c(0.5, 0.2),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_blank(),
-        axis.ticks.x = element_blank(),
+        legend.position = c(0.25, 0.5),
+        axis.text.x = element_text(color = "Black", size = 16),
+        axis.title.y = element_blank(),
+        axis.ticks.y = element_blank(),
         legend.title = element_blank(),
-        axis.title.y = element_text(color = "Black", size = 18),
-        legend.text = element_text(color = "Black", size = 16))
+        axis.title.x = element_text(color = "Black", size = 18),
+        legend.text = element_text(color = "Black", size = 16),
+        legend.background = element_blank()) +
+  ylab("[Metabolites] (mM)") +
+  coord_flip()
 
 Figure_1A
 
-####Load in and fit ITC data####
+#####Figure 1 B-G####
 
-df = read.csv("ITC_data_index.csv")
 
-list.fits = {}
-list.df.fit = {}
-list.df.dQ = {}
-list.df.dP = {}
+list.files("Figures/Figure_1")
 
-colnames(df)
+analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "NTPCM"),
+                       df.model,
+                       color = viridis(n =  7)[3],
+                       Labels = c("B", "E")){
 
-for (i in 1:length(df$Metabolite)){
-  print(paste(df$Metabolite[i], " at ", df$Temperature[i], "C", sep = ""))
-  df.Cell = read.itc(c(paste("ITC_data_files", df$Cell[i], sep = "/"),
-                       df$Syrringe.X[i], df$Syringe.M[i], df$Syringe.C[i],
-                       df$Cell.X[i], df$Cell.M[i], df$Cell.C[i]))
-  df.blank = read.itc(c(paste("ITC_data_files", df$Blank[i], sep = "/"),
-                        df$Syrringe.X[i], df$Syringe.M[i], df$Syringe.C[i],
-                        df$Cell.X[i], df$Cell.M[i], df$Cell.C[i]))
-  dQ = df.Cell$inj$dQ.dX - df.blank$inj$dQ.dX
-  list.df.dQ[[i]] = df.Cell$inj
-  list.df.dQ[[i]]$dQ.dX = dQ
-  list.df.dQ[[i]]$Metabolite = df$Metabolite[i]
-  list.df.dQ[[i]]$Replicate = df$Replicate[i]
-  list.df.dQ[[i]]$Temperature = mean(df.Cell$dP$Temperature)
-  list.df.dP[[i]] = df.Cell$dP
-  list.df.dP[[i]]$Metabolite = df$Metabolite[i]
-  list.df.dP[[i]]$Replicate = df$Replicate[i]
-  list.fits[[i]] = MetaboMgITC(df.Cell, df.blank,
-                               Fit.start = list(H = df$H.start[i], K = df$K.start[i]),
-                               Saturation.threshold = df$Sat.threshold[i])
-  list.df.fit[[i]] = data.frame(t(c(list.fits[[i]]$Table[,2], list.fits[[i]]$Table[,3])))
-  colnames(list.df.fit[[i]]) = c(as.character(t(list.fits[[i]]$Table[,1])), paste("Std.error.", as.character(t(list.fits[[i]]$Table[,1])), sep = ""))
-  list.df.fit[[i]]$Metabolite = df$Metabolite[i]
+  df = df %>% filter(EDTA == "EDTA = 0 mM")
+
+  fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
+            df %>% filter(Sample == "No chelator"),
+            start = list(I.max = 150000, I.min = 0, K = 10))
+
+  fit.form = function(Conc.Mg){
+    Emission = (coef(fit)[1] - coef(fit)[2])*(coef(fit)[3]*Conc.Mg/(1 + coef(fit)[3]*Conc.Mg)) + coef(fit)[2]
+  }
+
+  df$I.norm = (df$Emission - coef(fit)[2])/(coef(fit)[1]- coef(fit)[2])
+
+  fit1 = fit
+  fit.form = function(Conc.Mg){
+    Emission = (coef(fit1)[3]*Conc.Mg/(1 + coef(fit1)[3]*Conc.Mg))
+  }
+
+  Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color = Sample)) +
+    geom_point() +
+    theme_classic() +
+    geom_function(fun = fit.form, color = "dimgrey") +
+    ylab("HQS emmission") +
+    xlab("[Mg] total (mM)") +
+    ggtitle(df$Metabolites[1]) +
+    scale_color_manual(values = c(color, "dimgrey")) +
+    theme(axis.line = element_line(colour = 'black'),
+          axis.ticks = element_line(colour = "black"),
+          axis.text.x = element_text(color = "Black", size = 16),
+          axis.text.y = element_text(color = "Black", size = 16),
+          axis.title.x = element_text(color = "Black", size = 16),
+          axis.title.y = element_text(color = "Black", size = 16),
+          legend.text = element_text(color = "Black", size = 16),
+          legend.title = element_text(color = "Black", size = 16),
+          legend.position = c(0.8, 0.3),
+          plot.title = element_text(color = "Black", size = 14,hjust = 0.5))
+
+  df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
+
+  list.fit = {}
+
+  for (i in 1:10){
+    list.fit[[i]] = lm( as.vector(Mg.free) ~  poly(Conc.Mg, i, raw=TRUE), df %>% filter(Sample == "Chelator"))
+  }
+
+  df.model.sel = data.frame(model.sel(list.fit))
+
+  best.polynomial.order = as.integer(rownames(df.model.sel)[which.max(df.model.sel$weight)])
+  best.polynomial = list.fit[[best.polynomial.order]]
+
+  df$model = predict(list.fit[[best.polynomial.order]])
+
+  free.Mg = 2
+
+  Mg.total = find.Mg.total(best.polynomial, Free.Mg.mM = free.Mg)
+
+  fit = best.polynomial
+
+  terms = c()
+
+  for(i in length(fit$coefficients):1){
+    terms[i] = paste(fit$coefficients[i], "*(Total.Mg)^(", i - 1, ")", sep = "")
+    if (i == length(fit$coefficients)){
+      formula.text = paste(terms[i], sep = "")
+    }else{
+      formula.text = paste(formula.text, terms[i], sep = "+")
+    }
+  }
+
+  Figure_Mg_free = ggplot() +
+    geom_hex(data = df.model, mapping = aes(x = Conc.Mg, y = Mg.free), bins = 100) +
+    geom_abline(slope = 1, intercept = 0, color = "dimgrey", size = 1.0) +
+    geom_line(data = df, mapping = aes(x = Conc.Mg, y = model), color = color) +
+    geom_point(data = df, mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
+    theme_classic() +
+    scale_fill_viridis(option = "rocket") +
+    geom_segment(aes(x = 0.01, y = free.Mg, xend = Mg.total, yend = free.Mg),
+                 arrow = arrow(length = unit(0.5, "cm")),
+                 color = "red") +
+    geom_segment(aes(x = Mg.total, y = free.Mg, xend = Mg.total, yend = 0.01),
+                 arrow = arrow(length = unit(0.5, "cm")),
+                 color = "red") +
+    annotate("text", x = 30, y = 0.001, label = paste(round(Mg.total, digits = 2), " mM total Mg2+"), color = "red") +
+    annotate("text", x = 0.1, y = 10, label = paste(round(free.Mg, digits = 2), " mM free Mg2+"), color = "red") +
+    scale_color_manual(values = c(color, "dimgrey")) +
+    scale_y_continuous(trans = "log10", labels = comma) +
+    scale_x_continuous(trans = "log10", labels = comma) +
+    ylab("[Mg] free (mM)") +
+    xlab("[Mg] total (mM)") +
+    ggtitle(df$Metabolites[1]) +
+    theme(axis.line = element_line(colour = 'black'),
+          axis.ticks = element_line(colour = "black"),
+          axis.text.x = element_text(color = "Black", size = 16),
+          axis.text.y = element_text(color = "Black", size = 16),
+          axis.title.x = element_text(color = "Black", size = 16),
+          axis.title.y = element_text(color = "Black", size = 16),
+          legend.position = "none",
+          plot.title = element_text(color = "Black", size = 14,hjust = 0.5))
+
+  output = plot_grid(Figure_Norm_Em, Figure_Mg_free, ncol = 1, labels = Labels)
+
 }
 
-df.final = bind_rows(list.df.fit)
+df.HQS = read.csv("Figures/Figure_1/HQS_data.csv")
 
-df.final$Kd = 1000/df.final$K
+df.AC.model = read.csv("Figures/Figure_1/Modeled_AC_MCM_concentrations.csv")
 
-Std.error.Kd = c()
+#NTPCM
+df.model.NTPCM = df.AC.model %>% select(Mg.T, Mg.free.NTP)
+colnames(df.model.NTPCM) = c('Conc.Mg', "Mg.free")
 
-for (i in 1:length(df.final$n)){
-  K = df.final$K[i]
-  dK = df.final$Std.error.K[i]
-  Kd = z ~ 1000/K
-  Std.error.Kd[i] = abs(dK*eval(D(Kd[[3]], "K")))
+Figure_1BE = analyze.HQS(df.HQS %>% filter(Metabolites == "NTPCM"),
+                         df.model.NTPCM,
+                         viridis(n =  7)[3],
+                         Labels = c("B", "E"))
+
+#WMCM
+df.model.NTPCM = df.AC.model %>% select(Mg.T, Mg.free.WMCM)
+colnames(df.model.NTPCM) = c('Conc.Mg', "Mg.free")
+
+Figure_1CF = analyze.HQS(df.HQS %>% filter(Metabolites == "NTPCM"),
+                         df.model.NTPCM,
+                         viridis(n =  7)[1],
+                         Labels = c("C", "F"))
+
+#Ecoli80
+df.model.NTPCM = df.AC.model %>% select(Mg.T, Mg.free)
+colnames(df.model.NTPCM) = c('Conc.Mg', "Mg.free")
+
+Figure_1DG = analyze.HQS(df.HQS %>% filter(Metabolites == "NTPCM"),
+                         df.model.NTPCM,
+                         viridis(n =  7)[6],
+                         Labels = c("D", "G"))
+
+
+####Figure 1 H####
+
+df.conc.m = read.csv("Figures/Figure_1/Modeled_AC_metabolite_concentrations.csv")
+
+df.conc.m$MCM = factor(df.conc.m$MCM,
+                   levels = c("NTPCM","WMCM", "Ecoli80"),
+                   labels = c("Strong", "Weak", "Ecoli80"))
+
+
+quantiles_95 <- function(x) {
+  r <- quantile(x, probs=c(0.01, 0.05, 0.5, 0.95, 0.99))
+  names(r) <- c("ymin", "lower", "middle", "upper", "ymax")
+  r
 }
 
-
-df.final$Std.error.Kd = Std.error.Kd
-
-colnames(df.final)
-
-df.final = df.final %>% select(Metabolite, Temp., Std.error.Temp.,
-                               K, Std.error.K,
-                               Kd, Std.error.Kd,
-                               n, Std.error.n,
-                               dG, Std.error.dG,
-                               dH, Std.error.dH,
-                               dS, Std.error.dS,
-                               Saturation, Std.error.Saturation) %>%
-  arrange(Temp.) %>%
-  arrange(Metabolite)
-
-####Write SI table####
-
-write.csv(df.final, "SI_Table_X_ITC_fit_results.csv", row.names = FALSE)
-
-Figure_1B = list.fits[[9]]$Plot
-
-####Make Figure 1C####
-
-df.final$ymin = df.final$K - df.final$Std.error.K
-df.final$ymax = df.final$K + df.final$Std.error.K
-df.final$xmin = df.final$Temp. - df.final$Std.error.Temp.
-df.final$xmax = df.final$Temp. + df.final$Std.error.Temp.
-
-
-df.rect = data.frame(x = c(24, 51, 51, 24), y = c(10, 10, 1/0.002, 1/0.002))
-
-head(df.final)
-
-one_over_trans = function() trans_new("one_over", function(x) 1/(x + 273.15), function(x)((1/x)  - 273.15))
-
-Figure_1C = ggplot() +
-  geom_polygon(data = df.rect, mapping = aes(x = x, y = y), fill = "grey") +
-  geom_hline(yintercept = 1/0.002, size = 1.5) +
-  stat_smooth(data = df.final, mapping = aes(x = Temp.,
-                                             y = K,
-                                             color = Metabolite,), method = "lm", se = FALSE) +
-  geom_pointrange(data = df.final, mapping = aes(x = Temp., color = Metabolite, shape = Metabolite, y = K, xmin = xmin, ymin = ymin, xmax = xmax, ymax = ymax), size = 1) +
-  annotate("text", y = c(650, 403, 12), x = c(45, 45, 30), label = c("Strong", "Weak", "transformed = 1/(x+273.15)"), size = 5) +
-  scale_color_manual(values = viridis(9)) +
-  scale_y_continuous(trans = "log10", limits = c(10, 15000), expand = c(0, 0)) +
-  scale_x_continuous(trans = "one_over", expand = c(0, 0)) +
-  ylab("K (1/M)") +
-  xlab("Temperature (\u00b0C)") +
+Figure_1H = ggplot(df.conc.m, aes(x = MCM,
+                      y = MCM.conc,
+                      fill = MCM)) +
+  geom_violin() +
+  stat_summary(fun.data = quantiles_95, geom="boxplot", alpha = 0) +
+  scale_fill_manual(values = viridis(n =  7)[c(3,1,6)]) +
   theme_classic() +
-  theme(axis.line = element_line(colour = 'black', size = 1.5),
-        axis.ticks = element_line(colour = "black", size = 1.5),
-        axis.text.x = element_text(color = "Black", size = 16),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_text(color = "Black", size = 18),
-        axis.title.y = element_text(color = "Black", size = 18),
-        legend.text = element_text(color = "Black", size = 12),
-        legend.title = element_blank(),
-        legend.position = c(0.8, 0.55))
+  ylim(0, 250) +
+  theme(axis.text = element_text(color = "Black", size = 16),
+        axis.title.y = element_blank(),
+        axis.title.x = element_text(color = "Black", size = 16)) +
+  ylab("[Metabolites] (mM)") +
+  coord_flip()
 
-Figure_1C
+####Make Figure_1I####
 
-####Predict how strong amino acids bind to Mg at different temperatures####
+head(df.AC.model)
 
-#?Kd.app.calc
+colnames(df.AC.model)[1] = "Iteration"
 
-list.files()
+MCM = c()
+Mg.T = c()
 
-df = read.csv("Top_15_E.coli_amino_acids.csv")
-
-head(df)
-
-Kd.app = c()
-
-for (i in 1:length(df$Metabolites)){
-  Kd.app[i] = Kd.app.calc(df$Metabolites[i],
-              Temperature = df$Temperature[i],
-              constants.path = "~/Jacob/R_packages/MetaboMgITC2/Binding_constant_concentration_data/210525_Metaboites_binding_Mg_thermodynamics.csv")
+for (i in 1:length(unique(df.AC.model$Iteration))){
+  df = df.AC.model %>% filter(Iteration == unique(df.AC.model$Iteration)[i])
+  MCM = c(MCM, "NTPCM")
+  Mg.T = c(Mg.T, df$Mg.T[which.min(abs(2 - df$Mg.free.NTP))])
+  MCM = c(MCM, "WMCM")
+  Mg.T = c(Mg.T, df$Mg.T[which.min(abs(2 - df$Mg.free.WMCM))])
+  MCM = c(MCM, "Ecoli80")
+  Mg.T = c(Mg.T, df$Mg.T[which.min(abs(2 - df$Mg.free))])
 }
 
-df$K.app = 1000/Kd.app
 
-####Make Figure 1D####
+df.Mg.T = data.frame(MCM, Mg.T)
 
-length(unique(df$Metabolites))
+df.Mg.T$MCM = factor(df.Mg.T$MCM,
+                       levels = c("NTPCM","WMCM", "Ecoli80"),
+                       labels = c("Strong", "Weak", "Ecoli80"))
 
-df.rect = data.frame(x = c(24, 51, 51, 24), y = c(0.001, 0.001, 150, 150))
-
-Figure_1D = ggplot() +
-  geom_polygon(data = df.rect, mapping = aes(x = x, y = y), fill = "grey") +
-  geom_line(data = df, mapping = aes(x = Temperature, color =  Metabolites, y = K.app), size = 2) +
-  scale_color_manual(values = viridis(7)) +
-  scale_y_continuous(trans = "log10", limits = c(0.001, 150), expand = c(0, 0)) +
-  scale_x_continuous(trans = "one_over", expand = c(0, 0)) +
-  annotate("text", y = c(650, 403, 0.0015), x = c(45, 45, 30), label = c("Strong", "Weak", "transformed = 1/(x+273.15)"), size = 5) +
-  ylab("K (1/M)") +
-  xlab("Temperature (\u00b0C)") +
+Figure_1I = ggplot(df.conc.m, aes(x = MCM,
+                                  y = Mg.T,
+                                  fill = MCM)) +
+  geom_violin() +
+  stat_summary(fun.data = quantiles_95, geom="boxplot", alpha = 0) +
+  geom_hline(yintercept = c(6.44, 24.94), color = "red") +
+  scale_fill_manual(values = viridis(n =  7)[c(3,1,6)]) +
   theme_classic() +
-  theme(axis.line = element_line(colour = 'black', size = 1.5),
-        axis.ticks = element_line(colour = "black", size = 1.5),
-        axis.text.x = element_text(color = "Black", size = 16),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_text(color = "Black", size = 18),
-        axis.title.y = element_text(color = "Black", size = 18),
-        legend.text = element_text(color = "Black", size = 12),
-        legend.title = element_blank(),
-        legend.position = c(0.5, 0.5))
+  theme(axis.text = element_text(color = "Black", size = 16),
+        axis.title.y = element_blank(),
+        axis.title.x = element_text(color = "Black", size = 16)) +
+  ylab("[Mg Total] (mM) for 2 mM Mg Free") +
+  coord_flip()
 
-Figure_1D
 
-write.csv(df, "SI_Table_X_predicted_binding_constants.csv", row.names = FALSE)
+Figure_1BCDEFG = plot_grid(Figure_1BE, Figure_1CF, Figure_1DG, nrow = 1)
 
-####Put together final figure####
+Figure_1HI = plot_grid(Figure_1H, Figure_1I, nrow = 1, labels = c("H", "I"))
 
-#?plot_grid
+Figure_1ABCDEFGHI = plot_grid(Figure_1A, Figure_1BCDEFG, Figure_1HI, labels = "A", ncol = 1, rel_heights = c(0.5,2,1))
 
-Figure_1CD = plot_grid(Figure_1C, Figure_1D, nrow = 2, labels = c("C", "D"), label_size = 20)
-Figure_1BCD = plot_grid(Figure_1B, Figure_1CD, rel_widths = c(1, 1.2), labels = c("B"), label_size = 20)
-Figure_1 = plot_grid(Figure_1A, Figure_1BCD, rel_widths = c(1, 5), labels = c("A"), label_size = 20)
-
-ggsave("Figure_1.svg", Figure_1, scale = 5, units = "in", width = 3.3, height = 2.7, bg = "white")
+ggsave("Figures/Figure_1/Figure_1ABCDEFGHI.png", Figure_1ABCDEFG, width = 3.3, height = 4.3, units = "in", scale = 3)

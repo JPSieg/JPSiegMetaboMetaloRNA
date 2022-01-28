@@ -195,9 +195,14 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
   best.polynomial.order = as.integer(rownames(df.model.sel)[which.max(df.model.sel$weight)])
   best.polynomial = list.fit[[best.polynomial.order]]
 
-  df$model = predict(list.fit[[best.polynomial.order]])
+  df.no_edta = df %>% filter(Sample == "Chelator")  %>% filter(EDTA == "EDTA = 0 mM")
 
-  df$model[which(df$Sample != "Chelator")] = NA
+  df.no_edta$model = predict(list.fit[[best.polynomial.order]])
+
+  df.no_edta2 = df %>% filter(Sample == "No chelator")  %>% filter(EDTA == "EDTA = 0 mM")
+  df.no_edta2$model = NA
+
+  df.no_edta = bind_rows(df.no_edta, df.no_edta2)
 
   free.Mg = 2
 
@@ -216,33 +221,26 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
     }
   }
 
-  ggplot() +
-    geom_line(data = df, mapping = aes(x = Conc.Mg, y = model), color = color)
-
   Figure_Mg_free = ggplot() +
     geom_hex(data = df.model, mapping = aes(x = Conc.Mg, y = Mg.free), bins = 100) +
     geom_abline(slope = 1, intercept = 0, color = "dimgrey", size = 1.0) +
-    geom_line(data = df %>% filter(!is.na(model)), mapping = aes(x = Conc.Mg, y = model), color = color) +
-    geom_point(data = df, mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
+    geom_line(data = df.no_edta %>% filter(!is.na(model)), mapping = aes(x = Conc.Mg, y = model), color = color) +
+    geom_point(data = df.no_edta, mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
     theme_classic() +
     scale_fill_viridis(option = "rocket") +
-    geom_segment(aes(x = 0.01, y = free.Mg, xend = Mg.total, yend = free.Mg),
-                 arrow = arrow(length = unit(0.5, "cm")),
+    geom_hline(yintercept = 2,
                  color = "red") +
-    geom_segment(aes(x = Mg.total, y = free.Mg, xend = Mg.total, yend = 0.05),
-                 arrow = arrow(length = unit(0.5, "cm")),
-                 color = "red") +
-    annotate("text", x = 30, y = 0.01, label = paste(round(Mg.total, digits = 2), " mM total Mg2+"), color = "red") +
-    annotate("text", x = 0.1, y = 10, label = paste(round(free.Mg, digits = 2), " mM free Mg2+"), color = "red") +
+    #annotate("text", x = 30, y = 0.01, label = paste(round(Mg.total, digits = 2), " mM total Mg2+"), color = "red") +
+    annotate("text", x = 0.7, y = 10, label = paste(round(free.Mg, digits = 2), " mM free Mg2+"), color = "red") +
     scale_color_manual(values = c(color, "dimgrey")) +
     scale_y_continuous(trans = "log10",
-                       breaks = c(0.01, 0.1, 1, 10, 100),
-                       labels = c("0.01", "0.1", "1.0", "10", "100"),
-                       lim = c(0.01, 500)) +
+                       breaks = c(0.1, 1, 10, 100, 200),
+                       labels = c("0.1", "1.0", "10", "100", "200"),
+                       lim = c(0.1, 250)) +
     scale_x_continuous(trans = "log10",
-                       breaks = c(0.01, 0.1, 1, 10, 100),
-                       labels = c("0.01", "0.1", "1.0", "10", "100"),
-                       lim = c(0.01, 500)) +
+                       breaks = c(0.1, 1, 10, 100, 200),
+                       labels = c("0.1", "1.0", "10", "100", "200"),
+                       lim = c(0.1, 250)) +
     ylab("[Mg] free (mM)") +
     xlab("[Mg] total (mM)") +
     ggtitle(df$Metabolites[1]) +
@@ -282,11 +280,11 @@ Figure_1CF = analyze.HQS(df.HQS %>% filter(Metabolites == "WMCM"),
                          Labels = c("C", "F"))
 
 #Ecoli80
-df.model.NTPCM = df.AC.model %>% select(Mg.T, Mg.free)
-colnames(df.model.NTPCM) = c('Conc.Mg', "Mg.free")
+df.model.Ecoli80 = df.AC.model %>% select(Mg.T, Mg.free)
+colnames(df.model.Ecoli80) = c('Conc.Mg', "Mg.free")
 
-Figure_1DG = analyze.HQS(df.HQS %>% filter(Metabolites == "NTPCM"),
-                         df.model.NTPCM,
+Figure_1DG = analyze.HQS(df.HQS %>% filter(Metabolites == "Ecoli80"),
+                         df.model.Ecoli80,
                          viridis(n =  7)[6],
                          Labels = c("D", "G"))
 
@@ -351,7 +349,7 @@ Figure_1I = ggplot(df.conc.m, aes(x = MCM,
                                   fill = MCM)) +
   geom_violin() +
   stat_summary(fun.data = quantiles_95, geom="boxplot", alpha = 0) +
-  geom_hline(yintercept = c(6.44, 24.94), color = "red") +
+  geom_hline(yintercept = c(6.44, 24.94, 31.02), color = "red") +
   scale_fill_manual(values = viridis(n =  7)[c(3,1,6)]) +
   theme_classic() +
   theme(axis.text = element_text(color = "Black", size = 16),

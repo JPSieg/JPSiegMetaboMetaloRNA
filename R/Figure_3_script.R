@@ -58,6 +58,8 @@ raw.plot = ggplot(df %>% filter(Reading %in% readings)) +
         legend.title = element_text(color = "Black", size = 10),
         legend.position = "none")
 
+raw.plot
+
 #####Make Tms plot####
 
 list.files("Figures/Figure_3")
@@ -67,11 +69,28 @@ df.Tms = read.csv("Figures/Figure_3/Fits_summary_Tms.csv")
 df.Tms$Condition = factor(df.Tms$Condition,
                           levels = c("Monovalent", "NTPCM", "WMCM", "Ecoli80"))
 
+head(df.Tms)
+
+df.Tms$logB = log10(df.Tms$B)
+
+df.Tms = df.Tms %>% filter(B >= 250)
+
+ggplot(df.Tms, aes(x = logB, y = Tm, color = Condition)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  facet_wrap(~Helix, scales = "free")
+
+lm.fit = lm(Tm ~ logB * Helix * Condition, df.Tms)
+
+df.Tms$predict = predict(lm.fit)
+
 Tm.plot = ggplot() +
   scale_color_viridis(name = "[BHQ1] (nM)") +
   facet_wrap(~Helix, nrow = 1) +
   geom_beeswarm(data = df.Tms,
                 mapping = aes(x = Condition, y = Tm, color = B)) +
+  geom_line(data = df.Tms,
+            mapping = aes(x = Condition, y = predict, color = B, group = logB)) +
   theme_classic() +
   ylab("Tm (\u00b0C)") +
   theme(axis.line = element_line(colour = 'black'),

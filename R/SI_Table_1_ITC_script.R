@@ -17,6 +17,8 @@ df = read.csv("Figures/SI_Table_1_ITC/ITC_data_index.csv")
 list.fits = {}
 list.df.fit = {}
 
+
+n.simulations = 100
 colnames(df)
 
 for (i in 1:length(df$Metabolite)){

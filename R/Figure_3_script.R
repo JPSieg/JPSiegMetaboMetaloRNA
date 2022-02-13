@@ -17,20 +17,20 @@ head(df)
 head(df.Ks)
 
 
-df.Ks = df.Ks %>%
+df.Ks.2 = df.Ks %>%
   filter(Condition == "Monovalent") %>%
   filter(Helix == "F")
 
 
 readings = c(20, 40, 60, 67, 75, 80, 85)
 
-Mmodel1 = function(x){df.Ks$Fmax[readings[1]] + (df.Ks$Fmin[readings[1]] - df.Ks$Fmax[readings[1]])*(((10^9)/df.Ks$K[readings[1]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[1]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
-Mmodel2 = function(x){df.Ks$Fmax[readings[2]] + (df.Ks$Fmin[readings[2]] - df.Ks$Fmax[readings[2]])*(((10^9)/df.Ks$K[readings[2]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[2]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
-Mmodel3 = function(x){df.Ks$Fmax[readings[3]] + (df.Ks$Fmin[readings[3]] - df.Ks$Fmax[readings[3]])*(((10^9)/df.Ks$K[readings[3]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[3]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
-Mmodel4 = function(x){df.Ks$Fmax[readings[4]] + (df.Ks$Fmin[readings[4]] - df.Ks$Fmax[readings[4]])*(((10^9)/df.Ks$K[readings[4]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[4]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
-Mmodel5 = function(x){df.Ks$Fmax[readings[5]] + (df.Ks$Fmin[readings[5]] - df.Ks$Fmax[readings[5]])*(((10^9)/df.Ks$K[readings[5]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[5]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
-Mmodel6 = function(x){df.Ks$Fmax[readings[6]] + (df.Ks$Fmin[readings[6]] - df.Ks$Fmax[readings[6]])*(((10^9)/df.Ks$K[readings[6]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[6]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
-Mmodel7 = function(x){df.Ks$Fmax[readings[7]] + (df.Ks$Fmin[readings[7]] - df.Ks$Fmax[readings[7]])*(((10^9)/df.Ks$K[readings[7]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[7]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel1 = function(x){df.Ks.2$Fmax[readings[1]] + (df.Ks.2$Fmin[readings[1]] - df.Ks.2$Fmax[readings[1]])*(((10^9)/df.Ks.2$K[readings[1]]+(200/1.3470043)+x)-((((10^9)/df.Ks.2$K[readings[1]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel2 = function(x){df.Ks.2$Fmax[readings[2]] + (df.Ks.2$Fmin[readings[2]] - df.Ks.2$Fmax[readings[2]])*(((10^9)/df.Ks.2$K[readings[2]]+(200/1.3470043)+x)-((((10^9)/df.Ks.2$K[readings[2]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel3 = function(x){df.Ks.2$Fmax[readings[3]] + (df.Ks.2$Fmin[readings[3]] - df.Ks.2$Fmax[readings[3]])*(((10^9)/df.Ks.2$K[readings[3]]+(200/1.3470043)+x)-((((10^9)/df.Ks.2$K[readings[3]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel4 = function(x){df.Ks.2$Fmax[readings[4]] + (df.Ks.2$Fmin[readings[4]] - df.Ks.2$Fmax[readings[4]])*(((10^9)/df.Ks.2$K[readings[4]]+(200/1.3470043)+x)-((((10^9)/df.Ks.2$K[readings[4]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel5 = function(x){df.Ks.2$Fmax[readings[5]] + (df.Ks.2$Fmin[readings[5]] - df.Ks.2$Fmax[readings[5]])*(((10^9)/df.Ks.2$K[readings[5]]+(200/1.3470043)+x)-((((10^9)/df.Ks.2$K[readings[5]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel6 = function(x){df.Ks.2$Fmax[readings[6]] + (df.Ks.2$Fmin[readings[6]] - df.Ks.2$Fmax[readings[6]])*(((10^9)/df.Ks.2$K[readings[6]]+(200/1.3470043)+x)-((((10^9)/df.Ks.2$K[readings[6]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel7 = function(x){df.Ks.2$Fmax[readings[7]] + (df.Ks.2$Fmin[readings[7]] - df.Ks.2$Fmax[readings[7]])*(((10^9)/df.Ks.2$K[readings[7]]+(200/1.3470043)+x)-((((10^9)/df.Ks.2$K[readings[7]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
 
 
 raw.plot = ggplot(df %>% filter(Reading %in% readings)) +
@@ -180,6 +180,44 @@ df.vh = read.csv("Figures/Figure_3/Fits_summary_vh.csv")
 df.vh$Condition = factor(df.vh$Condition,
                           levels = c("Monovalent", "NTPCM", "WMCM", "Ecoli80"))
 
+dH.plot = ggplot(data = df.vh %>% filter(Method == "1 VH plot"),
+                 mapping = aes(x = Condition, y = H, ymin = H - SE.H, ymax = H + SE.H)) +
+  facet_wrap(~Helix, nrow = 1) +
+  geom_bar(stat="identity") +
+  geom_errorbar() +
+  theme_classic() +
+  ylab("dH 37\u00b0C (kcal/mol)") +
+  scale_y_continuous(trans = 'reverse') +
+  theme(axis.line = element_line(colour = 'black'),
+        axis.ticks = element_line(colour = "black"),
+        axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
+        axis.text.y = element_text(color = "Black", size = 16),
+        axis.title.x = element_blank(),
+        axis.title.y = element_text(color = "Black", size = 16),
+        legend.text = element_text(color = "Black", size = 10),
+        legend.title = element_text(color = "Black", size = 14))
+
+dH.plot
+
+dS.plot = ggplot(data = df.vh %>% filter(Method == "1 VH plot"),
+                 mapping = aes(x = Condition, y = S, ymin = S - SE.S, ymax = S + SE.S)) +
+  facet_wrap(~Helix, nrow = 1) +
+  geom_bar(stat="identity") +
+  geom_errorbar() +
+  theme_classic() +
+  ylab("dS 37\u00b0C (cal/mol/K)") +
+  scale_y_continuous(trans = 'reverse') +
+  theme(axis.line = element_line(colour = 'black'),
+        axis.ticks = element_line(colour = "black"),
+        axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
+        axis.text.y = element_text(color = "Black", size = 16),
+        axis.title.x = element_blank(),
+        axis.title.y = element_text(color = "Black", size = 16),
+        legend.text = element_text(color = "Black", size = 10),
+        legend.title = element_text(color = "Black", size = 14))
+
+dS.plot
+
 
 dG.plot = ggplot(data = df.vh %>% filter(Method == "1 VH plot"),
        mapping = aes(x = Condition, y = G, ymin = G - SE.G, ymax = G + SE.G)) +
@@ -221,15 +259,16 @@ Figure_3ABC = plot_grid(image, raw.plot, vh.plot, nrow = 1,
                         labels = c("A", "B", "C"))
 
 
-Figure_ABCDE = plot_grid(Figure_3ABC,
-                         Tm.plot,
+Figure_ABCDEF = plot_grid(Figure_3ABC,
+                         dH.plot,
+                         dS.plot,
                          dG.plot,
                          ncol = 1,
-                         labels = c("", "D", "E"))
+                         labels = c("", "D", "E", "F"))
 
-Figure_ABCDE
+Figure_ABCDEF
 
 ggsave("Figures/Figure_3/Figure_3.png",
-       Figure_ABCDE,
+       Figure_ABCDEF,
        scale = 2,
-       width = 7, height = 6, units = "in")
+       width = 7, height = 7, units = "in")

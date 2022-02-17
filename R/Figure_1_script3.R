@@ -111,25 +111,31 @@ E.coli = bind_rows(E.coli, df.total)
 
 E.coli$Mg.binding.strength = factor(E.coli$Mg.binding.strength,
        levels = c("other", "strong", "weak"),
-       labels = c("other", "strong", "weak"))
+       labels = c("other", "NTPCM", "WMCM"))
 
 Figure_1A = ggplot(E.coli, aes(x = "", y = Concentration, fill = Mg.binding.strength, label = Metabolites)) +
-  geom_bar(width = 1, stat = "identity", color = "black") +
-  #geom_text(mapping = aes(y = Sum.concentration), nudge_y = -3, color = "white", size = 3) +
+  geom_bar(width = 0.8, stat = "identity", color = "black") +
+  annotate("line", x = c(1.4,1.4), y = c(0,195), size = 2, color = viridis(n = 7)[6]) +
+  annotate("line", x = c(1.4,1.4), y = c(195,243), size = 2, color = "black") +
+  annotate("text", x = 1.53, y = 100, label = "15 metabolites = 80% E. coli metabolome = Ecoli80", size = 4,
+           color = viridis(n = 7)[6]) +
+  annotate("text", x = 1, y = 220, label = "10%\n228 other\nmetabolites", size = 4,
+           color = "black") +
   scale_fill_manual(values = viridis(n =  7)[c(7, 3, 1)]) +
   theme_classic()+
+  #scale_x_discrete(limits = factor("",)) +
   theme(axis.line.x = element_line(colour = 'black'),
         axis.line.y = element_blank(),
         axis.ticks = element_line(colour = "black"),
         axis.text.y = element_text(color = "Black", size = 8,
                                    angle = 45, hjust = 1, vjust = 1),
-        legend.position = c(0.25, 0.5),
+        legend.position = c(0.15, 0.55),
         axis.text.x = element_text(color = "Black", size = 16),
         axis.title.y = element_blank(),
         axis.ticks.y = element_blank(),
         legend.title = element_blank(),
         axis.title.x = element_text(color = "Black", size = 18),
-        legend.text = element_text(color = "Black", size = 16),
+        legend.text = element_text(color = "Black", size = 10),
         legend.background = element_blank()) +
   ylab("[Metabolites] (mM)") +
   coord_flip()
@@ -177,7 +183,7 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
           axis.text.y = element_text(color = "Black", size = 16),
           axis.title.x = element_text(color = "Black", size = 16),
           axis.title.y = element_text(color = "Black", size = 16),
-          legend.text = element_text(color = "Black", size = 16),
+          legend.text = element_text(color = "Black", size = 10),
           legend.title = element_text(color = "Black", size = 16),
           legend.position = c(0.8, 0.3),
           plot.title = element_text(color = "Black", size = 14,hjust = 0.5))

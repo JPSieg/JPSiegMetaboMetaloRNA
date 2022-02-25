@@ -23,12 +23,14 @@ for (i in 1:length(vector.files)){
 ####Fit data####
 
 list.fit = {}
+list.K.range = {}
 
 list.fit[[1]] = meltR.F(list.df[[1]],
                         K_error_quantile = 0.5,
                         file_path = "Figures/Figure_3/Fit_data/",
                         file_prefix = vector.prefixes[1],
                         Save_results = "all")
+list.K.range[[1]] = c()
 
 list.fit[[2]] = meltR.F(list.df[[2]],
                         K_error_quantile = 0.5,

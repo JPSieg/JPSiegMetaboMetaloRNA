@@ -58,106 +58,31 @@ raw.plot = ggplot(df %>% filter(Reading %in% readings)) +
         legend.title = element_text(color = "Black", size = 10),
         legend.position = "none")
 
-raw.plot
-
-#####Make Tms plot####
-
-list.files("Figures/Figure_3")
-
-df.Tms = read.csv("Figures/Figure_3/Fits_summary_Tms.csv")
-
-df.Tms$Condition = factor(df.Tms$Condition,
-                          levels = c("Monovalent", "NTPCM", "WMCM", "Ecoli80"))
-
-head(df.Tms)
-
-df.Tms$logB = log10(df.Tms$B)
-
-df.Tms = df.Tms %>% filter(B >= 250)
-
-ggplot(df.Tms, aes(x = logB, y = Tm, color = Condition)) +
-  geom_point() +
-  geom_smooth(method = "lm") +
-  facet_wrap(~Helix, scales = "free")
-
-lm.fit = lm(Tm ~ logB * Helix * Condition, df.Tms)
-
-df.Tms$predict = predict(lm.fit)
-
-Tm.plot = ggplot() +
-  scale_color_viridis(name = "[BHQ1] (nM)") +
-  facet_wrap(~Helix, nrow = 1) +
-  geom_beeswarm(data = df.Tms,
-                mapping = aes(x = Condition, y = Tm, color = B)) +
-  geom_line(data = df.Tms,
-            mapping = aes(x = Condition, y = predict, color = B, group = logB)) +
-  theme_classic() +
-  ylab("Tm (\u00b0C)") +
-  theme(axis.line = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_blank(),
-        axis.title.y = element_text(color = "Black", size = 16),
-        legend.text = element_text(color = "Black", size = 10),
-        legend.title = element_text(color = "Black", size = 10),
-        legend.position = c(0.5, 0.6))
-
-Tm.plot
-
 ####Make vh plots####
 
 df.Ks = read.csv("Figures/Figure_3/Fits_summary_Ks.csv")
-
-list.files("Figures/Figure_3")
-
-head(df.Ks)
-View(df.Ks)
-unique(df.Ks$Condition)
-
-df.Ks$lnK = log(df.Ks$K)
-df.Ks$invT = 1/(273.15 + df.Ks$Temperature)
-df.Ks$SE.lnK = df.Ks$SE.K/df.Ks$K
 
 df.Ks$Condition = factor(df.Ks$Condition,
                          levels = c("Monovalent", "NTPCM", "WMCM", "Ecoli80"))
 
 
 df.Ks = df.Ks %>% filter(Helix == "F")
-df.Ks.Monovalent = df.Ks %>%
-  filter(Condition == "Monovalent") %>%
-  filter(SE.lnK <= K_error) %>%
-  filter(K <= 1/(10*10^-9)) %>%
-  filter(K >= 1/(500*10^-9))
-df.Ks.NTPCM = df.Ks %>%
-  filter(Condition == "NTPCM") %>%
-  filter(SE.lnK <= K_error) %>%
-  filter(K <= 1/(10*10^-9)) %>%
-  filter(K >= 1/(500*10^-9))
-df.Ks.WMCM = df.Ks %>%
-  filter(Condition == "WMCM") %>%
-  filter(SE.lnK <= K_error) %>%
-  filter(K <= 1/(20*10^-9)) %>%
-  filter(K >= 1/(750*10^-9))
-df.Ks.Ecoli80 = df.Ks %>%
-  filter(Condition == "Ecoli80") %>%
-  filter(SE.lnK <= K_error) %>%
-  filter(K <= 1/(20*10^-9)) %>%
-  filter(K >= 1/(750*10^-9))
 
-vh.plot = ggplot(bind_rows(df.Ks.Monovalent, df.Ks.NTPCM, df.Ks.WMCM, df.Ks.Ecoli80),
-       aes(x = invT, y = lnK,
-                  ymin = lnK - SE.lnK,
-                  ymax = lnK +SE.lnK,
-                  color = Condition,
-           shape = Condition)) +
+
+vh.plot = ggplot(df.Ks %>%
+                    filter(In_K_range == TRUE) %>%
+                    filter(SE.lnK <= K_error),
+                  aes(x = invT, y = lnK,
+                      ymin = lnK - SE.lnK,
+                      ymax = lnK +SE.lnK,
+                      color = Condition,
+                      shape = Condition)) +
   geom_smooth(method = "lm", se = FALSE) +
   scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)])) +
   geom_pointrange() +
-  ylab("ln[K (M)]") +
+  ylab("ln[K (1/M)]") +
   xlab("1/Temperature (K)") +
   theme_classic() +
-  xlim(0.003, 0.003125) +
   theme(axis.line = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
         axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
@@ -165,11 +90,9 @@ vh.plot = ggplot(bind_rows(df.Ks.Monovalent, df.Ks.NTPCM, df.Ks.WMCM, df.Ks.Ecol
         axis.title.x = element_text(color = "Black", size = 16),
         axis.title.y = element_text(color = "Black", size = 16),
         legend.text = element_text(color = "Black", size = 10),
-        legend.title = element_text(color = "Black", size = 10),
-        legend.position = c(0.9, 0.3))
-
-
-vh.plot
+        legend.title = element_blank(),
+        legend.position = c(0.95, 0.3),
+        legend.background = element_blank())
 
 ####Make thermo plot####
 
@@ -191,7 +114,7 @@ dG.plot = ggplot(data = df.vh %>% filter(Method == "1 VH plot"),
   geom_errorbar() +
   theme_classic() +
   ylab("K at 37\u00b0C (1/M)") +
-  coord_cartesian(ylim=c(2.5,12.5)) +
+  coord_cartesian(ylim=c(5,12.5)) +
   theme(axis.line = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
         axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
@@ -225,14 +148,14 @@ Figure_3ABC = plot_grid(image, raw.plot, vh.plot, nrow = 1,
 
 
 Figure_ABCDE = plot_grid(Figure_3ABC,
-                         Tm.plot,
                          dG.plot,
                          ncol = 1,
-                         labels = c("", "D", "E"))
+                         labels = c("", "D"))
 
 Figure_ABCDE
 
 ggsave("Figures/Figure_3/Figure_3.png",
        Figure_ABCDE,
        scale = 2,
-       width = 7, height = 6, units = "in")
+       width = 7, height = 4.5, units = "in",
+       bg = "white")

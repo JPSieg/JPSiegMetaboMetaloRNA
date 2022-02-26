@@ -36,11 +36,27 @@ Figure_2C = ggplot(df, aes(x = N, y = Reactivity,
                color = Condition, group = Condition)) +
   geom_pointrange() +
   geom_line() +
+  geom_segment(aes(x = 29, y = -150, xend = 30, yend = -150),
+               color ="black", size = 0.5) +
+  geom_segment(aes(x = 30, y = -150, xend = 34, yend = -150),
+               color ="black", size = 5) +
+  geom_segment(aes(x = 34, y = -150, xend = 45, yend = -150),
+               color ="black", size = 0.5) +
+  geom_segment(aes(x = 45, y = -150, xend = 50, yend = -150),
+               color ="black", size = 5) +
+  geom_segment(aes(x = 50, y = -150, xend = 58, yend = -150),
+               color ="black", size = 0.5) +
+  geom_segment(aes(x = 58, y = -150, xend = 63, yend = -150),
+               color ="black", size = 5) +
+  annotate("text", x = 32, y = -150, label = "P2", color = "white") +
+  annotate("text", x = 47.5, y = -150, label = "P3", color = "white") +
+  annotate("text", x = 60.5, y = -150, label = "P3", color = "white") +
   scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
   theme_classic()+
   ylab("Estimated dCounts/dt") +
   xlab("Nucleotide") +
   xlim(29, 63) +
+  ylim(-200, 1500) +
   theme(axis.line.x = element_line(colour = 'black'),
         axis.line.y = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
@@ -65,7 +81,7 @@ Figure_2D = ggplot(df, aes(x = Condition, y = Reactivity,
                            ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                            color = Condition, group = Condition)) +
   facet_wrap(~BP) +
-  stat_compare_means(comparisons = comparisons, size = 2.5) +
+  stat_compare_means(comparisons = comparisons, size = 2.5, label = "p.signif") +
   geom_boxplot(alpha = 0.01) +
   geom_beeswarm() +
   scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
@@ -89,30 +105,9 @@ Figure_2D = ggplot(df, aes(x = Condition, y = Reactivity,
 
 list.files("Figures/Figure_2/2_structures")
 
-PNG.2mMFree = ggplot() +
-  draw_image("Figures/Figure_2/2_structures/2mMFree.png") +
+Figure_2B = ggplot() +
+  draw_image("Figures/Figure_2/2_structures/No_reactivity.png") +
   theme(panel.background = element_blank())
-PNG.NTPCM = ggplot() +
-  draw_image("Figures/Figure_2/2_structures/NTPCM.png") +
-  theme(panel.background = element_blank())
-PNG.WMCM = ggplot() +
-  draw_image("Figures/Figure_2/2_structures/WMCM.png") +
-  theme(panel.background = element_blank())
-PNG.Eco80 = ggplot() +
-  draw_image("Figures/Figure_2/2_structures/Eco80.png") +
-  theme(panel.background = element_blank())
-PNG.25mMFree = ggplot() +
-  draw_image("Figures/Figure_2/2_structures/25mMFree.png") +
-  theme(panel.background = element_blank())
-PNG.Legend = ggplot() +
-  draw_image("Figures/Figure_2/2_structures/Legend.png") +
-  theme(panel.background = element_blank())
-
-Figure_2B = plot_grid(PNG.2mMFree, PNG.NTPCM, PNG.WMCM,
-          PNG.Eco80, PNG.25mMFree, PNG.Legend,
-          labels = c("2 mM Free", "NTPCM", "WMCM", "Eco80", "25 mM free", ""))
-
-
 
 ####Figure_2A####
 
@@ -122,9 +117,9 @@ PNG.2A = ggplot() +
   draw_image("Figures/Figure_2/Optimized_resolution.png") +
   theme(panel.background = element_blank())
 
-Figure_2CD = plot_grid(Figure_2C, Figure_2D, ncol = 1, labels = c("C", "D"), label_x = -0.05, rel_heights = c(1, 1.3), label_size = 20)
-Figure_2BCD = plot_grid(Figure_2B, Figure_2CD, rel_widths = c(1.5, 1), labels = c("B", ""), label_size = 20)
-Figure_2ABCD = plot_grid(PNG.2A, Figure_2BCD, labels = c("A"), ncol = 1, rel_heights = c(5,4.5), label_size = 20)
+Figure_2BCD = plot_grid(Figure_2B, Figure_2C, Figure_2D, labels = c("B", "C", "D"),
+                        label_size = 20, nrow = 1, rel_widths = c(1, 1.2, 1.2), hjust = c(-0.5, 0.75, 0.75))
+Figure_2ABCD = plot_grid(PNG.2A, Figure_2BCD, labels = c("A"), ncol = 1, rel_heights = c(2,1), label_size = 20)
 
-ggsave("Figures/Figure_2/Figure_2.png", Figure_2ABCD, width = 7, height = 8, scale = 2)
+ggsave("Figures/Figure_2/Figure_2.png", Figure_2ABCD, width = 7, height = 6, scale = 2)
 

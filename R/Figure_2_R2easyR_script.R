@@ -24,3 +24,5 @@ for (i in 1:length(list.df)){
 
   r2easyR.write(prefix, list.df[[i]], RNA_name = Condition[i], colors = "circles")
 }
+
+r2easyR.write("Figures/Figure_2/R2R/No_reactivity", list.df[[1]], RNA_name = "No_reactivity", colors = "NA")

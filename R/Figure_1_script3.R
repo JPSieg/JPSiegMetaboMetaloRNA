@@ -150,7 +150,9 @@ list.files("Figures/Figure_1")
 analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
                        df.model = df.model.WMCM,
                        color = viridis(n =  7)[1],
-                       Labels = c("B", "E")){
+                       Labels = c("B", "E"),
+                       xlimits = c(0, 75),
+                       ylimits = c(0, 40)){
 
   df = df %>% filter(EDTA == "EDTA = 0 mM")
 
@@ -184,7 +186,7 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
           axis.title.x = element_text(color = "Black", size = 16),
           axis.title.y = element_text(color = "Black", size = 16),
           legend.text = element_text(color = "Black", size = 10),
-          legend.title = element_text(color = "Black", size = 16),
+          legend.title = element_blank(),
           legend.position = c(0.8, 0.3),
           plot.title = element_text(color = "Black", size = 14,hjust = 0.5))
 
@@ -226,30 +228,30 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
       formula.text = paste(formula.text, terms[i], sep = "+")
     }
   }
+  formula.text = gsub("Total.Mg", "x", formula.text)
+
+  lm.fun = function(x){
+    eval(parse(text = formula.text))
+  }
+
+  colnames(df.model) = c("Conc.Mg", "Mg.free")
 
   Figure_Mg_free = ggplot() +
-    geom_hex(data = df.model, mapping = aes(x = Conc.Mg, y = Mg.free), bins = 100) +
+    geom_hex(data = df.model %>% filter(Conc.Mg < xlimits[2]), mapping = aes(x = Conc.Mg, y = Mg.free), bins = 50) +
     geom_abline(slope = 1, intercept = 0, color = "dimgrey", size = 1.0) +
-    geom_line(data = df.no_edta %>% filter(!is.na(model)), mapping = aes(x = Conc.Mg, y = model), color = color) +
-    geom_point(data = df.no_edta, mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
+    geom_point(data = df.no_edta %>% filter(Sample == "Chelator"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
     theme_classic() +
+    geom_function(fun = lm.fun, color = color) +
     scale_fill_viridis(option = "rocket") +
     geom_hline(yintercept = 2,
                  color = "red") +
     #annotate("text", x = 30, y = 0.01, label = paste(round(Mg.total, digits = 2), " mM total Mg2+"), color = "red") +
-    annotate("text", x = 0.7, y = 10, label = paste(round(free.Mg, digits = 2), " mM free Mg2+"), color = "red") +
+    #annotate("text", x = 40, y = 5, label = paste(round(free.Mg, digits = 2), " mM free Mg2+"), color = "red") +
     scale_color_manual(values = c(color, "dimgrey")) +
-    scale_y_continuous(trans = "log10",
-                       breaks = c(0.1, 1, 10, 100, 200),
-                       labels = c("0.1", "1.0", "10", "100", "200"),
-                       lim = c(0.1, 250)) +
-    scale_x_continuous(trans = "log10",
-                       breaks = c(0.1, 1, 10, 100, 200),
-                       labels = c("0.1", "1.0", "10", "100", "200"),
-                       lim = c(0.1, 250)) +
     ylab("[Mg] free (mM)") +
     xlab("[Mg] total (mM)") +
     ggtitle(df$Metabolites[1]) +
+    coord_cartesian(xlim = xlimits, ylim = ylimits) +
     theme(axis.line = element_line(colour = 'black'),
           axis.ticks = element_line(colour = "black"),
           axis.text.x = element_text(color = "Black", size = 16),
@@ -274,7 +276,8 @@ colnames(df.model.NTPCM) = c('Conc.Mg', "Mg.free")
 Figure_1BE = analyze.HQS(df.HQS %>% filter(Metabolites == "NTPCM"),
                          df.model.NTPCM,
                          viridis(n =  7)[3],
-                         Labels = c("B", "E"))
+                         Labels = c("B", "E"),
+                         xlimits = c(0, 70))
 
 #WMCM
 df.model.WMCM = df.AC.model %>% select(Mg.T, Mg.free.WMCM)
@@ -283,7 +286,8 @@ colnames(df.model.WMCM) = c('Conc.Mg', "Mg.free")
 Figure_1CF = analyze.HQS(df.HQS %>% filter(Metabolites == "WMCM"),
                          df.model.WMCM,
                          viridis(n =  7)[1],
-                         Labels = c("C", "F"))
+                         Labels = c("C", "F"),
+                         xlimits = c(0, 70))
 
 #Ecoli80
 df.model.Ecoli80 = df.AC.model %>% select(Mg.T, Mg.free)
@@ -292,7 +296,8 @@ colnames(df.model.Ecoli80) = c('Conc.Mg', "Mg.free")
 Figure_1DG = analyze.HQS(df.HQS %>% filter(Metabolites == "Ecoli80"),
                          df.model.Ecoli80,
                          viridis(n =  7)[6],
-                         Labels = c("D", "G"))
+                         Labels = c("D", "G"),
+                         xlimits = c(1, 80))
 
 
 ####Figure 1 H####
@@ -301,7 +306,7 @@ df.conc.m = read.csv("Figures/Figure_1/Modeled_AC_metabolite_concentrations.csv"
 
 df.conc.m$MCM = factor(df.conc.m$MCM,
                    levels = c("NTPCM","WMCM", "Ecoli80"),
-                   labels = c("Strong", "Weak", "Ecoli80"))
+                   labels = c("Strong", "Weak", "Eco80"))
 
 
 quantiles_95 <- function(x) {
@@ -320,6 +325,7 @@ Figure_1H = ggplot(df.conc.m, aes(x = MCM,
   ylim(0, 250) +
   theme(axis.text = element_text(color = "Black", size = 16),
         axis.title.y = element_blank(),
+        legend.title = element_blank(),
         axis.title.x = element_text(color = "Black", size = 16)) +
   ylab("[Metabolites] (mM)") +
   coord_flip()
@@ -348,7 +354,7 @@ df.Mg.T = data.frame(MCM, Mg.T)
 
 df.Mg.T$MCM = factor(df.Mg.T$MCM,
                        levels = c("NTPCM","WMCM", "Ecoli80"),
-                       labels = c("Strong", "Weak", "Ecoli80"))
+                       labels = c("Strong", "Weak", "Eco80"))
 
 Figure_1I = ggplot(df.conc.m, aes(x = MCM,
                                   y = Mg.T,
@@ -359,6 +365,7 @@ Figure_1I = ggplot(df.conc.m, aes(x = MCM,
   scale_fill_manual(values = viridis(n =  7)[c(3,1,6)]) +
   theme_classic() +
   theme(axis.text = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         axis.title.y = element_blank(),
         axis.title.x = element_text(color = "Black", size = 16)) +
   ylab("[Mg Total] (mM) for 2 mM Mg Free") +
@@ -372,3 +379,4 @@ Figure_1HI = plot_grid(Figure_1H, Figure_1I, nrow = 1, labels = c("H", "I"))
 Figure_1ABCDEFGHI = plot_grid(Figure_1A, Figure_1BCDEFG, Figure_1HI, labels = "A", ncol = 1, rel_heights = c(0.5,2,1))
 
 ggsave("Figures/Figure_1/Figure_1ABCDEFGHI.png", Figure_1ABCDEFGHI, width = 3.3, height = 4, units = "in", scale = 3)
+

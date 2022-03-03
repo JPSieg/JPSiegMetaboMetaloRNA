@@ -1,0 +1,71 @@
+2022-03-02 05:23:37,856 - BEGIN
+2022-03-02 05:23:37,856 - Script name: /usr/local/bin/denss.all.py
+2022-03-02 05:23:37,857 - DENSS Version: 1.6.5
+2022-03-02 05:23:37,857 - Data filename: rna-ecoli80-avg_subtr.out
+2022-03-02 05:23:37,857 - Output prefix: Eco80_DENSS/Eco80_DENSS_19
+2022-03-02 05:23:37,857 - Mode: SLOW
+2022-03-02 05:23:37,871 - q range of input data: 0.000 < q < 0.283
+2022-03-02 05:23:37,871 - Maximum dimension: 65.400
+2022-03-02 05:23:37,871 - Sampling ratio: 3.000
+2022-03-02 05:23:37,871 - Requested real space voxel size: 3.066
+2022-03-02 05:23:37,871 - Number of electrons: 10000.000
+2022-03-02 05:23:37,871 - Limit Dmax: False
+2022-03-02 05:23:37,871 - Limit Dmax Steps: [502]
+2022-03-02 05:23:37,871 - Recenter: True
+2022-03-02 05:23:37,871 - Recenter Steps: [501, 1001, 1501, 2001, 2501, 3001, 3501, 4001, 4501, 5001, 5501, 6001, 6501, 7001, 7501, 8001]
+2022-03-02 05:23:37,871 - Recenter Mode: com
+2022-03-02 05:23:37,871 - NCS: 0
+2022-03-02 05:23:37,871 - NCS Steps: [3000, 5000, 7000, 9000]
+2022-03-02 05:23:37,871 - NCS Axis: 1
+2022-03-02 05:23:37,871 - Positivity: True
+2022-03-02 05:23:37,871 - Extrapolate high q: True
+2022-03-02 05:23:37,871 - Shrinkwrap: True
+2022-03-02 05:23:37,871 - Shrinkwrap Old Method: False
+2022-03-02 05:23:37,871 - Shrinkwrap sigma start (angstroms): 9.196875
+2022-03-02 05:23:37,871 - Shrinkwrap sigma end (angstroms): 4.5984375
+2022-03-02 05:23:37,872 - Shrinkwrap sigma start (voxels): 3.0
+2022-03-02 05:23:37,872 - Shrinkwrap sigma end (voxels): 1.5
+2022-03-02 05:23:37,872 - Shrinkwrap sigma decay: 0.99
+2022-03-02 05:23:37,872 - Shrinkwrap threshold fraction: 0.2
+2022-03-02 05:23:37,872 - Shrinkwrap iterations: 20
+2022-03-02 05:23:37,872 - Shrinkwrap starting step: 1000
+2022-03-02 05:23:37,872 - Enforce connectivity: True
+2022-03-02 05:23:37,872 - Enforce connectivity steps: [2000]
+2022-03-02 05:23:37,872 - Chi2 end fraction: 1.000e-03
+2022-03-02 05:23:37,872 - Maximum number of steps: 11000
+2022-03-02 05:23:37,872 - Grid size (voxels): 64 x 64 x 64
+2022-03-02 05:23:37,872 - Real space box width (angstroms): 196.200
+2022-03-02 05:23:37,872 - Real space box range (angstroms): -98.100 < x < 98.100
+2022-03-02 05:23:37,872 - Real space box volume (angstroms^3): 7552609.128
+2022-03-02 05:23:37,872 - Real space voxel size (angstroms): 3.066
+2022-03-02 05:23:37,872 - Real space voxel volume (angstroms^3): 28.811
+2022-03-02 05:23:37,872 - Reciprocal space box width (angstroms^(-1)): 2.018
+2022-03-02 05:23:37,872 - Reciprocal space box range (angstroms^(-1)): -1.025 < qx < 0.993
+2022-03-02 05:23:37,872 - Maximum q vector (diagonal) (angstroms^(-1)): 1.775
+2022-03-02 05:23:37,872 - Number of q shells: 55
+2022-03-02 05:23:37,872 - Width of q shells (angstroms^(-1)): 0.032
+2022-03-02 05:23:37,872 - Random seed: 472209853
+2022-03-02 05:23:38,040 - Step     0:  4.17e+04  118.58        7552609          
+2022-03-02 05:24:44,924 - Step   500:  4.28e-01  108.43        7552609          
+2022-03-02 05:25:56,022 - Step  1000:  1.66e-01  38.95        7552609          
+2022-03-02 05:26:46,333 - Step  1500:  3.72e-02  36.21        301218          
+2022-03-02 05:27:33,584 - Step  2000:  2.42e-03  26.77        45751          
+2022-03-02 05:28:22,845 - Step  2500:  1.29e-02  24.10        42092          
+2022-03-02 05:29:12,202 - Step  3000:  1.53e-03  24.65        44858          
+2022-03-02 05:30:02,024 - Step  3500:  3.84e-04  24.85        45694          
+2022-03-02 05:30:51,628 - Step  4000:  1.59e-04  24.92        45982          
+2022-03-02 05:31:41,513 - Step  4500:  1.65e-04  24.92        45694          
+2022-03-02 05:32:31,393 - Step  5000:  1.16e-04  24.94        45895          
+2022-03-02 05:33:21,291 - Step  5500:  1.08e-04  24.94        45982          
+2022-03-02 05:33:56,178 - FINISHED DENSITY REFINEMENT
+2022-03-02 05:33:56,286 - Number of steps: 5850
+2022-03-02 05:33:56,286 - Final Chi2: 1.070e-04
+2022-03-02 05:33:56,286 - Final Rg: 24.940
+2022-03-02 05:33:56,286 - Final Support Volume: 46039.846
+2022-03-02 05:33:56,287 - Mean Density (all voxels): 0.00132
+2022-03-02 05:33:56,288 - Std. Dev. of Density (all voxels): 0.02310
+2022-03-02 05:33:56,288 - RMSD of Density (all voxels): 0.02314
+2022-03-02 05:33:56,290 - Modified Mean Density (voxels >0.01*max): 0.25428
+2022-03-02 05:33:56,291 - Modified Std. Dev. of Density (voxels >0.01*max): 0.19693
+2022-03-02 05:33:56,291 - Modified RMSD of Density (voxels >0.01*max): 0.32162
+2022-03-02 05:33:56,291 - END

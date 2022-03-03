@@ -1,0 +1,77 @@
+2022-03-02 06:50:34,150 - BEGIN
+2022-03-02 06:50:34,150 - Script name: /usr/local/bin/denss.all.py
+2022-03-02 06:50:34,150 - DENSS Version: 1.6.5
+2022-03-02 06:50:34,150 - Data filename: rna-ecoli80-avg_subtr.out
+2022-03-02 06:50:34,150 - Output prefix: Eco80_DENSS/Eco80_DENSS_32
+2022-03-02 06:50:34,150 - Mode: SLOW
+2022-03-02 06:50:34,167 - q range of input data: 0.000 < q < 0.283
+2022-03-02 06:50:34,167 - Maximum dimension: 65.400
+2022-03-02 06:50:34,167 - Sampling ratio: 3.000
+2022-03-02 06:50:34,167 - Requested real space voxel size: 3.066
+2022-03-02 06:50:34,167 - Number of electrons: 10000.000
+2022-03-02 06:50:34,167 - Limit Dmax: False
+2022-03-02 06:50:34,167 - Limit Dmax Steps: [502]
+2022-03-02 06:50:34,167 - Recenter: True
+2022-03-02 06:50:34,167 - Recenter Steps: [501, 1001, 1501, 2001, 2501, 3001, 3501, 4001, 4501, 5001, 5501, 6001, 6501, 7001, 7501, 8001]
+2022-03-02 06:50:34,167 - Recenter Mode: com
+2022-03-02 06:50:34,167 - NCS: 0
+2022-03-02 06:50:34,167 - NCS Steps: [3000, 5000, 7000, 9000]
+2022-03-02 06:50:34,167 - NCS Axis: 1
+2022-03-02 06:50:34,167 - Positivity: True
+2022-03-02 06:50:34,167 - Extrapolate high q: True
+2022-03-02 06:50:34,167 - Shrinkwrap: True
+2022-03-02 06:50:34,167 - Shrinkwrap Old Method: False
+2022-03-02 06:50:34,167 - Shrinkwrap sigma start (angstroms): 9.196875
+2022-03-02 06:50:34,167 - Shrinkwrap sigma end (angstroms): 4.5984375
+2022-03-02 06:50:34,167 - Shrinkwrap sigma start (voxels): 3.0
+2022-03-02 06:50:34,167 - Shrinkwrap sigma end (voxels): 1.5
+2022-03-02 06:50:34,167 - Shrinkwrap sigma decay: 0.99
+2022-03-02 06:50:34,167 - Shrinkwrap threshold fraction: 0.2
+2022-03-02 06:50:34,167 - Shrinkwrap iterations: 20
+2022-03-02 06:50:34,168 - Shrinkwrap starting step: 1000
+2022-03-02 06:50:34,168 - Enforce connectivity: True
+2022-03-02 06:50:34,168 - Enforce connectivity steps: [2000]
+2022-03-02 06:50:34,168 - Chi2 end fraction: 1.000e-03
+2022-03-02 06:50:34,168 - Maximum number of steps: 11000
+2022-03-02 06:50:34,168 - Grid size (voxels): 64 x 64 x 64
+2022-03-02 06:50:34,168 - Real space box width (angstroms): 196.200
+2022-03-02 06:50:34,168 - Real space box range (angstroms): -98.100 < x < 98.100
+2022-03-02 06:50:34,168 - Real space box volume (angstroms^3): 7552609.128
+2022-03-02 06:50:34,168 - Real space voxel size (angstroms): 3.066
+2022-03-02 06:50:34,168 - Real space voxel volume (angstroms^3): 28.811
+2022-03-02 06:50:34,168 - Reciprocal space box width (angstroms^(-1)): 2.018
+2022-03-02 06:50:34,168 - Reciprocal space box range (angstroms^(-1)): -1.025 < qx < 0.993
+2022-03-02 06:50:34,168 - Maximum q vector (diagonal) (angstroms^(-1)): 1.775
+2022-03-02 06:50:34,168 - Number of q shells: 55
+2022-03-02 06:50:34,168 - Width of q shells (angstroms^(-1)): 0.032
+2022-03-02 06:50:34,168 - Random seed: 741637581
+2022-03-02 06:50:34,346 - Step     0:  4.17e+04  130.43        7552609          
+2022-03-02 06:51:53,066 - Step   500:  3.35e-01  94.79        7552609          
+2022-03-02 06:53:13,230 - Step  1000:  1.13e-01  75.77        7552609          
+2022-03-02 06:54:07,433 - Step  1500:  2.23e-02  35.14        301218          
+2022-03-02 06:54:58,719 - Step  2000:  8.22e-03  23.88        50966          
+2022-03-02 06:55:49,699 - Step  2500:  3.17e-03  24.27        43072          
+2022-03-02 06:56:41,011 - Step  3000:  1.67e-03  24.45        43850          
+2022-03-02 06:57:32,192 - Step  3500:  1.40e-03  24.49        44109          
+2022-03-02 06:58:23,138 - Step  4000:  1.32e-03  24.51        44195          
+2022-03-02 06:59:13,992 - Step  4500:  1.29e-03  24.52        44167          
+2022-03-02 07:00:04,939 - Step  5000:  1.25e-03  24.53        44109          
+2022-03-02 07:00:56,009 - Step  5500:  1.26e-03  24.53        44051          
+2022-03-02 07:01:47,224 - Step  6000:  1.21e-03  24.54        44051          
+2022-03-02 07:02:37,999 - Step  6500:  1.18e-03  24.55        44138          
+2022-03-02 07:03:28,821 - Step  7000:  1.14e-03  24.56        44224          
+2022-03-02 07:04:19,358 - Step  7500:  1.13e-03  24.57        44224          
+2022-03-02 07:05:10,324 - Step  8000:  1.07e-03  24.58        44340          
+2022-03-02 07:06:01,299 - Step  8500:  1.04e-03  24.59        44340          
+2022-03-02 07:06:33,641 - FINISHED DENSITY REFINEMENT
+2022-03-02 07:06:33,753 - Number of steps: 8815
+2022-03-02 07:06:33,753 - Final Chi2: 1.026e-03
+2022-03-02 07:06:33,753 - Final Rg: 24.598
+2022-03-02 07:06:33,753 - Final Support Volume: 44253.569
+2022-03-02 07:06:33,754 - Mean Density (all voxels): 0.00132
+2022-03-02 07:06:33,755 - Std. Dev. of Density (all voxels): 0.02310
+2022-03-02 07:06:33,755 - RMSD of Density (all voxels): 0.02314
+2022-03-02 07:06:33,757 - Modified Mean Density (voxels >0.01*max): 0.25663
+2022-03-02 07:06:33,757 - Modified Std. Dev. of Density (voxels >0.01*max): 0.19781
+2022-03-02 07:06:33,757 - Modified RMSD of Density (voxels >0.01*max): 0.32402
+2022-03-02 07:06:33,758 - END

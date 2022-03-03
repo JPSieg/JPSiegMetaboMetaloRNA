@@ -154,8 +154,11 @@ write.csv(df.final, "Figures/SI_figure_x_concentration_correction/Final_conc_err
 
 df.final = read.csv("Figures/SI_figure_x_concentration_correction/Final_conc_error_10000_fits.csv")
 
+list.files()
+
 df.final$Error.type = factor(df.final$Error.type,
-                             levels = c("None", "+15% FAM error", "+15% FAM error & optimized"))
+                             levels = c("None", "+15% FAM error", "+15% FAM error & optimized"),
+                             labels = c("None", "+20% FAM error", "+20% FAM error & optimized"))
 
 dG.plot = ggplot(df.final, aes(x = FAM.error, y = BHQ1.error, fill = dG.error)) +
   geom_tile() +
@@ -164,7 +167,7 @@ dG.plot = ggplot(df.final, aes(x = FAM.error, y = BHQ1.error, fill = dG.error)) 
   theme_classic() +
   xlab("%FAM error") +
   ylab("%BHQ1 error") +
-  facet_wrap(~Error.type, ncol = 1) +
+  facet_wrap(~Error.type, nrow = 1) +
   theme(axis.line = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
         axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
@@ -244,11 +247,56 @@ dS.plot = ggplot(df.final, aes(x = FAM.error, y = BHQ1.error, fill = dS.error)) 
         legend.text = element_text(color = "Black", size = 10),
         legend.title = element_text(color = "Black", size = 10))
 
+list.files("Figures/SI_figure_x_concentration_correction")
 
-plot.final = plot_grid(dG.plot, R.plot, Total.plot,
+
+df = read.csv("Figures/SI_figure_x_concentration_correction/Model_data_with_conc_error.csv")
+
+head(df)
+
+Mmodel <- function(x){ (2-0.2)*(1 - ((0.1+200+x)-(((0.1+200+x)^2)-(4*200*x))^(1/2))/(2*200)) + 0.2 }
+Mmodel.cor <- function(x){ (2-0.2*1.2)*(1 - ((0.1+200*1.2+x)-(((0.1+200*1.2+x)^2)-(4*200*1.2*x))^(1/2))/(2*200*1.2)) + 0.2 }
+
+opt.plot = ggplot(df %>% filter(Reading == 1), aes(x = B, Emission)) +
+  geom_point() +
+  geom_function(fun = Mmodel) +
+  geom_function(fun = Mmodel.cor, color = "red") +
+  xlab("[BHQ1] (nM)") +
+  ylab("Emission") +
+  annotate("text", x = 500, y = 0.5, label = "Start R = 1") +
+  annotate("text", x = 500, y = 0.4, label = "optimized R = 1.2", color = "red") +
+  theme_classic() +
+  theme(axis.line = element_line(colour = 'black'),
+        axis.ticks = element_line(colour = "black"),
+        axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
+        axis.text.y = element_text(color = "Black", size = 16),
+        axis.title.x = element_text(color = "Black", size = 16),
+        axis.title.y = element_text(color = "Black", size = 16),
+        legend.text = element_text(color = "Black", size = 10),
+        legend.title = element_text(color = "Black", size = 10))
+
+
+
+
+plot.final = plot_grid(dG.plot,
+                       opt.plot,
           nrow = 1,
-          labels = c("A", "B", "C"))
+          labels = c("A", "B"),
+          rel_widths = c(3,1))
 
-ggsave("Figures/SI_figure_x_concentration_correction/SI_figure_x_concentration.png", width = 15,
+ggsave("Figures/SI_figure_x_concentration_correction/SI_figure_x_concentration.png", width = 7,
+       height = 2,
+       scale = 2,
        plot.final)
 
+df.er = df.final %>%
+  filter(!is.na(dG.error)) %>%
+  filter(Error.type == "+20% FAM error & optimized") %>%
+  select(dG.error)
+
+str(df.er$dG.error)
+
+range(df.er$dG.error)
+mean(df.er$dG.error)
+hist(df.er$dG.error)
+quantile(df.er$dG.error, 0.80)

@@ -105,16 +105,16 @@ head(df.vh)
 df.vh$Condition = factor(df.vh$Condition,
                           levels = c("Monovalent", "NTPCM", "WMCM", "Ecoli80"))
 
-df.vh$K = exp(-as.numeric(df.vh$G)/(0.0198720425864083*(273.15 + 37)))
+df.vh$K = exp(-as.numeric(df.vh$G)/(0.00198720425864083*(273.15 + 37)))
 df.vh$SE.K = df.vh$K*as.numeric(df.vh$SE.G)/as.numeric(df.vh$G)
-dG.plot = ggplot(data = df.vh %>% filter(Method == "1 VH plot"),
+dG.plot = ggplot(data = df.vh,
        mapping = aes(x = Condition, y = K, ymin = K - SE.K, ymax = K + SE.K)) +
-  facet_wrap(~Helix, nrow = 1) +
+  facet_wrap(~Helix, nrow = 1, scales = "free") +
   geom_bar(stat="identity") +
   geom_errorbar() +
   theme_classic() +
   ylab("K at 37\u00b0C (1/M)") +
-  coord_cartesian(ylim=c(5,12.5)) +
+  #coord_cartesian(ylim=c(5,12.5)) +
   theme(axis.line = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
         axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),

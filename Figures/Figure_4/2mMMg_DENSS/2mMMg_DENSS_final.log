@@ -1,0 +1,65 @@
+2022-03-01 11:02:13,135 - BEGIN
+2022-03-01 11:02:13,135 - Command: /usr/local/bin/denss.all.py -nm 40 -j 2 -ref Gua_apt_no_ligand.pdb -c_on -f 2mMMg-RNA-rep1_subtr.out -o 2mMMg_DENSS --plot_on
+2022-03-01 11:02:13,135 - DENSS Version: 1.6.5
+2022-03-01 11:02:13,135 - Data filename: 2mMMg-RNA-rep1_subtr.out
+2022-03-01 11:02:13,135 - Enantiomer selection: True
+2022-03-01 11:02:13,146 - Starting DENSS runs
+2022-03-01 15:00:33,539 - Finished DENSS runs
+2022-03-01 15:00:33,552 - Average Rg...............: 26.895 +- 0.175
+2022-03-01 15:00:33,552 - Average Chi2.............: 2.742e-04 +- 1.965e-04
+2022-03-01 15:00:33,552 - Average Support Volume...: 79542.438 +- 2646.539
+2022-03-01 15:00:40,061 - Selecting best enantiomers
+2022-03-01 15:26:44,464 - Aligning all maps to reference
+2022-03-01 15:39:31,462 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_0_aligned.mrc 0.714  
+2022-03-01 15:39:31,505 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_1_aligned.mrc 0.590 F
+2022-03-01 15:39:31,548 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_2_aligned.mrc 0.662  
+2022-03-01 15:39:31,592 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_3_aligned.mrc 0.748  
+2022-03-01 15:39:31,635 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_4_aligned.mrc 0.636  
+2022-03-01 15:39:31,679 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_5_aligned.mrc 0.649  
+2022-03-01 15:39:31,722 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_6_aligned.mrc 0.687  
+2022-03-01 15:39:31,765 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_7_aligned.mrc 0.685  
+2022-03-01 15:39:31,808 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_8_aligned.mrc 0.676  
+2022-03-01 15:39:31,851 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_9_aligned.mrc 0.672  
+2022-03-01 15:39:31,895 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_10_aligned.mrc 0.668  
+2022-03-01 15:39:31,938 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_11_aligned.mrc 0.674  
+2022-03-01 15:39:31,981 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_12_aligned.mrc 0.645  
+2022-03-01 15:39:32,026 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_13_aligned.mrc 0.707  
+2022-03-01 15:39:32,070 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_14_aligned.mrc 0.643  
+2022-03-01 15:39:32,114 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_15_aligned.mrc 0.699  
+2022-03-01 15:39:32,157 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_16_aligned.mrc 0.629  
+2022-03-01 15:39:32,200 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_17_aligned.mrc 0.706  
+2022-03-01 15:39:32,244 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_18_aligned.mrc 0.677  
+2022-03-01 15:39:32,287 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_19_aligned.mrc 0.721  
+2022-03-01 15:39:32,331 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_20_aligned.mrc 0.705  
+2022-03-01 15:39:32,374 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_21_aligned.mrc 0.727  
+2022-03-01 15:39:32,418 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_22_aligned.mrc 0.669  
+2022-03-01 15:39:32,461 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_23_aligned.mrc 0.710  
+2022-03-01 15:39:32,505 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_24_aligned.mrc 0.652  
+2022-03-01 15:39:32,548 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_25_aligned.mrc 0.710  
+2022-03-01 15:39:32,591 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_26_aligned.mrc 0.710  
+2022-03-01 15:39:32,635 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_27_aligned.mrc 0.758  
+2022-03-01 15:39:32,678 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_28_aligned.mrc 0.641  
+2022-03-01 15:39:32,721 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_29_aligned.mrc 0.670  
+2022-03-01 15:39:32,764 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_30_aligned.mrc 0.649  
+2022-03-01 15:39:32,807 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_31_aligned.mrc 0.731  
+2022-03-01 15:39:32,851 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_32_aligned.mrc 0.657  
+2022-03-01 15:39:32,894 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_33_aligned.mrc 0.678  
+2022-03-01 15:39:32,937 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_34_aligned.mrc 0.618  
+2022-03-01 15:39:32,981 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_35_aligned.mrc 0.677  
+2022-03-01 15:39:33,024 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_36_aligned.mrc 0.682  
+2022-03-01 15:39:33,067 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_37_aligned.mrc 0.679  
+2022-03-01 15:39:33,111 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_38_aligned.mrc 0.675  
+2022-03-01 15:39:33,140 - Correlation score to reference: 2mMMg_DENSS/2mMMg_DENSS_39_aligned.mrc 0.672  
+2022-03-01 15:39:33,162 - Mean of correlation scores: 0.679
+2022-03-01 15:39:33,163 - Standard deviation of the scores: 0.035
+2022-03-01 15:39:33,163 - Total number of input maps for alignment: 40
+2022-03-01 15:39:33,163 - Number of aligned maps accepted: 39
+2022-03-01 15:39:33,164 - Correlation score between average and reference: 0.887
+2022-03-01 15:39:33,164 - Mean Density of Avg Map (all voxels): 0.00111
+2022-03-01 15:39:33,165 - Std. Dev. of Density (all voxels): 0.00990
+2022-03-01 15:39:33,165 - RMSD of Density (all voxels): 0.00996
+2022-03-01 15:39:33,166 - Modified Mean Density (voxels >0.01*max): 0.03274
+2022-03-01 15:39:33,167 - Modified Std. Dev. of Density (voxels >0.01*max): 0.04351
+2022-03-01 15:39:33,167 - Modified RMSD of Density (voxels >0.01*max): 0.05445
+2022-03-01 15:39:36,226 - Resolution = 34.1 +- 4.0 A
+2022-03-01 15:39:36,226 - END

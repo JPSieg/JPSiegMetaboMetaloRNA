@@ -1,0 +1,65 @@
+2022-03-01 11:06:20,755 - BEGIN
+2022-03-01 11:06:20,755 - Script name: /usr/local/bin/denss.all.py
+2022-03-01 11:06:20,756 - DENSS Version: 1.6.5
+2022-03-01 11:06:20,756 - Data filename: 2mMMg-RNA-rep1_subtr.out
+2022-03-01 11:06:20,756 - Output prefix: 2mMMg_DENSS/2mMMg_DENSS_6
+2022-03-01 11:06:20,756 - Mode: SLOW
+2022-03-01 11:06:20,771 - q range of input data: 0.000 < q < 0.276
+2022-03-01 11:06:20,772 - Maximum dimension: 69.360
+2022-03-01 11:06:20,772 - Sampling ratio: 3.000
+2022-03-01 11:06:20,772 - Requested real space voxel size: 3.251
+2022-03-01 11:06:20,772 - Number of electrons: 10000.000
+2022-03-01 11:06:20,772 - Limit Dmax: False
+2022-03-01 11:06:20,772 - Limit Dmax Steps: [502]
+2022-03-01 11:06:20,772 - Recenter: True
+2022-03-01 11:06:20,772 - Recenter Steps: [501, 1001, 1501, 2001, 2501, 3001, 3501, 4001, 4501, 5001, 5501, 6001, 6501, 7001, 7501, 8001]
+2022-03-01 11:06:20,772 - Recenter Mode: com
+2022-03-01 11:06:20,772 - NCS: 0
+2022-03-01 11:06:20,772 - NCS Steps: [3000, 5000, 7000, 9000]
+2022-03-01 11:06:20,772 - NCS Axis: 1
+2022-03-01 11:06:20,772 - Positivity: True
+2022-03-01 11:06:20,772 - Extrapolate high q: True
+2022-03-01 11:06:20,772 - Shrinkwrap: True
+2022-03-01 11:06:20,772 - Shrinkwrap Old Method: False
+2022-03-01 11:06:20,772 - Shrinkwrap sigma start (angstroms): 9.75375
+2022-03-01 11:06:20,772 - Shrinkwrap sigma end (angstroms): 4.876875
+2022-03-01 11:06:20,772 - Shrinkwrap sigma start (voxels): 3.0000000000000004
+2022-03-01 11:06:20,772 - Shrinkwrap sigma end (voxels): 1.5000000000000002
+2022-03-01 11:06:20,772 - Shrinkwrap sigma decay: 0.99
+2022-03-01 11:06:20,772 - Shrinkwrap threshold fraction: 0.2
+2022-03-01 11:06:20,772 - Shrinkwrap iterations: 20
+2022-03-01 11:06:20,772 - Shrinkwrap starting step: 1000
+2022-03-01 11:06:20,772 - Enforce connectivity: True
+2022-03-01 11:06:20,772 - Enforce connectivity steps: [2000]
+2022-03-01 11:06:20,772 - Chi2 end fraction: 1.000e-03
+2022-03-01 11:06:20,772 - Maximum number of steps: 11000
+2022-03-01 11:06:20,772 - Grid size (voxels): 64 x 64 x 64
+2022-03-01 11:06:20,772 - Real space box width (angstroms): 208.080
+2022-03-01 11:06:20,772 - Real space box range (angstroms): -104.040 < x < 104.040
+2022-03-01 11:06:20,772 - Real space box volume (angstroms^3): 9009299.354
+2022-03-01 11:06:20,773 - Real space voxel size (angstroms): 3.251
+2022-03-01 11:06:20,773 - Real space voxel volume (angstroms^3): 34.368
+2022-03-01 11:06:20,773 - Reciprocal space box width (angstroms^(-1)): 1.902
+2022-03-01 11:06:20,773 - Reciprocal space box range (angstroms^(-1)): -0.966 < qx < 0.936
+2022-03-01 11:06:20,773 - Maximum q vector (diagonal) (angstroms^(-1)): 1.674
+2022-03-01 11:06:20,773 - Number of q shells: 55
+2022-03-01 11:06:20,773 - Width of q shells (angstroms^(-1)): 0.030
+2022-03-01 11:06:20,773 - Random seed: 1640093581
+2022-03-01 11:06:20,877 - Step     0:  1.43e+05  109.33        9009299          
+2022-03-01 11:07:12,580 - Step   500:  5.10e-01  67.51        9009299          
+2022-03-01 11:08:22,952 - Step  1000:  1.52e-01  28.72        9009299          
+2022-03-01 11:08:59,046 - Step  1500:  2.43e-02  31.93        359314          
+2022-03-01 11:09:32,825 - Step  2000:  1.34e-03  26.79        88600          
+2022-03-01 11:10:07,412 - Step  2500:  5.96e-04  26.66        78530          
+2022-03-01 11:10:32,405 - FINISHED DENSITY REFINEMENT
+2022-03-01 11:10:32,516 - Number of steps: 2850
+2022-03-01 11:10:32,516 - Final Chi2: 4.521e-04
+2022-03-01 11:10:32,516 - Final Rg: 27.140
+2022-03-01 11:10:32,516 - Final Support Volume: 78530.308
+2022-03-01 11:10:32,517 - Mean Density (all voxels): 0.00111
+2022-03-01 11:10:32,518 - Std. Dev. of Density (all voxels): 0.01437
+2022-03-01 11:10:32,519 - RMSD of Density (all voxels): 0.01441
+2022-03-01 11:10:32,521 - Modified Mean Density (voxels >0.01*max): 0.12973
+2022-03-01 11:10:32,521 - Modified Std. Dev. of Density (voxels >0.01*max): 0.08603
+2022-03-01 11:10:32,521 - Modified RMSD of Density (voxels >0.01*max): 0.15566
+2022-03-01 11:10:32,521 - END

@@ -1,0 +1,65 @@
+2022-03-02 03:31:08,654 - BEGIN
+2022-03-02 03:31:08,654 - Command: /usr/local/bin/denss.all.py -nm 40 -j 2 -ref Gua_apt_no_ligand.pdb -c_on -f rna-ecoli80-avg_subtr.out -o Eco80_DENSS --plot_on
+2022-03-02 03:31:08,654 - DENSS Version: 1.6.5
+2022-03-02 03:31:08,654 - Data filename: rna-ecoli80-avg_subtr.out
+2022-03-02 03:31:08,654 - Enantiomer selection: True
+2022-03-02 03:31:08,664 - Starting DENSS runs
+2022-03-02 08:00:48,676 - Finished DENSS runs
+2022-03-02 08:00:48,691 - Average Rg...............: 24.899 +- 0.210
+2022-03-02 08:00:48,691 - Average Chi2.............: 3.001e-04 +- 2.570e-04
+2022-03-02 08:00:48,692 - Average Support Volume...: 46043.447 +- 1868.829
+2022-03-02 08:00:54,625 - Selecting best enantiomers
+2022-03-02 08:27:20,537 - Aligning all maps to reference
+2022-03-02 08:40:03,101 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_0_aligned.mrc 0.689  
+2022-03-02 08:40:03,144 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_1_aligned.mrc 0.613  
+2022-03-02 08:40:03,186 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_2_aligned.mrc 0.645  
+2022-03-02 08:40:03,229 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_3_aligned.mrc 0.612  
+2022-03-02 08:40:03,272 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_4_aligned.mrc 0.632  
+2022-03-02 08:40:03,314 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_5_aligned.mrc 0.648  
+2022-03-02 08:40:03,357 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_6_aligned.mrc 0.614  
+2022-03-02 08:40:03,399 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_7_aligned.mrc 0.587  
+2022-03-02 08:40:03,441 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_8_aligned.mrc 0.664  
+2022-03-02 08:40:03,484 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_9_aligned.mrc 0.617  
+2022-03-02 08:40:03,527 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_10_aligned.mrc 0.622  
+2022-03-02 08:40:03,569 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_11_aligned.mrc 0.575  
+2022-03-02 08:40:03,611 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_12_aligned.mrc 0.630  
+2022-03-02 08:40:03,654 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_13_aligned.mrc 0.639  
+2022-03-02 08:40:03,696 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_14_aligned.mrc 0.647  
+2022-03-02 08:40:03,738 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_15_aligned.mrc 0.575  
+2022-03-02 08:40:03,780 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_16_aligned.mrc 0.622  
+2022-03-02 08:40:03,823 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_17_aligned.mrc 0.583  
+2022-03-02 08:40:03,865 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_18_aligned.mrc 0.624  
+2022-03-02 08:40:03,894 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_19_aligned.mrc 0.626  
+2022-03-02 08:40:03,924 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_20_aligned.mrc 0.679  
+2022-03-02 08:40:03,954 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_21_aligned.mrc 0.581  
+2022-03-02 08:40:03,983 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_22_aligned.mrc 0.589  
+2022-03-02 08:40:04,013 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_23_aligned.mrc 0.620  
+2022-03-02 08:40:04,043 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_24_aligned.mrc 0.632  
+2022-03-02 08:40:04,072 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_25_aligned.mrc 0.653  
+2022-03-02 08:40:04,103 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_26_aligned.mrc 0.640  
+2022-03-02 08:40:04,133 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_27_aligned.mrc 0.699  
+2022-03-02 08:40:04,163 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_28_aligned.mrc 0.625  
+2022-03-02 08:40:04,193 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_29_aligned.mrc 0.642  
+2022-03-02 08:40:04,222 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_30_aligned.mrc 0.686  
+2022-03-02 08:40:04,252 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_31_aligned.mrc 0.631  
+2022-03-02 08:40:04,281 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_32_aligned.mrc 0.616  
+2022-03-02 08:40:04,311 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_33_aligned.mrc 0.635  
+2022-03-02 08:40:04,340 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_34_aligned.mrc 0.597  
+2022-03-02 08:40:04,369 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_35_aligned.mrc 0.545 F
+2022-03-02 08:40:04,399 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_36_aligned.mrc 0.604  
+2022-03-02 08:40:04,428 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_37_aligned.mrc 0.636  
+2022-03-02 08:40:04,458 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_38_aligned.mrc 0.600  
+2022-03-02 08:40:04,487 - Correlation score to reference: Eco80_DENSS/Eco80_DENSS_39_aligned.mrc 0.627  
+2022-03-02 08:40:04,549 - Mean of correlation scores: 0.625
+2022-03-02 08:40:04,549 - Standard deviation of the scores: 0.032
+2022-03-02 08:40:04,549 - Total number of input maps for alignment: 40
+2022-03-02 08:40:04,549 - Number of aligned maps accepted: 39
+2022-03-02 08:40:04,550 - Correlation score between average and reference: 0.909
+2022-03-02 08:40:04,550 - Mean Density of Avg Map (all voxels): 0.00132
+2022-03-02 08:40:04,551 - Std. Dev. of Density (all voxels): 0.01343
+2022-03-02 08:40:04,551 - RMSD of Density (all voxels): 0.01350
+2022-03-02 08:40:04,552 - Modified Mean Density (voxels >0.01*max): 0.05185
+2022-03-02 08:40:04,553 - Modified Std. Dev. of Density (voxels >0.01*max): 0.06803
+2022-03-02 08:40:04,553 - Modified RMSD of Density (voxels >0.01*max): 0.08554
+2022-03-02 08:40:06,051 - Resolution = 29.8 +- 5.0 A
+2022-03-02 08:40:06,051 - END

@@ -1,0 +1,5 @@
+denss.align.py -f 2mMMg_DENSS/2mMMg_DENSS_avg.mrc -ref Gua_apt_no_ligand_2mMMg.pdb
+denss.align.py -f NTPCM_DENSS/NTPCM_DENSS_avg.mrc -ref Gua_apt_no_ligand_NTPCM.pdb
+denss.align.py -f WMCM_DENSS/WMCM_DENSS_avg.mrc -ref Gua_apt_no_ligand_WMCM.pdb
+denss.align.py -f Eco80_DENSS/Eco80_DENSS_avg.mrc -ref Gua_apt_no_ligand_Eco80.pdb
+denss.align.py -f 25mMMg_DENSS/25mMMg_DENSS_avg.mrc -ref Gua_apt_no_ligand_25mMMg.pdb

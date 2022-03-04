@@ -1,0 +1,10 @@
+2022-03-03 02:10:57 PM BEGIN
+2022-03-03 02:10:57 PM Command: /usr/local/bin/denss.align.py -f 25mMMg_DENSS/25mMMg_DENSS_avg.mrc -ref Gua_apt_no_ligand_25mMMg.pdb
+2022-03-03 02:10:57 PM DENSS Version: 1.6.5
+2022-03-03 02:10:57 PM Map filename(s): ['25mMMg_DENSS/25mMMg_DENSS_avg.mrc']
+2022-03-03 02:10:57 PM Reference filename: Gua_apt_no_ligand_25mMMg.pdb
+2022-03-03 02:10:57 PM Enantiomer selection: True
+2022-03-03 02:10:57 PM Center PDB reference: True
+2022-03-03 02:10:57 PM PDB reference map resolution: 15.00
+2022-03-03 02:12:39 PM Correlation score to reference: 25mMMg_DENSS_avg_aligned.mrc 8.480e-01
+2022-03-03 02:12:39 PM END

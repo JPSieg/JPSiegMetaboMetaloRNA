@@ -1,0 +1,65 @@
+2022-03-16 14:49:52,291 - BEGIN
+2022-03-16 14:49:52,291 - Script name: /usr/local/bin/denss.all.py
+2022-03-16 14:49:52,291 - DENSS Version: 1.6.5
+2022-03-16 14:49:52,291 - Data filename: 25mMMg-RNA-rep1_subtr.out
+2022-03-16 14:49:52,291 - Output prefix: 25mMMg_DENSS_WAXSiS/25mMMg_DENSS_WAXSiS_12
+2022-03-16 14:49:52,291 - Mode: SLOW
+2022-03-16 14:49:52,306 - q range of input data: 0.000 < q < 0.238
+2022-03-16 14:49:52,306 - Maximum dimension: 75.010
+2022-03-16 14:49:52,306 - Sampling ratio: 3.000
+2022-03-16 14:49:52,307 - Requested real space voxel size: 3.516
+2022-03-16 14:49:52,307 - Number of electrons: 10000.000
+2022-03-16 14:49:52,307 - Limit Dmax: False
+2022-03-16 14:49:52,307 - Limit Dmax Steps: [502]
+2022-03-16 14:49:52,307 - Recenter: True
+2022-03-16 14:49:52,307 - Recenter Steps: [501, 1001, 1501, 2001, 2501, 3001, 3501, 4001, 4501, 5001, 5501, 6001, 6501, 7001, 7501, 8001]
+2022-03-16 14:49:52,307 - Recenter Mode: com
+2022-03-16 14:49:52,307 - NCS: 0
+2022-03-16 14:49:52,307 - NCS Steps: [3000, 5000, 7000, 9000]
+2022-03-16 14:49:52,307 - NCS Axis: 1
+2022-03-16 14:49:52,307 - Positivity: True
+2022-03-16 14:49:52,307 - Extrapolate high q: True
+2022-03-16 14:49:52,307 - Shrinkwrap: True
+2022-03-16 14:49:52,307 - Shrinkwrap Old Method: False
+2022-03-16 14:49:52,307 - Shrinkwrap sigma start (angstroms): 10.548281250000002
+2022-03-16 14:49:52,307 - Shrinkwrap sigma end (angstroms): 5.274140625000001
+2022-03-16 14:49:52,307 - Shrinkwrap sigma start (voxels): 3.0000000000000004
+2022-03-16 14:49:52,307 - Shrinkwrap sigma end (voxels): 1.5000000000000002
+2022-03-16 14:49:52,307 - Shrinkwrap sigma decay: 0.99
+2022-03-16 14:49:52,307 - Shrinkwrap threshold fraction: 0.2
+2022-03-16 14:49:52,307 - Shrinkwrap iterations: 20
+2022-03-16 14:49:52,307 - Shrinkwrap starting step: 1000
+2022-03-16 14:49:52,307 - Enforce connectivity: True
+2022-03-16 14:49:52,307 - Enforce connectivity steps: [2000]
+2022-03-16 14:49:52,307 - Chi2 end fraction: 1.000e-03
+2022-03-16 14:49:52,307 - Maximum number of steps: 11000
+2022-03-16 14:49:52,307 - Grid size (voxels): 64 x 64 x 64
+2022-03-16 14:49:52,307 - Real space box width (angstroms): 225.030
+2022-03-16 14:49:52,307 - Real space box range (angstroms): -112.515 < x < 112.515
+2022-03-16 14:49:52,307 - Real space box volume (angstroms^3): 11395181.858
+2022-03-16 14:49:52,307 - Real space voxel size (angstroms): 3.516
+2022-03-16 14:49:52,307 - Real space voxel volume (angstroms^3): 43.469
+2022-03-16 14:49:52,307 - Reciprocal space box width (angstroms^(-1)): 1.759
+2022-03-16 14:49:52,307 - Reciprocal space box range (angstroms^(-1)): -0.893 < qx < 0.866
+2022-03-16 14:49:52,308 - Maximum q vector (diagonal) (angstroms^(-1)): 1.548
+2022-03-16 14:49:52,308 - Number of q shells: 55
+2022-03-16 14:49:52,308 - Width of q shells (angstroms^(-1)): 0.028
+2022-03-16 14:49:52,308 - Random seed: 2147284433
+2022-03-16 14:49:52,492 - Step     0:  2.94e+05  128.43        11395181          
+2022-03-16 14:51:14,092 - Step   500:  2.38e+00  156.43        11395181          
+2022-03-16 14:52:34,893 - Step  1000:  7.01e-01  125.22        11395181          
+2022-03-16 14:53:29,689 - Step  1500:  1.86e-01  42.93        454470          
+2022-03-16 14:54:21,871 - Step  2000:  3.12e-03  28.61        92806          
+2022-03-16 14:55:13,687 - Step  2500:  2.61e-03  28.83        81635          
+2022-03-16 14:56:00,985 - FINISHED DENSITY REFINEMENT
+2022-03-16 14:56:01,094 - Number of steps: 2952
+2022-03-16 14:56:01,094 - Final Chi2: 2.045e-03
+2022-03-16 14:56:01,094 - Final Rg: 28.845
+2022-03-16 14:56:01,094 - Final Support Volume: 82330.606
+2022-03-16 14:56:01,094 - Mean Density (all voxels): 0.00088
+2022-03-16 14:56:01,095 - Std. Dev. of Density (all voxels): 0.01294
+2022-03-16 14:56:01,096 - RMSD of Density (all voxels): 0.01297
+2022-03-16 14:56:01,098 - Modified Mean Density (voxels >0.01*max): 0.12594
+2022-03-16 14:56:01,099 - Modified Std. Dev. of Density (voxels >0.01*max): 0.09205
+2022-03-16 14:56:01,099 - Modified RMSD of Density (voxels >0.01*max): 0.15600
+2022-03-16 14:56:01,099 - END

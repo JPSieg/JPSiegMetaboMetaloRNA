@@ -1,0 +1,10 @@
+2022-03-17 03:38:55 PM BEGIN
+2022-03-17 03:38:55 PM Command: /usr/local/bin/denss.align.py -f 2mMMg_DENSS_WAXSiS/2mMMg_DENSS_WAXSiS_avg.mrc -ref Monomer_WAXSiS_result.pdb
+2022-03-17 03:38:55 PM DENSS Version: 1.6.5
+2022-03-17 03:38:55 PM Map filename(s): ['2mMMg_DENSS_WAXSiS/2mMMg_DENSS_WAXSiS_avg.mrc']
+2022-03-17 03:38:55 PM Reference filename: Monomer_WAXSiS_result.pdb
+2022-03-17 03:38:55 PM Enantiomer selection: True
+2022-03-17 03:38:55 PM Center PDB reference: True
+2022-03-17 03:38:55 PM PDB reference map resolution: 15.00
+2022-03-17 03:40:39 PM Correlation score to reference: 2mMMg_DENSS_WAXSiS_avg_aligned.mrc 9.205e-01
+2022-03-17 03:40:39 PM END

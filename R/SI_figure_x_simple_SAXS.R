@@ -181,15 +181,40 @@ read.waxsis = function(data_path){
 
 df.2mM = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/2mMMg_over.xvg")
 df.2mM$Condition = "2 mM Mg X2 = 1.09"
+df.2mM$State = "Monomer"
 df.25mM = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/25mMMg_over.xvg")
 df.25mM$Condition = "25 mM Mg X2 = 2.7"
+df.25mM$State = "Monomer"
 df.WMCM = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/WMCM_over.xvg")
 df.WMCM$Condition = "WMCM X2 = 1.534"
+df.WMCM$State = "Monomer"
+df.25mM$State = "Monomer"
 df.NTPCM = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/NTPCM_over.xvg")
 df.NTPCM$Condition = "NTPCM X2 = 0.86"
+df.NTPCM$State = "Monomer"
 df.Eco80 = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/Eco80_over.xvg")
 df.Eco80$Condition = "Eco80 X2 = 0.81"
-df.exp = bind_rows(df.2mM, df.25mM, df.NTPCM, df.WMCM, df.Eco80)
+df.Eco80$State = "Monomer"
+
+df.2mM.dimer = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/2mM_dimer_over.xvg")
+df.2mM.dimer$Condition = "2 mM Mg X2 = 1.09"
+df.2mM.dimer$State = "Dimer"
+df.25mM.dimer = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/25mM_dimer_over.xvg")
+df.25mM.dimer$Condition = "25 mM Mg X2 = 2.7"
+df.25mM.dimer$State = "Dimer"
+df.WMCM.dimer = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/WMCM_dimer_over.xvg")
+df.WMCM.dimer$Condition = "WMCM X2 = 1.534"
+df.WMCM.dimer$State = "Dimer"
+df.25mM.dimer$State = "Dimer"
+df.NTPCM.dimer = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/NTPCM_dimer_over.xvg")
+df.NTPCM.dimer$Condition = "NTPCM X2 = 0.86"
+df.NTPCM.dimer$State = "Dimer"
+df.Eco80.dimer = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/Eco80_dimer_over.xvg")
+df.Eco80.dimer$Condition = "Eco80 X2 = 0.81"
+df.Eco80.dimer$State = "Dimer"
+
+df.exp = bind_rows(df.2mM, df.25mM, df.NTPCM, df.WMCM, df.Eco80,
+                   df.2mM.dimer, df.25mM.dimer, df.NTPCM.dimer, df.WMCM.dimer, df.Eco80.dimer)
 
 df.exp$Condition = factor(df.exp$Condition,
                           levels = c("2 mM Mg X2 = 1.09",
@@ -198,7 +223,11 @@ df.exp$Condition = factor(df.exp$Condition,
                                     "Eco80 X2 = 0.81",
                                     "25 mM Mg X2 = 2.7"))
 
-Residuals = ggplot(df.exp, aes(x = q, y = (Iq.fit - Iq.calc)/Iq.fit, color = Condition)) +
+head(df.exp)
+unique(df.exp$State)
+df.exp[which(is.na(df.exp$State)),]
+
+Residuals = ggplot(df.exp, aes(x = q, y = (Iq.fit - Iq.calc)/Iq.fit, color = Condition, group = State)) +
   geom_point(alpha = 0.5) +
   scale_x_continuous(trans = "log10") +
   scale_y_continuous(limits = c(-5, 5), n.breaks = 3) +
@@ -206,7 +235,7 @@ Residuals = ggplot(df.exp, aes(x = q, y = (Iq.fit - Iq.calc)/Iq.fit, color = Con
   ylab("Normalized\nResiduals") +
   theme_classic() +
   scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  facet_wrap(~Condition, nrow = 1) +
+  facet_wrap(c("Condition", "State")) +
   theme(axis.line = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -222,7 +251,7 @@ Residuals = ggplot(df.exp, aes(x = q, y = (Iq.fit - Iq.calc)/Iq.fit, color = Con
 
 Data = ggplot() +
   geom_point(data = df.exp, mapping = aes(x = q, y = Iq.fit, color = Condition), alpha = 0.5) +
-  geom_line(data = df.exp, mapping = aes(x = q, y = Iq.calc), color = "black") +
+  geom_line(data = df.exp, mapping = aes(x = q, y = Iq.calc, shape = State, group = State)) +
   scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
   scale_x_continuous(trans = "log10") +
   scale_y_continuous(trans = "log10") +

@@ -1,0 +1,37 @@
+Note: removed all ligands (that is, HETATM lines), but kept crystal water
+MD simulation:
+	Estimate for number of atoms in envelope = 14305 - will generate 126 simulation frames
+	Simulation time (ps)    = 66
+	Equilibration time (ps) = 3
+	Simulation system contained 4290 solute atoms and 20962 water molecules.
+	Added 132 Na+ to neutralize the simulation cell.
+
+SAXS/WAXS calculation:
+	Maximum q scattering vector [nm-1]:                   10
+	Number of solute and pure-sovlent simulation frames:  126
+	Simulation time discarded for equilibration (ps):     3
+	Correcting solvent density to [e/nm3]:                334
+	Number of q-points for spherical average:             Max{500, 0.20*(D*q)^2}  [D = diameter of envelope]
+	Distance of envelope from solute [nm]:                0.7
+	Volume of envelope [nm3]:                             170.152
+	Maximum diameter of solute [nm]:                      11.0782
+	Number of atoms used for rotational fit:              736
+	Buffer subtraction scheme:                            Total buffer intensity subtracted
+
+Fitting the experimental data to the calculated data on a linear scale was successful.
+	Carried out a weighted fit, because 3 columns were found in experimental intensity file.
+	Fitting results f/c for I(fitted) = f*I(given) + c
+	Overall scale: f   = 1.08159e+08
+	Offset added:  c   = -1.80941e+06
+	Fit quality:   chi = 0.750852 +- 0.00209357
+
+Fitting the experimental data to the calculated data on a non-weighted logarithmic scale was successful.
+	Fitting results f/c for I(fitted) = f*I(given) + c
+	Overall scale: f   = 1.23441e+08
+	Offset added:  c   = 3.58793
+	Fit quality:   chi = 1e+10 +- 0 (log scale)
+
+Guinier fit:
+	Rg [A] = 31.9188
+	For comparison: Rg(solute) [A] = 31.8839
+

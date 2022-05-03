@@ -289,6 +289,9 @@ ggsave("Figures/SI_figure_x_concentration_correction/SI_figure_x_concentration.p
        scale = 2,
        plot.final)
 
+ggsave("Figures/SI_figure_x_concentration_correction/Job_plot.svg",
+       opt.plot)
+
 df.er = df.final %>%
   filter(!is.na(dG.error)) %>%
   filter(Error.type == "+20% FAM error & optimized") %>%

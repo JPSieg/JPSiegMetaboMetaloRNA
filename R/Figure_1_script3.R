@@ -115,11 +115,11 @@ E.coli$Mg.binding.strength = factor(E.coli$Mg.binding.strength,
 
 Figure_1A = ggplot(E.coli, aes(x = "", y = Concentration, fill = Mg.binding.strength, label = Metabolites)) +
   geom_bar(width = 0.8, stat = "identity", color = "black") +
-  annotate("line", x = c(1.4,1.4), y = c(0,195), size = 2, color = viridis(n = 7)[6]) +
-  annotate("line", x = c(1.4,1.4), y = c(195,243), size = 2, color = "black") +
-  annotate("text", x = 1.53, y = 100, label = "15 metabolites = 80% E. coli metabolome = Ecoli80", size = 4,
-           color = viridis(n = 7)[6]) +
-  annotate("text", x = 1, y = 220, label = "10%\n228 other\nmetabolites", size = 4,
+  annotate("rect", xmin = 0.6, xmax = 1.4, ymin = 0, ymax = 195,
+           size = 2, color = viridis(n = 7)[6], alpha = 0.1) +
+  annotate("text", x = 1, y = 45, label = "15 metabolites =\n80% E. coli metabolome =\nEcoli80", size = 4,
+           color = "white") +
+  annotate("text", x = 1, y = 220, label = "20%\n228 other\nmetabolites", size = 4,
            color = "black") +
   scale_fill_manual(values = viridis(n =  7)[c(7, 3, 1)]) +
   theme_classic()+
@@ -129,7 +129,6 @@ Figure_1A = ggplot(E.coli, aes(x = "", y = Concentration, fill = Mg.binding.stre
         axis.ticks = element_line(colour = "black"),
         axis.text.y = element_text(color = "Black", size = 8,
                                    angle = 45, hjust = 1, vjust = 1),
-        legend.position = c(0.15, 0.55),
         axis.text.x = element_text(color = "Black", size = 16),
         axis.title.y = element_blank(),
         axis.ticks.y = element_blank(),
@@ -276,7 +275,7 @@ colnames(df.model.NTPCM) = c('Conc.Mg', "Mg.free")
 Figure_1BE = analyze.HQS(df.HQS %>% filter(Metabolites == "NTPCM"),
                          df.model.NTPCM,
                          viridis(n =  7)[3],
-                         Labels = c("B", "E"),
+                         Labels = c("C", "F"),
                          xlimits = c(0, 70))
 
 #WMCM
@@ -286,7 +285,7 @@ colnames(df.model.WMCM) = c('Conc.Mg', "Mg.free")
 Figure_1CF = analyze.HQS(df.HQS %>% filter(Metabolites == "WMCM"),
                          df.model.WMCM,
                          viridis(n =  7)[1],
-                         Labels = c("C", "F"),
+                         Labels = c("D", "G"),
                          xlimits = c(0, 70))
 
 #Ecoli80
@@ -296,7 +295,7 @@ colnames(df.model.Ecoli80) = c('Conc.Mg', "Mg.free")
 Figure_1DG = analyze.HQS(df.HQS %>% filter(Metabolites == "Ecoli80"),
                          df.model.Ecoli80,
                          viridis(n =  7)[6],
-                         Labels = c("D", "G"),
+                         Labels = c("B", "E"),
                          xlimits = c(1, 80))
 
 
@@ -372,11 +371,10 @@ Figure_1I = ggplot(df.conc.m, aes(x = MCM,
   coord_flip()
 
 
-Figure_1BCDEFG = plot_grid(Figure_1BE, Figure_1CF, Figure_1DG, nrow = 1)
+Figure_1BCDEFG = plot_grid(Figure_1DG, Figure_1BE, Figure_1CF, nrow = 1)
 
-Figure_1HI = plot_grid(Figure_1H, Figure_1I, nrow = 1, labels = c("H", "I"))
 
-Figure_1ABCDEFGHI = plot_grid(Figure_1A, Figure_1BCDEFG, Figure_1HI, labels = "A", ncol = 1, rel_heights = c(0.5,2,1))
+Figure_1ABCDEFG = plot_grid(Figure_1A, Figure_1BCDEFG, labels = "A", ncol = 1, rel_heights = c(0.5,1.5))
 
-ggsave("Figures/Figure_1/Figure_1ABCDEFGHI.png", Figure_1ABCDEFGHI, width = 3.3, height = 4, units = "in", scale = 3)
+ggsave("Figures/Figure_1/Figure_1.svg", Figure_1ABCDEFG, width = 3.3, height = 3, units = "in", scale = 3)
 

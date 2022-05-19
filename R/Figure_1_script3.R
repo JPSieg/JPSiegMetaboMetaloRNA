@@ -151,7 +151,7 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
                        color = viridis(n =  7)[1],
                        Labels = c("B", "E"),
                        xlimits = c(0, 75),
-                       ylimits = c(0, 40)){
+                       ylimits = c(-10, 40)){
 
   df = df %>% filter(EDTA == "EDTA = 0 mM")
 
@@ -186,7 +186,7 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
           axis.title.y = element_text(color = "Black", size = 16),
           legend.text = element_text(color = "Black", size = 10),
           legend.title = element_blank(),
-          legend.position = c(0.8, 0.3),
+          legend.position = c(0.6, 0.2),
           plot.title = element_text(color = "Black", size = 14,hjust = 0.5))
 
   df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
@@ -260,7 +260,32 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
           legend.position = "none",
           plot.title = element_text(color = "Black", size = 14,hjust = 0.5))
 
-  output = plot_grid(Figure_Norm_Em, Figure_Mg_free, ncol = 1, labels = Labels)
+  output.df = df %>% filter(Sample == "Chelator") %>% select(Metabolites, Conc.Mg, Mg.free)
+
+  output.plot = plot_grid(Figure_Norm_Em, Figure_Mg_free, ncol = 1, labels = Labels,
+                     align = "v")
+
+  df.model$Conc.Mg[which.min(abs(df.model$Mg.free - 2))]
+
+  length(unique(df.model$Conc.Mg))
+
+  output.model = df.model %>% aggregate(Mg.free ~ Conc.Mg, FUN = mean)
+
+
+  CI95 = c()
+
+  for (i in 1:nrow(output.model)){
+    expected.Mgfree = df.model %>%
+      filter(Conc.Mg == output.model$Conc.Mg[i])
+    CI95[i] = paste(quantile(expected.Mgfree$Mg.free, 0.025), "to", quantile(expected.Mgfree$Mg.free, 0.975))
+  }
+
+  output.model$CI95 = CI95
+
+  output.model$Condition = df$Metabolites[1]
+  output = list(output.plot,
+                output.model,
+                output.df)
 
 }
 
@@ -299,82 +324,20 @@ Figure_1DG = analyze.HQS(df.HQS %>% filter(Metabolites == "Ecoli80"),
                          xlimits = c(1, 80))
 
 
-####Figure 1 H####
-
-df.conc.m = read.csv("Figures/Figure_1/Modeled_AC_metabolite_concentrations.csv")
-
-df.conc.m$MCM = factor(df.conc.m$MCM,
-                   levels = c("NTPCM","WMCM", "Ecoli80"),
-                   labels = c("Strong", "Weak", "Eco80"))
 
 
-quantiles_95 <- function(x) {
-  r <- quantile(x, probs=c(0.01, 0.05, 0.5, 0.95, 0.99))
-  names(r) <- c("ymin", "lower", "middle", "upper", "ymax")
-  r
-}
-
-Figure_1H = ggplot(df.conc.m, aes(x = MCM,
-                      y = MCM.conc,
-                      fill = MCM)) +
-  geom_violin() +
-  stat_summary(fun.data = quantiles_95, geom="boxplot", alpha = 0) +
-  scale_fill_manual(values = viridis(n =  7)[c(3,1,6)]) +
-  theme_classic() +
-  ylim(0, 250) +
-  theme(axis.text = element_text(color = "Black", size = 16),
-        axis.title.y = element_blank(),
-        legend.title = element_blank(),
-        axis.title.x = element_text(color = "Black", size = 16)) +
-  ylab("[Metabolites] (mM)") +
-  coord_flip()
-
-####Make Figure_1I####
-
-head(df.AC.model)
-
-colnames(df.AC.model)[1] = "Iteration"
-
-MCM = c()
-Mg.T = c()
-
-for (i in 1:length(unique(df.AC.model$Iteration))){
-  df = df.AC.model %>% filter(Iteration == unique(df.AC.model$Iteration)[i])
-  MCM = c(MCM, "NTPCM")
-  Mg.T = c(Mg.T, df$Mg.T[which.min(abs(2 - df$Mg.free.NTP))])
-  MCM = c(MCM, "WMCM")
-  Mg.T = c(Mg.T, df$Mg.T[which.min(abs(2 - df$Mg.free.WMCM))])
-  MCM = c(MCM, "Ecoli80")
-  Mg.T = c(Mg.T, df$Mg.T[which.min(abs(2 - df$Mg.free))])
-}
-
-
-df.Mg.T = data.frame(MCM, Mg.T)
-
-df.Mg.T$MCM = factor(df.Mg.T$MCM,
-                       levels = c("NTPCM","WMCM", "Ecoli80"),
-                       labels = c("Strong", "Weak", "Eco80"))
-
-Figure_1I = ggplot(df.conc.m, aes(x = MCM,
-                                  y = Mg.T,
-                                  fill = MCM)) +
-  geom_violin() +
-  stat_summary(fun.data = quantiles_95, geom="boxplot", alpha = 0) +
-  geom_hline(yintercept = c(6.44, 24.94, 31.02), color = "red") +
-  scale_fill_manual(values = viridis(n =  7)[c(3,1,6)]) +
-  theme_classic() +
-  theme(axis.text = element_text(color = "Black", size = 16),
-        legend.title = element_blank(),
-        axis.title.y = element_blank(),
-        axis.title.x = element_text(color = "Black", size = 16)) +
-  ylab("[Mg Total] (mM) for 2 mM Mg Free") +
-  coord_flip()
-
-
-Figure_1BCDEFG = plot_grid(Figure_1DG, Figure_1BE, Figure_1CF, nrow = 1)
+Figure_1BCDEFG = plot_grid(Figure_1DG[[1]], Figure_1BE[[1]], Figure_1CF[[1]], nrow = 1)
 
 
 Figure_1ABCDEFG = plot_grid(Figure_1A, Figure_1BCDEFG, labels = "A", ncol = 1, rel_heights = c(0.5,1.5))
 
 ggsave("Figures/Figure_1/Figure_1.svg", Figure_1ABCDEFG, width = 3.3, height = 3, units = "in", scale = 3)
 
+df.model = bind_rows(Figure_1DG[[2]],Figure_1BE[[2]], Figure_1CF[[2]])
+
+list.files("Figures/Table 2")
+write.csv(df.model, "Figures/Table 2/Modeled_results.csv")
+
+df.final = bind_rows(Figure_1DG[[3]],Figure_1BE[[3]], Figure_1CF[[3]])
+
+write.csv(df.final, "Figures/Table 2/HQS_results.csv")

@@ -2,7 +2,7 @@ library(tidyverse)
 
 df.met = read.csv("Figures/Figure_1/Top_15_E.coli_metabolites_edited.csv")
 
-models = 100
+models = 1000
 
 AC.met.model = function(data_frame = df.met){
   M.error = c()
@@ -10,7 +10,9 @@ AC.met.model = function(data_frame = df.met){
   for ( i in 1:nrow(data_frame)){
     M.error[i] = rnorm(1, 0, data_frame$M.error[i])
     #M.error = M.error + rnorm(1, 0.015, 0.005)
-    Kd.error[i] = rnorm(1, 0, data_frame$Kd.error[i])
+    if (is.na(data_frame$Kd.error[i])){}else{
+      Kd.error[i] = rnorm(1, 0, data_frame$Kd.error[i])
+    }
   }
   data_frame$Model.conc = data_frame$Concentration + M.error
   data_frame$Model.Kd = data_frame$Kd + Kd.error
@@ -86,7 +88,7 @@ write.csv(df, "Figures/Figure_1/Modeled_AC_metabolite_concentrations.csv", row.n
 
 
 
-Mg.T = 10^(seq(-1, log10(500), length.out = 250))
+Mg.T = seq(0, 100, length.out = 500)
 
 pb = txtProgressBar(min = 1, max = length(list.df.model), initial = 1)
 

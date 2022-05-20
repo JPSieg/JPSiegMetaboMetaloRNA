@@ -96,10 +96,12 @@ Figure_x = plot_grid(list.plot[[4]],
           list.plot[[9]],
           list.plot[[10]],
           list.plot[[3]],
-          list.plot[[1]], ncol = 5, hjust = 0.01, label_size = 20,
+          list.plot[[1]], ncol = 5, hjust = 0.075, label_size = 20,
           labels = c("(A)", "(B)", "(C)", "(D)", "(E)",
                      "(F)", "(G)", "(H)", "(I)", "(J)"))
 
 ggsave("Figures/SI_Figure_X_ITC/SI_Figure_X_ITC.svg",
+       Figure_x, width = 6, height = 4, scale = 4)
+ggsave("Figures/SI_Figure_X_ITC/SI_Figure_X_ITC.png",
        Figure_x, width = 6, height = 4, scale = 4)
 

@@ -678,8 +678,8 @@ df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
 
 Mg.free.calc = function(K, Conc.Mg){
   a = 1
-  b = 240 + Conc.Mg + (1/K)
-  c = 240*Conc.Mg
+  b = 5 + Conc.Mg + (1/K)
+  c = 5*Conc.Mg
   x = Conc.Mg - (-b + sqrt((b^2) + (4*a*c)))/(2*a)
 }
 
@@ -747,4 +747,7 @@ plot_grid(Figure_Glutamate, Figure_Glutathione,
           label_size = 20)
 
 ggsave("Figures/SI_Figure_X_HQS_to_measure_weak_binders/SI_Figure_X_HQS_binding.svg",
+       width = 6, scale = 3)
+
+ggsave("Figures/SI_Figure_X_HQS_to_measure_weak_binders/SI_Figure_X_HQS_binding.png",
        width = 6, scale = 3)

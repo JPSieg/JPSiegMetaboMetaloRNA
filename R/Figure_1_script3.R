@@ -117,7 +117,7 @@ Figure_1A = ggplot(E.coli, aes(x = "", y = Concentration, fill = Mg.binding.stre
   geom_bar(width = 0.8, stat = "identity", color = "black") +
   annotate("rect", xmin = 0.6, xmax = 1.4, ymin = 0, ymax = 195,
            size = 2, color = viridis(n = 7)[6], alpha = 0.1) +
-  annotate("text", x = 1, y = 45, label = "15 metabolites =\n80% E. coli metabolome =\nEcoli80", size = 4,
+  annotate("text", x = 1, y = 45, label = "15 metabolites =\n80% E. coli metabolome =\nEco80", size = 4,
            color = "white") +
   annotate("text", x = 1, y = 220, label = "20%\n228 other\nmetabolites", size = 4,
            color = "black") +
@@ -151,13 +151,18 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
                        color = viridis(n =  7)[1],
                        Labels = c("B", "E"),
                        xlimits = c(0, 75),
-                       ylimits = c(-10, 40)){
+                       ylimits = c(-5, 40)){
 
   df = df %>% filter(EDTA == "EDTA = 0 mM")
 
   fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
             df %>% filter(Sample == "No chelator"),
-            start = list(I.max = 150000, I.min = 0, K = 10))
+            start = list(I.max = 150000, I.min = 0, K = 10),
+            algorithm = "port",
+            lower = c(0, 0, 0))
+
+  output.HQS = data.frame(coef(summary(fit)))
+  output.HQS$Condition = df$Metabolites[1]
 
   fit.form = function(Conc.Mg){
     Emission = (coef(fit)[1] - coef(fit)[2])*(coef(fit)[3]*Conc.Mg/(1 + coef(fit)[3]*Conc.Mg)) + coef(fit)[2]
@@ -283,15 +288,23 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
   output.model$CI95 = CI95
 
   output.model$Condition = df$Metabolites[1]
+
   output = list(output.plot,
                 output.model,
-                output.df)
+                output.df,
+                output.HQS)
 
 }
 
 df.HQS = read.csv("Figures/Figure_1/HQS_data.csv")
 
 df.AC.model = read.csv("Figures/Figure_1/Modeled_AC_MCM_concentrations.csv")
+
+unique(df.HQS$Metabolites)
+
+df.HQS$Metabolites = factor(df.HQS$Metabolites,
+                            levels = c("NTPCM", "WMCM", "Ecoli80"),
+                            labels = c("NTPCM", "WMCM", "Eco80"))
 
 #NTPCM
 df.model.NTPCM = df.AC.model %>% select(Mg.T, Mg.free.NTP)
@@ -317,7 +330,7 @@ Figure_1CF = analyze.HQS(df.HQS %>% filter(Metabolites == "WMCM"),
 df.model.Ecoli80 = df.AC.model %>% select(Mg.T, Mg.free)
 colnames(df.model.Ecoli80) = c('Conc.Mg', "Mg.free")
 
-Figure_1DG = analyze.HQS(df.HQS %>% filter(Metabolites == "Ecoli80"),
+Figure_1DG = analyze.HQS(df.HQS %>% filter(Metabolites == "Eco80"),
                          df.model.Ecoli80,
                          viridis(n =  7)[6],
                          Labels = c("B", "E"),
@@ -337,6 +350,11 @@ df.model = bind_rows(Figure_1DG[[2]],Figure_1BE[[2]], Figure_1CF[[2]])
 
 list.files("Figures/Table 2")
 write.csv(df.model, "Figures/Table 2/Modeled_results.csv")
+
+df.HQS.fits = bind_rows(Figure_1DG[[4]],Figure_1BE[[4]], Figure_1CF[[4]])
+list.files("Figures/SI_Table_3_HQS_fits_in_AC")
+write.csv(df.HQS.fits, "Figures/SI_Table_3_HQS_fits_in_AC/HQS_binding_K_fits.csv")
+
 
 df.final = bind_rows(Figure_1DG[[3]],Figure_1BE[[3]], Figure_1CF[[3]])
 

@@ -88,7 +88,7 @@ write.csv(df, "Figures/Figure_1/Modeled_AC_metabolite_concentrations.csv", row.n
 
 
 
-Mg.T = seq(0, 100, length.out = 500)
+Mg.T = 10^seq(-1, log10(200), length.out = 250)
 
 pb = txtProgressBar(min = 1, max = length(list.df.model), initial = 1)
 

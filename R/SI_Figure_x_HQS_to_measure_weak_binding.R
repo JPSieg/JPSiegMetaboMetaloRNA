@@ -686,7 +686,7 @@ Mg.free.calc = function(K, Conc.Mg){
 df.chelator =  df %>% filter(Sample == "Chelator") %>% filter(EDTA != "EDTA = 80 mM")
 
 Fit.chelator = nls(Mg.free ~ Mg.free.calc(K, Conc.Mg),
-                   data = df.chelator %>% filter(EDTA == "EDTA = 0 mM") %>% filter(Conc.Mg <= 10)%>% filter(Conc.Mg >= 0.1),
+                   data = df.chelator %>% filter(EDTA == "EDTA = 0 mM") %>% filter(Conc.Mg <= 3)%>% filter(Conc.Mg >= 0.1),
                    trace = TRUE,
                    algorithm = "port",
                    control = nls.control(warnOnly = TRUE),
@@ -694,8 +694,8 @@ Fit.chelator = nls(Mg.free ~ Mg.free.calc(K, Conc.Mg),
 
 Mg.free.chelator = function(Conc.Mg){
   a = 1
-  b = 240 + Conc.Mg + (1/coef(Fit.chelator)[1])
-  c = 240*Conc.Mg
+  b = 5 + Conc.Mg + (1/coef(Fit.chelator)[1])
+  c = 5*Conc.Mg
   x = Conc.Mg - (-b + sqrt((b^2) + (4*a*c)))/(2*a)
 }
 

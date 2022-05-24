@@ -1,0 +1,5 @@
+1.) Metabolite names
+2.) More white space
+3.) Delete redundatn axis values
+4.) White box background
+5.) Label biological free Mg range

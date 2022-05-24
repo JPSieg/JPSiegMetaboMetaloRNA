@@ -114,12 +114,12 @@ E.coli$Mg.binding.strength = factor(E.coli$Mg.binding.strength,
        labels = c("other", "NTPCM", "WMCM"))
 
 Figure_1A = ggplot(E.coli, aes(x = "", y = Concentration, fill = Mg.binding.strength, label = Metabolites)) +
-  geom_bar(width = 0.8, stat = "identity", color = "black") +
+  geom_bar(width = 0.8, stat = "identity", color = "black", size = 1) +
   annotate("rect", xmin = 0.6, xmax = 1.4, ymin = 0, ymax = 195,
-           size = 2, color = viridis(n = 7)[6], alpha = 0.1) +
-  annotate("text", x = 1, y = 45, label = "15 metabolites =\n80% E. coli metabolome =\nEco80", size = 4,
-           color = "white") +
-  annotate("text", x = 1, y = 220, label = "20%\n228 other\nmetabolites", size = 4,
+           size = 2, color = "black", alpha = 0.1) +
+  annotate("text", x = 1.5, y = 100, label = "15 metabolites = 80% E. coli metabolome = Eco80", size = 4,
+           color = "black") +
+  annotate("text", x = 1, y = 220, label = "228\nmetabolites\n = other 20%", size = 4,
            color = "black") +
   scale_fill_manual(values = viridis(n =  7)[c(7, 3, 1)]) +
   theme_classic()+
@@ -146,20 +146,20 @@ Figure_1A
 
 list.files("Figures/Figure_1")
 
-analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
-                       df.model = df.model.WMCM,
+analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "Eco80"),
+                       df.model = df.model.NTPCM,
                        color = viridis(n =  7)[1],
                        Labels = c("B", "E"),
                        xlimits = c(0, 75),
-                       ylimits = c(-5, 40)){
+                       ylimits = c(-1, 20)){
+
 
   df = df %>% filter(EDTA == "EDTA = 0 mM")
 
   fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
             df %>% filter(Sample == "No chelator"),
             start = list(I.max = 150000, I.min = 0, K = 10),
-            algorithm = "port",
-            lower = c(0, 0, 0))
+            trace = TRUE)
 
   output.HQS = data.frame(coef(summary(fit)))
   output.HQS$Condition = df$Metabolites[1]
@@ -175,23 +175,27 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
     Emission = (coef(fit1)[3]*Conc.Mg/(1 + coef(fit1)[3]*Conc.Mg))
   }
 
-  Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color = Sample)) +
+  df$Sample = factor(df$Sample,
+                     levels = c("No chelator", "Chelator"))
+
+  Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, shape = Sample, color = Sample)) +
     geom_point() +
     theme_classic() +
     geom_function(fun = fit.form, color = "dimgrey") +
-    ylab("HQS emmission") +
-    xlab("[Mg] total (mM)") +
+    ylab("HQS emission") +
+    xlab(expression("Total [Mg^2+] (mM)")) +
     ggtitle(df$Metabolites[1]) +
-    scale_color_manual(values = c(color, "dimgrey")) +
+    scale_color_manual(values = c("dimgrey", "black")) +
+    scale_x_continuous(trans = "log10", limits = c(0.1, 210)) +
     theme(axis.line = element_line(colour = 'black'),
           axis.ticks = element_line(colour = "black"),
           axis.text.x = element_text(color = "Black", size = 16),
           axis.text.y = element_text(color = "Black", size = 16),
-          axis.title.x = element_text(color = "Black", size = 16),
+          axis.title.x = element_blank(),
           axis.title.y = element_text(color = "Black", size = 16),
           legend.text = element_text(color = "Black", size = 10),
           legend.title = element_blank(),
-          legend.position = c(0.6, 0.2),
+          legend.position = c(0.30, 0.83),
           plot.title = element_text(color = "Black", size = 14,hjust = 0.5))
 
   df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
@@ -199,7 +203,7 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
   list.fit = {}
 
   for (i in 1:10){
-    list.fit[[i]] = lm( as.vector(Mg.free) ~  poly(Conc.Mg, i, raw=TRUE), df %>% filter(Sample == "Chelator"))
+    list.fit[[i]] = lm(Mg.free ~  poly(Conc.Mg, i, raw=TRUE), df %>% filter(Sample == "Chelator"))
   }
 
   df.model.sel = data.frame(model.sel(list.fit))
@@ -211,10 +215,9 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
 
   df.no_edta$model = predict(list.fit[[best.polynomial.order]])
 
-  df.no_edta2 = df %>% filter(Sample == "No chelator")  %>% filter(EDTA == "EDTA = 0 mM")
-  df.no_edta2$model = NA
+  coef(summary(list.fit[[best.polynomial.order]]))
 
-  df.no_edta = bind_rows(df.no_edta, df.no_edta2)
+  plot(df.no_edta$Conc.Mg, df.no_edta$model)
 
   free.Mg = 2
 
@@ -241,21 +244,21 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
   colnames(df.model) = c("Conc.Mg", "Mg.free")
 
   Figure_Mg_free = ggplot() +
-    geom_hex(data = df.model %>% filter(Conc.Mg < xlimits[2]), mapping = aes(x = Conc.Mg, y = Mg.free), bins = 50) +
-    geom_abline(slope = 1, intercept = 0, color = "dimgrey", size = 1.0) +
-    geom_point(data = df.no_edta %>% filter(Sample == "Chelator"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
+    geom_hex(data = df.model %>% filter(Conc.Mg < 200), mapping = aes(x = Conc.Mg, y = Mg.free), bins = 50) +
+    geom_polygon(data = NULL, mapping = aes(x = c(0.1, 200, 200, 0.1), y = c(0.5, 0.5, 3, 3)),
+                 fill = "red", alpha = 0.25) +
+    annotate("segment", y = 2, yend = 2, x = 0.1, xend = 200,
+             color = "red") +
+    geom_point(data = df.no_edta %>% filter(Sample == "Chelator"), mapping = aes(x = Conc.Mg, y = Mg.free), shape = "triangle") +
     theme_classic() +
-    geom_function(fun = lm.fun, color = color) +
-    scale_fill_viridis(option = "rocket") +
-    geom_hline(yintercept = 2,
-                 color = "red") +
+    geom_line(data = df.no_edta, mapping = aes(x = Conc.Mg, y = model),  color = "black") +
+    scale_fill_viridis(option = "D") +
     #annotate("text", x = 30, y = 0.01, label = paste(round(Mg.total, digits = 2), " mM total Mg2+"), color = "red") +
     #annotate("text", x = 40, y = 5, label = paste(round(free.Mg, digits = 2), " mM free Mg2+"), color = "red") +
-    scale_color_manual(values = c(color, "dimgrey")) +
-    ylab("[Mg] free (mM)") +
-    xlab("[Mg] total (mM)") +
-    ggtitle(df$Metabolites[1]) +
-    coord_cartesian(xlim = xlimits, ylim = ylimits) +
+    ylab(bquote('Free'~'Mg'^'2+'~'(mM)')) +
+    xlab(bquote('Total'~'Mg'^'2+'~'(mM)')) +
+    scale_x_continuous(trans = "log10", limits = c(0.1, 210)) +
+    scale_y_continuous(lim = ylimits) +
     theme(axis.line = element_line(colour = 'black'),
           axis.ticks = element_line(colour = "black"),
           axis.text.x = element_text(color = "Black", size = 16),
@@ -263,7 +266,9 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "WMCM"),
           axis.title.x = element_text(color = "Black", size = 16),
           axis.title.y = element_text(color = "Black", size = 16),
           legend.position = "none",
-          plot.title = element_text(color = "Black", size = 14,hjust = 0.5))
+          plot.title = element_text(color = "Black", size = 14,hjust = 0.75))
+
+  Figure_Mg_free
 
   output.df = df %>% filter(Sample == "Chelator") %>% select(Metabolites, Conc.Mg, Mg.free)
 
@@ -303,7 +308,7 @@ df.AC.model = read.csv("Figures/Figure_1/Modeled_AC_MCM_concentrations.csv")
 unique(df.HQS$Metabolites)
 
 df.HQS$Metabolites = factor(df.HQS$Metabolites,
-                            levels = c("NTPCM", "WMCM", "Ecoli80"),
+                            levels = c("NTPCM", "WMCM", "Eco80"),
                             labels = c("NTPCM", "WMCM", "Eco80"))
 
 #NTPCM

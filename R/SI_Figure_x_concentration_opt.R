@@ -2,6 +2,7 @@ library(MeltR)
 library(tidyverse)
 library(viridis)
 library(cowplot)
+library(ggtext)
 
 ####Make error combinations 100*100 = 10,000#####
 
@@ -28,8 +29,34 @@ print("Fitting model data no concentration error")
 
 #write.csv(df.no.error, "Figures/SI_figure_x_concentration_correction/Model_data_no_conc_error.csv", row.names = FALSE)
 
+#df = meltR.F.model(-56.2, -0.1364, FAM_error = 1.0, BHQ1_error = 1.0, Emission_SD = 0.05)
 
-df.error = meltR.F.model(-56.2, -0.1364, FAM_error = 1.2, BHQ1_error = 0.8, Emission_SD = 0.05)
+list.files("Figures/SI_figure_x_concentration_correction")
+
+#write.csv(df, "Figures/SI_figure_x_concentration_correction/Modeled_no_error.csv", row.names = F)
+
+df = read.csv("Figures/SI_figure_x_concentration_correction/Modeled_no_error.csv")
+
+meltR.F(df, Optimize_conc = FALSE,
+        Kd_range = c(10, 200),
+        Kd_error_quantile = 1)
+
+
+df.error = meltR.F.model(-56.2, -0.1364, FAM_error = 1.2, BHQ1_error = 1, Emission_SD = 0.05)
+
+write.csv(df.error, "Figures/SI_figure_x_concentration_correction/Modeled_error.csv", row.names = F)
+
+df.error = read.csv("Figures/SI_figure_x_concentration_correction/Modeled_error.csv")
+
+df.error$A = 200
+
+meltR.F(df.error, Optimize_conc = FALSE,
+        Kd_range = c(10, 200),
+        Kd_error_quantile = 1)
+
+meltR.F(df.error,
+        Kd_range = c(10, 200),
+        Kd_error_quantile = 1)
 
 pb = txtProgressBar(min = 1, max = nrow(df.model), initial = 1)
 
@@ -160,10 +187,11 @@ df.final$Error.type = factor(df.final$Error.type,
                              levels = c("None", "+15% FAM error", "+15% FAM error & optimized"),
                              labels = c("None", "+20% FAM error", "+20% FAM error & optimized"))
 
-dG.plot = ggplot(df.final, aes(x = FAM.error, y = BHQ1.error, fill = dG.error)) +
+dG.plot.A = ggplot(df.final %>% filter(Error.type == "None"), aes(x = FAM.error, y = BHQ1.error, fill = dG.error)) +
   geom_tile() +
-  scale_fill_viridis(option = "F", direction = -1) +
-  geom_abline(slope = 1, intercept = 1) +
+  scale_fill_viridis(limits = c(0, max(df.final$dG.error, na.rm = T)), option = "F", direction = -1,
+                     name = "dG error \n(kcal/mol)") +
+  geom_abline(slope = 1, intercept = 0) +
   theme_classic() +
   xlab("%FAM error") +
   ylab("%BHQ1 error") +
@@ -175,48 +203,17 @@ dG.plot = ggplot(df.final, aes(x = FAM.error, y = BHQ1.error, fill = dG.error)) 
         axis.title.x = element_text(color = "Black", size = 16),
         axis.title.y = element_text(color = "Black", size = 16),
         legend.text = element_text(color = "Black", size = 10),
+        strip.background = element_rect(size = 1),
+        strip.text = element_markdown(color = "Black", size = 14),
         legend.title = element_text(color = "Black", size = 10))
 
-R.plot = ggplot(df.final, aes(x = R, y = dG.error)) +
-  geom_smooth() +
-  geom_point() +
-  scale_fill_viridis(option = "F", direction = -1) +
-  geom_vline(xintercept = c(1, (4+4*0.15)/4)) +
-  theme_classic() +
-  scale_x_continuous(trans = "log2") +
-  xlab("R = [FAM-RNA]/[RNA-BHQ1]") +
-  ylab("dG error (kcal/mol)") +
-  facet_wrap(~Error.type, ncol = 1) +
-  theme(axis.line = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_text(color = "Black", size = 16),
-        axis.title.y = element_text(color = "Black", size = 16),
-        legend.text = element_text(color = "Black", size = 10),
-        legend.title = element_text(color = "Black", size = 10))
-
-Total.plot = ggplot(df.final, aes(x = Total, y = dG.error)) +
-  geom_point() +
-  scale_fill_viridis(option = "F", direction = -1) +
-  theme_classic() +
-  xlab("Total concentration error (nm)") +
-  ylab("dG error (kcal/mol)") +
-  facet_wrap(~Error.type, ncol = 1) +
-  theme(axis.line = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_text(color = "Black", size = 16),
-        axis.title.y = element_text(color = "Black", size = 16),
-        legend.text = element_text(color = "Black", size = 10),
-        legend.title = element_text(color = "Black", size = 10))
-
-dH.plot = ggplot(df.final, aes(x = FAM.error, y = BHQ1.error, fill = dH.error)) +
+dG.plot.B = ggplot(df.final %>% filter(Error.type == "+20% FAM error"), aes(x = FAM.error, y = BHQ1.error, fill = dG.error)) +
   geom_tile() +
   facet_wrap(~Error.type, ncol = 1) +
-  scale_fill_viridis(option = "G", direction = -1) +
+  scale_fill_viridis(limits = c(0, max(df.final$dG.error, na.rm = T)), option = "F", direction = -1,
+                     name = "dG error \n(kcal/mol)") +
   geom_abline(slope = 1, intercept = 0) +
+  geom_abline(slope = 1/(1.2), intercept = (100 -1.15*100)/1.15, color = "red") +
   theme_classic() +
   xlab("%FAM error") +
   ylab("%BHQ1 error") +
@@ -227,13 +224,19 @@ dH.plot = ggplot(df.final, aes(x = FAM.error, y = BHQ1.error, fill = dH.error)) 
         axis.title.x = element_text(color = "Black", size = 16),
         axis.title.y = element_text(color = "Black", size = 16),
         legend.text = element_text(color = "Black", size = 10),
+        strip.background = element_rect(size = 1),
+        strip.text = element_markdown(color = "Black", size = 14),
         legend.title = element_text(color = "Black", size = 10))
 
+df.opt.er = df.final %>% filter(Error.type == "+20% FAM error & optimized")
 
-dS.plot = ggplot(df.final, aes(x = FAM.error, y = BHQ1.error, fill = dS.error)) +
+mean(df.opt.er$dG.error, na.rm = TRUE)
+
+dG.plot.C = ggplot(df.final %>% filter(Error.type == "+20% FAM error & optimized"), aes(x = FAM.error, y = BHQ1.error, fill = dG.error)) +
   geom_tile() +
   facet_wrap(~Error.type, ncol = 1) +
-  scale_fill_viridis(option = "F", direction = -1) +
+  scale_fill_viridis(limits = c(0, max(df.final$dG.error, na.rm = T)), option = "F", direction = -1,
+                     name = "dG error \n(kcal/mol)") +
   geom_abline(slope = 1, intercept = 1) +
   theme_classic() +
   xlab("%FAM error") +
@@ -245,6 +248,8 @@ dS.plot = ggplot(df.final, aes(x = FAM.error, y = BHQ1.error, fill = dS.error)) 
         axis.title.x = element_text(color = "Black", size = 16),
         axis.title.y = element_text(color = "Black", size = 16),
         legend.text = element_text(color = "Black", size = 10),
+        strip.background = element_rect(size = 1),
+        strip.text = element_markdown(color = "Black", size = 14),
         legend.title = element_text(color = "Black", size = 10))
 
 list.files("Figures/SI_figure_x_concentration_correction")
@@ -257,14 +262,16 @@ head(df)
 Mmodel <- function(x){ (2-0.2)*(1 - ((0.1+200+x)-(((0.1+200+x)^2)-(4*200*x))^(1/2))/(2*200)) + 0.2 }
 Mmodel.cor <- function(x){ (2-0.2*1.2)*(1 - ((0.1+200*1.2+x)-(((0.1+200*1.2+x)^2)-(4*200*1.2*x))^(1/2))/(2*200*1.2)) + 0.2 }
 
-opt.plot = ggplot(df %>% filter(Reading == 1), aes(x = B, Emission)) +
+df.error$A = 240
+
+opt.plot = ggplot(df.error %>% filter(Reading == 1), aes(x = B, Emission)) +
   geom_point() +
   geom_function(fun = Mmodel) +
   geom_function(fun = Mmodel.cor, color = "red") +
   xlab("[BHQ1] (nM)") +
   ylab("Emission") +
-  annotate("text", x = 500, y = 0.5, label = "Start R = 1") +
-  annotate("text", x = 500, y = 0.4, label = "optimized R = 1.2", color = "red") +
+  annotate("text", x = 600, y = 0.6, label = "Start X = 1") +
+  annotate("text", x = 600, y = 0.45, label = "optimized X = 1.2", color = "red") +
   theme_classic() +
   theme(axis.line = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
@@ -278,14 +285,20 @@ opt.plot = ggplot(df %>% filter(Reading == 1), aes(x = B, Emission)) +
 
 
 
-plot.final = plot_grid(dG.plot,
+plot.final = plot_grid(dG.plot.A,
+                       dG.plot.B,
+                       dG.plot.C,
                        opt.plot,
-          nrow = 1,
-          labels = c("A", "B"),
-          rel_widths = c(3,1))
+          nrow = 2,
+          labels = c("A", "B", "C", "D"))
+
+ggsave("Figures/SI_figure_x_concentration_correction/SI_figure_x_concentration.svg", width = 7,
+       height = 6,
+       scale = 2,
+       plot.final)
 
 ggsave("Figures/SI_figure_x_concentration_correction/SI_figure_x_concentration.png", width = 7,
-       height = 2,
+       height = 6,
        scale = 2,
        plot.final)
 

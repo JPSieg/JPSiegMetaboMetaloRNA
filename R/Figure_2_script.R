@@ -6,6 +6,7 @@ library(ggbeeswarm)
 library(ggpubr)
 library(png)
 library(ggtext)
+library(rsvg)
 
 ####Organize Gua data####
 
@@ -15,11 +16,6 @@ list.df = lapply(vector.files, read.csv)
 
 df = bind_rows(list.df)
 
-df$BP = NA
-
-df$BP[which(df$Dotbracket == ".")] = "Single stranded"
-df$BP[which(df$Dotbracket != ".")] = "Base paired"
-
 ####Make Figure 2C####
 
 df = df %>% filter(!is.na(Reactivity)) %>%
@@ -27,12 +23,26 @@ df = df %>% filter(!is.na(Reactivity)) %>%
 
 df$Condition = factor(df$Condition,
                       levels = c("2 mM free Mg",
+                                 "Eco80",
                                  "NTPCM",
                                  "WMCM",
+                                 "25 mM Free Mg"),
+                      labels = c("2 mM free Mg",
                                  "Eco80",
-                                 "25 mM Free Mg"))
+                                 "NTPCM",
+                                 "WMCM",
+                                 "25 mM free Mg"))
 
-Figure_2C = ggplot(df, aes(x = N, y = Reactivity,
+unique(df$BP)
+
+df$BP = factor(df$BP,
+               levels = c("Single stranded",
+                          "Non-cannonical",
+                          "WC",
+                          "WC + Non-cannonical"))
+
+
+Figure_3C = ggplot(df, aes(x = N, y = Reactivity,
                ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                color = Condition, group = Condition)) +
   geom_pointrange() +
@@ -49,9 +59,9 @@ Figure_2C = ggplot(df, aes(x = N, y = Reactivity,
                color ="black", size = 0.5) +
   geom_segment(aes(x = 58, y = -150, xend = 63, yend = -150),
                color ="black", size = 5) +
-  annotate("text", x = 32, y = -150, label = "P2", color = "white") +
-  annotate("text", x = 47.5, y = -150, label = "P3", color = "white") +
-  annotate("text", x = 60.5, y = -150, label = "P3", color = "white") +
+  annotate("text", x = 32, y = -150, label = "P2-3'", color = "white") +
+  annotate("text", x = 47.5, y = -150, label = "P3-5'", color = "white") +
+  annotate("text", x = 60.5, y = -150, label = "P3-3'", color = "white") +
   scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
   theme_classic()+
   ylab("Estimated dCounts/dt") +
@@ -70,24 +80,27 @@ Figure_2C = ggplot(df, aes(x = N, y = Reactivity,
         legend.title = element_blank(),
         legend.background = element_blank())
 
+Figure_3C
+
 
 unique(df$Condition)
 
-comparisons = list(c("2 mM free Mg", "25 mM Free Mg"),
-                   c("2 mM free Mg", "NTPCM"),
-                   c("2 mM free Mg", "WMCM"),
-                   c("2 mM free Mg", "Eco80"))
+comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
+                   c("25 mM free Mg", "Eco80"),
+                   c("25 mM free Mg", "NTPCM"),
+                   c("25 mM free Mg", "WMCM"))
 
-Figure_2D = ggplot(df, aes(x = Condition, y = Reactivity,
+Figure_3D = ggplot(df, aes(x = Condition, y = Reactivity,
                            ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                            color = Condition, group = Condition)) +
-  facet_wrap(~BP) +
+  facet_wrap(~BP, nrow = 1) +
   stat_compare_means(comparisons = comparisons, size = 2.5,
                      label = "p.format", method = "t.test") +
   geom_boxplot(alpha = 0.01) +
   geom_beeswarm() +
   scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
   theme_classic()+
+  ggtitle("Guanine aptamer") +
   ylab("Estimated dCounts/dt") +
   theme(axis.line.x = element_line(colour = 'black'),
         axis.line.y = element_line(colour = 'black'),
@@ -100,41 +113,24 @@ Figure_2D = ggplot(df, aes(x = Condition, y = Reactivity,
         legend.title = element_text(color = "Black", size = 10),
         axis.title.x = element_blank(),
         legend.text = element_text(color = "Black", size = 10),
-        legend.position = "none")
+        legend.position = "none",
+        plot.title = element_text(color = "Black", size = 16))
 
+Figure_3D
 
-
-####Figure 2B####
-
-list.files("Figures/Figure_2/2_structures")
-
-Figure_2B = ggplot() +
-  draw_image("Figures/Figure_2/2_structures/No_reactivity.png") +
-  theme(panel.background = element_blank())
-
-####Figure 2E####
-
-list.files("Figures/Figure_2/2_structures")
-
-Figure_2E = ggplot() +
-  draw_image("Figures/Figure_2/2_structures/CPEB3_no_reactivity.png") +
-  theme(panel.background = element_blank())
-
-####Figure 2H####
-
-list.files("Figures/Figure_2/2_structures")
-
-Figure_2H = ggplot() +
-  draw_image("Figures/Figure_2/2_structures/tRNA_no_reactivity.png") +
-  theme(panel.background = element_blank())
-
-####Figure_2A####
+####Figure_3A####
 
 list.files("Figures/Figure_2")
 
-PNG.2A = ggplot() +
-  draw_image("Figures/Figure_2/Optimized_resolution.png") +
-  theme(panel.background = element_blank())
+bitmap <- rsvg_raw('Figures/Figure_2/Figure_3A_ILP_layout.svg', width = 600)
+Figure_3A <- ggdraw() + draw_image(bitmap)
+
+####Figure_3B####
+
+list.files("Figures/Figure_2")
+
+bitmap <- rsvg_raw('Figures/Figure_2/Figure_3B_Secondary_structure.svg', width = 600)
+Figure_3B <- ggdraw() + draw_image(bitmap)
 
 ####Organize CPEB3 data####
 
@@ -144,24 +140,32 @@ list.df = lapply(vector.files, read.csv)
 
 df = bind_rows(list.df)
 
-df$BP = NA
+df$Condition = factor(df$Condition,
+                      levels = c("2 mM free Mg",
+                                 "Eco80",
+                                 "NTPCM",
+                                 "WMCM",
+                                 "25 mM Free Mg"),
+                      labels = c("2 mM free Mg",
+                                 "Eco80",
+                                 "NTPCM",
+                                 "WMCM",
+                                 "25 mM free Mg"))
 
-df$BP[which(df$Dotbracket == ".")] = "Single stranded"
-df$BP[which(df$Dotbracket != ".")] = "Base paired"
+unique(df$BP)
 
-####Make Figure 2C####
+df$BP = factor(df$BP,
+               levels = c("Single stranded",
+                          "Non-cannonical",
+                          "WC",
+                          "WC + Non-cannonical"))
+
+####Make SI Figure for CPEB3####
 
 df = df %>% filter(!is.na(Reactivity)) %>%
   filter(!is.na(Condition))
 
-df$Condition = factor(df$Condition,
-                      levels = c("2 mM free Mg",
-                                 "NTPCM",
-                                 "WMCM",
-                                 "Eco80",
-                                 "25 mM Free Mg"))
-
-Figure_2F = ggplot(df, aes(x = N, y = Reactivity,
+SI_figure_X.1 = ggplot(df, aes(x = N, y = Reactivity,
                            ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                            color = Condition, group = Condition)) +
   geom_pointrange() +
@@ -204,15 +208,16 @@ Figure_2F = ggplot(df, aes(x = N, y = Reactivity,
         legend.title = element_blank(),
         legend.background = element_blank())
 
+SI_figure_X.1
 
 unique(df$Condition)
 
-comparisons = list(c("2 mM free Mg", "25 mM Free Mg"),
-                   c("2 mM free Mg", "NTPCM"),
-                   c("2 mM free Mg", "WMCM"),
-                   c("2 mM free Mg", "Eco80"))
+comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
+                   c("25 mM free Mg", "Eco80"),
+                   c("25 mM free Mg", "NTPCM"),
+                   c("25 mM free Mg", "WMCM"))
 
-Figure_2G = ggplot(df, aes(x = Condition, y = Reactivity,
+Figure_3E = ggplot(df, aes(x = Condition, y = Reactivity,
                            ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                            color = Condition, group = Condition)) +
   facet_wrap(~BP) +
@@ -222,6 +227,7 @@ Figure_2G = ggplot(df, aes(x = Condition, y = Reactivity,
   geom_beeswarm() +
   scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
   theme_classic()+
+  ggtitle("CPEB3 ribozyme") +
   ylab("Estimated dCounts/dt") +
   theme(axis.line.x = element_line(colour = 'black'),
         axis.line.y = element_line(colour = 'black'),
@@ -234,7 +240,10 @@ Figure_2G = ggplot(df, aes(x = Condition, y = Reactivity,
         axis.title.x = element_blank(),
         strip.background = element_rect(size = 1),
         strip.text = element_markdown(color = "Black", size = 14),legend.text = element_text(color = "Black", size = 10),
-        legend.position = "none")
+        legend.position = "none",
+        plot.title = element_text(color = "Black", size = 16))
+
+Figure_3E
 
 ####Organize tRNA data####
 
@@ -244,11 +253,6 @@ list.df = lapply(vector.files, read.csv)
 
 df = bind_rows(list.df)
 
-df$BP = NA
-
-df$BP[which(df$Dotbracket == ".")] = "Single stranded"
-df$BP[which(df$Dotbracket != ".")] = "Base paired"
-
 ####Make Figure 2I####
 
 df = df %>% filter(!is.na(Reactivity)) %>%
@@ -256,12 +260,24 @@ df = df %>% filter(!is.na(Reactivity)) %>%
 
 df$Condition = factor(df$Condition,
                       levels = c("2 mM free Mg",
+                                 "Eco80",
                                  "NTPCM",
                                  "WMCM",
+                                 "25 mM Free Mg"),
+                      labels = c("2 mM free Mg",
                                  "Eco80",
-                                 "25 mM Free Mg"))
+                                 "NTPCM",
+                                 "WMCM",
+                                 "25 mM free Mg"))
 
-Figure_2I = ggplot(df, aes(x = N, y = Reactivity,
+df$BP = factor(df$BP,
+               levels = c("Single stranded",
+                          "Non-cannonical",
+                          "WC",
+                          "WC + Non-cannonical"))
+
+
+SI_figure_X.2 = ggplot(df, aes(x = N, y = Reactivity,
                            ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                            color = Condition, group = Condition)) +
   geom_pointrange() +
@@ -306,15 +322,16 @@ Figure_2I = ggplot(df, aes(x = N, y = Reactivity,
         legend.title = element_blank(),
         legend.background = element_blank())
 
+SI_figure_X.2
 
 unique(df$Condition)
 
-comparisons = list(c("2 mM free Mg", "25 mM Free Mg"),
-                   c("2 mM free Mg", "NTPCM"),
-                   c("2 mM free Mg", "WMCM"),
-                   c("2 mM free Mg", "Eco80"))
+comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
+                   c("25 mM free Mg", "Eco80"),
+                   c("25 mM free Mg", "NTPCM"),
+                   c("25 mM free Mg", "WMCM"))
 
-Figure_2J = ggplot(df, aes(x = Condition, y = Reactivity,
+Figure_3F = ggplot(df, aes(x = Condition, y = Reactivity,
                            ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                            color = Condition, group = Condition)) +
   facet_wrap(~BP) +
@@ -324,6 +341,7 @@ Figure_2J = ggplot(df, aes(x = Condition, y = Reactivity,
   geom_beeswarm() +
   scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
   theme_classic()+
+  ggtitle("tRNA") +
   ylab("Estimated dCounts/dt") +
   theme(axis.line.x = element_line(colour = 'black'),
         axis.line.y = element_line(colour = 'black'),
@@ -336,21 +354,19 @@ Figure_2J = ggplot(df, aes(x = Condition, y = Reactivity,
         axis.title.x = element_blank(),
         strip.background = element_rect(size = 1),
         strip.text = element_markdown(color = "Black", size = 14),legend.text = element_text(color = "Black", size = 10),
-        legend.position = "none")
+        legend.position = "none",
+        plot.title = element_text(color = "Black", size = 16))
 
+Figure_3F
 
 ####Consolidate plots into one plot####
 
-Figure_2BCD = plot_grid(Figure_2B, Figure_2C, Figure_2D, labels = c("B", "C", "D"),
-                        label_size = 20, nrow = 1, rel_widths = c(1, 1.2, 1.2), hjust = c(-0.5, 0.75, 0.75))
-Figure_2EFG = plot_grid(Figure_2E, Figure_2F, Figure_2G, labels = c("E", "F", "G"),
-                        label_size = 20, nrow = 1, rel_widths = c(1, 1.2, 1.2), hjust = c(-0.5, 0.75, 0.75))
+Figure_3ABC = plot_grid(Figure_3A, Figure_3B, Figure_3C, nrow = 1, labels = c("A", "B", "C"), label_size = 20)
 
-Figure_2HIJ = plot_grid(Figure_2H, Figure_2I, Figure_2J, labels = c("E", "F", "G"),
-                        label_size = 20, nrow = 1, rel_widths = c(1, 1.2, 1.2), hjust = c(-0.5, 0.75, 0.75))
+Figure_3DEF = plot_grid(Figure_3D, Figure_3E, Figure_3F, nrow = 1, labels = c("D", "E", "F"), rel_widths = c(1.7, 1, 1), label_size = 20)
 
+Figure_3 = plot_grid(Figure_3ABC, Figure_3DEF, ncol = 1)
 
-Figure_2ABCDEFGHIJ = plot_grid(PNG.2A, Figure_2BCD, Figure_2EFG, Figure_2HIJ, labels = c("A"), ncol = 1, rel_heights = c(2,1,1,1), label_size = 20)
+Figure_3
 
-
-ggsave("Figures/Figure_2/Figure_2.png", Figure_2ABCDEFGHIJ, width = 7, height = 12, scale = 2)
+ggsave("Figures/Figure_2/Figure_3.svg", Figure_3, width = 7, height = 4, scale = 3.2, bg = "white")

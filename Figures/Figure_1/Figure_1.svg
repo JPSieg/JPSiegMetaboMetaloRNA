@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,16 +36,16 @@
      guidetolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:window-width="1064"
-     inkscape:window-height="1132"
+     inkscape:window-width="1848"
+     inkscape:window-height="1136"
      id="namedview5835"
      showgrid="false"
-     inkscape:zoom="0.53356482"
-     inkscape:cx="448.50031"
-     inkscape:cy="211.70998"
-     inkscape:window-x="84"
+     inkscape:zoom="1.5091492"
+     inkscape:cx="415.12889"
+     inkscape:cy="838.42807"
+     inkscape:window-x="72"
      inkscape:window-y="27"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg5833" />
   <defs
      id="defs3348">
@@ -139,165 +139,164 @@
          style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
     </clipPath>
   </defs>
-  <g
-     clip-path="url(#cpMTUuNzh8NjI3LjA5fDUuNDh8MTE2LjU4)"
-     id="g3419"
-     transform="translate(0,18.103062)">
-    <rect
-       x="15.78"
-       y="5.48"
-       width="611.31"
-       height="111.1"
-       style="fill:#ffffff;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
-       id="rect3375" />
-    <rect
-       x="43.57"
-       y="24"
-       width="219.55"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3377" />
-    <rect
-       x="263.12"
-       y="24"
-       width="37.959999"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3379" />
-    <rect
-       x="301.07999"
-       y="24"
-       width="34.759998"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3381" />
-    <rect
-       x="335.84"
-       y="24"
-       width="21.129999"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3383" />
-    <rect
-       x="356.98001"
-       y="24"
-       width="18.02"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3385" />
-    <rect
-       x="375"
-       y="24"
-       width="9.6700001"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3387" />
-    <rect
-       x="384.67001"
-       y="24"
-       width="9.1899996"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3389" />
-    <rect
-       x="393.87"
-       y="24"
-       width="8.71"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3391" />
-    <rect
-       x="402.57999"
-       y="24"
-       width="8.6199999"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3393" />
-    <rect
-       x="411.20001"
-       y="24"
-       width="8.3699999"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3395" />
-    <rect
-       x="419.57001"
-       y="24"
-       width="7"
-       height="74.07"
-       style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3397" />
-    <rect
-       x="426.57001"
-       y="24"
-       width="22.02"
-       height="74.07"
-       style="fill:#31688e;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3399" />
-    <rect
-       x="448.59"
-       y="24"
-       width="18.959999"
-       height="74.07"
-       style="fill:#31688e;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3401" />
-    <rect
-       x="467.54999"
-       y="24"
-       width="11.14"
-       height="74.07"
-       style="fill:#31688e;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3403" />
-    <rect
-       x="478.69"
-       y="24"
-       width="10.57"
-       height="74.07"
-       style="fill:#31688e;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3405" />
-    <rect
-       x="489.26001"
-       y="24"
-       width="110.05"
-       height="74.07"
-       style="fill:#fde725;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3407" />
-    <rect
-       x="43.57"
-       y="24"
-       width="445.95999"
-       height="74.07"
-       style="fill:#595959;fill-opacity:0.1;stroke:#000000;stroke-width:4.26999998;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
-       id="rect3409" />
-    <text
-       x="272.26999"
-       y="18.889999"
-       style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
-       textLength="292.26001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text3411">15 metabolites = 80% E. coli metabolome = Eco80</text>
-    <text
-       x="546.71002"
-       y="48.790001"
-       style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
-       textLength="21.709999"
-       lengthAdjust="spacingAndGlyphs"
-       id="text3413">228</text>
-    <text
-       x="546.71002"
-       y="65.18"
-       style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
-       textLength="67.410004"
-       lengthAdjust="spacingAndGlyphs"
-       id="text3415">metabolites</text>
-    <text
-       x="546.71002"
-       y="81.57"
-       style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
-       textLength="75.970001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text3417"> = other 20%</text>
-  </g>
+  <rect
+     id="rect3375"
+     style="fill:#ffffff;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+     height="111.1"
+     width="611.31"
+     y="23.583061"
+     x="15.78" />
+  <rect
+     id="rect3377"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="219.55"
+     y="42.103062"
+     x="43.57" />
+  <rect
+     id="rect3379"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="37.959999"
+     y="42.103062"
+     x="263.12" />
+  <rect
+     id="rect3381"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="34.759998"
+     y="42.103062"
+     x="301.07999" />
+  <rect
+     id="rect3383"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="21.129999"
+     y="42.103062"
+     x="335.84" />
+  <rect
+     id="rect3385"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="18.02"
+     y="42.103062"
+     x="356.98001" />
+  <rect
+     id="rect3387"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="9.6700001"
+     y="42.103062"
+     x="375" />
+  <rect
+     id="rect3389"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="9.1899996"
+     y="42.103062"
+     x="384.67001" />
+  <rect
+     id="rect3391"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="8.71"
+     y="42.103062"
+     x="393.87" />
+  <rect
+     id="rect3393"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="8.6199999"
+     y="42.103062"
+     x="402.57999" />
+  <rect
+     id="rect3395"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="8.3699999"
+     y="42.103062"
+     x="411.20001" />
+  <rect
+     id="rect3397"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     height="74.07"
+     width="7"
+     y="42.103062"
+     x="419.57001" />
+  <rect
+     id="rect3399"
+     style="fill:#31688e;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+     height="74.07"
+     width="22.02"
+     y="42.103062"
+     x="426.57001" />
+  <rect
+     id="rect3401"
+     style="fill:#31688e;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+     height="74.07"
+     width="18.959999"
+     y="42.103062"
+     x="448.59" />
+  <rect
+     id="rect3403"
+     style="fill:#31688e;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+     height="74.07"
+     width="11.14"
+     y="42.103062"
+     x="467.54999" />
+  <rect
+     id="rect3405"
+     style="fill:#31688e;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+     height="74.07"
+     width="10.57"
+     y="42.103062"
+     x="478.69" />
+  <rect
+     id="rect3407"
+     style="fill:#fde725;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+     height="74.07"
+     width="110.05"
+     y="42.103062"
+     x="489.26001" />
+  <rect
+     id="rect3409"
+     style="fill:#595959;fill-opacity:0.1;stroke:#000000;stroke-width:4.26999998;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+     height="74.07"
+     width="445.95999"
+     y="42.103062"
+     x="43.57" />
+  <text
+     id="text3411"
+     lengthAdjust="spacingAndGlyphs"
+     textLength="292.26001"
+     style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     y="18.889999"
+     x="272.26999"
+     transform="translate(0,18.103062)">15 metabolites = 80% E. coli metabolome = Eco80</text>
+  <text
+     id="text3413"
+     lengthAdjust="spacingAndGlyphs"
+     textLength="21.709999"
+     style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     y="48.790001"
+     x="546.71002"
+     transform="translate(0,18.103062)">228</text>
+  <text
+     id="text3415"
+     lengthAdjust="spacingAndGlyphs"
+     textLength="67.410004"
+     style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     y="65.18"
+     x="546.71002"
+     transform="translate(0,18.103062)">metabolites</text>
+  <text
+     id="text3417"
+     lengthAdjust="spacingAndGlyphs"
+     textLength="75.970001"
+     style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     y="81.57"
+     x="546.71002"
+     transform="translate(0,18.103062)"> = other 20%</text>
   <polyline
      id="polyline3421"
      style="fill:none;stroke:#000000;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"

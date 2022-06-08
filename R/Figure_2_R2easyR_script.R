@@ -1,5 +1,42 @@
 library(R2easyR)
 
+####Gua secondary strucutres####
+
+list.files("Figures/Figure_2/Gua_data_files")
+
+df = read.csv("Figures/Figure_2/Gua_data_files/2mMFree.csv")
+
+table(df$Dotbracket)
+
+list.files("Figures/Figure_2/Standard_structures")
+
+??R2easyR
+
+Pknot = unique(df$Pknot)
+Pknot = Pknot[-which(is.na(Pknot))]
+
+list.pknot = list()
+
+for (i in Pknot){
+  df$Dotbracket[which(df$Pknot == i)] = "."
+  list.pknot[[i]] = df$N[which(df$Pknot == i)]
+}
+
+list.pknot
+
+r2easyR.write("Figures/Figure_2/Standard_structures/Gua_riboswitch",
+              df,
+              "Gua_riboswitch")
+
+r2easyR.pknot_drawer("Figures/Figure_2/Standard_structures/Gua_riboswitch.sto",
+                     list.pknot)
+
+
+
+r2easyR.grey_letters_editor("Figures/Figure_2/Standard_structures/Gua_riboswitch.sto",
+                            df$N[which(df$Non.cannonical.tertiary == TRUE)],
+                            viridis(n =  7)[4])
+
 ####Gua aptamer####
 
 vector.files = paste("Figures/Figure_2/Gua_data_files", list.files("Figures/Figure_2/Gua_data_files"), sep = "/")

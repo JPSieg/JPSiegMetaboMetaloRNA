@@ -42,9 +42,9 @@ meltR.F(df, Optimize_conc = FALSE,
         Kd_error_quantile = 1)
 
 
-df.error = meltR.F.model(-56.2, -0.1364, FAM_error = 1.2, BHQ1_error = 1, Emission_SD = 0.05)
+#df.error = meltR.F.model(-56.2, -0.1364, FAM_error = 1.2, BHQ1_error = 1, Emission_SD = 0.05)
 
-write.csv(df.error, "Figures/SI_figure_x_concentration_correction/Modeled_error.csv", row.names = F)
+#write.csv(df.error, "Figures/SI_figure_x_concentration_correction/Modeled_error.csv", row.names = F)
 
 df.error = read.csv("Figures/SI_figure_x_concentration_correction/Modeled_error.csv")
 
@@ -57,6 +57,10 @@ meltR.F(df.error, Optimize_conc = FALSE,
 meltR.F(df.error,
         Kd_range = c(10, 200),
         Kd_error_quantile = 1)
+
+meltR.F(df.error,
+        Kd_range = c(10, 1000),
+        Kd_error_quantile = 0.5)
 
 pb = txtProgressBar(min = 1, max = nrow(df.model), initial = 1)
 
@@ -264,6 +268,8 @@ Mmodel.cor <- function(x){ (2-0.2*1.2)*(1 - ((0.1+200*1.2+x)-(((0.1+200*1.2+x)^2
 
 df.error$A = 240
 
+df.error = read.csv("Figures/SI_figure_x_concentration_correction/Modeled_error.csv")
+
 opt.plot = ggplot(df.error %>% filter(Reading == 1), aes(x = B, Emission)) +
   geom_point() +
   geom_function(fun = Mmodel) +
@@ -287,8 +293,8 @@ opt.plot = ggplot(df.error %>% filter(Reading == 1), aes(x = B, Emission)) +
 
 plot.final = plot_grid(dG.plot.A,
                        dG.plot.B,
-                       dG.plot.C,
                        opt.plot,
+                       dG.plot.C,
           nrow = 2,
           labels = c("A", "B", "C", "D"))
 

@@ -1,4 +1,0 @@
-
- Created by CRYSOL v. 28 on   15-Mar-2022   14:28:37
-
- Batch: crysol Monomer_WAXSiS_result.pdb rna-ecoli80-avg_subtr.dat CRYSOL -lm 99 -fb 18

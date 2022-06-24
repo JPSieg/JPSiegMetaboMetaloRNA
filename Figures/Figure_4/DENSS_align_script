@@ -1,5 +1,0 @@
-denss.align.py -f 2mMMg_DENSS_WAXSiS/2mMMg_DENSS_WAXSiS_avg.mrc -ref Monomer_WAXSiS_result.pdb
-denss.align.py -f NTPCM_DENSS_WAXSiS/NTPCM_DENSS_WAXSiS_avg.mrc -ref Monomer_WAXSiS_result.pdb
-denss.align.py -f WMCM_DENSS_WAXSiS/WMCM_DENSS_WAXSiS_avg.mrc -ref Monomer_WAXSiS_result.pdb
-denss.align.py -f Eco80_DENSS_WAXSiS/Eco80_DENSS_WAXSiS_avg.mrc -ref Monomer_WAXSiS_result.pdb
-denss.align.py -f 25mMMg_DENSS_WAXSiS/25mMMg_DENSS_WAXSiS_avg.mrc -ref Monomer_WAXSiS_result.pdb

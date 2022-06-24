@@ -1,0 +1,12 @@
+# STOCKHOLM 1.0
+No_reactivity	GCGGAUUUAGCUCAGUUGGGAGAGCGCCAGACUGAAGAUCUGGAGGUCCUGUGUUCGAUCCACAGAAUUCGCACCA
+#=GC SS_cons	<<<<<<<..<<<<........>>>>.<<<<<.......>>>>>.....<<<<<.......>>>>>>>>>>>>....
+#=GC R2R_LABEL	.......................................................................a....
+#=GC cons	GCGGAUUUAGCUCAGUUGGGAGAGCGCCAGACUGAAGAUCUGGAGGUCCUGUGUUCGAUCCACAGAAUUCGCACCA
+#=GC conss	2222222222222222222222222222222222222222222222222222222222222222222222222222
+#=GC cov_SS_cons	3333333333333333333333333333333333333333333333333333333333333333333333333333
+#=GF R2R tick_label_regular_numbering 1 10 firstNucNum 1
+#=GF R2R tick_label_regular_numbering 0 20 firstNucNum 1
+#=GF R2R set_dir pos0 90 f
+#=GF R2R place_explicit a++ a 45 1 0 0 0 90 f
+//

@@ -1,0 +1,77 @@
+Nucleotide,N,Dotbracket,Reactivity,SE.k,Significant,Condition,Pknot,Crystal N,Non.cannonical.tertiary,BP
+G,1,<,,,,,,1,,WC
+C,2,<,,,,,,2,,WC
+G,3,<,,,,,,3,,WC
+G,4,<,,,,,,4,,WC
+A,5,<,,,,,,5,,WC
+U,6,<,,,,,,6,,WC
+U,7,<,,,,,,7,,WC
+U,8,.,,,,,,8,T,Non-cannonical
+A,9,.,,,,,,9,T,Non-cannonical
+G,10,<,,,,,,10,T,WC + Non-cannonical
+C,11,<,,,,,,11,,WC
+U,12,<,,,,,,12,,WC
+C,13,<,,,,,,13,,WC
+A,14,.,,,,,,14,T,Non-cannonical
+G,15,.,,,,,,15,T,Non-cannonical
+U,16,.,,,,,,16,,Single stranded
+U,17,.,,,,,,17,,Single stranded
+G,18,.,,,,,,18,T,Non-cannonical
+G,19,.,,,,,,19,T,Non-cannonical
+G,20,.,,,,,,20,,Single stranded
+A,21,.,,,,,,21,,Single stranded
+G,22,>,,,,,,22,T,WC + Non-cannonical
+A,23,>,,,,,,23,T,WC + Non-cannonical
+G,24,>,20.2971371609992,5.27463540140679,TRUE,2 mM free Mg,,24,,WC
+C,25,>,-86.4208907964672,8.79796607029212,TRUE,2 mM free Mg,,25,,WC
+G,26,.,-10.3294857096159,2.31377857104763,TRUE,2 mM free Mg,,26,T,Non-cannonical
+C,27,<,-22.6890434683585,10.1870729562497,TRUE,2 mM free Mg,,27,,WC
+C,28,<,-40.6710462572813,5.05732669303629,TRUE,2 mM free Mg,,28,,WC
+A,29,<,62.1712038265366,4.77184623749967,TRUE,2 mM free Mg,,29,,WC
+G,30,<,397.244568711912,14.8206705853695,TRUE,2 mM free Mg,,30,,WC
+A,31,<,358.320681022642,16.1591622944486,TRUE,2 mM free Mg,,31,,WC
+C,32,.,751.713746757445,42.0038291325906,TRUE,2 mM free Mg,,32,,Single stranded
+U,33,.,1228.24555281227,61.7443726592467,TRUE,2 mM free Mg,,33,,Single stranded
+G,34,.,2657.7019168127,196.109681867021,TRUE,2 mM free Mg,,34,,Single stranded
+A,35,.,544.650470121684,17.4473145433675,TRUE,2 mM free Mg,,35,,Single stranded
+A,36,.,210.560798440254,6.51872554230386,TRUE,2 mM free Mg,,36,,Single stranded
+G,37,.,273.137703355644,26.6421534909455,TRUE,2 mM free Mg,,37,,Single stranded
+A,38,.,42.4963789937884,3.95787126243283,TRUE,2 mM free Mg,,38,,Single stranded
+U,39,>,-38.8347068942646,3.78383676622468,TRUE,2 mM free Mg,,39,,WC
+C,40,>,-30.6929103287778,3.83211839983065,TRUE,2 mM free Mg,,40,,WC
+U,41,>,-46.4111619357165,10.1848689208166,TRUE,2 mM free Mg,,41,,WC
+G,42,>,25.6846581355882,7.52654407102433,TRUE,2 mM free Mg,,42,,WC
+G,43,>,-41.0156130317217,8.99930477683174,TRUE,2 mM free Mg,,43,,WC
+A,44,.,-55.7033229697439,2.44810640023414,TRUE,2 mM free Mg,,44,T,Non-cannonical
+G,45,.,-39.9548675161734,5.98318322575282,TRUE,2 mM free Mg,,45,T,Non-cannonical
+G,46,.,-14.6696195149782,3.2911006565823,TRUE,2 mM free Mg,,46,T,Non-cannonical
+U,47,.,-9.73560443520652,3.38226280812295,TRUE,2 mM free Mg,,47,,Single stranded
+C,48,.,-37.8858915339279,8.17588810329788,TRUE,2 mM free Mg,,48,T,Non-cannonical
+C,49,<,-8.47593378431682,2.5292829450862,TRUE,2 mM free Mg,,49,,WC
+U,50,<,20.4226289769154,5.58463599073253,TRUE,2 mM free Mg,,50,,WC
+G,51,<,57.4362594426842,4.54774413953368,TRUE,2 mM free Mg,,51,,WC
+U,52,<,5.49443354450251,4.18852324074112,FALSE,2 mM free Mg,,52,,WC
+G,53,<,76.8135708867114,5.10363587073605,TRUE,2 mM free Mg,,53,,WC
+U,54,.,-23.7753170616713,5.93255531832364,TRUE,2 mM free Mg,,54,T,Non-cannonical
+U,55,.,80.2791270492117,5.57034903767151,TRUE,2 mM free Mg,,55,T,Non-cannonical
+C,56,.,66.0748014290283,5.96972673483784,TRUE,2 mM free Mg,,56,T,Non-cannonical
+G,57,.,56.0398467403424,4.67384912629386,TRUE,2 mM free Mg,,57,,Single stranded
+A,58,.,-6.92886863479333,5.48851157638495,FALSE,2 mM free Mg,,58,T,Non-cannonical
+U,59,.,18.3013384898923,4.89172735757333,TRUE,2 mM free Mg,,59,,Single stranded
+C,60,.,33.9171882691915,4.13379198957153,TRUE,2 mM free Mg,,60,,Single stranded
+C,61,>,-31.2325017398057,6.39450621882448,TRUE,2 mM free Mg,,61,,WC
+A,62,>,23.7477406224354,3.59390847505535,TRUE,2 mM free Mg,,62,,WC
+C,63,>,0.76383929270001,5.04436730636006,FALSE,2 mM free Mg,,63,,WC
+A,64,>,144.480467362273,9.07746484950978,TRUE,2 mM free Mg,,64,,WC
+G,65,>,79.1788130907143,6.01360545146207,TRUE,2 mM free Mg,,65,,WC
+A,66,>,,,,,,66,,WC
+A,67,>,,,,,,67,,WC
+U,68,>,,,,,,68,,WC
+U,69,>,,,,,,69,,WC
+C,70,>,,,,,,70,,WC
+G,71,>,,,,,,71,,WC
+C,72,>,,,,,,72,,WC
+A,73,.,,,,,,73,,Single stranded
+C,74,.,,,,,,74,,Single stranded
+C,75,.,,,,,,75,,Single stranded
+A,76,.,,,,,,76,,Single stranded

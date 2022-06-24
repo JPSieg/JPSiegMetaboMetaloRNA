@@ -277,20 +277,69 @@ Data
 SI_figure_XC = plot_grid(Residuals, Data, ncol = 1, rel_heights = c(1.5, 4),
           align = "v")
 
+####Figure D####
+
+list.files("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS")
+
+NTPCM = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/NTPCM_angle_0deg.png") +
+  theme(panel.background = element_blank())
+
+NTPCM.90 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/NTPCM_angle_90deg.png") +
+  theme(panel.background = element_blank())
+
+WMCM = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/WMCM_angle_0deg.png") +
+  theme(panel.background = element_blank())
+
+WMCM.90 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/WMCM_angle_90deg.png") +
+  theme(panel.background = element_blank())
+
+Free25 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/25mMMg_angle_0deg.png") +
+  theme(panel.background = element_blank())
+
+Free25.90 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/25mMMg_angle_90deg.png") +
+  theme(panel.background = element_blank())
+
+Figure_D = plot_grid(NTPCM, NTPCM.90, nrow = 1) +
+  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
+  annotate("text", label = "Rg = 26.7 (1.3) A", x = 0.75, y = 0.1, size = 5) +
+  annotate("text", label = "NTPCM", x = 0.5, y = 0.8, size = 5) +
+  theme(panel.background = element_blank())
+
+Figure_E = plot_grid(WMCM, WMCM.90, nrow = 1) +
+  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
+  annotate("text", label = "Rg = 30.0 (1.0) A", x = 0.75, y = 0.1, size = 5) +
+  annotate("text", label = "WMCM", x = 0.5, y = 0.8, size = 5) +
+  theme(panel.background = element_blank())
+
+Figure_F = plot_grid(Free25, Free25.90, nrow = 1) +
+  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
+  annotate("text", label = "Rg = 33.6 (0.9) A", x = 0.75, y = 0.1, size = 5) +
+  annotate("text", label = "25 mM free Mg2+", x = 0.5, y = 0.8, size = 5) +
+  theme(panel.background = element_blank())
+
 ####Consolidate plot####
 
 SI_figure_XAB = plot_grid(Kratky.plot, Pr.plot,
                         labels = c("A", "B"),
                         label_size = 20)
 
+SI_Figure_XDEF = plot_grid(Figure_D, Figure_E, Figure_F,
+                           nrow = 1,
+                           labels = c("C", "D", "E"),
+                           label_size = 20)
+
 SI_figure_X = plot_grid(SI_figure_XAB,
-                        SI_figure_XC,
+                        SI_Figure_XDEF,
                         ncol = 1,
-                        labels = c("", "C"),
-                        label_size = 20,
-                        rel_heights = c(2, 3))
+                        rel_heights = c(1, 1))
 
 ####Print plot####
 
-ggsave("Figures/SI_figure_x_simple_SAXS/SI_figure_x.png", SI_figure_X, scale = 1.4, height = 7, width = 15)
+ggsave("Figures/SI_figure_x_simple_SAXS/SI_figure_x.svg", SI_figure_X, scale = 1.4, height = 6, width = 10)
 

@@ -1,0 +1,44 @@
+# STOCKHOLM 1.0
+NTPCM	GGAACACUCAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUAUGGGUG
+#=GC SS_cons	....<<<<<<<<...<<<<<<<.......>>>>>>>........<<<<<<.......>>>>>>..>>>>>>>>
+#=GC R2R_LABEL	.........................................................................
+#=GC cons	GGAACACUCAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUAUGGGUG
+#=GC conss	2222222222222222222222222222222222222222222222222222222222222222222222222
+#=GC cov_SS_cons	3333333333333333333333333333333333333333333333333333333333333333333333333
+#=GF R2R circle_nuc #:28 rgb:254,224,210
+#=GF R2R circle_nuc #:29 rgb:251,106,74
+#=GF R2R circle_nuc #:30 rgb:252,187,161
+#=GF R2R circle_nuc #:31 rgb:254,224,210
+#=GF R2R circle_nuc #:32 rgb:254,224,210
+#=GF R2R circle_nuc #:33 rgb:254,224,210
+#=GF R2R circle_nuc #:35 rgb:254,224,210
+#=GF R2R circle_nuc #:36 rgb:254,224,210
+#=GF R2R circle_nuc #:37 rgb:254,224,210
+#=GF R2R circle_nuc #:38 rgb:254,224,210
+#=GF R2R circle_nuc #:39 rgb:254,224,210
+#=GF R2R circle_nuc #:40 rgb:254,224,210
+#=GF R2R circle_nuc #:41 rgb:252,187,161
+#=GF R2R circle_nuc #:42 rgb:254,224,210
+#=GF R2R circle_nuc #:43 rgb:254,224,210
+#=GF R2R circle_nuc #:44 rgb:254,224,210
+#=GF R2R circle_nuc #:45 rgb:254,224,210
+#=GF R2R circle_nuc #:46 rgb:254,224,210
+#=GF R2R circle_nuc #:47 rgb:254,224,210
+#=GF R2R circle_nuc #:48 rgb:254,224,210
+#=GF R2R circle_nuc #:49 rgb:254,224,210
+#=GF R2R circle_nuc #:50 rgb:254,224,210
+#=GF R2R circle_nuc #:51 rgb:254,224,210
+#=GF R2R circle_nuc #:52 rgb:252,146,114
+#=GF R2R circle_nuc #:53 rgb:254,224,210
+#=GF R2R circle_nuc #:54 rgb:254,224,210
+#=GF R2R circle_nuc #:55 rgb:254,224,210
+#=GF R2R circle_nuc #:56 rgb:254,224,210
+#=GF R2R circle_nuc #:57 rgb:254,224,210
+#=GF R2R circle_nuc #:58 rgb:254,224,210
+#=GF R2R circle_nuc #:59 rgb:254,224,210
+#=GF R2R circle_nuc #:60 rgb:252,187,161
+#=GF R2R circle_nuc #:61 rgb:254,224,210
+#=GF R2R circle_nuc #:62 rgb:254,224,210
+#=GF R2R SetDrawingParam nucShrinkWithCircleNuc 1 pairBondScaleWithCircleNuc 1
+#=GF R2R tick_label_regular_numbering 1 10 firstNucNum 1
+//

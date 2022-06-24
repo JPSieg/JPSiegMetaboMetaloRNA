@@ -34,8 +34,8 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
     #geom_function(fun = fit.form, color = "black") +
   ggtitle("L-Glutamate") +
   ylab("HQS emmission") +
-    xlab("[Mg] total (mM)") +
-    scale_color_manual(values = viridis(5), name = "Chelator") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
+  scale_color_manual(values = viridis(5), name = "Chelator") +
     theme(axis.line = element_line(colour = 'black', size = 1.5),
           axis.ticks = element_line(colour = "black", size = 1.5),
           axis.text.x = element_text(color = "Black", size = 16),
@@ -43,7 +43,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
           axis.title.x = element_text(color = "Black", size = 18),
           axis.title.y = element_text(color = "Black", size = 18),
           legend.text = element_text(color = "Black", size = 16),
-          legend.title = element_text(color = "Black", size = 16),
+          legend.title = element_blank(),
           legend.position = c(0.8, 0.3))
 
 df$I.norm = (df$Emission - coef(fit)[2])/(coef(fit)[1]- coef(fit)[2])
@@ -58,8 +58,9 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
     geom_function(fun = fit.form, color = "black") +
   ggtitle("L-Glutamate") +
   ylab("HQS emmission") +
-    xlab("[Mg] total (mM)") +
-    scale_color_manual(values = viridis(5), name = "Ligand") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
+  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, by = 0.25)) +
+  scale_color_manual(values = viridis(5), name = "Ligand") +
     theme(axis.line = element_line(colour = 'black', size = 1.5),
           axis.ticks = element_line(colour = "black", size = 1.5),
           axis.text.x = element_text(color = "Black", size = 16),
@@ -67,7 +68,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
           axis.title.x = element_text(color = "Black", size = 18),
           axis.title.y = element_text(color = "Black", size = 18),
           legend.text = element_text(color = "Black", size = 16),
-          legend.title = element_text(color = "Black", size = 16),
+          legend.title = element_blank(),
           legend.position = c(0.5, 0.3),
           plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
@@ -106,8 +107,8 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
     scale_color_manual(values = viridis(5)) +
     scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
     scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-    ylab("[Mg] free (mM)") +
-    xlab("[Mg] total (mM)") +
+    ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
+    xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
     theme(axis.line = element_line(colour = 'black', size = 1.5),
           axis.ticks = element_line(colour = "black", size = 1.5),
           axis.text.x = element_text(color = "Black", size = 16),
@@ -115,7 +116,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
           axis.title.x = element_text(color = "Black", size = 18),
           axis.title.y = element_text(color = "Black", size = 18),
           legend.text = element_text(color = "Black", size = 16),
-          legend.title = element_text(color = "Black", size = 16),
+          legend.title = element_blank(),
           legend.position = "none")
 
 
@@ -155,7 +156,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   theme_classic() +
   #geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
-  xlab("[Mg] total (mM)") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_color_manual(values = viridis(5), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
@@ -164,7 +165,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = c(0.8, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
@@ -180,7 +181,8 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   geom_function(fun = fit.form, color = "black") +
   ggtitle("Glutathione") +
   ylab("HQS emmission") +
-  xlab("[Mg] total (mM)") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
   scale_color_manual(values = viridis(5), name = "Ligand") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
@@ -189,7 +191,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = c(0.5, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
@@ -227,8 +229,8 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
   scale_color_manual(values = viridis(5)) +
   scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-  ylab("[Mg] free (mM)") +
-  xlab("[Mg] total (mM)") +
+  ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -236,7 +238,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = "none")
 
 
@@ -278,7 +280,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   ggtitle("L-Aspartate") +
   #geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
-  xlab("[Mg] total (mM)") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_color_manual(values = viridis(5), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
@@ -287,7 +289,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = c(0.8, 0.3))
 
 df$I.norm = (df$Emission - coef(fit)[2])/(coef(fit)[1]- coef(fit)[2])
@@ -302,7 +304,8 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   geom_function(fun = fit.form, color = "black") +
   ggtitle("L-Aspartate") +
   ylab("HQS emmission") +
-  xlab("[Mg] total (mM)") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
   scale_color_manual(values = viridis(5), name = "Ligand") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
@@ -311,7 +314,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = c(0.5, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
@@ -350,8 +353,8 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
   scale_color_manual(values = viridis(5)) +
   scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-  ylab("[Mg] free (mM)") +
-  xlab("[Mg] total (mM)") +
+  ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -359,7 +362,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = "none")
 
 
@@ -400,7 +403,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   theme_classic() +
   #geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
-  xlab("[Mg] total (mM)") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_color_manual(values = viridis(5), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
@@ -409,7 +412,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = c(0.8, 0.3))
 
 df$I.norm = (df$Emission - coef(fit)[2])/(coef(fit)[1]- coef(fit)[2])
@@ -423,7 +426,8 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   theme_classic() +
   geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
-  xlab("[Mg] total (mM)") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
   ggtitle("L-Valine") +
   scale_color_manual(values = viridis(5), name = "Ligand") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -433,7 +437,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = c(0.5, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
@@ -471,8 +475,8 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
   scale_color_manual(values = viridis(5)) +
   scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-  ylab("[Mg] free (mM)") +
-  xlab("[Mg] total (mM)") +
+  ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -480,7 +484,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = "none")
 
 Figure_Valine = plot_grid(Figure_Norm_Em, Figure_Mg_free, ncol = 1, align = "v")
@@ -521,7 +525,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   theme_classic() +
   #geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
-  xlab("[Mg] total (mM)") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_color_manual(values = viridis(5), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
@@ -530,7 +534,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = c(0.8, 0.3))
 
 df$I.norm = (df$Emission - coef(fit)[2])/(coef(fit)[1]- coef(fit)[2])
@@ -545,7 +549,8 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   geom_function(fun = fit.form, color = "black") +
   ggtitle("L-Glutamine") +
   ylab("HQS emmission") +
-  xlab("[Mg] total (mM)") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
   scale_color_manual(values = viridis(5), name = "Ligand") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
@@ -554,7 +559,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = c(0.5, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
@@ -592,8 +597,8 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
   scale_color_manual(values = viridis(5)) +
   scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-  ylab("[Mg] free (mM)") +
-  xlab("[Mg] total (mM)") +
+  ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -601,7 +606,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = "none")
 
 
@@ -637,7 +642,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   theme_classic() +
   #geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
-  xlab("[Mg] total (mM)") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_color_manual(values = viridis(5), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
@@ -646,7 +651,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = c(0.8, 0.3))
 
 df$I.norm = (df$Emission - coef(fit)[2])/(coef(fit)[1]- coef(fit)[2])
@@ -661,7 +666,8 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   geom_function(fun = fit.form, color = "black") +
   ggtitle("Pyruvic acid") +
   ylab("HQS emmission") +
-  xlab("[Mg] total (mM)") +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
   scale_color_manual(values = viridis(5), name = "Ligand") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
@@ -670,7 +676,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = c(0.5, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
@@ -708,8 +714,8 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
   scale_color_manual(values = viridis(5)) +
   scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-  ylab("[Mg] free (mM)") +
-  xlab("[Mg] total (mM)") +
+  ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
+  xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -717,7 +723,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
         axis.title.x = element_text(color = "Black", size = 18),
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 16),
+        legend.title = element_blank(),
         legend.position = "none")
 
 

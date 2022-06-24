@@ -1,372 +1,176 @@
-
 library(tidyverse)
+library(MeltR)
 library(viridis)
-library(cowplot)
 library(ggbeeswarm)
-library(ggpubr)
-library(png)
+library(cowplot)
 library(ggtext)
-library(rsvg)
-
-####Organize Gua data####
-
-vector.files = paste("Figures/Figure_2/Gua_data_files", list.files("Figures/Figure_2/Gua_data_files"), sep = "/")
-
-list.df = lapply(vector.files, read.csv)
-
-df = bind_rows(list.df)
-
-####Make Figure 2C####
-
-df = df %>% filter(!is.na(Reactivity)) %>%
-  filter(!is.na(Condition))
-
-df$Condition = factor(df$Condition,
-                      levels = c("2 mM free Mg",
-                                 "Eco80",
-                                 "NTPCM",
-                                 "WMCM",
-                                 "25 mM Free Mg"),
-                      labels = c("2 mM free Mg",
-                                 "Eco80",
-                                 "NTPCM",
-                                 "WMCM",
-                                 "25 mM free Mg"))
-
-unique(df$BP)
-
-df$BP = factor(df$BP,
-               levels = c("Single stranded",
-                          "Non-cannonical",
-                          "WC",
-                          "WC + Non-cannonical"))
+library(ggpubr)
 
 
-Figure_3C = ggplot(df, aes(x = N, y = Reactivity,
-               ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
-               color = Condition, group = Condition)) +
-  geom_pointrange() +
-  geom_line() +
-  geom_segment(aes(x = 29, y = -150, xend = 30, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 30, y = -150, xend = 34, yend = -150),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 34, y = -150, xend = 45, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 45, y = -150, xend = 50, yend = -150),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 50, y = -150, xend = 58, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 58, y = -150, xend = 63, yend = -150),
-               color ="black", size = 5) +
-  annotate("text", x = 32, y = -150, label = "P2-3'", color = "white") +
-  annotate("text", x = 47.5, y = -150, label = "P3-5'", color = "white") +
-  annotate("text", x = 60.5, y = -150, label = "P3-3'", color = "white") +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  theme_classic()+
-  ylab("Estimated dCounts/dt") +
-  xlab("Nucleotide") +
-  xlim(29, 63) +
-  ylim(-200, 1500) +
-  theme(axis.line.x = element_line(colour = 'black'),
-        axis.line.y = element_line(colour = 'black'),
+####Raw data plot####
+
+Figure_2/Fluorescence_data
+
+list.files("Figures/Figure_2_helix_stability")
+
+df = read.csv("Figures/Figure_2_helix_stability/Fluorescence_data/js5060_Helix_F_formatted.csv")
+df.Ks = read.csv("Figures/Figure_2_helix_stability/Fits_summary_Ks.csv")
+
+
+head(df)
+head(df.Ks)
+
+
+df.Ks = df.Ks %>%
+  filter(Condition == "Monovalent") %>%
+  filter(Helix == "F")
+
+
+readings = c(20, 40, 60, 67, 75, 80, 85)
+
+Mmodel1 = function(x){df.Ks$Fmax[readings[1]] + (df.Ks$Fmin[readings[1]] - df.Ks$Fmax[readings[1]])*(((10^9)/df.Ks$K[readings[1]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[1]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel2 = function(x){df.Ks$Fmax[readings[2]] + (df.Ks$Fmin[readings[2]] - df.Ks$Fmax[readings[2]])*(((10^9)/df.Ks$K[readings[2]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[2]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel3 = function(x){df.Ks$Fmax[readings[3]] + (df.Ks$Fmin[readings[3]] - df.Ks$Fmax[readings[3]])*(((10^9)/df.Ks$K[readings[3]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[3]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel4 = function(x){df.Ks$Fmax[readings[4]] + (df.Ks$Fmin[readings[4]] - df.Ks$Fmax[readings[4]])*(((10^9)/df.Ks$K[readings[4]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[4]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel5 = function(x){df.Ks$Fmax[readings[5]] + (df.Ks$Fmin[readings[5]] - df.Ks$Fmax[readings[5]])*(((10^9)/df.Ks$K[readings[5]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[5]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel6 = function(x){df.Ks$Fmax[readings[6]] + (df.Ks$Fmin[readings[6]] - df.Ks$Fmax[readings[6]])*(((10^9)/df.Ks$K[readings[6]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[6]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+Mmodel7 = function(x){df.Ks$Fmax[readings[7]] + (df.Ks$Fmin[readings[7]] - df.Ks$Fmax[readings[7]])*(((10^9)/df.Ks$K[readings[7]]+(200/1.3470043)+x)-((((10^9)/df.Ks$K[readings[7]]+(200/1.3470043)+x)^2)-(4*(200/1.3470043)*x))^(1/2))/(2*(200/1.3470043))}
+
+df.raw = df %>% filter(Reading %in% readings)
+
+unique(df.raw$Temperature)[1:13]
+
+raw.plot = ggplot(df %>% filter(Reading %in% readings)) +
+  geom_point(mapping = aes(x = B,
+                           y = Emission,
+                           color = factor(floor(Temperature)))) +
+  stat_function(fun = Mmodel1, color = viridis(7, option = "H")[1]) +
+  stat_function(fun = Mmodel2, color = viridis(7, option = "H")[2]) +
+  stat_function(fun = Mmodel3, color = viridis(7, option = "H")[3]) +
+  stat_function(fun = Mmodel4, color = viridis(7, option = "H")[4]) +
+  stat_function(fun = Mmodel5, color = viridis(7, option = "H")[5]) +
+  stat_function(fun = Mmodel6, color = viridis(7, option = "H")[6]) +
+  stat_function(fun = Mmodel7, color = viridis(7, option = "H")[7]) +
+  scale_color_manual(values = viridis(7, option = "H")) +
+  theme_classic() +
+  ylab("FAM-RNA emission") +
+  xlab("[RNA-BHQ1] (nM)") +
+  theme(axis.line = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16),
+        axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
         axis.text.y = element_text(color = "Black", size = 16),
+        axis.title.x = element_text(color = "Black", size = 16),
         axis.title.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_text(color = "Black", size = 18),
-        legend.text = element_text(color = "Black", size = 8),
-        legend.position = c(0.55, 0.85),
-        legend.title = element_blank(),
-        legend.background = element_blank())
-
-Figure_3C
-
-
-unique(df$Condition)
-
-comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
-                   c("25 mM free Mg", "Eco80"),
-                   c("25 mM free Mg", "NTPCM"),
-                   c("25 mM free Mg", "WMCM"))
-
-Figure_3D = ggplot(df, aes(x = Condition, y = Reactivity,
-                           ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
-                           color = Condition, group = Condition)) +
-  facet_wrap(~BP, nrow = 1) +
-  stat_compare_means(comparisons = comparisons, size = 2.5,
-                     label = "p.format", method = "t.test") +
-  geom_boxplot(alpha = 0.01) +
-  geom_beeswarm() +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  theme_classic()+
-  ggtitle("Guanine aptamer") +
-  ylab("Estimated dCounts/dt") +
-  theme(axis.line.x = element_line(colour = 'black'),
-        axis.line.y = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        strip.background = element_rect(size = 1),
-        strip.text = element_markdown(color = "Black", size = 14),axis.text.x = element_text(color = "Black", size = 16,
-                                   angle = 45, hjust = 1, vjust = 1),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.y = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 10),
-        axis.title.x = element_blank(),
         legend.text = element_text(color = "Black", size = 10),
-        legend.position = "none",
-        plot.title = element_text(color = "Black", size = 16))
+        legend.title = element_text(color = "Black", size = 10),
+        legend.position = "none")
 
-Figure_3D
+####Make vh plots####
 
-####Figure_3A####
+df.Ks = read.csv("Figures/Figure_2_helix_stability/Fits_summary_Ks.csv")
 
-list.files("Figures/Figure_2")
+df.Ks$Condition = factor(df.Ks$Condition,
+                         levels = c("Monovalent","Ecoli80", "NTPCM", "WMCM"),
+                         labels = c("Monovalent","Eco80", "NTPCM", "WMCM"))
 
-bitmap <- rsvg_raw('Figures/Figure_2/Figure_3A_ILP_layout.svg', width = 600)
-Figure_3A <- ggdraw() + draw_image(bitmap)
 
-####Figure_3B####
+df.Ks = df.Ks %>% filter(Helix == "F")
 
-list.files("Figures/Figure_2")
 
-bitmap <- rsvg_raw('Figures/Figure_2/Figure_3B_Secondary_structure.svg', width = 600)
-Figure_3B <- ggdraw() + draw_image(bitmap)
-
-####Organize CPEB3 data####
-
-vector.files = paste("Figures/Figure_2/CPEB3_data_files", list.files("Figures/Figure_2/CPEB3_data_files"), sep = "/")
-
-list.df = lapply(vector.files, read.csv)
-
-df = bind_rows(list.df)
-
-df$Condition = factor(df$Condition,
-                      levels = c("2 mM free Mg",
-                                 "Eco80",
-                                 "NTPCM",
-                                 "WMCM",
-                                 "25 mM Free Mg"),
-                      labels = c("2 mM free Mg",
-                                 "Eco80",
-                                 "NTPCM",
-                                 "WMCM",
-                                 "25 mM free Mg"))
-
-unique(df$BP)
-
-df$BP = factor(df$BP,
-               levels = c("Single stranded",
-                          "Non-cannonical",
-                          "WC",
-                          "WC + Non-cannonical"))
-
-####Make SI Figure for CPEB3####
-
-df = df %>% filter(!is.na(Reactivity)) %>%
-  filter(!is.na(Condition))
-
-SI_figure_X.1 = ggplot(df, aes(x = N, y = Reactivity,
-                           ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
-                           color = Condition, group = Condition)) +
+vh.plot = ggplot(df.Ks %>%
+                    filter(In_K_range == TRUE) %>%
+                    filter(SE.lnK <= K_error),
+                  aes(x = invT, y = lnK,
+                      ymin = lnK - SE.lnK,
+                      ymax = lnK +SE.lnK,
+                      color = Condition,
+                      shape = Condition)) +
+  geom_smooth(method = "lm", se = FALSE) +
+  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(6, 3, 1)])) +
   geom_pointrange() +
-  geom_line() +
-  geom_segment(aes(x = 22, y = -150, xend = 27, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 27, y = -150, xend = 29, yend = -150),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 29, y = -150, xend = 31, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 31, y = -150, xend = 36, yend = -150),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 36, y = -150, xend = 39, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 39, y = -150, xend = 45, yend = -150),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 45, y = -150, xend = 50, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 50, y = -150, xend = 56, yend = -150),
-               color ="black", size = 5) +
-  annotate("text", x = 28, y = -150, label = "P3", color = "white") +
-  annotate("text", x = 33.5, y = -150, label = "P1", color = "white") +
-  annotate("text", x = 41.5, y = -150, label = "P4", color = "white") +
-  annotate("text", x = 53, y = -150, label = "P4", color = "white") +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  theme_classic()+
-  ylab("Estimated dCounts/dt") +
-  xlab("Nucleotide") +
-  xlim(22, 56) +
-  ylim(-200, 1500) +
-  theme(axis.line.x = element_line(colour = 'black'),
-        axis.line.y = element_line(colour = 'black'),
+  ylab("ln[K (1/M)]") +
+  xlab("1/Temperature (K)") +
+  theme_classic() +
+  theme(axis.line = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16),
+        axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
         axis.text.y = element_text(color = "Black", size = 16),
+        axis.title.x = element_text(color = "Black", size = 16),
         axis.title.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_text(color = "Black", size = 18),
-        legend.text = element_text(color = "Black", size = 8),
-        legend.position = c(0.55, 0.85),
+        legend.text = element_text(color = "Black", size = 14),
         legend.title = element_blank(),
+        legend.position = c(0.75, 0.3),
         legend.background = element_blank())
 
-SI_figure_X.1
+####Make thermo plot####
 
-unique(df$Condition)
+df.vh = read.csv("Figures/Figure_2_helix_stability/Fits_summary_vh.csv")
+head(df.vh)
 
-comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
-                   c("25 mM free Mg", "Eco80"),
-                   c("25 mM free Mg", "NTPCM"),
-                   c("25 mM free Mg", "WMCM"))
 
-Figure_3E = ggplot(df, aes(x = Condition, y = Reactivity,
-                           ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
-                           color = Condition, group = Condition)) +
-  facet_wrap(~BP) +
-  stat_compare_means(comparisons = comparisons, size = 2.5,
-                     label = "p.format", method = "t.test") +
-  geom_boxplot(alpha = 0.01) +
-  geom_beeswarm() +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  theme_classic()+
-  ggtitle("CPEB3 ribozyme") +
-  ylab("Estimated dCounts/dt") +
-  theme(axis.line.x = element_line(colour = 'black'),
-        axis.line.y = element_line(colour = 'black'),
+df.vh$Condition = factor(df.vh$Condition,
+                         levels = c("Monovalent","Ecoli80", "NTPCM", "WMCM"),
+                         labels = c("Monovalent","Eco80", "NTPCM", "WMCM"))
+df.vh$Helix = factor(df.vh$Helix,
+                     levels = c("I", "F", "J", "G", "H"),
+                     labels = c("1:CGGAUGGC/GCCAUCCG",
+                                "2:CGCAUCCU/AGGAUGCG",
+                                "3:CGUAUGUA/UACAUACG",
+                                "4:CCAUAUCA/UGAUAUGG",
+                                "5:CCAUAUUA/UAAUAUGG"))
+
+
+df.vh$K = exp(-as.numeric(df.vh$G)/(0.00198720425864083*(273.15 + 37)))
+df.vh$SE.K = df.vh$K*as.numeric(df.vh$SE.G)/as.numeric(df.vh$G)
+dG.plot = ggplot(data = df.vh,
+       mapping = aes(x = Condition, y = G, ymin = G - 0.015*G, ymax = G + 0.015*G)) +
+  facet_wrap(~Helix, nrow = 1, scales = "free") +
+  geom_point(stat="identity", size = 5) +
+  geom_errorbar(size = 1.5) +
+  theme_classic() +
+  ylab("K at 37\u00b0C (1/M)") +
+  scale_y_reverse(breaks = scales::pretty_breaks(n = 5)) +
+  #coord_cartesian(ylim=c(5,12.5)) +
+  theme(axis.line = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16,
-                                   angle = 45, hjust = 1, vjust = 1),
+        axis.text.x = element_text(color = "Black", size = 14, angle = 45, hjust = 1),
         axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.y = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 10),
         axis.title.x = element_blank(),
-        strip.background = element_rect(size = 1),
-        strip.text = element_markdown(color = "Black", size = 14),legend.text = element_text(color = "Black", size = 10),
-        legend.position = "none",
-        plot.title = element_text(color = "Black", size = 16))
-
-Figure_3E
-
-####Organize tRNA data####
-
-vector.files = paste("Figures/Figure_2/tRNA_data_files", list.files("Figures/Figure_2/tRNA_data_files"), sep = "/")
-
-list.df = lapply(vector.files, read.csv)
-
-df = bind_rows(list.df)
-
-####Make Figure 2I####
-
-df = df %>% filter(!is.na(Reactivity)) %>%
-  filter(!is.na(Condition))
-
-df$Condition = factor(df$Condition,
-                      levels = c("2 mM free Mg",
-                                 "Eco80",
-                                 "NTPCM",
-                                 "WMCM",
-                                 "25 mM Free Mg"),
-                      labels = c("2 mM free Mg",
-                                 "Eco80",
-                                 "NTPCM",
-                                 "WMCM",
-                                 "25 mM free Mg"))
-
-df$BP = factor(df$BP,
-               levels = c("Single stranded",
-                          "Non-cannonical",
-                          "WC",
-                          "WC + Non-cannonical"))
-
-
-SI_figure_X.2 = ggplot(df, aes(x = N, y = Reactivity,
-                           ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
-                           color = Condition, group = Condition)) +
-  geom_pointrange() +
-  geom_line() +
-  geom_segment(aes(x = 24, y = -300, xend = 25, yend = -300),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 25, y = -300, xend = 27, yend = -300),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 27, y = -300, xend = 31, yend = -300),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 31, y = -300, xend = 39, yend = -300),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 39, y = -300, xend = 43, yend = -300),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 43, y = -300, xend = 49, yend = -300),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 49, y = -300, xend = 53, yend = -300),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 53, y = -300, xend = 61, yend = -300),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 61, y = -300, xend = 65, yend = -300),
-               color ="black", size = 5) +
-  annotate("text", x = 29, y = -300, label = "P3-5'", color = "white") +
-  annotate("text", x = 41, y = -300, label = "P3-3'", color = "white") +
-  annotate("text", x = 51, y = -300, label = "P4-5'", color = "white") +
-  annotate("text", x = 63, y = -300, label = "P4-3'", color = "white") +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  theme_classic()+
-  ylab("Estimated dCounts/dt") +
-  xlab("Nucleotide") +
-  xlim(24, 65) +
-  ylim(-400, 5000) +
-  theme(axis.line.x = element_line(colour = 'black'),
-        axis.line.y = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16),
-        axis.text.y = element_text(color = "Black", size = 16),
         axis.title.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_text(color = "Black", size = 18),
-        legend.text = element_text(color = "Black", size = 8),
-        legend.position = c(0.55, 0.85),
-        legend.title = element_blank(),
-        legend.background = element_blank())
-
-SI_figure_X.2
-
-unique(df$Condition)
-
-comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
-                   c("25 mM free Mg", "Eco80"),
-                   c("25 mM free Mg", "NTPCM"),
-                   c("25 mM free Mg", "WMCM"))
-
-Figure_3F = ggplot(df, aes(x = Condition, y = Reactivity,
-                           ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
-                           color = Condition, group = Condition)) +
-  facet_wrap(~BP) +
-  stat_compare_means(comparisons = comparisons, size = 2.5,
-                     label = "p.format", method = "t.test") +
-  geom_boxplot(alpha = 0.01) +
-  geom_beeswarm() +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  theme_classic()+
-  ggtitle("tRNA") +
-  ylab("Estimated dCounts/dt") +
-  theme(axis.line.x = element_line(colour = 'black'),
-        axis.line.y = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16,
-                                   angle = 45, hjust = 1, vjust = 1),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.y = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 10),
-        axis.title.x = element_blank(),
+        legend.text = element_text(color = "Black", size = 10),
         strip.background = element_rect(size = 1),
-        strip.text = element_markdown(color = "Black", size = 14),legend.text = element_text(color = "Black", size = 10),
-        legend.position = "none",
-        plot.title = element_text(color = "Black", size = 16))
+        strip.text = element_markdown(color = "Black", size = 14),
+        legend.title = element_text(color = "Black", size = 14))
 
-Figure_3F
+dG.plot
 
-####Consolidate plots into one plot####
+####Read in figure 3A####
 
-Figure_3ABC = plot_grid(Figure_3A, Figure_3B, Figure_3C, nrow = 1, labels = c("A", "B", "C"), label_size = 20)
+library(svglite)
+library(magick)
+library(rsvg)
+library(grobblR)
+library(grid)
 
-Figure_3DEF = plot_grid(Figure_3D, Figure_3E, Figure_3F, nrow = 1, labels = c("D", "E", "F"), rel_widths = c(1.7, 1, 1), label_size = 20)
+list.files("Figures/Figure_2_helix_stability")
 
-Figure_3 = plot_grid(Figure_3ABC, Figure_3DEF, ncol = 1)
+bitmap <- rsvg_raw('Figures/Figure_2_helix_stability/Figure_3A.svg', width = 600)
+image <- ggdraw() + draw_image(bitmap)
 
-Figure_3
+####Make figure 3####
 
-ggsave("Figures/Figure_2/Figure_3.svg", Figure_3, width = 7, height = 4, scale = 3.2, bg = "white")
+Figure_3ABC = plot_grid(image, raw.plot, vh.plot, nrow = 1,
+                        labels = c("A", "B", "C"))
+
+Figure_ABCDE = plot_grid(Figure_3ABC,
+                         dG.plot,
+                         ncol = 1,
+                         labels = c("", "D"))
+
+Figure_ABCDE
+
+ggsave("Figures/Figure_2_helix_stability/Figure_2.svg",
+       Figure_ABCDE,
+       scale = 2.5,
+       width = 7, height = 4.5, units = "in",
+       bg = "white")

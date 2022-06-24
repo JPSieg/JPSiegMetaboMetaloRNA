@@ -147,7 +147,7 @@ Figure_1A
 list.files("Figures/Figure_1")
 
 analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "Eco80"),
-                       df.model = df.model.NTPCM,
+                       df.model = df.model.Ecoli80,
                        color = viridis(n =  7)[1],
                        Labels = c("B", "E"),
                        xlimits = c(0, 75),
@@ -259,6 +259,8 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "Eco80"),
     xlab(bquote('Total'~'Mg'^'2+'~'(mM)')) +
     scale_x_continuous(trans = "log10", limits = c(0.1, 210)) +
     scale_y_continuous(lim = ylimits) +
+    geom_vline(xintercept = c(40, 200)) +
+    geom_hline(yintercept = c(11)) +
     theme(axis.line = element_line(colour = 'black'),
           axis.ticks = element_line(colour = "black"),
           axis.text.x = element_text(color = "Black", size = 16),

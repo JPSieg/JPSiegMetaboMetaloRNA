@@ -144,142 +144,26 @@ Pr.plot = ggplot(df.out, aes(x = R, y = 1000*P.R, color = Condition)) +
         legend.background = element_blank(),
         legend.position = c(0.35, 0.3))
 
-####Fit comparisons####
 
-list.files("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits")
-
-read.waxsis = function(data_path){
-
-  con = file(data_path)
-  Lines = readLines(con)
-  close(con)
-
-  q = c()
-  Iq.fit = c()
-  Iq.fit.err = c()
-  Iq.calc = c()
-  Iq.calc.err = c()
-
-  for (i in 10:length(Lines)){
-    Line.vector = strsplit(Lines[[i]], split = " ")[[1]]
-    Line.vector = Line.vector[-which(Line.vector == "")]
-    Line.vector = as.numeric(Line.vector)
-    q[i] = Line.vector[1]
-    Iq.fit[i] = Line.vector[2]
-    Iq.fit.err[i] = Line.vector[3]
-    Iq.calc[i] = Line.vector[4]
-    Iq.calc.err[i] = Line.vector[5]
-  }
-
-  output = data.frame(q,
-                         Iq.fit,
-                         Iq.fit.err,
-                         Iq.calc,
-                         Iq.calc.err)
-
-}
-
-df.2mM = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/2mMMg_over.xvg")
-df.2mM$Condition = "2 mM Mg X2 = 1.09"
-df.2mM$State = "Monomer"
-df.25mM = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/25mMMg_over.xvg")
-df.25mM$Condition = "25 mM Mg X2 = 2.7"
-df.25mM$State = "Monomer"
-df.WMCM = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/WMCM_over.xvg")
-df.WMCM$Condition = "WMCM X2 = 1.534"
-df.WMCM$State = "Monomer"
-df.25mM$State = "Monomer"
-df.NTPCM = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/NTPCM_over.xvg")
-df.NTPCM$Condition = "NTPCM X2 = 0.86"
-df.NTPCM$State = "Monomer"
-df.Eco80 = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/Eco80_over.xvg")
-df.Eco80$Condition = "Eco80 X2 = 0.81"
-df.Eco80$State = "Monomer"
-
-df.2mM.dimer = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/2mM_dimer_over.xvg")
-df.2mM.dimer$Condition = "2 mM Mg X2 = 1.09"
-df.2mM.dimer$State = "Dimer"
-df.25mM.dimer = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/25mM_dimer_over.xvg")
-df.25mM.dimer$Condition = "25 mM Mg X2 = 2.7"
-df.25mM.dimer$State = "Dimer"
-df.WMCM.dimer = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/WMCM_dimer_over.xvg")
-df.WMCM.dimer$Condition = "WMCM X2 = 1.534"
-df.WMCM.dimer$State = "Dimer"
-df.25mM.dimer$State = "Dimer"
-df.NTPCM.dimer = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/NTPCM_dimer_over.xvg")
-df.NTPCM.dimer$Condition = "NTPCM X2 = 0.86"
-df.NTPCM.dimer$State = "Dimer"
-df.Eco80.dimer = read.waxsis("Figures/SI_figure_x_simple_SAXS/WAXSiS_fits/Eco80_dimer_over.xvg")
-df.Eco80.dimer$Condition = "Eco80 X2 = 0.81"
-df.Eco80.dimer$State = "Dimer"
-
-df.exp = bind_rows(df.2mM, df.25mM, df.NTPCM, df.WMCM, df.Eco80,
-                   df.2mM.dimer, df.25mM.dimer, df.NTPCM.dimer, df.WMCM.dimer, df.Eco80.dimer)
-
-df.exp$Condition = factor(df.exp$Condition,
-                          levels = c("2 mM Mg X2 = 1.09",
-                                     "NTPCM X2 = 0.86",
-                                     "WMCM X2 = 1.534",
-                                    "Eco80 X2 = 0.81",
-                                    "25 mM Mg X2 = 2.7"))
-
-head(df.exp)
-unique(df.exp$State)
-df.exp[which(is.na(df.exp$State)),]
-
-Residuals = ggplot(df.exp, aes(x = q, y = (Iq.fit - Iq.calc)/Iq.fit, color = Condition, group = State)) +
-  geom_point(alpha = 0.5) +
-  scale_x_continuous(trans = "log10") +
-  scale_y_continuous(limits = c(-5, 5), n.breaks = 3) +
-  geom_hline(yintercept = 0) +
-  ylab("Normalized\nResiduals") +
-  theme_classic() +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  facet_wrap(c("Condition", "State")) +
-  theme(axis.line = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_blank(),
-        axis.title.y = element_text(color = "Black", size = 12),
-        legend.text = element_text(color = "Black", size = 10),
-        strip.background = element_rect(size = 1),
-        strip.text = element_text(color = "Black", size = 14),
-        legend.title = element_blank(),
-        legend.background = element_blank(),
-        legend.position = "none")
-
-Data = ggplot() +
-  geom_point(data = df.exp, mapping = aes(x = q, y = Iq.fit, color = Condition), alpha = 0.5) +
-  geom_line(data = df.exp, mapping = aes(x = q, y = Iq.calc, shape = State, group = State)) +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  scale_x_continuous(trans = "log10") +
-  scale_y_continuous(trans = "log10") +
-  facet_wrap(~Condition, nrow = 1) +
-  xlab("q (1/\u212b)") +
-  ylab("I(q)") +
-  theme_classic() +
-  theme(axis.line = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_text(color = "Black", size = 16),
-        axis.title.y = element_text(color = "Black", size = 16),
-        legend.text = element_text(color = "Black", size = 10),
-        strip.background = element_rect(size = 1),
-        strip.text = element_text(color = "Black", size = 14),
-        legend.title = element_blank(),
-        legend.background = element_blank(),
-        legend.position = "none")
-
-Data
-
-SI_figure_XC = plot_grid(Residuals, Data, ncol = 1, rel_heights = c(1.5, 4),
-          align = "v")
-
-####Figure D####
+####DENSS####
 
 list.files("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS")
+
+Mg.free.2mM = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/2mMMg_angle_0deg.png") +
+  theme(panel.background = element_blank())
+
+Mg.free.2mM.90 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/2mMMg_angle_90deg.png") +
+  theme(panel.background = element_blank())
+
+Eco80 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/Eco80_angle_0deg.png") +
+  theme(panel.background = element_blank())
+
+Eco80.90 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/Eco80_angle_90deg.png") +
+  theme(panel.background = element_blank())
 
 NTPCM = ggplot() +
   draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/NTPCM_angle_0deg.png") +
@@ -305,37 +189,127 @@ Free25.90 = ggplot() +
   draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_WAXSiS/25mMMg_angle_90deg.png") +
   theme(panel.background = element_blank())
 
-Figure_D = plot_grid(NTPCM, NTPCM.90, nrow = 1) +
+Figure_C.DENSS = plot_grid(Mg.free.2mM, Mg.free.2mM.90, nrow = 1) +
   draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
-  annotate("text", label = "Rg = 26.7 (1.3) A", x = 0.75, y = 0.1, size = 5) +
-  annotate("text", label = "NTPCM", x = 0.5, y = 0.8, size = 5) +
   theme(panel.background = element_blank())
 
-Figure_E = plot_grid(WMCM, WMCM.90, nrow = 1) +
+
+Figure_D.DENSS = plot_grid(Eco80, Eco80.90, nrow = 1) +
   draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
-  annotate("text", label = "Rg = 30.0 (1.0) A", x = 0.75, y = 0.1, size = 5) +
-  annotate("text", label = "WMCM", x = 0.5, y = 0.8, size = 5) +
   theme(panel.background = element_blank())
 
-Figure_F = plot_grid(Free25, Free25.90, nrow = 1) +
+
+Figure_E.DENSS = plot_grid(NTPCM, NTPCM.90, nrow = 1) +
   draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
-  annotate("text", label = "Rg = 33.6 (0.9) A", x = 0.75, y = 0.1, size = 5) +
-  annotate("text", label = "25 mM free Mg2+", x = 0.5, y = 0.8, size = 5) +
   theme(panel.background = element_blank())
+
+Figure_F.DENSS = plot_grid(WMCM, WMCM.90, nrow = 1) +
+  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
+  theme(panel.background = element_blank())
+
+Figure_G.DENSS = plot_grid(Free25, Free25.90, nrow = 1) +
+  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
+  theme(panel.background = element_blank())
+
+####Bead####
+
+list.files("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead")
+
+Mg.free.2mM = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead/2mMMg_angle_0deg.png") +
+  theme(panel.background = element_blank())
+
+Mg.free.2mM.90 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead/2mMMg_angle_90deg.png") +
+  theme(panel.background = element_blank())
+
+Eco80 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead/Eco80_angle_0deg.png") +
+  theme(panel.background = element_blank())
+
+Eco80.90 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead/Eco80_angle_90deg.png") +
+  theme(panel.background = element_blank())
+
+NTPCM = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead/NTPCM_angle_0deg.png") +
+  theme(panel.background = element_blank())
+
+NTPCM.90 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead/NTPCM_angle_90deg.png") +
+  theme(panel.background = element_blank())
+
+WMCM = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead/WMCM_angle_0deg.png") +
+  theme(panel.background = element_blank())
+
+WMCM.90 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead/WMCM_angle_90deg.png") +
+  theme(panel.background = element_blank())
+
+Free25 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead/25mMMg_angle_0deg.png") +
+  theme(panel.background = element_blank())
+
+Free25.90 = ggplot() +
+  draw_image("Figures/SI_figure_x_simple_SAXS/Images_from_pymol_Bead/25mMMg_angle_90deg.png") +
+  theme(panel.background = element_blank())
+
+Figure_C.Bead = plot_grid(Mg.free.2mM, Mg.free.2mM.90, nrow = 1) +
+  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
+  theme(panel.background = element_blank())
+
+
+Figure_D.Bead = plot_grid(Eco80, Eco80.90, nrow = 1) +
+  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
+  theme(panel.background = element_blank())
+
+
+Figure_E.Bead = plot_grid(NTPCM, NTPCM.90, nrow = 1) +
+  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
+  theme(panel.background = element_blank())
+
+Figure_F.Bead = plot_grid(WMCM, WMCM.90, nrow = 1) +
+  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
+  theme(panel.background = element_blank())
+
+Figure_G.Bead = plot_grid(Free25, Free25.90, nrow = 1) +
+  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
+  theme(panel.background = element_blank())
+
+####Consolidate reconstructions####
+
+Figure_C = plot_grid(Figure_C.DENSS, Figure_C.Bead, ncol = 1, label_y = 0.8,
+          labels = c("Electron density", "Bead model"),
+          label_size = 14)
+Figure_D = plot_grid(Figure_D.DENSS, Figure_D.Bead, ncol = 1, label_y = 0.8,
+                     labels = c("Electron density", "Bead model"),
+                     label_size = 14)
+Figure_E = plot_grid(Figure_E.DENSS, Figure_E.Bead, ncol = 1, label_y = 0.8,
+                     labels = c("Electron density", "Bead model"),
+                     label_size = 14)
+Figure_F = plot_grid(Figure_F.DENSS, Figure_F.Bead, ncol = 1, label_y = 0.8,
+                     labels = c("Electron density", "Bead model"),
+                     label_size = 14)
+Figure_G = plot_grid(Figure_G.DENSS, Figure_G.Bead, ncol = 1, label_y = 0.8,
+                     labels = c("Electron density", "Bead model"),
+                     label_size = 14)
 
 ####Consolidate plot####
 
-SI_figure_XAB = plot_grid(Kratky.plot, Pr.plot,
-                        labels = c("A", "B"),
-                        label_size = 20)
+SI_figure_XABC = plot_grid(Kratky.plot, Pr.plot, Figure_C,
+                        labels = c("A", "B", "C (2 mM free Mg2+)"),
+                        label_size = 20,
+                        nrow = 1,
+                        rel_widths = c(24, 24, 16))
 
-SI_Figure_XDEF = plot_grid(Figure_D, Figure_E, Figure_F,
+SI_Figure_XDEFG = plot_grid(Figure_D, Figure_E, Figure_F, Figure_G,
                            nrow = 1,
-                           labels = c("C", "D", "E"),
+                           labels = c("D (Eco80)", "E (NTPCM)", "F (WMCM)", "G (25 mM free Mg2+)"),
                            label_size = 20)
 
-SI_figure_X = plot_grid(SI_figure_XAB,
-                        SI_Figure_XDEF,
+SI_figure_X = plot_grid(SI_figure_XABC,
+                        SI_Figure_XDEFG,
                         ncol = 1,
                         rel_heights = c(1, 1))
 

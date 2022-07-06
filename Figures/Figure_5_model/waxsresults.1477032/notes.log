@@ -1,0 +1,39 @@
+
+IMPORTANT NOTE: The backbone-restrained MD simulation of your biomolecule exploded. This usually means
+                that your input structure contains some severe atomic clashes, broken bonds, or similar,
+                which could not be fixed by the energy minimization. We therefore rerun the simualation
+                using frozen coordinates of the biomolecule. Water and counter ions will still be properly simulated,
+                so the SWAXS calculations are based on a physically realistic hydration layer. Only the
+                flexibility of the solute will not taken into account. For large solutes, neglecting side chain
+                fluctutations has probably only a small effect. For small solutes the effect may be signficant
+                (for an example, see Chen and Hub, Biophys J, 2014).
+
+If you think your structure should be correct (such as a high-resolution crstal structure), an error in the
+MD engine or a PDB file not following PDB conventions may have cause the problem. In that case, please
+contact us! Thank you!
+
+Residue UNK-0 considered biologically relevant, having 250 atoms.
+MD simulation:
+	Estimate for number of atoms in envelope = 9425 - will generate 174 simulation frames
+	Simulation time (ps)    = 91
+	Equilibration time (ps) = 4
+	CONSTRAINING SOLUTE !
+	Simulation system contained 924 solute atoms and 27028 water molecules.
+	Added 39 Na+ to neutralize the simulation cell.
+
+SAXS/WAXS calculation:
+	Maximum q scattering vector [nm-1]:                   10
+	Number of solute and pure-sovlent simulation frames:  174
+	Simulation time discarded for equilibration (ps):     4
+	Correcting solvent density to [e/nm3]:                334
+	Number of q-points for spherical average:             Max{500, 0.20*(D*q)^2}  [D = diameter of envelope]
+	Distance of envelope from solute [nm]:                0.7
+	Volume of envelope [nm3]:                             100.69
+	Maximum diameter of solute [nm]:                      9.24524
+	Number of atoms used for rotational fit:              96
+	Buffer subtraction scheme:                            Total buffer intensity subtracted
+
+Guinier fit:
+	Rg [A] = 24.2026
+	For comparison: Rg(solute) [A] = 22.5819
+

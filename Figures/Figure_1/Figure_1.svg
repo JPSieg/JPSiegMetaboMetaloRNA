@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    class="svglite"
    width="712.79999pt"
    height="683pt"
@@ -14,7 +7,17 @@
    version="1.1"
    id="svg5833"
    sodipodi:docname="Figure_1.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   inkscape:export-filename="C:\Users\jpsie\Documents\Rpackages\JPSiegMetaboMetaloRNA\Figures\Figure_1\Figure_1.png"
+   inkscape:export-xdpi="600.09998"
+   inkscape:export-ydpi="600.09998"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata5837">
     <rdf:RDF>
@@ -23,7 +26,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,17 +38,19 @@
      guidetolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
-     inkscape:window-height="1133"
+     inkscape:window-width="1023"
+     inkscape:window-height="729"
      id="namedview5835"
      showgrid="false"
-     inkscape:zoom="0.53356482"
-     inkscape:cx="539.79344"
-     inkscape:cy="435.50056"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
+     inkscape:zoom="0.3772873"
+     inkscape:cx="357.8175"
+     inkscape:cy="328.662"
+     inkscape:window-x="233"
+     inkscape:window-y="22"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg5833" />
+     inkscape:current-layer="svg5833"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt" />
   <defs
      id="defs3348">
     <marker
@@ -104,6 +108,34 @@
          inkscape:connector-curvature="0"
          id="path2456-1-9"
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2456-11"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ea1818;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-2-5"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path2456-11-9"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ea1818;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          transform="scale(-0.6)" />
     </marker>
@@ -192,77 +224,77 @@
      x="15.78" />
   <rect
      id="rect3377"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:0.74825174"
      height="74.07"
      width="219.55"
      y="42.103062"
      x="43.57" />
   <rect
      id="rect3379"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="74.07"
      width="37.959999"
      y="42.103062"
      x="263.12" />
   <rect
      id="rect3381"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="74.07"
      width="34.759998"
      y="42.103062"
      x="301.07999" />
   <rect
      id="rect3383"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="74.07"
      width="21.129999"
      y="42.103062"
      x="335.84" />
   <rect
      id="rect3385"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="74.07"
      width="18.02"
      y="42.103062"
      x="356.98001" />
   <rect
      id="rect3387"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="74.07"
      width="9.6700001"
      y="42.103062"
      x="375" />
   <rect
      id="rect3389"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="74.07"
      width="9.1899996"
      y="42.103062"
      x="384.67001" />
   <rect
      id="rect3391"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="74.07"
      width="8.71"
      y="42.103062"
      x="393.87" />
   <rect
      id="rect3393"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="74.07"
      width="8.6199999"
      y="42.103062"
      x="402.57999" />
   <rect
      id="rect3395"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="74.07"
      width="8.3699999"
      y="42.103062"
      x="411.20001" />
   <rect
      id="rect3397"
-     style="fill:#8e01b0;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="74.07"
      width="7"
      y="42.103062"
@@ -304,16 +336,16 @@
      x="489.26001" />
   <rect
      id="rect3409"
-     style="fill:#595959;fill-opacity:0.1;stroke:#000000;stroke-width:4.26999998;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+     style="fill:#595959;fill-opacity:0;stroke:#000000;stroke-width:4.27;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
      height="74.07"
      width="445.95999"
-     y="42.103062"
+     y="42.103065"
      x="43.57" />
   <text
      id="text3411"
      lengthAdjust="spacingAndGlyphs"
      textLength="292.26001"
-     style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     style="font-size:11.38px;font-family:Arimo;text-anchor:middle;white-space:pre"
      y="18.889999"
      x="272.26999"
      transform="translate(0,18.103062)">15 metabolites = 80% E. coli metabolome = Eco80</text>
@@ -321,7 +353,7 @@
      id="text3413"
      lengthAdjust="spacingAndGlyphs"
      textLength="21.709999"
-     style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     style="font-size:11.38px;font-family:Arimo;text-anchor:middle;white-space:pre"
      y="48.790001"
      x="546.71002"
      transform="translate(0,18.103062)">228</text>
@@ -329,7 +361,7 @@
      id="text3415"
      lengthAdjust="spacingAndGlyphs"
      textLength="67.410004"
-     style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     style="font-size:11.38px;font-family:Arimo;text-anchor:middle;white-space:pre"
      y="65.18"
      x="546.71002"
      transform="translate(0,18.103062)">metabolites</text>
@@ -337,7 +369,7 @@
      id="text3417"
      lengthAdjust="spacingAndGlyphs"
      textLength="75.970001"
-     style="font-size:11.38000011px;font-family:Arimo;text-anchor:middle;white-space:pre"
+     style="font-size:11.38px;font-family:Arimo;text-anchor:middle;white-space:pre"
      y="81.57"
      x="546.71002"
      transform="translate(0,18.103062)"> = other 20%</text>
@@ -448,7 +480,7 @@
      x="644.95001" />
   <rect
      id="rect3453"
-     style="fill:#440154;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10"
+     style="fill:#aa40c4;stroke:#000000;stroke-width:2.13000011;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;fill-opacity:1"
      height="14.45"
      width="14.45"
      y="56.089249"
@@ -1261,870 +1293,883 @@
   <g
      clip-path="url(#cpNzIuMjN8MjMyLjEyfDQxMC40OHw1OTYuMjE=)"
      id="g4187"
-     transform="translate(0,35)">
+     transform="translate(4.8828125e-6,34.999978)">
     <rect
        x="72.230003"
        y="410.48001"
        width="159.89"
        height="185.73"
-       style="fill:#ffffff;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       style="fill:#ffffff;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="rect3759" />
     <polygon
-       points="78.19,578.75 79.65,577.78 81.1,578.75 81.1,580.7 79.65,581.67 78.19,580.7 "
-       style="fill:#21908d;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="79.65,577.78 81.1,578.75 81.1,580.7 79.65,581.67 78.19,580.7 78.19,578.75 "
+       style="fill:#21908d;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3761" />
     <polygon
-       points="81.1,578.75 82.56,577.78 84.01,578.75 84.01,580.7 82.56,581.67 81.1,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="82.56,577.78 84.01,578.75 84.01,580.7 82.56,581.67 81.1,580.7 81.1,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3763" />
     <polygon
-       points="84.01,578.75 85.46,577.78 86.92,578.75 86.92,580.7 85.46,581.67 84.01,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="85.46,577.78 86.92,578.75 86.92,580.7 85.46,581.67 84.01,580.7 84.01,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3765" />
     <polygon
-       points="86.92,578.75 88.37,577.78 89.82,578.75 89.82,580.7 88.37,581.67 86.92,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="88.37,577.78 89.82,578.75 89.82,580.7 88.37,581.67 86.92,580.7 86.92,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3767" />
     <polygon
-       points="89.82,578.75 91.28,577.78 92.73,578.75 92.73,580.7 91.28,581.67 89.82,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="91.28,577.78 92.73,578.75 92.73,580.7 91.28,581.67 89.82,580.7 89.82,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3769" />
     <polygon
-       points="92.73,578.75 94.18,577.78 95.64,578.75 95.64,580.7 94.18,581.67 92.73,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="94.18,577.78 95.64,578.75 95.64,580.7 94.18,581.67 92.73,580.7 92.73,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3771" />
     <polygon
-       points="95.64,578.75 97.09,577.78 98.54,578.75 98.54,580.7 97.09,581.67 95.64,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="97.09,577.78 98.54,578.75 98.54,580.7 97.09,581.67 95.64,580.7 95.64,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3773" />
     <polygon
-       points="98.54,578.75 100,577.78 101.45,578.75 101.45,580.7 100,581.67 98.54,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="100,577.78 101.45,578.75 101.45,580.7 100,581.67 98.54,580.7 98.54,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3775" />
     <polygon
-       points="101.45,578.75 102.9,577.78 104.36,578.75 104.36,580.7 102.9,581.67 101.45,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="102.9,577.78 104.36,578.75 104.36,580.7 102.9,581.67 101.45,580.7 101.45,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3777" />
     <polygon
-       points="104.36,578.75 105.81,577.78 107.26,578.75 107.26,580.7 105.81,581.67 104.36,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="105.81,577.78 107.26,578.75 107.26,580.7 105.81,581.67 104.36,580.7 104.36,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3779" />
     <polygon
-       points="107.26,578.75 108.72,577.78 110.17,578.75 110.17,580.7 108.72,581.67 107.26,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="108.72,577.78 110.17,578.75 110.17,580.7 108.72,581.67 107.26,580.7 107.26,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3781" />
     <polygon
-       points="110.17,578.75 111.63,577.78 113.08,578.75 113.08,580.7 111.63,581.67 110.17,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="111.63,577.78 113.08,578.75 113.08,580.7 111.63,581.67 110.17,580.7 110.17,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3783" />
     <polygon
-       points="113.08,578.75 114.53,577.78 115.99,578.75 115.99,580.7 114.53,581.67 113.08,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="114.53,577.78 115.99,578.75 115.99,580.7 114.53,581.67 113.08,580.7 113.08,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3785" />
     <polygon
-       points="115.99,578.75 117.44,577.78 118.89,578.75 118.89,580.7 117.44,581.67 115.99,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="117.44,577.78 118.89,578.75 118.89,580.7 117.44,581.67 115.99,580.7 115.99,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3787" />
     <polygon
-       points="118.89,578.75 120.35,577.78 121.8,578.75 121.8,580.7 120.35,581.67 118.89,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="120.35,577.78 121.8,578.75 121.8,580.7 120.35,581.67 118.89,580.7 118.89,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3789" />
     <polygon
-       points="121.8,578.75 123.25,577.78 124.71,578.75 124.71,580.7 123.25,581.67 121.8,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="123.25,577.78 124.71,578.75 124.71,580.7 123.25,581.67 121.8,580.7 121.8,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3791" />
     <polygon
-       points="124.71,578.75 126.16,577.78 127.61,578.75 127.61,580.7 126.16,581.67 124.71,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="126.16,577.78 127.61,578.75 127.61,580.7 126.16,581.67 124.71,580.7 124.71,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3793" />
     <polygon
-       points="127.61,578.75 129.07,577.78 130.52,578.75 130.52,580.7 129.07,581.67 127.61,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="129.07,577.78 130.52,578.75 130.52,580.7 129.07,581.67 127.61,580.7 127.61,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3795" />
     <polygon
-       points="130.52,578.75 131.97,577.78 133.43,578.75 133.43,580.7 131.97,581.67 130.52,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="131.97,577.78 133.43,578.75 133.43,580.7 131.97,581.67 130.52,580.7 130.52,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3797" />
     <polygon
-       points="133.43,578.75 134.88,577.78 136.33,578.75 136.33,580.7 134.88,581.67 133.43,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="134.88,577.78 136.33,578.75 136.33,580.7 134.88,581.67 133.43,580.7 133.43,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3799" />
     <polygon
-       points="136.33,578.75 137.79,577.78 139.24,578.75 139.24,580.7 137.79,581.67 136.33,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="137.79,577.78 139.24,578.75 139.24,580.7 137.79,581.67 136.33,580.7 136.33,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3801" />
     <polygon
-       points="139.24,578.75 140.7,577.78 142.15,578.75 142.15,580.7 140.7,581.67 139.24,580.7 "
-       style="fill:#fde725;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="140.7,577.78 142.15,578.75 142.15,580.7 140.7,581.67 139.24,580.7 139.24,578.75 "
+       style="fill:#fde725;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3803" />
     <polygon
-       points="142.15,578.75 143.6,577.78 145.06,578.75 145.06,580.7 143.6,581.67 142.15,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="143.6,577.78 145.06,578.75 145.06,580.7 143.6,581.67 142.15,580.7 142.15,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3805" />
     <polygon
-       points="145.06,578.75 146.51,577.78 147.96,578.75 147.96,580.7 146.51,581.67 145.06,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="146.51,577.78 147.96,578.75 147.96,580.7 146.51,581.67 145.06,580.7 145.06,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3807" />
     <polygon
-       points="147.96,578.75 149.42,577.78 150.87,578.75 150.87,580.7 149.42,581.67 147.96,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="149.42,577.78 150.87,578.75 150.87,580.7 149.42,581.67 147.96,580.7 147.96,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3809" />
     <polygon
-       points="150.87,578.75 152.32,577.78 153.78,578.75 153.78,580.7 152.32,581.67 150.87,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="152.32,577.78 153.78,578.75 153.78,580.7 152.32,581.67 150.87,580.7 150.87,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3811" />
     <polygon
-       points="153.78,578.75 155.23,577.78 156.68,578.75 156.68,580.7 155.23,581.67 153.78,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="155.23,577.78 156.68,578.75 156.68,580.7 155.23,581.67 153.78,580.7 153.78,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3813" />
     <polygon
-       points="156.68,578.75 158.14,577.78 159.59,578.75 159.59,580.7 158.14,581.67 156.68,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="158.14,577.78 159.59,578.75 159.59,580.7 158.14,581.67 156.68,580.7 156.68,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3815" />
     <polygon
-       points="159.59,578.75 161.04,577.78 162.5,578.75 162.5,580.7 161.04,581.67 159.59,580.7 "
-       style="fill:#8fd644;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="161.04,577.78 162.5,578.75 162.5,580.7 161.04,581.67 159.59,580.7 159.59,578.75 "
+       style="fill:#8fd644;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3817" />
     <polygon
-       points="162.5,578.75 163.95,577.78 165.41,578.75 165.41,580.7 163.95,581.67 162.5,580.7 "
-       style="fill:#8ed645;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="163.95,577.78 165.41,578.75 165.41,580.7 163.95,581.67 162.5,580.7 162.5,578.75 "
+       style="fill:#8ed645;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3819" />
     <polygon
-       points="165.41,578.75 166.86,577.78 168.31,578.75 168.31,580.7 166.86,581.67 165.41,580.7 "
-       style="fill:#4ac16d;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="166.86,577.78 168.31,578.75 168.31,580.7 166.86,581.67 165.41,580.7 165.41,578.75 "
+       style="fill:#4ac16d;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3821" />
     <polygon
-       points="168.31,578.75 169.77,577.78 171.22,578.75 171.22,580.7 169.77,581.67 168.31,580.7 "
-       style="fill:#2db27d;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="169.77,577.78 171.22,578.75 171.22,580.7 169.77,581.67 168.31,580.7 168.31,578.75 "
+       style="fill:#2db27d;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3823" />
     <polygon
-       points="171.22,578.75 172.67,577.78 174.13,578.75 174.13,580.7 172.67,581.67 171.22,580.7 "
-       style="fill:#31688e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="172.67,577.78 174.13,578.75 174.13,580.7 172.67,581.67 171.22,580.7 171.22,578.75 "
+       style="fill:#31688e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3825" />
     <polygon
-       points="174.13,578.75 175.58,577.78 177.03,578.75 177.03,580.7 175.58,581.67 174.13,580.7 "
-       style="fill:#450659;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="175.58,577.78 177.03,578.75 177.03,580.7 175.58,581.67 174.13,580.7 174.13,578.75 "
+       style="fill:#450659;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3827" />
     <polygon
-       points="163.95,575.83 165.41,574.86 166.86,575.83 166.86,577.77 165.41,578.74 163.95,577.77 "
-       style="fill:#440155;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="165.41,574.86 166.86,575.83 166.86,577.77 165.41,578.74 163.95,577.77 163.95,575.83 "
+       style="fill:#440155;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3829" />
     <polygon
-       points="166.86,575.83 168.31,574.86 169.77,575.83 169.77,577.77 168.31,578.74 166.86,577.77 "
-       style="fill:#472d7b;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="168.31,574.86 169.77,575.83 169.77,577.77 168.31,578.74 166.86,577.77 166.86,575.83 "
+       style="fill:#472d7b;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3831" />
     <polygon
-       points="169.77,575.83 171.22,574.86 172.67,575.83 172.67,577.77 171.22,578.74 169.77,577.77 "
-       style="fill:#2f6b8e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="171.22,574.86 172.67,575.83 172.67,577.77 171.22,578.74 169.77,577.77 169.77,575.83 "
+       style="fill:#2f6b8e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3833" />
     <polygon
-       points="172.67,575.83 174.13,574.86 175.58,575.83 175.58,577.77 174.13,578.74 172.67,577.77 "
-       style="fill:#36b878;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="174.13,574.86 175.58,575.83 175.58,577.77 174.13,578.74 172.67,577.77 172.67,575.83 "
+       style="fill:#36b878;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3835" />
     <polygon
-       points="175.58,575.83 177.03,574.86 178.49,575.83 178.49,577.77 177.03,578.74 175.58,577.77 "
-       style="fill:#8ad647;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="177.03,574.86 178.49,575.83 178.49,577.77 177.03,578.74 175.58,577.77 175.58,575.83 "
+       style="fill:#8ad647;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3837" />
     <polygon
-       points="178.49,575.83 179.94,574.86 181.39,575.83 181.39,577.77 179.94,578.74 178.49,577.77 "
-       style="fill:#6dce59;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="179.94,574.86 181.39,575.83 181.39,577.77 179.94,578.74 178.49,577.77 178.49,575.83 "
+       style="fill:#6dce59;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3839" />
     <polygon
-       points="181.39,575.83 182.85,574.86 184.3,575.83 184.3,577.77 182.85,578.74 181.39,577.77 "
-       style="fill:#3e4989;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="182.85,574.86 184.3,575.83 184.3,577.77 182.85,578.74 181.39,577.77 181.39,575.83 "
+       style="fill:#3e4989;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3841" />
     <polygon
-       points="177.03,572.9 178.49,571.93 179.94,572.9 179.94,574.85 178.49,575.82 177.03,574.85 "
-       style="fill:#440155;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="178.49,571.93 179.94,572.9 179.94,574.85 178.49,575.82 177.03,574.85 177.03,572.9 "
+       style="fill:#440155;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3843" />
     <polygon
-       points="179.94,572.9 181.39,571.93 182.85,572.9 182.85,574.85 181.39,575.82 179.94,574.85 "
-       style="fill:#2f6b8e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="181.39,571.93 182.85,572.9 182.85,574.85 181.39,575.82 179.94,574.85 179.94,572.9 "
+       style="fill:#2f6b8e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3845" />
     <polygon
-       points="182.85,572.9 184.3,571.93 185.75,572.9 185.75,574.85 184.3,575.82 182.85,574.85 "
-       style="fill:#21a585;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="184.3,571.93 185.75,572.9 185.75,574.85 184.3,575.82 182.85,574.85 182.85,572.9 "
+       style="fill:#21a585;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3847" />
     <polygon
-       points="185.75,572.9 187.21,571.93 188.66,572.9 188.66,574.85 187.21,575.82 185.75,574.85 "
-       style="fill:#460a5d;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="187.21,571.93 188.66,572.9 188.66,574.85 187.21,575.82 185.75,574.85 185.75,572.9 "
+       style="fill:#460a5d;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3849" />
     <polygon
-       points="181.39,569.98 182.85,569.01 184.3,569.98 184.3,571.92 182.85,572.89 181.39,571.92 "
-       style="fill:#450659;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="182.85,569.01 184.3,569.98 184.3,571.92 182.85,572.89 181.39,571.92 181.39,569.98 "
+       style="fill:#450659;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3851" />
     <polygon
-       points="184.3,569.98 185.75,569.01 187.21,569.98 187.21,571.92 185.75,572.89 184.3,571.92 "
-       style="fill:#25858e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="185.75,569.01 187.21,569.98 187.21,571.92 185.75,572.89 184.3,571.92 184.3,569.98 "
+       style="fill:#25858e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3853" />
     <polygon
-       points="187.21,569.98 188.66,569.01 190.11,569.98 190.11,571.92 188.66,572.89 187.21,571.92 "
-       style="fill:#482677;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="188.66,569.01 190.11,569.98 190.11,571.92 188.66,572.89 187.21,571.92 187.21,569.98 "
+       style="fill:#482677;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3855" />
     <polygon
-       points="182.85,567.06 184.3,566.08 185.75,567.06 185.75,569 184.3,569.97 182.85,569 "
-       style="fill:#440256;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="184.3,566.08 185.75,567.06 185.75,569 184.3,569.97 182.85,569 182.85,567.06 "
+       style="fill:#440256;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3857" />
     <polygon
-       points="185.75,567.06 187.21,566.08 188.66,567.06 188.66,569 187.21,569.97 185.75,569 "
-       style="fill:#2f6b8e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="187.21,566.08 188.66,567.06 188.66,569 187.21,569.97 185.75,569 185.75,567.06 "
+       style="fill:#2f6b8e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3859" />
     <polygon
-       points="188.66,567.06 190.11,566.08 191.57,567.06 191.57,569 190.11,569.97 188.66,569 "
-       style="fill:#481a6c;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="190.11,566.08 191.57,567.06 191.57,569 190.11,569.97 188.66,569 188.66,567.06 "
+       style="fill:#481a6c;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3861" />
     <polygon
-       points="184.3,564.13 185.75,563.16 187.21,564.13 187.21,566.07 185.75,567.04 184.3,566.07 "
-       style="fill:#440155;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="185.75,563.16 187.21,564.13 187.21,566.07 185.75,567.04 184.3,566.07 184.3,564.13 "
+       style="fill:#440155;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3863" />
     <polygon
-       points="187.21,564.13 188.66,563.16 190.11,564.13 190.11,566.07 188.66,567.04 187.21,566.07 "
-       style="fill:#375a8c;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="188.66,563.16 190.11,564.13 190.11,566.07 188.66,567.04 187.21,566.07 187.21,564.13 "
+       style="fill:#375a8c;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3865" />
     <polygon
-       points="190.11,564.13 191.57,563.16 193.02,564.13 193.02,566.07 191.57,567.04 190.11,566.07 "
-       style="fill:#481668;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="191.57,563.16 193.02,564.13 193.02,566.07 191.57,567.04 190.11,566.07 190.11,564.13 "
+       style="fill:#481668;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3867" />
     <polygon
-       points="185.75,561.21 187.21,560.24 188.66,561.21 188.66,563.15 187.21,564.12 185.75,563.15 "
-       style="fill:#450457;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="187.21,560.24 188.66,561.21 188.66,563.15 187.21,564.12 185.75,563.15 185.75,561.21 "
+       style="fill:#450457;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3869" />
     <polygon
-       points="188.66,561.21 190.11,560.24 191.57,561.21 191.57,563.15 190.11,564.12 188.66,563.15 "
-       style="fill:#39578c;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="190.11,560.24 191.57,561.21 191.57,563.15 190.11,564.12 188.66,563.15 188.66,561.21 "
+       style="fill:#39578c;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3871" />
     <polygon
-       points="191.57,561.21 193.02,560.24 194.48,561.21 194.48,563.15 193.02,564.12 191.57,563.15 "
-       style="fill:#450558;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="193.02,560.24 194.48,561.21 194.48,563.15 193.02,564.12 191.57,563.15 191.57,561.21 "
+       style="fill:#450558;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3873" />
     <polygon
-       points="187.21,558.28 188.66,557.31 190.11,558.28 190.11,560.22 188.66,561.2 187.21,560.22 "
-       style="fill:#450659;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="188.66,557.31 190.11,558.28 190.11,560.22 188.66,561.2 187.21,560.22 187.21,558.28 "
+       style="fill:#450659;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3875" />
     <polygon
-       points="190.11,558.28 191.57,557.31 193.02,558.28 193.02,560.22 191.57,561.2 190.11,560.22 "
-       style="fill:#3c4f8a;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="191.57,557.31 193.02,558.28 193.02,560.22 191.57,561.2 190.11,560.22 190.11,558.28 "
+       style="fill:#3c4f8a;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3877" />
     <polygon
-       points="193.02,558.28 194.48,557.31 195.93,558.28 195.93,560.22 194.48,561.2 193.02,560.22 "
-       style="fill:#440256;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="194.48,557.31 195.93,558.28 195.93,560.22 194.48,561.2 193.02,560.22 193.02,558.28 "
+       style="fill:#440256;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3879" />
     <polygon
-       points="188.66,555.36 190.11,554.39 191.57,555.36 191.57,557.3 190.11,558.27 188.66,557.3 "
-       style="fill:#481769;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="190.11,554.39 191.57,555.36 191.57,557.3 190.11,558.27 188.66,557.3 188.66,555.36 "
+       style="fill:#481769;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3881" />
     <polygon
-       points="191.57,555.36 193.02,554.39 194.48,555.36 194.48,557.3 193.02,558.27 191.57,557.3 "
-       style="fill:#463480;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="193.02,554.39 194.48,555.36 194.48,557.3 193.02,558.27 191.57,557.3 191.57,555.36 "
+       style="fill:#463480;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3883" />
     <polygon
-       points="190.11,552.43 191.57,551.46 193.02,552.43 193.02,554.38 191.57,555.35 190.11,554.38 "
-       style="fill:#482878;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="191.57,551.46 193.02,552.43 193.02,554.38 191.57,555.35 190.11,554.38 190.11,552.43 "
+       style="fill:#482878;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3885" />
     <polygon
-       points="193.02,552.43 194.48,551.46 195.93,552.43 195.93,554.38 194.48,555.35 193.02,554.38 "
-       style="fill:#481c6e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="194.48,551.46 195.93,552.43 195.93,554.38 194.48,555.35 193.02,554.38 193.02,552.43 "
+       style="fill:#481c6e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3887" />
     <polygon
-       points="188.66,549.51 190.11,548.54 191.57,549.51 191.57,551.45 190.11,552.42 188.66,551.45 "
-       style="fill:#440155;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="190.11,548.54 191.57,549.51 191.57,551.45 190.11,552.42 188.66,551.45 188.66,549.51 "
+       style="fill:#440155;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3889" />
     <polygon
-       points="191.57,549.51 193.02,548.54 194.48,549.51 194.48,551.45 193.02,552.42 191.57,551.45 "
-       style="fill:#433d84;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="193.02,548.54 194.48,549.51 194.48,551.45 193.02,552.42 191.57,551.45 191.57,549.51 "
+       style="fill:#433d84;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3891" />
     <polygon
-       points="194.48,549.51 195.93,548.54 197.38,549.51 197.38,551.45 195.93,552.42 194.48,551.45 "
-       style="fill:#450357;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.93,548.54 197.38,549.51 197.38,551.45 195.93,552.42 194.48,551.45 194.48,549.51 "
+       style="fill:#450357;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3893" />
     <polygon
-       points="190.11,546.58 191.57,545.61 193.02,546.58 193.02,548.53 191.57,549.5 190.11,548.53 "
-       style="fill:#450458;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="191.57,545.61 193.02,546.58 193.02,548.53 191.57,549.5 190.11,548.53 190.11,546.58 "
+       style="fill:#450458;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3895" />
     <polygon
-       points="193.02,546.58 194.48,545.61 195.93,546.58 195.93,548.53 194.48,549.5 193.02,548.53 "
-       style="fill:#453781;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="194.48,545.61 195.93,546.58 195.93,548.53 194.48,549.5 193.02,548.53 193.02,546.58 "
+       style="fill:#453781;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3897" />
     <polygon
-       points="195.93,546.58 197.38,545.61 198.84,546.58 198.84,548.53 197.38,549.5 195.93,548.53 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="197.38,545.61 198.84,546.58 198.84,548.53 197.38,549.5 195.93,548.53 195.93,546.58 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3899" />
     <polygon
-       points="191.57,543.66 193.02,542.69 194.48,543.66 194.48,545.6 193.02,546.57 191.57,545.6 "
-       style="fill:#481c6e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="193.02,542.69 194.48,543.66 194.48,545.6 193.02,546.57 191.57,545.6 191.57,543.66 "
+       style="fill:#481c6e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3901" />
     <polygon
-       points="194.48,543.66 195.93,542.69 197.38,543.66 197.38,545.6 195.93,546.57 194.48,545.6 "
-       style="fill:#481b6d;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.93,542.69 197.38,543.66 197.38,545.6 195.93,546.57 194.48,545.6 194.48,543.66 "
+       style="fill:#481b6d;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3903" />
     <polygon
-       points="190.11,540.74 191.57,539.76 193.02,540.74 193.02,542.68 191.57,543.65 190.11,542.68 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="191.57,539.76 193.02,540.74 193.02,542.68 191.57,543.65 190.11,542.68 190.11,540.74 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3905" />
     <polygon
-       points="193.02,540.74 194.48,539.76 195.93,540.74 195.93,542.68 194.48,543.65 193.02,542.68 "
-       style="fill:#472e7c;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="194.48,539.76 195.93,540.74 195.93,542.68 194.48,543.65 193.02,542.68 193.02,540.74 "
+       style="fill:#472e7c;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3907" />
     <polygon
-       points="195.93,540.74 197.38,539.76 198.84,540.74 198.84,542.68 197.38,543.65 195.93,542.68 "
-       style="fill:#450659;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="197.38,539.76 198.84,540.74 198.84,542.68 197.38,543.65 195.93,542.68 195.93,540.74 "
+       style="fill:#450659;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3909" />
     <polygon
-       points="191.57,537.81 193.02,536.84 194.48,537.81 194.48,539.75 193.02,540.72 191.57,539.75 "
-       style="fill:#450558;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="193.02,536.84 194.48,537.81 194.48,539.75 193.02,540.72 191.57,539.75 191.57,537.81 "
+       style="fill:#450558;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3911" />
     <polygon
-       points="194.48,537.81 195.93,536.84 197.38,537.81 197.38,539.75 195.93,540.72 194.48,539.75 "
-       style="fill:#472f7d;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.93,536.84 197.38,537.81 197.38,539.75 195.93,540.72 194.48,539.75 194.48,537.81 "
+       style="fill:#472f7d;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3913" />
     <polygon
-       points="197.38,537.81 198.84,536.84 200.29,537.81 200.29,539.75 198.84,540.72 197.38,539.75 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,536.84 200.29,537.81 200.29,539.75 198.84,540.72 197.38,539.75 197.38,537.81 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3915" />
     <polygon
-       points="193.02,534.89 194.48,533.92 195.93,534.89 195.93,536.83 194.48,537.8 193.02,536.83 "
-       style="fill:#471164;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="194.48,533.92 195.93,534.89 195.93,536.83 194.48,537.8 193.02,536.83 193.02,534.89 "
+       style="fill:#471164;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3917" />
     <polygon
-       points="195.93,534.89 197.38,533.92 198.84,534.89 198.84,536.83 197.38,537.8 195.93,536.83 "
-       style="fill:#481b6d;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="197.38,533.92 198.84,534.89 198.84,536.83 197.38,537.8 195.93,536.83 195.93,534.89 "
+       style="fill:#481b6d;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3919" />
     <polygon
-       points="191.57,531.96 193.02,530.99 194.48,531.96 194.48,533.9 193.02,534.87 191.57,533.9 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="193.02,530.99 194.48,531.96 194.48,533.9 193.02,534.87 191.57,533.9 191.57,531.96 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3921" />
     <polygon
-       points="194.48,531.96 195.93,530.99 197.38,531.96 197.38,533.9 195.93,534.87 194.48,533.9 "
-       style="fill:#472b7a;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.93,530.99 197.38,531.96 197.38,533.9 195.93,534.87 194.48,533.9 194.48,531.96 "
+       style="fill:#472b7a;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3923" />
     <polygon
-       points="197.38,531.96 198.84,530.99 200.29,531.96 200.29,533.9 198.84,534.87 197.38,533.9 "
-       style="fill:#440256;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,530.99 200.29,531.96 200.29,533.9 198.84,534.87 197.38,533.9 197.38,531.96 "
+       style="fill:#440256;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3925" />
     <polygon
-       points="193.02,529.04 194.48,528.07 195.93,529.04 195.93,530.98 194.48,531.95 193.02,530.98 "
-       style="fill:#440256;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="194.48,528.07 195.93,529.04 195.93,530.98 194.48,531.95 193.02,530.98 193.02,529.04 "
+       style="fill:#440256;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3927" />
     <polygon
-       points="195.93,529.04 197.38,528.07 198.84,529.04 198.84,530.98 197.38,531.95 195.93,530.98 "
-       style="fill:#482979;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="197.38,528.07 198.84,529.04 198.84,530.98 197.38,531.95 195.93,530.98 195.93,529.04 "
+       style="fill:#482979;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3929" />
     <polygon
-       points="198.84,529.04 200.29,528.07 201.74,529.04 201.74,530.98 200.29,531.95 198.84,530.98 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,528.07 201.74,529.04 201.74,530.98 200.29,531.95 198.84,530.98 198.84,529.04 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3931" />
     <polygon
-       points="194.48,526.11 195.93,525.14 197.38,526.11 197.38,528.06 195.93,529.03 194.48,528.06 "
-       style="fill:#481a6c;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.93,525.14 197.38,526.11 197.38,528.06 195.93,529.03 194.48,528.06 194.48,526.11 "
+       style="fill:#481a6c;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3933" />
     <polygon
-       points="197.38,526.11 198.84,525.14 200.29,526.11 200.29,528.06 198.84,529.03 197.38,528.06 "
-       style="fill:#470e61;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,525.14 200.29,526.11 200.29,528.06 198.84,529.03 197.38,528.06 197.38,526.11 "
+       style="fill:#470e61;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3935" />
     <polygon
-       points="193.02,523.19 194.48,522.22 195.93,523.19 195.93,525.13 194.48,526.1 193.02,525.13 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="194.48,522.22 195.93,523.19 195.93,525.13 194.48,526.1 193.02,525.13 193.02,523.19 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3937" />
     <polygon
-       points="195.93,523.19 197.38,522.22 198.84,523.19 198.84,525.13 197.38,526.1 195.93,525.13 "
-       style="fill:#482777;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="197.38,522.22 198.84,523.19 198.84,525.13 197.38,526.1 195.93,525.13 195.93,523.19 "
+       style="fill:#482777;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3939" />
     <polygon
-       points="198.84,523.19 200.29,522.22 201.74,523.19 201.74,525.13 200.29,526.1 198.84,525.13 "
-       style="fill:#440256;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,522.22 201.74,523.19 201.74,525.13 200.29,526.1 198.84,525.13 198.84,523.19 "
+       style="fill:#440256;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3941" />
     <polygon
-       points="194.48,520.26 195.93,519.29 197.38,520.26 197.38,522.21 195.93,523.18 194.48,522.21 "
-       style="fill:#46085c;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.93,519.29 197.38,520.26 197.38,522.21 195.93,523.18 194.48,522.21 194.48,520.26 "
+       style="fill:#46085c;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3943" />
     <polygon
-       points="197.38,520.26 198.84,519.29 200.29,520.26 200.29,522.21 198.84,523.18 197.38,522.21 "
-       style="fill:#481d6f;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,519.29 200.29,520.26 200.29,522.21 198.84,523.18 197.38,522.21 197.38,520.26 "
+       style="fill:#481d6f;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3945" />
     <polygon
-       points="195.93,517.34 197.38,516.37 198.84,517.34 198.84,519.28 197.38,520.25 195.93,519.28 "
-       style="fill:#481b6d;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="197.38,516.37 198.84,517.34 198.84,519.28 197.38,520.25 195.93,519.28 195.93,517.34 "
+       style="fill:#481b6d;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3947" />
     <polygon
-       points="198.84,517.34 200.29,516.37 201.74,517.34 201.74,519.28 200.29,520.25 198.84,519.28 "
-       style="fill:#46085c;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,516.37 201.74,517.34 201.74,519.28 200.29,520.25 198.84,519.28 198.84,517.34 "
+       style="fill:#46085c;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3949" />
     <polygon
-       points="194.48,514.42 195.93,513.44 197.38,514.42 197.38,516.36 195.93,517.33 194.48,516.36 "
-       style="fill:#440255;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.93,513.44 197.38,514.42 197.38,516.36 195.93,517.33 194.48,516.36 194.48,514.42 "
+       style="fill:#440255;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3951" />
     <polygon
-       points="197.38,514.42 198.84,513.44 200.29,514.42 200.29,516.36 198.84,517.33 197.38,516.36 "
-       style="fill:#482475;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,513.44 200.29,514.42 200.29,516.36 198.84,517.33 197.38,516.36 197.38,514.42 "
+       style="fill:#482475;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3953" />
     <polygon
-       points="200.29,514.42 201.74,513.44 203.2,514.42 203.2,516.36 201.74,517.33 200.29,516.36 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,513.44 203.2,514.42 203.2,516.36 201.74,517.33 200.29,516.36 200.29,514.42 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3955" />
     <polygon
-       points="195.93,511.49 197.38,510.52 198.84,511.49 198.84,513.43 197.38,514.4 195.93,513.43 "
-       style="fill:#460b5e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="197.38,510.52 198.84,511.49 198.84,513.43 197.38,514.4 195.93,513.43 195.93,511.49 "
+       style="fill:#460b5e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3957" />
     <polygon
-       points="198.84,511.49 200.29,510.52 201.74,511.49 201.74,513.43 200.29,514.4 198.84,513.43 "
-       style="fill:#481467;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,510.52 201.74,511.49 201.74,513.43 200.29,514.4 198.84,513.43 198.84,511.49 "
+       style="fill:#481467;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3959" />
     <polygon
-       points="194.48,508.57 195.93,507.6 197.38,508.57 197.38,510.51 195.93,511.48 194.48,510.51 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.93,507.6 197.38,508.57 197.38,510.51 195.93,511.48 194.48,510.51 194.48,508.57 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3961" />
     <polygon
-       points="197.38,508.57 198.84,507.6 200.29,508.57 200.29,510.51 198.84,511.48 197.38,510.51 "
-       style="fill:#482173;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,507.6 200.29,508.57 200.29,510.51 198.84,511.48 197.38,510.51 197.38,508.57 "
+       style="fill:#482173;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3963" />
     <polygon
-       points="200.29,508.57 201.74,507.6 203.2,508.57 203.2,510.51 201.74,511.48 200.29,510.51 "
-       style="fill:#440155;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,507.6 203.2,508.57 203.2,510.51 201.74,511.48 200.29,510.51 200.29,508.57 "
+       style="fill:#440155;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3965" />
     <polygon
-       points="195.93,505.64 197.38,504.67 198.84,505.64 198.84,507.58 197.38,508.55 195.93,507.58 "
-       style="fill:#440356;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="197.38,504.67 198.84,505.64 198.84,507.58 197.38,508.55 195.93,507.58 195.93,505.64 "
+       style="fill:#440356;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3967" />
     <polygon
-       points="198.84,505.64 200.29,504.67 201.74,505.64 201.74,507.58 200.29,508.55 198.84,507.58 "
-       style="fill:#481d6f;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,504.67 201.74,505.64 201.74,507.58 200.29,508.55 198.84,507.58 198.84,505.64 "
+       style="fill:#481d6f;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3969" />
     <polygon
-       points="197.38,502.72 198.84,501.75 200.29,502.72 200.29,504.66 198.84,505.63 197.38,504.66 "
-       style="fill:#48196b;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,501.75 200.29,502.72 200.29,504.66 198.84,505.63 197.38,504.66 197.38,502.72 "
+       style="fill:#48196b;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3971" />
     <polygon
-       points="200.29,502.72 201.74,501.75 203.2,502.72 203.2,504.66 201.74,505.63 200.29,504.66 "
-       style="fill:#450458;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,501.75 203.2,502.72 203.2,504.66 201.74,505.63 200.29,504.66 200.29,502.72 "
+       style="fill:#450458;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3973" />
     <polygon
-       points="195.93,499.79 197.38,498.82 198.84,499.79 198.84,501.74 197.38,502.71 195.93,501.74 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="197.38,498.82 198.84,499.79 198.84,501.74 197.38,502.71 195.93,501.74 195.93,499.79 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3975" />
     <polygon
-       points="198.84,499.79 200.29,498.82 201.74,499.79 201.74,501.74 200.29,502.71 198.84,501.74 "
-       style="fill:#482071;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,498.82 201.74,499.79 201.74,501.74 200.29,502.71 198.84,501.74 198.84,499.79 "
+       style="fill:#482071;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3977" />
     <polygon
-       points="201.74,499.79 203.2,498.82 204.65,499.79 204.65,501.74 203.2,502.71 201.74,501.74 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,498.82 204.65,499.79 204.65,501.74 203.2,502.71 201.74,501.74 201.74,499.79 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3979" />
     <polygon
-       points="197.38,496.87 198.84,495.9 200.29,496.87 200.29,498.81 198.84,499.78 197.38,498.81 "
-       style="fill:#470e61;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,495.9 200.29,496.87 200.29,498.81 198.84,499.78 197.38,498.81 197.38,496.87 "
+       style="fill:#470e61;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3981" />
     <polygon
-       points="200.29,496.87 201.74,495.9 203.2,496.87 203.2,498.81 201.74,499.78 200.29,498.81 "
-       style="fill:#470c5f;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,495.9 203.2,496.87 203.2,498.81 201.74,499.78 200.29,498.81 200.29,496.87 "
+       style="fill:#470c5f;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3983" />
     <polygon
-       points="198.84,493.94 200.29,492.97 201.74,493.94 201.74,495.89 200.29,496.86 198.84,495.89 "
-       style="fill:#481c6e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,492.97 201.74,493.94 201.74,495.89 200.29,496.86 198.84,495.89 198.84,493.94 "
+       style="fill:#481c6e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3985" />
     <polygon
-       points="201.74,493.94 203.2,492.97 204.65,493.94 204.65,495.89 203.2,496.86 201.74,495.89 "
-       style="fill:#440255;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,492.97 204.65,493.94 204.65,495.89 203.2,496.86 201.74,495.89 201.74,493.94 "
+       style="fill:#440255;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3987" />
     <polygon
-       points="197.38,491.02 198.84,490.05 200.29,491.02 200.29,492.96 198.84,493.93 197.38,492.96 "
-       style="fill:#450559;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,490.05 200.29,491.02 200.29,492.96 198.84,493.93 197.38,492.96 197.38,491.02 "
+       style="fill:#450559;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3989" />
     <polygon
-       points="200.29,491.02 201.74,490.05 203.2,491.02 203.2,492.96 201.74,493.93 200.29,492.96 "
-       style="fill:#481668;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,490.05 203.2,491.02 203.2,492.96 201.74,493.93 200.29,492.96 200.29,491.02 "
+       style="fill:#481668;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3991" />
     <polygon
-       points="198.84,488.1 200.29,487.12 201.74,488.1 201.74,490.04 200.29,491.01 198.84,490.04 "
-       style="fill:#481668;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,487.12 201.74,488.1 201.74,490.04 200.29,491.01 198.84,490.04 198.84,488.1 "
+       style="fill:#481668;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3993" />
     <polygon
-       points="201.74,488.1 203.2,487.12 204.65,488.1 204.65,490.04 203.2,491.01 201.74,490.04 "
-       style="fill:#450559;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,487.12 204.65,488.1 204.65,490.04 203.2,491.01 201.74,490.04 201.74,488.1 "
+       style="fill:#450559;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3995" />
     <polygon
-       points="197.38,485.17 198.84,484.2 200.29,485.17 200.29,487.11 198.84,488.08 197.38,487.11 "
-       style="fill:#440255;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,484.2 200.29,485.17 200.29,487.11 198.84,488.08 197.38,487.11 197.38,485.17 "
+       style="fill:#440255;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3997" />
     <polygon
-       points="200.29,485.17 201.74,484.2 203.2,485.17 203.2,487.11 201.74,488.08 200.29,487.11 "
-       style="fill:#481c6e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,484.2 203.2,485.17 203.2,487.11 201.74,488.08 200.29,487.11 200.29,485.17 "
+       style="fill:#481c6e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon3999" />
     <polygon
-       points="198.84,482.25 200.29,481.28 201.74,482.25 201.74,484.19 200.29,485.16 198.84,484.19 "
-       style="fill:#470d60;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,481.28 201.74,482.25 201.74,484.19 200.29,485.16 198.84,484.19 198.84,482.25 "
+       style="fill:#470d60;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4001" />
     <polygon
-       points="201.74,482.25 203.2,481.28 204.65,482.25 204.65,484.19 203.2,485.16 201.74,484.19 "
-       style="fill:#460b5e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,481.28 204.65,482.25 204.65,484.19 203.2,485.16 201.74,484.19 201.74,482.25 "
+       style="fill:#460b5e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4003" />
     <polygon
-       points="197.38,479.32 198.84,478.35 200.29,479.32 200.29,481.26 198.84,482.23 197.38,481.26 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="198.84,478.35 200.29,479.32 200.29,481.26 198.84,482.23 197.38,481.26 197.38,479.32 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4005" />
     <polygon
-       points="200.29,479.32 201.74,478.35 203.2,479.32 203.2,481.26 201.74,482.23 200.29,481.26 "
-       style="fill:#481b6d;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,478.35 203.2,479.32 203.2,481.26 201.74,482.23 200.29,481.26 200.29,479.32 "
+       style="fill:#481b6d;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4007" />
     <polygon
-       points="203.2,479.32 204.65,478.35 206.1,479.32 206.1,481.26 204.65,482.23 203.2,481.26 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,478.35 206.1,479.32 206.1,481.26 204.65,482.23 203.2,481.26 203.2,479.32 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4009" />
     <polygon
-       points="198.84,476.4 200.29,475.43 201.74,476.4 201.74,478.34 200.29,479.31 198.84,478.34 "
-       style="fill:#450659;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,475.43 201.74,476.4 201.74,478.34 200.29,479.31 198.84,478.34 198.84,476.4 "
+       style="fill:#450659;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4011" />
     <polygon
-       points="201.74,476.4 203.2,475.43 204.65,476.4 204.65,478.34 203.2,479.31 201.74,478.34 "
-       style="fill:#471164;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,475.43 204.65,476.4 204.65,478.34 203.2,479.31 201.74,478.34 201.74,476.4 "
+       style="fill:#471164;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4013" />
     <polygon
-       points="200.29,473.47 201.74,472.5 203.2,473.47 203.2,475.42 201.74,476.39 200.29,475.42 "
-       style="fill:#481769;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,472.5 203.2,473.47 203.2,475.42 201.74,476.39 200.29,475.42 200.29,473.47 "
+       style="fill:#481769;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4015" />
     <polygon
-       points="203.2,473.47 204.65,472.5 206.1,473.47 206.1,475.42 204.65,476.39 203.2,475.42 "
-       style="fill:#440155;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,472.5 206.1,473.47 206.1,475.42 204.65,476.39 203.2,475.42 203.2,473.47 "
+       style="fill:#440155;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4017" />
     <polygon
-       points="198.84,470.55 200.29,469.58 201.74,470.55 201.74,472.49 200.29,473.46 198.84,472.49 "
-       style="fill:#440255;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,469.58 201.74,470.55 201.74,472.49 200.29,473.46 198.84,472.49 198.84,470.55 "
+       style="fill:#440255;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4019" />
     <polygon
-       points="201.74,470.55 203.2,469.58 204.65,470.55 204.65,472.49 203.2,473.46 201.74,472.49 "
-       style="fill:#481769;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,469.58 204.65,470.55 204.65,472.49 203.2,473.46 201.74,472.49 201.74,470.55 "
+       style="fill:#481769;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4021" />
     <polygon
-       points="200.29,467.62 201.74,466.65 203.2,467.62 203.2,469.57 201.74,470.54 200.29,469.57 "
-       style="fill:#481467;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,466.65 203.2,467.62 203.2,469.57 201.74,470.54 200.29,469.57 200.29,467.62 "
+       style="fill:#481467;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4023" />
     <polygon
-       points="203.2,467.62 204.65,466.65 206.1,467.62 206.1,469.57 204.65,470.54 203.2,469.57 "
-       style="fill:#440256;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,466.65 206.1,467.62 206.1,469.57 204.65,470.54 203.2,469.57 203.2,467.62 "
+       style="fill:#440256;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4025" />
     <polygon
-       points="198.84,464.7 200.29,463.73 201.74,464.7 201.74,466.64 200.29,467.61 198.84,466.64 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="200.29,463.73 201.74,464.7 201.74,466.64 200.29,467.61 198.84,466.64 198.84,464.7 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4027" />
     <polygon
-       points="201.74,464.7 203.2,463.73 204.65,464.7 204.65,466.64 203.2,467.61 201.74,466.64 "
-       style="fill:#481769;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,463.73 204.65,464.7 204.65,466.64 203.2,467.61 201.74,466.64 201.74,464.7 "
+       style="fill:#481769;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4029" />
     <polygon
-       points="200.29,461.78 201.74,460.8 203.2,461.78 203.2,463.72 201.74,464.69 200.29,463.72 "
-       style="fill:#470f62;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,460.8 203.2,461.78 203.2,463.72 201.74,464.69 200.29,463.72 200.29,461.78 "
+       style="fill:#470f62;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4031" />
     <polygon
-       points="203.2,461.78 204.65,460.8 206.1,461.78 206.1,463.72 204.65,464.69 203.2,463.72 "
-       style="fill:#46075a;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,460.8 206.1,461.78 206.1,463.72 204.65,464.69 203.2,463.72 203.2,461.78 "
+       style="fill:#46075a;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4033" />
     <polygon
-       points="201.74,458.85 203.2,457.88 204.65,458.85 204.65,460.79 203.2,461.76 201.74,460.79 "
-       style="fill:#48186a;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,457.88 204.65,458.85 204.65,460.79 203.2,461.76 201.74,460.79 201.74,458.85 "
+       style="fill:#48186a;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4035" />
     <polygon
-       points="204.65,458.85 206.1,457.88 207.56,458.85 207.56,460.79 206.1,461.76 204.65,460.79 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="206.1,457.88 207.56,458.85 207.56,460.79 206.1,461.76 204.65,460.79 204.65,458.85 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4037" />
     <polygon
-       points="200.29,455.93 201.74,454.96 203.2,455.93 203.2,457.87 201.74,458.84 200.29,457.87 "
-       style="fill:#46075b;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,454.96 203.2,455.93 203.2,457.87 201.74,458.84 200.29,457.87 200.29,455.93 "
+       style="fill:#46075b;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4039" />
     <polygon
-       points="203.2,455.93 204.65,454.96 206.1,455.93 206.1,457.87 204.65,458.84 203.2,457.87 "
-       style="fill:#460b5e;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,454.96 206.1,455.93 206.1,457.87 204.65,458.84 203.2,457.87 203.2,455.93 "
+       style="fill:#460b5e;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4041" />
     <polygon
-       points="201.74,453 203.2,452.03 204.65,453 204.65,454.94 203.2,455.91 201.74,454.94 "
-       style="fill:#481668;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,452.03 204.65,453 204.65,454.94 203.2,455.91 201.74,454.94 201.74,453 "
+       style="fill:#481668;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4043" />
     <polygon
-       points="204.65,453 206.1,452.03 207.56,453 207.56,454.94 206.1,455.91 204.65,454.94 "
-       style="fill:#440155;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="206.1,452.03 207.56,453 207.56,454.94 206.1,455.91 204.65,454.94 204.65,453 "
+       style="fill:#440155;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4045" />
     <polygon
-       points="200.29,450.08 201.74,449.11 203.2,450.08 203.2,452.02 201.74,452.99 200.29,452.02 "
-       style="fill:#450457;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,449.11 203.2,450.08 203.2,452.02 201.74,452.99 200.29,452.02 200.29,450.08 "
+       style="fill:#450457;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4047" />
     <polygon
-       points="203.2,450.08 204.65,449.11 206.1,450.08 206.1,452.02 204.65,452.99 203.2,452.02 "
-       style="fill:#471164;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,449.11 206.1,450.08 206.1,452.02 204.65,452.99 203.2,452.02 203.2,450.08 "
+       style="fill:#471164;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4049" />
     <polygon
-       points="201.74,447.15 203.2,446.18 204.65,447.15 204.65,449.1 203.2,450.07 201.74,449.1 "
-       style="fill:#471164;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,446.18 204.65,447.15 204.65,449.1 203.2,450.07 201.74,449.1 201.74,447.15 "
+       style="fill:#471164;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4051" />
     <polygon
-       points="204.65,447.15 206.1,446.18 207.56,447.15 207.56,449.1 206.1,450.07 204.65,449.1 "
-       style="fill:#440356;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="206.1,446.18 207.56,447.15 207.56,449.1 206.1,450.07 204.65,449.1 204.65,447.15 "
+       style="fill:#440356;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4053" />
     <polygon
-       points="200.29,444.23 201.74,443.26 203.2,444.23 203.2,446.17 201.74,447.14 200.29,446.17 "
-       style="fill:#440155;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,443.26 203.2,444.23 203.2,446.17 201.74,447.14 200.29,446.17 200.29,444.23 "
+       style="fill:#440155;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4055" />
     <polygon
-       points="203.2,444.23 204.65,443.26 206.1,444.23 206.1,446.17 204.65,447.14 203.2,446.17 "
-       style="fill:#481568;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,443.26 206.1,444.23 206.1,446.17 204.65,447.14 203.2,446.17 203.2,444.23 "
+       style="fill:#481568;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4057" />
     <polygon
-       points="201.74,441.3 203.2,440.33 204.65,441.3 204.65,443.25 203.2,444.22 201.74,443.25 "
-       style="fill:#470c5f;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,440.33 204.65,441.3 204.65,443.25 203.2,444.22 201.74,443.25 201.74,441.3 "
+       style="fill:#470c5f;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4059" />
     <polygon
-       points="204.65,441.3 206.1,440.33 207.56,441.3 207.56,443.25 206.1,444.22 204.65,443.25 "
-       style="fill:#46065a;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="206.1,440.33 207.56,441.3 207.56,443.25 206.1,444.22 204.65,443.25 204.65,441.3 "
+       style="fill:#46065a;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4061" />
     <polygon
-       points="200.29,438.38 201.74,437.41 203.2,438.38 203.2,440.32 201.74,441.29 200.29,440.32 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="201.74,437.41 203.2,438.38 203.2,440.32 201.74,441.29 200.29,440.32 200.29,438.38 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4063" />
     <polygon
-       points="203.2,438.38 204.65,437.41 206.1,438.38 206.1,440.32 204.65,441.29 203.2,440.32 "
-       style="fill:#481668;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,437.41 206.1,438.38 206.1,440.32 204.65,441.29 203.2,440.32 203.2,438.38 "
+       style="fill:#481668;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4065" />
     <polygon
-       points="201.74,435.46 203.2,434.48 204.65,435.46 204.65,437.4 203.2,438.37 201.74,437.4 "
-       style="fill:#46075a;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,434.48 204.65,435.46 204.65,437.4 203.2,438.37 201.74,437.4 201.74,435.46 "
+       style="fill:#46075a;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4067" />
     <polygon
-       points="204.65,435.46 206.1,434.48 207.56,435.46 207.56,437.4 206.1,438.37 204.65,437.4 "
-       style="fill:#460a5d;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="206.1,434.48 207.56,435.46 207.56,437.4 206.1,438.37 204.65,437.4 204.65,435.46 "
+       style="fill:#460a5d;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4069" />
     <polygon
-       points="203.2,432.53 204.65,431.56 206.1,432.53 206.1,434.47 204.65,435.44 203.2,434.47 "
-       style="fill:#481568;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,431.56 206.1,432.53 206.1,434.47 204.65,435.44 203.2,434.47 203.2,432.53 "
+       style="fill:#481568;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4071" />
     <polygon
-       points="206.1,432.53 207.56,431.56 209.01,432.53 209.01,434.47 207.56,435.44 206.1,434.47 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="207.56,431.56 209.01,432.53 209.01,434.47 207.56,435.44 206.1,434.47 206.1,432.53 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4073" />
     <polygon
-       points="201.74,429.61 203.2,428.64 204.65,429.61 204.65,431.55 203.2,432.52 201.74,431.55 "
-       style="fill:#450457;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,428.64 204.65,429.61 204.65,431.55 203.2,432.52 201.74,431.55 201.74,429.61 "
+       style="fill:#450457;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4075" />
     <polygon
-       points="204.65,429.61 206.1,428.64 207.56,429.61 207.56,431.55 206.1,432.52 204.65,431.55 "
-       style="fill:#470e61;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="206.1,428.64 207.56,429.61 207.56,431.55 206.1,432.52 204.65,431.55 204.65,429.61 "
+       style="fill:#470e61;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4077" />
     <polygon
-       points="203.2,426.68 204.65,425.71 206.1,426.68 206.1,428.62 204.65,429.59 203.2,428.62 "
-       style="fill:#471264;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,425.71 206.1,426.68 206.1,428.62 204.65,429.59 203.2,428.62 203.2,426.68 "
+       style="fill:#471264;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4079" />
     <polygon
-       points="206.1,426.68 207.56,425.71 209.01,426.68 209.01,428.62 207.56,429.59 206.1,428.62 "
-       style="fill:#440154;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="207.56,425.71 209.01,426.68 209.01,428.62 207.56,429.59 206.1,428.62 206.1,426.68 "
+       style="fill:#440154;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4081" />
     <polygon
-       points="201.74,423.76 203.2,422.79 204.65,423.76 204.65,425.7 203.2,426.67 201.74,425.7 "
-       style="fill:#440155;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="203.2,422.79 204.65,423.76 204.65,425.7 203.2,426.67 201.74,425.7 201.74,423.76 "
+       style="fill:#440155;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4083" />
     <polygon
-       points="204.65,423.76 206.1,422.79 207.56,423.76 207.56,425.7 206.1,426.67 204.65,425.7 "
-       style="fill:#471164;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="206.1,422.79 207.56,423.76 207.56,425.7 206.1,426.67 204.65,425.7 204.65,423.76 "
+       style="fill:#471164;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4085" />
     <polygon
-       points="203.2,420.83 204.65,419.86 206.1,420.83 206.1,422.78 204.65,423.75 203.2,422.78 "
-       style="fill:#471164;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.65,419.86 206.1,420.83 206.1,422.78 204.65,423.75 203.2,422.78 203.2,420.83 "
+       style="fill:#471164;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4087" />
     <polygon
-       points="206.1,420.83 207.56,419.86 209.01,420.83 209.01,422.78 207.56,423.75 206.1,422.78 "
-       style="fill:#440155;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="207.56,419.86 209.01,420.83 209.01,422.78 207.56,423.75 206.1,422.78 206.1,420.83 "
+       style="fill:#440155;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4089" />
     <polygon
-       points="223.93,555.6 79.5,555.6 79.5,575.7 223.93,575.7 "
-       style="fill:#ff0000;fill-opacity:0.25;stroke:none;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="79.5,555.6 79.5,575.7 223.93,575.7 223.93,555.6 "
+       style="fill:#ff0000;fill-opacity:0.25;stroke:none;stroke-width:1.07;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4091" />
     <line
        x1="79.5"
        y1="563.64001"
        x2="223.92999"
        y2="563.64001"
-       style="fill:none;stroke:#ff0000;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+       style="fill:none;stroke:#ff0000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        id="line4093" />
     <polygon
-       points="141.38,579.53 136.12,579.53 138.75,574.97 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="136.12,579.53 138.75,574.97 141.38,579.53 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4095" />
     <polygon
-       points="141.38,579.54 136.12,579.54 138.75,574.98 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="136.12,579.54 138.75,574.98 141.38,579.54 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4097" />
     <polygon
-       points="141.38,579.57 136.12,579.57 138.75,575.01 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="136.12,579.57 138.75,575.01 141.38,579.57 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4099" />
     <polygon
-       points="145.19,579.36 139.93,579.36 142.56,574.8 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="139.93,579.36 142.56,574.8 145.19,579.36 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4101" />
     <polygon
-       points="145.19,579.32 139.93,579.32 142.56,574.76 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="139.93,579.32 142.56,574.76 145.19,579.32 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4103" />
     <polygon
-       points="145.19,579.35 139.93,579.35 142.56,574.79 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="139.93,579.35 142.56,574.79 145.19,579.35 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4105" />
     <polygon
-       points="147.12,579.17 141.85,579.17 144.48,574.61 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="141.85,579.17 144.48,574.61 147.12,579.17 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4107" />
     <polygon
-       points="147.12,579.19 141.85,579.19 144.48,574.63 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="141.85,579.19 144.48,574.63 147.12,579.19 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4109" />
     <polygon
-       points="147.12,579.27 141.85,579.27 144.48,574.71 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="141.85,579.27 144.48,574.71 147.12,579.27 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4111" />
     <polygon
-       points="149.81,578.98 144.54,578.98 147.18,574.42 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="144.54,578.98 147.18,574.42 149.81,578.98 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4113" />
     <polygon
-       points="149.81,579.04 144.54,579.04 147.18,574.48 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="144.54,579.04 147.18,574.48 149.81,579.04 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4115" />
     <polygon
-       points="149.81,579.06 144.54,579.06 147.18,574.5 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="144.54,579.06 147.18,574.5 149.81,579.06 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4117" />
     <polygon
-       points="171.49,575.24 166.23,575.24 168.86,570.68 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="166.23,575.24 168.86,570.68 171.49,575.24 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4119" />
     <polygon
-       points="171.49,575.38 166.23,575.38 168.86,570.82 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="166.23,575.38 168.86,570.82 171.49,575.38 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4121" />
     <polygon
-       points="171.49,574.98 166.23,574.98 168.86,570.42 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="166.23,574.98 168.86,570.42 171.49,574.98 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4123" />
     <polygon
-       points="158.03,578.29 152.77,578.29 155.4,573.73 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="152.77,578.29 155.4,573.73 158.03,578.29 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4125" />
     <polygon
-       points="158.03,578.3 152.77,578.3 155.4,573.74 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="152.77,578.3 155.4,573.74 158.03,578.3 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4127" />
     <polygon
-       points="158.03,578.26 152.77,578.26 155.4,573.7 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="152.77,578.26 155.4,573.7 158.03,578.26 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4129" />
     <polygon
-       points="163.62,577.65 158.35,577.65 160.98,573.09 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="158.35,577.65 160.98,573.09 163.62,577.65 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4131" />
     <polygon
-       points="163.62,577.52 158.35,577.52 160.98,572.96 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="158.35,577.52 160.98,572.96 163.62,577.52 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4133" />
     <polygon
-       points="163.62,577.61 158.35,577.61 160.98,573.05 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="158.35,577.61 160.98,573.05 163.62,577.61 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4135" />
     <polygon
-       points="170.06,576.05 164.79,576.05 167.42,571.49 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="164.79,576.05 167.42,571.49 170.06,576.05 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4137" />
     <polygon
-       points="170.06,576.16 164.79,576.16 167.42,571.6 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="164.79,576.16 167.42,571.6 170.06,576.16 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4139" />
     <polygon
-       points="170.06,576.22 164.79,576.22 167.42,571.66 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="164.79,576.22 167.42,571.66 170.06,576.22 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4141" />
     <polygon
-       points="177.19,574.54 171.92,574.54 174.56,569.98 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="171.92,574.54 174.56,569.98 177.19,574.54 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4143" />
     <polygon
-       points="177.19,574.26 171.92,574.26 174.56,569.71 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="171.92,574.26 174.56,569.71 177.19,574.26 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4145" />
     <polygon
-       points="177.19,574.25 171.92,574.25 174.56,569.69 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="171.92,574.25 174.56,569.69 177.19,574.25 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4147" />
     <polygon
-       points="184.84,570.92 179.58,570.92 182.21,566.36 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="179.58,570.92 182.21,566.36 184.84,570.92 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4149" />
     <polygon
-       points="184.84,570.75 179.58,570.75 182.21,566.19 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="179.58,570.75 182.21,566.19 184.84,570.75 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4151" />
     <polygon
-       points="184.84,571.04 179.58,571.04 182.21,566.48 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="179.58,571.04 182.21,566.48 184.84,571.04 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4153" />
     <polygon
-       points="192.87,562.56 187.6,562.56 190.23,558 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="187.6,562.56 190.23,558 192.87,562.56 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4155" />
     <polygon
-       points="192.87,563.74 187.6,563.74 190.23,559.18 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="187.6,563.74 190.23,559.18 192.87,563.74 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4157" />
     <polygon
-       points="192.87,562.47 187.6,562.47 190.23,557.91 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="187.6,562.47 190.23,557.91 192.87,562.47 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4159" />
     <polygon
-       points="201.14,543.3 195.88,543.3 198.51,538.74 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.88,543.3 198.51,538.74 201.14,543.3 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4161" />
     <polygon
-       points="201.14,542.42 195.88,542.42 198.51,537.86 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.88,542.42 198.51,537.86 201.14,542.42 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4163" />
     <polygon
-       points="201.14,543.46 195.88,543.46 198.51,538.9 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="195.88,543.46 198.51,538.9 201.14,543.46 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4165" />
     <polygon
-       points="209.59,523.62 204.32,523.62 206.96,519.06 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.32,523.62 206.96,519.06 209.59,523.62 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4167" />
     <polygon
-       points="209.59,531.7 204.32,531.7 206.96,527.14 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.32,531.7 206.96,527.14 209.59,531.7 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4169" />
     <polygon
-       points="209.59,529.03 204.32,529.03 206.96,524.47 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="204.32,529.03 206.96,524.47 209.59,529.03 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4171" />
     <polygon
-       points="197.02,555.61 191.76,555.61 194.39,551.05 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="191.76,555.61 194.39,551.05 197.02,555.61 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4173" />
     <polygon
-       points="197.02,555.37 191.76,555.37 194.39,550.81 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="191.76,555.37 194.39,550.81 197.02,555.37 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4175" />
     <polygon
-       points="197.02,557.42 191.76,557.42 194.39,552.86 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="191.76,557.42 194.39,552.86 197.02,557.42 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4177" />
     <polygon
-       points="226.77,504.22 221.51,504.22 224.14,499.66 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="221.51,504.22 224.14,499.66 226.77,504.22 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4179" />
     <polygon
-       points="226.77,486.76 221.51,486.76 224.14,482.2 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="221.51,486.76 224.14,482.2 226.77,486.76 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4181" />
     <polygon
-       points="226.77,496.52 221.51,496.52 224.14,491.96 "
-       style="fill:#000000;stroke:none;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+       points="221.51,496.52 224.14,491.96 226.77,496.52 "
+       style="fill:#000000;stroke:none;stroke-width:0.71;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        id="polygon4183" />
     <polyline
        points="138.75,578.28 138.75,578.28 138.75,578.28 142.56,577.96 142.56,577.96 142.56,577.96 144.48,577.77 144.48,577.77 144.48,577.77 147.18,577.49 147.18,577.49 147.18,577.49 155.40,576.45 155.40,576.45 155.40,576.45 160.98,575.59 160.98,575.59 160.98,575.59 167.42,574.41 167.42,574.41 167.42,574.41 168.86,574.12 168.86,574.12 168.86,574.12 174.56,572.75 174.56,572.75 174.56,572.75 182.21,569.69 182.21,569.69 182.21,569.69 190.23,561.82 190.23,561.82 190.23,561.82 194.39,553.67 194.39,553.67 194.39,553.67 198.51,541.99 198.51,541.99 198.51,541.99 206.96,526.57 206.96,526.57 206.96,526.57 224.14,494.31 224.14,494.31 224.14,494.31 "
-       style="fill:none;stroke:#000000;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+       style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        id="polyline4185" />
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.75"
+     x="194.46028"
+     y="626.29871"
+     id="text6332-2-3"><tspan
+       style="stroke-width:0.75"
+       sodipodi:role="line"
+       id="tspan6336-1-3"
+       x="194.46028"
+       y="626.29871"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.75"
+         id="tspan6338-7-0">31.6 mM Total</tspan></tspan></text>
   <polyline
      id="polyline4189"
      style="fill:none;stroke:#000000;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
@@ -2280,7 +2325,7 @@
      id="text4235"
      lengthAdjust="spacingAndGlyphs"
      textLength="16.5"
-     style="font-size:11.19999981px;font-family:Arimo;white-space:pre"
+     style="font-size:11.2px;font-family:Arimo;white-space:pre"
      y="627.35999"
      x="153.64999"
      transform="translate(0,35)">2+</text>
@@ -2322,7 +2367,7 @@
      id="text4247"
      lengthAdjust="spacingAndGlyphs"
      textLength="16.5"
-     style="font-size:11.19999981px;font-family:Arimo;white-space:pre"
+     style="font-size:11.2px;font-family:Arimo;white-space:pre"
      transform="rotate(-90,276.18,262.4)">2+</text>
   <text
      id="text4249"
@@ -4012,6 +4057,19 @@
        style="fill:none;stroke:#000000;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        id="polyline4980" />
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.75"
+     x="424.44562"
+     y="627.04083"
+     id="text6332-2-3-6"><tspan
+       style="stroke-width:0.75"
+       sodipodi:role="line"
+       id="tspan6336-1-3-6"
+       x="424.44562"
+       y="627.04083"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.75"
+         id="tspan6338-7-0-0">25.0 mM Total</tspan></tspan></text>
   <polyline
      id="polyline4984"
      style="fill:none;stroke:#000000;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
@@ -4167,7 +4225,7 @@
      id="text5030"
      lengthAdjust="spacingAndGlyphs"
      textLength="16.5"
-     style="font-size:11.19999981px;font-family:Arimo;white-space:pre"
+     style="font-size:11.2px;font-family:Arimo;white-space:pre"
      y="627.35999"
      x="391.25"
      transform="translate(0,35)">2+</text>
@@ -5818,6 +5876,10 @@
        style="fill:none;stroke:#000000;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        id="polyline5761" />
   </g>
+  <path
+     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;marker-end:url(#Arrow2Mend-2-5)"
+     d="m 633.34,599.13 -0.0768,32.17024"
+     id="path2168-6-2" />
   <polyline
      id="polyline5765"
      style="fill:none;stroke:#000000;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
@@ -5973,7 +6035,7 @@
      id="text5811"
      lengthAdjust="spacingAndGlyphs"
      textLength="16.5"
-     style="font-size:11.19999981px;font-family:Arimo;white-space:pre"
+     style="font-size:11.2px;font-family:Arimo;white-space:pre"
      y="627.35999"
      x="628.84998"
      transform="translate(0,35)">2+</text>
@@ -6015,7 +6077,7 @@
      transform="translate(0,35)">G</text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75"
      x="-112.81541"
      y="52.921013"
      id="text6057"
@@ -6024,10 +6086,10 @@
        id="tspan6055"
        x="-112.81541"
        y="52.921013"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75;">L-Glutamic acid</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75">L-Glutamic acid</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75"
      x="-114.44848"
      y="271.09378"
      id="text6057-6"
@@ -6036,10 +6098,10 @@
        id="tspan6055-2"
        x="-114.44848"
        y="271.09378"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75;">Glutathione</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75">Glutathione</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75"
      x="-115.74635"
      y="308.73465"
      id="text6057-6-8"
@@ -6048,10 +6110,10 @@
        id="tspan6055-2-4"
        x="-115.74635"
        y="308.73465"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75;">Frutose-1,6-BP</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75">Frutose-1,6-BP</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75"
      x="-115.83849"
      y="343.95178"
      id="text6057-6-8-7"
@@ -6060,10 +6122,10 @@
        id="tspan6055-2-4-2"
        x="-115.83849"
        y="343.95178"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75;">UDP-N-acylGln</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75">UDP-N-acylGln</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75"
      x="-115.65772"
      y="381.94763"
      id="text6057-6-8-7-4"
@@ -6072,10 +6134,10 @@
        id="tspan6055-2-4-2-0"
        x="-115.65772"
        y="381.94763"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75;">L-Aspartic acid</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75">L-Aspartic acid</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75"
      x="-115.29388"
      y="364.85172"
      id="text6057-6-8-7-4-6"
@@ -6084,10 +6146,10 @@
        id="tspan6055-2-4-2-0-2"
        x="-115.29388"
        y="364.85172"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75;">Glucose-6-P</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75">Glucose-6-P</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75"
      x="-115.07934"
      y="391.34686"
      id="text6057-6-8-7-4-9"
@@ -6096,10 +6158,10 @@
        id="tspan6055-2-4-2-0-9"
        x="-115.07934"
        y="391.34686"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75;">L-Valine</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75">L-Valine</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75"
      x="-115.24271"
      y="399.93536"
      id="text6057-6-8-7-4-9-0"
@@ -6108,7 +6170,7 @@
        id="tspan6055-2-4-2-0-9-8"
        x="-115.24271"
        y="399.93536"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00000005px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75;">L-Glutamine</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75">L-Glutamine</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.75"
@@ -6195,7 +6257,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.75">dTTP</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.75;"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.75"
      x="79.067253"
      y="588.11932"
      id="text6332"><tspan
@@ -6203,11 +6265,11 @@
        id="tspan6336"
        x="79.067253"
        y="588.11932"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1"
    id="tspan6338">Biological free Mg     = 0.5 to 3 mM</tspan> </tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.39460611px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.31824434"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.39461px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.318244"
      x="132.94676"
      y="584.06262"
      id="text6342"><tspan
@@ -6215,7 +6277,7 @@
        id="tspan6340"
        x="132.94676"
        y="584.06262"
-       style="fill:#ff0000;fill-opacity:1;stroke-width:0.31824434">2+</tspan></text>
+       style="fill:#ff0000;fill-opacity:1;stroke-width:0.318244">2+</tspan></text>
   <text
      id="text3737-4"
      lengthAdjust="spacingAndGlyphs"
@@ -6290,7 +6352,7 @@
      sodipodi:nodetypes="cccc" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.99999952px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.75"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.75"
      x="237.0327"
      y="600.88751"
      id="text6332-2"><tspan
@@ -6351,4 +6413,25 @@
      id="path8654-8-7"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
+  <path
+     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+     d="m 188.66,598.16 -0.0768,32.17024"
+     id="path2168" />
+  <path
+     style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;marker-end:url(#Arrow2Mend-2)"
+     d="m 420.45,598.15 -0.0768,32.17024"
+     id="path2168-6" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.75"
+     x="638.45428"
+     y="625.98663"
+     id="text6332-2-3-6-7"><tspan
+       style="stroke-width:0.75"
+       sodipodi:role="line"
+       id="tspan6336-1-3-6-1"
+       x="638.45428"
+       y="625.98663"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.75"
+         id="tspan6338-7-0-0-1">6.5 mM Total</tspan></tspan></text>
 </svg>

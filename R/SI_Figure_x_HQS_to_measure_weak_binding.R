@@ -23,10 +23,13 @@ df = df.HQS %>% filter(Chelator == Ligand)
 
 fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
           df %>% filter(Sample == "No chelator") %>% filter(EDTA == "EDTA = 0 mM"),
-          start = list(I.max = 150000, I.min = 0, K = 10),
+          start = list(I.max = 150000, I.min = 0, K = 0.2),
           algorithm = "port",
           lower = c(0, 0, 0),
           control = nls.control(warnOnly = TRUE))
+
+df$Sample = factor(df$Sample,
+                   levels = c("No chelator", "Chelator"))
 
 Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
     geom_point() +
@@ -35,7 +38,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   ggtitle("L-Glutamate") +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
-  scale_color_manual(values = viridis(5), name = "Chelator") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
     theme(axis.line = element_line(colour = 'black', size = 1.5),
           axis.ticks = element_line(colour = "black", size = 1.5),
           axis.text.x = element_text(color = "Black", size = 16),
@@ -60,7 +63,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, by = 0.25)) +
-  scale_color_manual(values = viridis(5), name = "Ligand") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
     theme(axis.line = element_line(colour = 'black', size = 1.5),
           axis.ticks = element_line(colour = "black", size = 1.5),
           axis.text.x = element_text(color = "Black", size = 16),
@@ -99,12 +102,12 @@ Mg.free.chelator = function(Conc.Mg){
   }
 
 Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
-    geom_abline(slope = 1, intercept = 0, color = "dimgrey", size = 1.0) +
+    geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
     geom_point() +
     theme_classic() +
     geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
     #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
-    scale_color_manual(values = viridis(5)) +
+     scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
     scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
     scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
     ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
@@ -146,10 +149,13 @@ df = df.HQS %>% filter(Chelator == Ligand)
 
 fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
           df %>% filter(Sample == "No chelator") %>% filter(EDTA == "EDTA = 0 mM"),
-          start = list(I.max = 150000, I.min = 0, K = 10),
+         start = list(I.max = 150000, I.min = 0, K = 0.2),
           algorithm = "port",
           lower = c(0, 0, 0),
           control = nls.control(warnOnly = TRUE))
+
+df$Sample = factor(df$Sample,
+                   levels = c("No chelator", "Chelator"))
 
 Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   geom_point() +
@@ -157,7 +163,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   #geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
-  scale_color_manual(values = viridis(5), name = "Chelator") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -183,7 +189,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
-  scale_color_manual(values = viridis(5), name = "Ligand") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -221,12 +227,12 @@ Mg.free.chelator = function(Conc.Mg){
 }
 
 Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
-  geom_abline(slope = 1, intercept = 0, color = "dimgrey", size = 1.0) +
+  geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
   geom_point() +
   theme_classic() +
   geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
   #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
-  scale_color_manual(values = viridis(5)) +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
@@ -269,10 +275,13 @@ df = df.HQS %>% filter(Chelator == Ligand)
 
 fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
           df %>% filter(Sample == "No chelator") %>% filter(EDTA == "EDTA = 0 mM"),
-          start = list(I.max = 150000, I.min = 0, K = 10),
+         start = list(I.max = 150000, I.min = 0, K = 0.2),
           algorithm = "port",
           lower = c(0, 0, 0),
           control = nls.control(warnOnly = TRUE))
+
+df$Sample = factor(df$Sample,
+                   levels = c("No chelator", "Chelator"))
 
 Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   geom_point() +
@@ -281,7 +290,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   #geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
-  scale_color_manual(values = viridis(5), name = "Chelator") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -306,7 +315,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
-  scale_color_manual(values = viridis(5), name = "Ligand") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -345,12 +354,12 @@ Mg.free.chelator = function(Conc.Mg){
 }
 
 Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
-  geom_abline(slope = 1, intercept = 0, color = "dimgrey", size = 1.0) +
+  geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
   geom_point() +
   theme_classic() +
   geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
   #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
-  scale_color_manual(values = viridis(5)) +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
@@ -398,13 +407,17 @@ fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
           lower = c(0, 0, 0),
           control = nls.control(warnOnly = TRUE))
 
+df$Sample = factor(df$Sample,
+                   levels = c("No chelator", "Chelator"))
+
+
 Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   geom_point() +
   theme_classic() +
   #geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
-  scale_color_manual(values = viridis(5), name = "Chelator") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -429,7 +442,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
   ggtitle("L-Valine") +
-  scale_color_manual(values = viridis(5), name = "Ligand") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -467,12 +480,12 @@ Mg.free.chelator = function(Conc.Mg){
 }
 
 Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
-  geom_abline(slope = 1, intercept = 0, color = "dimgrey", size = 1.0) +
+  geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
   geom_point() +
   theme_classic() +
   geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
   #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
-  scale_color_manual(values = viridis(5)) +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
@@ -515,10 +528,13 @@ df = df.HQS %>% filter(Chelator == Ligand)
 
 fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
           df %>% filter(Sample == "No chelator") %>% filter(EDTA == "EDTA = 0 mM"),
-          start = list(I.max = 150000, I.min = 0, K = 10),
+         start = list(I.max = 150000, I.min = 0, K = 0.2),
           algorithm = "port",
           lower = c(0, 0, 0),
           control = nls.control(warnOnly = TRUE))
+
+df$Sample = factor(df$Sample,
+                   levels = c("No chelator", "Chelator"))
 
 Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   geom_point() +
@@ -526,7 +542,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   #geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
-  scale_color_manual(values = viridis(5), name = "Chelator") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -551,7 +567,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
-  scale_color_manual(values = viridis(5), name = "Ligand") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -589,12 +605,12 @@ Mg.free.chelator = function(Conc.Mg){
 }
 
 Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
-  geom_abline(slope = 1, intercept = 0, color = "dimgrey", size = 1.0) +
+  geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
   geom_point() +
   theme_classic() +
   geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
   #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
-  scale_color_manual(values = viridis(5)) +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
@@ -622,6 +638,12 @@ write.csv(df.result,
           "Figures/SI_Figure_X_HQS_to_measure_weak_binders/Kapp_fit_glutamine.csv",
           row.names = FALSE)
 
+
+df$Sample = factor(df$Sample,
+                   levels = c("No chelator", "Chelator"))
+
+
+
 ####Analyze pyruvate data####
 
 unique(df.HQS$Chelator)
@@ -632,10 +654,13 @@ df = df.HQS %>% filter(Chelator == Ligand)
 
 fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
           df %>% filter(Sample == "No chelator") %>% filter(EDTA == "EDTA = 0 mM"),
-          start = list(I.max = 150000, I.min = 0, K = 10),
+         start = list(I.max = 150000, I.min = 0, K = 0.2),
           algorithm = "port",
           lower = c(0, 0, 0),
           control = nls.control(warnOnly = TRUE))
+
+df$Sample = factor(df$Sample,
+                   levels = c("No chelator", "Chelator"))
 
 Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   geom_point() +
@@ -643,7 +668,7 @@ Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
   #geom_function(fun = fit.form, color = "black") +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
-  scale_color_manual(values = viridis(5), name = "Chelator") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -668,7 +693,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
   ylab("HQS emmission") +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
-  scale_color_manual(values = viridis(5), name = "Ligand") +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
         axis.ticks = element_line(colour = "black", size = 1.5),
         axis.text.x = element_text(color = "Black", size = 16),
@@ -706,12 +731,12 @@ Mg.free.chelator = function(Conc.Mg){
 }
 
 Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
-  geom_abline(slope = 1, intercept = 0, color = "dimgrey", size = 1.0) +
+  geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
   geom_point() +
   theme_classic() +
   geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
   #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
-  scale_color_manual(values = viridis(5)) +
+   scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
   ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
@@ -756,4 +781,4 @@ ggsave("Figures/SI_Figure_X_HQS_to_measure_weak_binders/SI_Figure_X_HQS_binding.
        width = 6, scale = 3)
 
 ggsave("Figures/SI_Figure_X_HQS_to_measure_weak_binders/SI_Figure_X_HQS_binding.png",
-       width = 6, scale = 3)
+       width = 6, scale = 3, dpi = 600)

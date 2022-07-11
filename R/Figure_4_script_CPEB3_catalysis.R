@@ -41,7 +41,6 @@ ggplot(df, aes(x = Time.min, y = f.cleaved, color = Replicate)) +
   xlab("Time (min)") +
   ylab("Fraction cleaved")
 
-ggsave("Raw_data_plot.png", width = 10, height = 4)
 
 ####Filter out long 25 mM Mg Time points####
 
@@ -168,7 +167,7 @@ C = ggplot(df.result, aes(x = Condition, y = Estimate)) +
 
 C
 
-####C####
+####B####
 
 B = ggplot(mapping =  aes(x = Time.min,
                            shape = Replicate,
@@ -192,6 +191,32 @@ B = ggplot(mapping =  aes(x = Time.min,
   ylab("Fraction cleaved")
 
 B
+
+ggplot(mapping =  aes(x = Time.min,
+                      shape = Replicate,
+                      group = Replicate,
+                      y = f.cleaved,
+                      color = Condition)) +
+  geom_point(data = df) +
+  geom_line(data = df.model) +
+  facet_wrap(~Condition, ncol = 1) +
+  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
+  theme_classic() +
+  #scale_x_continuous(trans = "log10") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, color = "black", size = 16),
+        axis.text.y = element_text(color = "black", size = 16),
+        axis.title.x = element_text(size = 16),
+        strip.background = element_rect(size = 1),
+        strip.text = element_markdown(color = "Black", size = 14),
+        axis.title.y = element_text(size = 16),
+        legend.position = "none") +
+  xlab("Time (min)") +
+  ylab("Fraction cleaved")
+
+ggsave("Figures/Figure_4_CPEB3_catalysis/Figure_4B_CPEB3_catalysis_no_log.png",
+       width = 1.5, height = 4, scale = 2.5, bg = "white")
+
+
 
 ####A###
 

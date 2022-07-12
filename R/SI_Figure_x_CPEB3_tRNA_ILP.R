@@ -19,23 +19,25 @@ Figure_A
 
 #### SI Figure B Degradation verses N CPEB3 ####
 
-vector.files = paste("Figures/Figure_2/CPEB3_data_files", list.files("Figures/Figure_2/CPEB3_data_files"), sep = "/")
+list.files("Figures/Figure_3_degredation")
+
+vector.files = paste("Figures/Figure_3_degredation/CPEB3_data_files", list.files("Figures/Figure_3_degredation/CPEB3_data_files"), sep = "/")
 
 list.df = lapply(vector.files, read.csv)
 
 df = bind_rows(list.df)
 
 df$Condition = factor(df$Condition,
-                      levels = c("2 mM free Mg",
+                      levels = c("25 mM Free Mg",
+                                 "2 mM free Mg",
                                  "Eco80",
                                  "NTPCM",
-                                 "WMCM",
-                                 "25 mM Free Mg"),
-                      labels = c("2 mM free Mg",
+                                 "WMCM"),
+                      labels = c("25 mM free Mg",
+                                 "2 mM free Mg",
                                  "Eco80",
                                  "NTPCM",
-                                 "WMCM",
-                                 "25 mM free Mg"))
+                                 "WMCM"))
 
 unique(df$BP)
 
@@ -73,7 +75,7 @@ SI_figure_B = ggplot(df, aes(x = N, y = Reactivity,
   annotate("text", x = 33, y = -150, label = "P1-3'", color = "white") +
   annotate("text", x = 42, y = -150, label = "P4-5'", color = "white") +
   annotate("text", x = 53, y = -150, label = "P4-3'", color = "white") +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
+  scale_color_manual(values = c("red", "dimgrey", viridis(n =  7)[c(3, 1, 6)])) +
   theme_classic()+
   ylab("Estimated dCounts/dt") +
   xlab("Nucleotide") +
@@ -104,7 +106,7 @@ Figure_C
 
 #### SI Figure B Degradation verses N CPEB3 ####
 
-vector.files = paste("Figures/Figure_2/tRNA_data_files", list.files("Figures/Figure_2/tRNA_data_files"), sep = "/")
+vector.files = paste("Figures/Figure_3_degredation/tRNA_data_files", list.files("Figures/Figure_3_degredation/tRNA_data_files"), sep = "/")
 
 list.df = lapply(vector.files, read.csv)
 
@@ -115,16 +117,16 @@ df = df %>% filter(!is.na(Reactivity)) %>%
   filter(!is.na(Condition))
 
 df$Condition = factor(df$Condition,
-                      levels = c("2 mM free Mg",
+                      levels = c("25 mM Free Mg",
+                                 "2 mM free Mg",
                                  "Eco80",
                                  "NTPCM",
-                                 "WMCM",
-                                 "25 mM Free Mg"),
-                      labels = c("2 mM free Mg",
+                                 "WMCM"),
+                      labels = c("25 mM free Mg",
+                                 "2 mM free Mg",
                                  "Eco80",
                                  "NTPCM",
-                                 "WMCM",
-                                 "25 mM free Mg"))
+                                 "WMCM"))
 
 df$BP = factor(df$BP,
                levels = c("Single stranded",
@@ -160,7 +162,7 @@ SI_figure_D = ggplot(df, aes(x = N, y = Reactivity,
   annotate("text", x = 41, y = -300, label = "P3-3'", color = "white") +
   annotate("text", x = 51, y = -300, label = "P4-5'", color = "white") +
   annotate("text", x = 63, y = -300, label = "P4-3'", color = "white") +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
+  scale_color_manual(values = c("red", "dimgrey", viridis(n =  7)[c(3, 1, 6)])) +
   theme_classic()+
   ylab("Estimated dCounts/dt") +
   xlab("Nucleotide") +
@@ -189,4 +191,8 @@ list.files("Figures/SI_Figure_X_CPEB3_tRNAphe_ILP")
 ggsave("Figures/SI_Figure_X_CPEB3_tRNAphe_ILP/SI_figure_x_CPEB3_tRNA_ILP.svg",
        SI_figure_X,
        bg = "white",
-       scale = 1.5)
+       scale = 3)
+ggsave("Figures/SI_Figure_X_CPEB3_tRNAphe_ILP/SI_figure_x_CPEB3_tRNA_ILP.png",
+       SI_figure_X,
+       bg = "white",
+       scale = 3)

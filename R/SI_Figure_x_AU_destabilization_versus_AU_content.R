@@ -1,19 +1,26 @@
 
+library(tidyverse)
+library(ggpubr)
+library(ggtext)
+
 list.files("Figures/Figure_x_AU_destabilization_versus_AU_content")
 
 df = read.csv("Figures/Figure_x_AU_destabilization_versus_AU_content/ddG_data.csv")
 
 head(df)
 
-ggplot(df %>% filter(Condition == "NTPCM"), aes(x = AU.content, y = ddG.kcal.mol,
+View(df)
+
+ggplot(df %>% filter(Condition != "2 mM free"), aes(x = AU.content, y = ddG.kcal.mol,
                                                 ymax = ddG.kcal.mol + error, ymin = ddG.kcal.mol - error,
                                                 label = Label)) +
+  facet_wrap(~Condition) +
   geom_point() +
   geom_smooth(method = "lm", se = F) +
   stat_regline_equation(aes(label = ..eq.label..)) +
   stat_regline_equation(aes(label = ..rr.label..), label.y = 0.7) +
   theme_classic() +
-  scale_y_continuous(limits = c(0.25, 0.75)) +
+  #scale_y_continuous(limits = c(0.25, 0.75)) +
   xlab("AU content (%)") +
   ylab("ddG (kcal/mol)") +
   theme(axis.line = element_line(colour = 'black'),
@@ -28,3 +35,8 @@ ggplot(df %>% filter(Condition == "NTPCM"), aes(x = AU.content, y = ddG.kcal.mol
         legend.title = element_text(color = "Black", size = 14))
 
 ggsave("Figures/Figure_x_AU_destabilization_versus_AU_content/SI_figure_x_AU_destabilization_versus_AU_content.svg")
+ggsave("Figures/Figure_x_AU_destabilization_versus_AU_content/SI_figure_x_AU_destabilization_versus_AU_content.png",
+       dpi = 600,
+       width = 4,
+       height = 2,
+       scale = 1.5)

@@ -77,7 +77,7 @@ SI_figure_B = ggplot(df, aes(x = N, y = Reactivity,
   annotate("text", x = 53, y = -150, label = "P4-3'", color = "white") +
   scale_color_manual(values = c("red", "dimgrey", viridis(n =  7)[c(3, 1, 6)])) +
   theme_classic()+
-  ylab("Estimated dCounts/dt") +
+  ylab("Degredation (counts/hour)") +
   xlab("Nucleotide") +
   xlim(22, 56) +
   ylim(-200, 1500) +
@@ -164,7 +164,7 @@ SI_figure_D = ggplot(df, aes(x = N, y = Reactivity,
   annotate("text", x = 63, y = -300, label = "P4-3'", color = "white") +
   scale_color_manual(values = c("red", "dimgrey", viridis(n =  7)[c(3, 1, 6)])) +
   theme_classic()+
-  ylab("Estimated dCounts/dt") +
+  ylab("Degredation (counts/hour)") +
   xlab("Nucleotide") +
   xlim(24, 65) +
   ylim(-400, 5000) +
@@ -195,4 +195,4 @@ ggsave("Figures/SI_Figure_X_CPEB3_tRNAphe_ILP/SI_figure_x_CPEB3_tRNA_ILP.svg",
 ggsave("Figures/SI_Figure_X_CPEB3_tRNAphe_ILP/SI_figure_x_CPEB3_tRNA_ILP.png",
        SI_figure_X,
        bg = "white",
-       scale = 3)
+       scale = 1.5)

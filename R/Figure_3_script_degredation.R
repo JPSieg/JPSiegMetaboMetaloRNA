@@ -38,28 +38,23 @@ df = df %>% filter(!is.na(Reactivity)) %>%
   filter(!is.na(Condition))
 
 df$Condition = factor(df$Condition,
-                      levels = c("2 mM free Mg",
+                      levels = c("25 mM Free Mg",
+                                 "2 mM free Mg",
                                  "Eco80",
                                  "NTPCM",
-                                 "WMCM",
-                                 "25 mM Free Mg"),
-                      labels = c("2 mM free Mg",
+                                 "WMCM"),
+                      labels = c("25 mM free Mg",
+                                 "2 mM free Mg",
                                  "Eco80",
                                  "NTPCM",
-                                 "WMCM",
-                                 "25 mM free Mg"))
+                                 "WMCM"))
 
 unique(df$BP)
 
 df$BP = factor(df$BP,
-               levels = c("Single stranded",
-                          "Non-cannonical",
-                          "WC",
-                          "WC + Non-cannonical"),
-               labels = c("SS",
+               levels = c("SS",
                           "NC",
-                          "WC",
-                          "WC + NC"))
+                          "WC"))
 
 
 Figure_3C = ggplot(df, aes(x = N, y = Reactivity,
@@ -82,9 +77,9 @@ Figure_3C = ggplot(df, aes(x = N, y = Reactivity,
   annotate("text", x = 32, y = -150, label = "P2-3'", color = "white") +
   annotate("text", x = 47.5, y = -150, label = "P3-5'", color = "white") +
   annotate("text", x = 60.5, y = -150, label = "P3-3'", color = "white") +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
+  scale_color_manual(values = c( "red", "dimgrey", viridis(n =  7)[c(3, 1, 6)])) +
   theme_classic()+
-  ylab("Estimated dCounts/dt") +
+  ylab("Degradation (counts/hour)") +
   xlab("Nucleotide") +
   xlim(29, 63) +
   ylim(-200, 1500) +
@@ -103,6 +98,45 @@ Figure_3C = ggplot(df, aes(x = N, y = Reactivity,
 Figure_3C
 
 ####Figure 3D####
+
+
+unique(df$Condition)
+
+comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
+                   c("25 mM free Mg", "Eco80"),
+                   c("25 mM free Mg", "NTPCM"),
+                   c("25 mM free Mg", "WMCM"))
+
+Figure_3D = ggplot(df %>% filter(Reactivity > -200), aes(x = Condition, y = Reactivity,
+                           ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
+                           color = Condition)) +
+  facet_wrap(~BP, nrow = 1) +
+  geom_line(mapping = aes(group = N), color = "dimgrey") +
+  geom_boxplot(alpha = 0.01) +
+  geom_beeswarm() +
+  #stat_compare_means(comparisons = comparisons, method = "t.test") +
+  scale_color_manual(values = c("red", "dimgrey", viridis(n =  7)[c(3, 1, 6)])) +
+  theme_classic()+
+  ggtitle("Guanine aptamer") +
+  ylab("Degradation (counts/hour)") +
+  theme(axis.line.x = element_line(colour = 'black'),
+        axis.line.y = element_line(colour = 'black'),
+        axis.ticks = element_line(colour = "black"),
+        strip.background = element_rect(size = 1),
+        strip.text = element_markdown(color = "Black", size = 14),axis.text.x = element_text(color = "Black", size = 16,
+                                                                                             angle = 45, hjust = 1, vjust = 1),
+        axis.text.y = element_text(color = "Black", size = 16),
+        axis.title.y = element_text(color = "Black", size = 16),
+        legend.title = element_text(color = "Black", size = 10),
+        axis.title.x = element_blank(),
+        legend.text = element_text(color = "Black", size = 10),
+        legend.position = "none",
+        plot.title = element_text(color = "Black", size = 16))
+
+Figure_3D
+
+
+####Figure 3E####
 
 list.files("Figures/Figure_3_degredation")
 
@@ -132,47 +166,12 @@ Bottom = plot_grid(Eco80, Eco80.90, nrow = 1) +
   annotate("text", label = "Rg = 28.3 (1.6) A", x = 0.75, y = 0.1, size = 5) +
   theme(panel.background = element_blank())
 
-Figure_3D = plot_grid(Top,
-          Bottom,
-          ncol = 1,
-          label_x = c(0.19, 0.36),
-          labels = c("2 mM free Mg2+", "Eco80"),
-          label_size = 16)
-
-####Figure 3E####
-
-unique(df$Condition)
-
-comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
-                   c("25 mM free Mg", "Eco80"),
-                   c("25 mM free Mg", "NTPCM"),
-                   c("25 mM free Mg", "WMCM"))
-
-Figure_3E = ggplot(df, aes(x = Condition, y = Reactivity,
-                           ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
-                           color = Condition, group = Condition)) +
-  facet_wrap(~BP, nrow = 1) +
-  geom_boxplot(alpha = 0.01) +
-  geom_beeswarm() +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  theme_classic()+
-  ggtitle("Guanine aptamer") +
-  ylab("Estimated dCounts/dt") +
-  theme(axis.line.x = element_line(colour = 'black'),
-        axis.line.y = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        strip.background = element_rect(size = 1),
-        strip.text = element_markdown(color = "Black", size = 14),axis.text.x = element_text(color = "Black", size = 16,
-                                   angle = 45, hjust = 1, vjust = 1),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.y = element_text(color = "Black", size = 16),
-        legend.title = element_text(color = "Black", size = 10),
-        axis.title.x = element_blank(),
-        legend.text = element_text(color = "Black", size = 10),
-        legend.position = "none",
-        plot.title = element_text(color = "Black", size = 16))
-
-Figure_3E
+Figure_3E = plot_grid(Top,
+                      Bottom,
+                      ncol = 1,
+                      label_x = c(0.19, 0.36),
+                      labels = c("2 mM free Mg2+", "Eco80"),
+                      label_size = 16)
 
 ####Organize CPEB3 data####
 
@@ -185,78 +184,23 @@ list.df = lapply(vector.files, read.csv)
 df = bind_rows(list.df)
 
 df$Condition = factor(df$Condition,
-                      levels = c("2 mM free Mg",
+                      levels = c("25 mM Free Mg",
+                                 "2 mM free Mg",
                                  "Eco80",
                                  "NTPCM",
-                                 "WMCM",
-                                 "25 mM Free Mg"),
-                      labels = c("2 mM free Mg",
+                                 "WMCM"),
+                      labels = c("25 mM free Mg",
+                                 "2 mM free Mg",
                                  "Eco80",
                                  "NTPCM",
-                                 "WMCM",
-                                 "25 mM free Mg"))
+                                 "WMCM"))
 
 unique(df$BP)
 
 df$BP = factor(df$BP,
-               levels = c("Single stranded",
-                          "Non-cannonical",
-                          "WC",
-                          "WC + Non-cannonical"),
-               labels = c("SS",
+               levels = c("SS",
                           "NC",
-                          "WC",
-                          "WC + NC"))
-
-####Make SI Figure for CPEB3####
-
-df = df %>% filter(!is.na(Reactivity)) %>%
-  filter(!is.na(Condition))
-
-SI_figure_X.1 = ggplot(df, aes(x = N, y = Reactivity,
-                           ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
-                           color = Condition, group = Condition)) +
-  geom_pointrange() +
-  geom_line() +
-  geom_segment(aes(x = 22, y = -150, xend = 27, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 27, y = -150, xend = 29, yend = -150),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 29, y = -150, xend = 31, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 31, y = -150, xend = 36, yend = -150),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 36, y = -150, xend = 39, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 39, y = -150, xend = 45, yend = -150),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 45, y = -150, xend = 50, yend = -150),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 50, y = -150, xend = 56, yend = -150),
-               color ="black", size = 5) +
-  annotate("text", x = 28, y = -150, label = "P3", color = "white") +
-  annotate("text", x = 33.5, y = -150, label = "P1", color = "white") +
-  annotate("text", x = 41.5, y = -150, label = "P4", color = "white") +
-  annotate("text", x = 53, y = -150, label = "P4", color = "white") +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  theme_classic()+
-  ylab("Estimated dCounts/dt") +
-  xlab("Nucleotide") +
-  xlim(22, 56) +
-  ylim(-200, 1500) +
-  theme(axis.line.x = element_line(colour = 'black'),
-        axis.line.y = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_text(color = "Black", size = 18),
-        legend.text = element_text(color = "Black", size = 8),
-        legend.position = c(0.55, 0.85),
-        legend.title = element_blank(),
-        legend.background = element_blank())
-
-SI_figure_X.1
+                          "WC"))
 
 unique(df$Condition)
 
@@ -265,16 +209,20 @@ comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
                    c("25 mM free Mg", "NTPCM"),
                    c("25 mM free Mg", "WMCM"))
 
+df = df %>% filter(!is.na(Condition))
+
 Figure_3F = ggplot(df, aes(x = Condition, y = Reactivity,
                            ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                            color = Condition, group = Condition)) +
   facet_wrap(~BP) +
+  geom_line(mapping = aes(group = N), color = "dimgrey") +
   geom_boxplot(alpha = 0.01) +
   geom_beeswarm() +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
+  #stat_compare_means(comparisons = comparisons, method = "t.test") +
+  scale_color_manual(values = c("red", "dimgrey", viridis(n =  7)[c(3, 1, 6)])) +
   theme_classic()+
   ggtitle("CPEB3 ribozyme") +
-  ylab("Estimated dCounts/dt") +
+  ylab("Degradation (counts/hour)") +
   theme(axis.line.x = element_line(colour = 'black'),
         axis.line.y = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
@@ -305,74 +253,21 @@ df = df %>% filter(!is.na(Reactivity)) %>%
   filter(!is.na(Condition))
 
 df$Condition = factor(df$Condition,
-                      levels = c("2 mM free Mg",
+                      levels = c("25 mM Free Mg",
+                                 "2 mM free Mg",
                                  "Eco80",
                                  "NTPCM",
-                                 "WMCM",
-                                 "25 mM Free Mg"),
-                      labels = c("2 mM free Mg",
+                                 "WMCM"),
+                      labels = c("25 mM free Mg",
+                                 "2 mM free Mg",
                                  "Eco80",
                                  "NTPCM",
-                                 "WMCM",
-                                 "25 mM free Mg"))
+                                 "WMCM"))
 
 df$BP = factor(df$BP,
-               levels = c("Single stranded",
-                          "Non-cannonical",
-                          "WC",
-                          "WC + Non-cannonical"),
-               labels = c("SS",
+               levels = c("SS",
                           "NC",
-                          "WC",
-                          "WC + NC"))
-
-
-SI_figure_X.2 = ggplot(df, aes(x = N, y = Reactivity,
-                           ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
-                           color = Condition, group = Condition)) +
-  geom_pointrange() +
-  geom_line() +
-  geom_segment(aes(x = 24, y = -300, xend = 25, yend = -300),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 25, y = -300, xend = 27, yend = -300),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 27, y = -300, xend = 31, yend = -300),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 31, y = -300, xend = 39, yend = -300),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 39, y = -300, xend = 43, yend = -300),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 43, y = -300, xend = 49, yend = -300),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 49, y = -300, xend = 53, yend = -300),
-               color ="black", size = 5) +
-  geom_segment(aes(x = 53, y = -300, xend = 61, yend = -300),
-               color ="black", size = 0.5) +
-  geom_segment(aes(x = 61, y = -300, xend = 65, yend = -300),
-               color ="black", size = 5) +
-  annotate("text", x = 29, y = -300, label = "P3-5'", color = "white") +
-  annotate("text", x = 41, y = -300, label = "P3-3'", color = "white") +
-  annotate("text", x = 51, y = -300, label = "P4-5'", color = "white") +
-  annotate("text", x = 63, y = -300, label = "P4-3'", color = "white") +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
-  theme_classic()+
-  ylab("Estimated dCounts/dt") +
-  xlab("Nucleotide") +
-  xlim(24, 65) +
-  ylim(-400, 5000) +
-  theme(axis.line.x = element_line(colour = 'black'),
-        axis.line.y = element_line(colour = 'black'),
-        axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16),
-        axis.text.y = element_text(color = "Black", size = 16),
-        axis.title.y = element_text(color = "Black", size = 16),
-        axis.title.x = element_text(color = "Black", size = 18),
-        legend.text = element_text(color = "Black", size = 8),
-        legend.position = c(0.55, 0.85),
-        legend.title = element_blank(),
-        legend.background = element_blank())
-
-SI_figure_X.2
+                          "WC"))
 
 unique(df$Condition)
 
@@ -384,13 +279,15 @@ comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
 Figure_3G = ggplot(df, aes(x = Condition, y = Reactivity,
                            ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                            color = Condition, group = Condition)) +
+  geom_line(mapping = aes(group = N), color = "dimgrey") +
   facet_wrap(~BP) +
   geom_boxplot(alpha = 0.01) +
   geom_beeswarm() +
-  scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
+  #stat_compare_means(comparisons = comparisons, method = "t.test") +
+  scale_color_manual(values = c("red", "dimgrey", viridis(n =  7)[c(3, 1, 6)])) +
   theme_classic()+
   ggtitle("tRNAphe") +
-  ylab("Estimated dCounts/dt") +
+  ylab("Degradation (counts/hour)") +
   theme(axis.line.x = element_line(colour = 'black'),
         axis.line.y = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
@@ -407,11 +304,17 @@ Figure_3G = ggplot(df, aes(x = Condition, y = Reactivity,
 
 Figure_3G
 
+####Check significance####
+
+Figure_3D
+Figure_3F
+Figure_3G
+
 ####Consolidate plots into one plot####
 
 Figure_3ABC = plot_grid(Figure_3A, Figure_3B, Figure_3C, nrow = 1, labels = c("A", "B", "C"), label_size = 20)
 
-Figure_3DE =  plot_grid(Figure_3D, Figure_3E, labels = c("D", "E"), label_size = 20, rel_widths = c(1, 1.6))
+Figure_3DE =  plot_grid(Figure_3D, Figure_3E, labels = c("D", "E"), label_size = 20, rel_widths = c(1.6, 1))
 
 Figure_3FG = plot_grid(Figure_3F, Figure_3G, labels = c("F", "G"), label_size = 20)
 

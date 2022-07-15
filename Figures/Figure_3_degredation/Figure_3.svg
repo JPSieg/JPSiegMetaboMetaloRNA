@@ -17,8 +17,13 @@
    sodipodi:docname="Figure_3.svg"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    inkscape:export-filename="/home/jacob/Jacob/Research/Manuscripts/JPSiegMetaboMetaloRNA/Figures/Figure_3_degredation/Figure_3.png"
+<<<<<<< HEAD
    inkscape:export-xdpi="600"
    inkscape:export-ydpi="600">
+=======
+   inkscape:export-xdpi="296.79999"
+   inkscape:export-ydpi="296.79999">
+>>>>>>> 4bbf666ac89822435f388e77b330e0295ad6d6b6
   <metadata
      id="metadata5274">
     <rdf:RDF>
@@ -43,9 +48,15 @@
      inkscape:window-height="1135"
      id="namedview5272"
      showgrid="false"
+<<<<<<< HEAD
      inkscape:zoom="0.14485868"
      inkscape:cx="1298.5065"
      inkscape:cy="535.8604"
+=======
+     inkscape:zoom="0.57943472"
+     inkscape:cx="316.27402"
+     inkscape:cy="466.06609"
+>>>>>>> 4bbf666ac89822435f388e77b330e0295ad6d6b6
      inkscape:window-x="937"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
@@ -72,8 +83,13 @@
      height="100%"
      style="fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
      id="rect6"
+<<<<<<< HEAD
      x="9.0500002"
      y="0" />
+=======
+     x="1577.8309"
+     y="94.48864" />
+>>>>>>> 4bbf666ac89822435f388e77b330e0295ad6d6b6
   <defs
      id="defs11">
     <clipPath

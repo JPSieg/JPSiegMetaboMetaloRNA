@@ -56,6 +56,9 @@ df$BP = factor(df$BP,
                           "NC",
                           "WC"))
 
+table(df %>% filter(Condition == "2 mM free Mg") %>%
+  select(BP))
+
 
 Figure_3C = ggplot(df, aes(x = N, y = Reactivity,
                ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
@@ -123,7 +126,7 @@ Figure_3D = ggplot(df %>% filter(Reactivity > -200), aes(x = Condition, y = Reac
         axis.line.y = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
         strip.background = element_rect(size = 1),
-        strip.text = element_markdown(color = "Black", size = 14),axis.text.x = element_text(color = "Black", size = 16,
+        strip.text = element_markdown(color = "Black", size = 14),axis.text.x = element_text(color = "Black", size = 14,
                                                                                              angle = 45, hjust = 1, vjust = 1),
         axis.text.y = element_text(color = "Black", size = 16),
         axis.title.y = element_text(color = "Black", size = 16),
@@ -136,42 +139,6 @@ Figure_3D = ggplot(df %>% filter(Reactivity > -200), aes(x = Condition, y = Reac
 Figure_3D
 
 
-####Figure 3E####
-
-list.files("Figures/Figure_3_degredation")
-
-Mg.free.2mM = ggplot() +
-  draw_image("Figures/Figure_3_degredation/2mMMg_angle_0deg.png") +
-  theme(panel.background = element_blank())
-
-Mg.free.2mM.90 = ggplot() +
-  draw_image("Figures/Figure_3_degredation/2mMMg_angle_90deg.png") +
-  theme(panel.background = element_blank())
-
-Eco80 = ggplot() +
-  draw_image("Figures/Figure_3_degredation/Eco80_angle_0deg.png") +
-  theme(panel.background = element_blank())
-
-Eco80.90 = ggplot() +
-  draw_image("Figures/Figure_3_degredation/Eco80_angle_90deg.png") +
-  theme(panel.background = element_blank())
-
-Top = plot_grid(Mg.free.2mM, Mg.free.2mM.90, nrow = 1) +
-  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
-  annotate("text", label = "Rg = 28.9 (0.9) A", x = 0.75, y = 0.1, size = 5) +
-  theme(panel.background = element_blank())
-
-Bottom = plot_grid(Eco80, Eco80.90, nrow = 1) +
-  draw_image("Figures/Figure_3_degredation/Rotate_symbol.png", scale = 0.2) +
-  annotate("text", label = "Rg = 28.3 (1.6) A", x = 0.75, y = 0.1, size = 5) +
-  theme(panel.background = element_blank())
-
-Figure_3E = plot_grid(Top,
-                      Bottom,
-                      ncol = 1,
-                      label_x = c(0.19, 0.36),
-                      labels = c("2 mM free Mg2+", "Eco80"),
-                      label_size = 16)
 
 ####Organize CPEB3 data####
 
@@ -211,7 +178,13 @@ comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
 
 df = df %>% filter(!is.na(Condition))
 
-Figure_3F = ggplot(df, aes(x = Condition, y = Reactivity,
+####Figure 3E####
+
+table(df %>% filter(Condition == "2 mM free Mg") %>%
+        select(BP))
+
+
+Figure_3E = ggplot(df, aes(x = Condition, y = Reactivity,
                            ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                            color = Condition, group = Condition)) +
   facet_wrap(~BP) +
@@ -226,7 +199,7 @@ Figure_3F = ggplot(df, aes(x = Condition, y = Reactivity,
   theme(axis.line.x = element_line(colour = 'black'),
         axis.line.y = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16,
+        axis.text.x = element_text(color = "Black", size = 14,
                                    angle = 45, hjust = 1, vjust = 1),
         axis.text.y = element_text(color = "Black", size = 16),
         axis.title.y = element_text(color = "Black", size = 16),
@@ -237,7 +210,7 @@ Figure_3F = ggplot(df, aes(x = Condition, y = Reactivity,
         legend.position = "none",
         plot.title = element_text(color = "Black", size = 16))
 
-Figure_3F
+Figure_3E
 
 ####Organize tRNA data####
 
@@ -247,7 +220,7 @@ list.df = lapply(vector.files, read.csv)
 
 df = bind_rows(list.df)
 
-####Make Figure 2G####
+####Make Figure 3F####
 
 df = df %>% filter(!is.na(Reactivity)) %>%
   filter(!is.na(Condition))
@@ -276,7 +249,10 @@ comparisons = list(c("25 mM free Mg", "2 mM free Mg"),
                    c("25 mM free Mg", "NTPCM"),
                    c("25 mM free Mg", "WMCM"))
 
-Figure_3G = ggplot(df, aes(x = Condition, y = Reactivity,
+table(df %>% filter(Condition == "2 mM free Mg") %>%
+        select(BP))
+
+Figure_3F = ggplot(df, aes(x = Condition, y = Reactivity,
                            ymin = Reactivity - SE.k, ymax = Reactivity + SE.k,
                            color = Condition, group = Condition)) +
   geom_line(mapping = aes(group = N), color = "dimgrey") +
@@ -291,7 +267,7 @@ Figure_3G = ggplot(df, aes(x = Condition, y = Reactivity,
   theme(axis.line.x = element_line(colour = 'black'),
         axis.line.y = element_line(colour = 'black'),
         axis.ticks = element_line(colour = "black"),
-        axis.text.x = element_text(color = "Black", size = 16,
+        axis.text.x = element_text(color = "Black", size = 14,
                                    angle = 45, hjust = 1, vjust = 1),
         axis.text.y = element_text(color = "Black", size = 16),
         axis.title.y = element_text(color = "Black", size = 16),
@@ -302,22 +278,18 @@ Figure_3G = ggplot(df, aes(x = Condition, y = Reactivity,
         legend.position = "none",
         plot.title = element_text(color = "Black", size = 16))
 
-Figure_3G
-
 ####Check significance####
 
 Figure_3D
+Figure_3E
 Figure_3F
-Figure_3G
 
 ####Consolidate plots into one plot####
 
-Figure_3ABC = plot_grid(Figure_3A, Figure_3B, Figure_3C, nrow = 1, labels = c("A", "B", "C"), label_size = 20)
+Figure_3 = plot_grid(Figure_3A, Figure_3B, Figure_3C, Figure_3D, Figure_3E, Figure_3F,
+                     labels = c("A", "B", "C", "D", "E", "F"),
+                     ncol = 2, rel_heights = c(1, 1.4, 1.4),
+                     label_size = 20)
 
-Figure_3DE =  plot_grid(Figure_3D, Figure_3E, labels = c("D", "E"), label_size = 20, rel_widths = c(1.6, 1))
-
-Figure_3FG = plot_grid(Figure_3F, Figure_3G, labels = c("F", "G"), label_size = 20)
-
-Figure_3 = plot_grid(Figure_3ABC, Figure_3DE, Figure_3FG, ncol = 1, rel_heights = c(1, 1.4, 1.4))
-
-ggsave("Figures/Figure_3_degredation/Figure_3.svg", Figure_3, width = 7, height = 6, scale = 2.2, bg = "white")
+#ggsave("Figures/Figure_3_degredation/Figure_3.svg", Figure_3,
+#       width = 5, height = 6, scale = 2, bg = "white")

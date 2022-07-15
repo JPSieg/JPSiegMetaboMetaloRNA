@@ -152,7 +152,7 @@ C = ggplot(df.result, aes(x = Condition, y = Estimate)) +
            fun = "mean") +
   geom_beeswarm(mapping = aes(shape = Replicate)) +
   geom_text(data = df.krel,
-            mapping = aes(x = Condition, y = Y, label = round(k.rel, digits = 2)),
+            mapping = aes(x = Condition, y = Y, label = round(k.rel, digits = 1)),
             size = 6) +
   ylab("Rate constant k (1/min)") +
   theme_classic() +
@@ -179,6 +179,7 @@ B = ggplot(mapping =  aes(x = Time.min,
   facet_wrap(~Condition, ncol = 1) +
   scale_color_manual(values = c("dimgrey", viridis(n =  7)[c(3, 1, 6)], "red")) +
   theme_classic() +
+  scale_y_continuous(breaks = c(0, 0.25, 0.5)) +
   scale_x_continuous(trans = "log10") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1, color = "black", size = 16),
         axis.text.y = element_text(color = "black", size = 16),
@@ -233,6 +234,179 @@ A <- ggdraw() + draw_image(bitmap)
 
 A
 
+####Figure 4D####
+
+####Load in data####
+
+list.files("Figures/Figure_4_CPEB3_catalysis")
+
+E.coli <- read.csv("Figures/Figure_1/Top_15_E.coli_metabolites_edited.csv")
+
+head(E.coli)
+
+Yeast = read.csv("Figures/Figure_4_CPEB3_catalysis/Table_1_final.csv") %>% filter(Species == "Yeast")
+Mammal = read.csv("Figures/Figure_4_CPEB3_catalysis/Table_1_final.csv") %>% filter(Species == "Mammal iBMK")
+
+####Sum metabolites####
+
+#E.coli
+
+E.coli.weak = E.coli %>% filter(Mg.binding.strength == "weak")
+
+Sum.concentration.weak = c()
+
+for (i in 1:length(E.coli.weak$Metabolites)){
+  Sum.concentration.weak[i] = sum(E.coli.weak$Concentration[1:i])
+}
+
+E.coli.strong = E.coli %>% filter(Mg.binding.strength == "strong")
+
+Sum.concentration.strong = c()
+
+for (i in 1:length(E.coli.strong$Metabolites)){
+  Sum.concentration.strong[i] = sum(sum(E.coli.weak$Concentration), E.coli.strong$Concentration[1:i])
+}
+
+Sum.concentration = c(Sum.concentration.weak, Sum.concentration.strong)
+
+E.coli = bind_rows(E.coli.weak, E.coli.strong)
+
+E.coli$Sum.concentration = Sum.concentration
+
+sum(E.coli$Concentration)
+
+#Yeast
+
+Yeast$Mg.binding.strength = NA
+
+Yeast$Mg.binding.strength[which(Yeast$Kd.app >= 2)] = "weak"
+Yeast$Mg.binding.strength[which(Yeast$Kd.app <= 2)] = "strong"
+
+Sum.concentration = c()
+
+for (i in 1:length(Yeast$Metabolites)){
+  Sum.concentration[i] = sum(Yeast$Concentration[1:i])
+}
+
+Yeast$Sum.concentration = Sum.concentration
+
+Sum.concentration[80]*0.80
+
+Yeast = Yeast %>% filter(Sum.concentration <= 193) %>% select(Species, Metabolites, Concentration, Mg.binding.strength)
+
+sum(Yeast$Concentration)
+
+table(Yeast$Mg.binding.strength)
+
+Yeast.weak = Yeast %>% filter(Mg.binding.strength == "weak")
+
+Sum.concentration.weak = c()
+
+for (i in 1:length(Yeast.weak$Metabolites)){
+  Sum.concentration.weak[i] = sum(Yeast.weak$Concentration[1:i])
+}
+
+Yeast.strong = Yeast %>% filter(Mg.binding.strength == "strong")
+
+Sum.concentration.strong = c()
+
+for (i in 1:length(Yeast.strong$Metabolites)){
+  Sum.concentration.strong[i] = sum(sum(Yeast.weak$Concentration), Yeast.strong$Concentration[1:i])
+}
+
+Sum.concentration = c(Sum.concentration.weak)
+
+Yeast = bind_rows(Yeast.weak, Yeast.strong)
+
+Yeast$Sum.concentration = Sum.concentration
+
+#Mammal
+
+Mammal$Mg.binding.strength = NA
+
+Mammal$Mg.binding.strength[which(Mammal$Kd.app >= 2)] = "weak"
+Mammal$Mg.binding.strength[which(Mammal$Kd.app <= 2)] = "strong"
+
+Sum.concentration = c()
+
+for (i in 1:length(Mammal$Metabolites)){
+  Sum.concentration[i] = sum(Mammal$Concentration[1:i])
+}
+
+Mammal$Sum.concentration = Sum.concentration
+
+Sum.concentration[90]*0.80
+
+Mammal = Mammal %>% filter(Sum.concentration <= 141) %>% select(Species, Metabolites, Concentration, Mg.binding.strength)
+
+sum(Mammal$Concentration)
+
+table(Mammal$Mg.binding.strength)
+
+Mammal.weak = Mammal %>% filter(Mg.binding.strength == "weak")
+
+Sum.concentration.weak = c()
+
+for (i in 1:length(Mammal.weak$Metabolites)){
+  Sum.concentration.weak[i] = sum(Mammal.weak$Concentration[1:i])
+}
+
+Mammal.strong = Mammal %>% filter(Mg.binding.strength == "strong")
+
+Sum.concentration.strong = c()
+
+for (i in 1:length(Mammal.strong$Metabolites)){
+  Sum.concentration.strong[i] = sum(sum(Mammal.weak$Concentration), Mammal.strong$Concentration[1:i])
+}
+
+Sum.concentration = c(Sum.concentration.weak, Sum.concentration.strong)
+
+Mammal = bind_rows(Mammal.weak, Mammal.strong)
+
+Mammal$Sum.concentration = Sum.concentration
+
+
+E.coli$Species = "Eco80"
+Yeast$Species = "Yeast80"
+Mammal$Species = "Mammal80"
+
+E.coli = E.coli %>% select(Species, Metabolites, Concentration, Mg.binding.strength, Sum.concentration)
+head(E.coli)
+head(Yeast)
+
+df.met = bind_rows(E.coli, Yeast, Mammal)
+
+####Make Figure 4D####
+
+df.met$Mg.binding.strength = factor(df.met$Mg.binding.strength,
+                                    levels = c("other", "strong", "weak"),
+                                    labels = c("other", "NTPCM", "WMCM"))
+
+library(viridis)
+
+Figure_4D = ggplot(df.met, aes(x = Species, y = Concentration, fill = Mg.binding.strength, label = Metabolites)) +
+  geom_bar(width = 0.8, stat = "identity", color = "black", size = 1) +
+  scale_fill_manual(values = viridis(n =  7)[c(7, 3, 1)]) +
+  theme_classic()+
+  #scale_x_discrete(limits = factor("",)) +
+  theme(axis.line.x = element_line(colour = 'black'),
+        axis.line.y = element_blank(),
+        axis.ticks = element_line(colour = "black"),
+        axis.text.y = element_text(color = "Black", size = 16),
+        axis.text.x = element_text(color = "Black", size = 16),
+        axis.title.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        legend.title = element_blank(),
+        axis.title.x = element_text(color = "Black", size = 18),
+        legend.text = element_text(color = "Black", size = 10),
+        legend.background = element_blank()) +
+  ylab("[Metabolites] (mM)") +
+  coord_flip()
+
+Figure_4D
+
+####Consolidate plots####
+
 AC = plot_grid(A, C, ncol = 1,
                labels = c("A", "C"),
                label_size = 20,
@@ -242,6 +416,14 @@ ABC = plot_grid(AC, B,
                 label_size = 20)
 
 ABC
+
+ABCD = plot_grid(ABC, Figure_4D,
+                 labels = c("", "D"),
+                 ncol = 1,
+                 rel_heights = c(3, 1),
+                 label_size = 20)
+
+
 
 ggsave("Figures/Figure_4_CPEB3_catalysis/Figure_4_CPEB3_catalysis.svg",
        width = 3.3, height = 4, scale = 2.5, bg = "white")

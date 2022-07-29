@@ -425,6 +425,6 @@ ABCD = plot_grid(ABC, Figure_4D,
 
 
 
-ggsave("Figures/Figure_4_CPEB3_catalysis/Figure_4_CPEB3_catalysis.svg",
-       width = 3.3, height = 4, scale = 2.5, bg = "white")
+#ggsave("Figures/Figure_4_CPEB3_catalysis/Figure_4_CPEB3_catalysis.svg",
+#       width = 3.3, height = 4, scale = 2.5, bg = "white")
 

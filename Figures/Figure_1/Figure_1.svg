@@ -42,9 +42,9 @@
      inkscape:window-height="705"
      id="namedview5835"
      showgrid="false"
-     inkscape:zoom="1.0671296"
-     inkscape:cx="-66.065076"
-     inkscape:cy="148.99783"
+     inkscape:zoom="3.0182983"
+     inkscape:cx="215.18748"
+     inkscape:cy="247.49045"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -2158,19 +2158,6 @@
        style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        id="polyline4185" />
   </g>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.51159px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.235462"
-     x="63.861843"
-     y="198.08173"
-     id="text6332-2-3"><tspan
-       style="stroke-width:0.235462"
-       sodipodi:role="line"
-       id="tspan6336-1-3"
-       x="63.861843"
-       y="198.08173"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.88369px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.235462"
-         id="tspan6338-7-0">31.6 mM Total</tspan></tspan></text>
   <polyline
      id="polyline4189"
      style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
@@ -4058,19 +4045,6 @@
        style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        id="polyline4980" />
   </g>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.51159px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.235462"
-     x="136.06546"
-     y="198.3147"
-     id="text6332-2-3-6"><tspan
-       style="stroke-width:0.235462"
-       sodipodi:role="line"
-       id="tspan6336-1-3-6"
-       x="136.06546"
-       y="198.3147"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.88369px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.235462"
-         id="tspan6338-7-0-0">25.0 mM Total</tspan></tspan></text>
   <polyline
      id="polyline4984"
      style="fill:none;stroke:#000000;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
@@ -6258,28 +6232,35 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.88369px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke-width:0.235462">dTTP</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.51159px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.235462"
-     x="27.634348"
-     y="186.09535"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.65667px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.342814"
+     x="27.55048"
+     y="181.66919"
      id="text6332"><tspan
        sodipodi:role="line"
        id="tspan6336"
-       x="27.634348"
-       y="186.09535"
-       style="stroke-width:0.235462"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.88369px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.235462"
-   id="tspan6338">Biological free Mg     = 0.5 to 3 mM</tspan> </tspan></text>
+       x="27.55048"
+       y="181.66919"
+       style="stroke-width:0.342814"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.7425px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.342814"
+         id="tspan6338">Biological free Mg    </tspan></tspan><tspan
+       sodipodi:role="line"
+       x="27.55048"
+       y="186.24002"
+       style="stroke-width:0.342814"
+       id="tspan8115"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.7425px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.342814"
+   id="tspan8117">= 0.5 to 3 mM</tspan> </tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.06573px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.0999123"
-     x="44.549751"
-     y="184.82175"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.55162px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.145464"
+     x="52.177944"
+     y="179.81493"
      id="text6342"><tspan
        sodipodi:role="line"
        id="tspan6340"
-       x="44.549751"
-       y="184.82175"
-       style="fill:#ff0000;fill-opacity:1;stroke-width:0.0999123">2+</tspan></text>
+       x="52.177944"
+       y="179.81493"
+       style="fill:#ff0000;fill-opacity:1;stroke-width:0.145464">2+</tspan></text>
   <text
      id="text3737-4"
      lengthAdjust="spacingAndGlyphs"
@@ -6354,20 +6335,20 @@
      sodipodi:nodetypes="cccc" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.51159px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.235462"
-     x="77.227402"
-     y="190.1039"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.75867px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.446126"
+     x="81.448776"
+     y="190.3961"
      id="text6332-2"><tspan
-       style="stroke-width:0.235462"
+       style="stroke-width:0.446126"
        sodipodi:role="line"
        id="tspan6336-1"
-       x="77.227402"
-       y="190.1039"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.88369px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.235462"
+       x="81.448776"
+       y="190.3961"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.56899px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.446126"
    id="tspan6338-7">2 mM</tspan> </tspan></text>
   <path
-     style="fill:#ff0000;fill-opacity:1;stroke:#ea1818;stroke-width:0.0941847;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
-     d="m 77.198562,189.43717 -3.714531,0.009"
+     style="fill:#ff0000;fill-opacity:1;stroke:#ea1818;stroke-width:0.17845;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+     d="m 81.394129,189.25712 -7.037858,0.017"
      id="path8654"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
@@ -6425,15 +6406,44 @@
      id="path2168-6" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.51159px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.235462"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.235462"
      x="203.2532"
      y="197.98373"
-     id="text6332-2-3-6-7"><tspan
-       style="stroke-width:0.235462"
+     id="text6332-2-3-6-7"
+     inkscape:export-filename="C:\Users\jpsie\Documents\Rpackages\JPSiegMetaboMetaloRNA\Figures\Figure_1\Figure_1.png"
+     inkscape:export-xdpi="600.09998"
+     inkscape:export-ydpi="600.09998"><tspan
+       style="font-size:4px;stroke-width:0.235462"
        sodipodi:role="line"
        id="tspan6336-1-3-6-1"
        x="203.2532"
        y="197.98373"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.88369px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.235462"
-         id="tspan6338-7-0-0-1">6.5 mM Total</tspan></tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.235462"
+         id="tspan6338-7-0-0-1">6.4 mM Total</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.235462"
+     x="136.06546"
+     y="198.3147"
+     id="text6332-2-3-6"><tspan
+       style="stroke-width:0.235462;font-size:4px"
+       sodipodi:role="line"
+       id="tspan6336-1-3-6"
+       x="136.06546"
+       y="198.3147"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.235462;font-size:4px"
+         id="tspan6338-7-0-0">25.0 mM Total</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.235462"
+     x="63.861843"
+     y="198.08173"
+     id="text6332-2-3"><tspan
+       style="stroke-width:0.235462;font-size:4px"
+       sodipodi:role="line"
+       id="tspan6336-1-3"
+       x="63.861843"
+       y="198.08173"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke-width:0.235462;font-size:4px"
+         id="tspan6338-7-0">31.6 mM Total</tspan></tspan></text>
 </svg>

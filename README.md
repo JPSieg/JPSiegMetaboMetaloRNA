@@ -5,13 +5,15 @@ Raw data and Rscripts for:
 "The Metabolome Weakens RNA Helix Stability and Increases
 RNA Chemical Stability"
 
-Jacob P. Siegᵵ1,2,¶ Lauren McKinley1,2, Melanie Huot3,4, Neela H. Yennawar5,
+Jacob P. Sieg1,2, Lauren McKinley1,2, Melanie Huot3,4, Neela H. Yennawar5,
  and Philip C. Bevilacqua*1,2,3
  
 1 Department of Chemistry, Pennsylvania State University, University Park, PA 16802.
 2 Center for RNA Molecular Biology, Pennsylvania State University, University Park, PA 16802.
 3 Department of Biochemistry and Molecular Biology, Pennsylvania State University, University Park, PA 16802.
 4 The Huck Institutes of the Life Sciences, The Pennsylvania State University, University Park, PA 16802.
+
+*Corresponding author
 
 ### Cite
 

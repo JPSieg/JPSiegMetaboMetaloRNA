@@ -291,5 +291,5 @@ Figure_3 = plot_grid(Figure_3A, Figure_3B, Figure_3C, Figure_3D, Figure_3E, Figu
                      ncol = 2, rel_heights = c(1, 1.4, 1.4),
                      label_size = 20)
 
-#ggsave("Figures/Figure_3_degredation/Figure_3.svg", Figure_3,
-#       width = 5, height = 6, scale = 2, bg = "white")
+ggsave("Figures/Figure_3_degredation/Figure_3.svg", Figure_3,
+       width = 5, height = 6, scale = 2, bg = "white")

@@ -43,9 +43,9 @@
      inkscape:window-height="705"
      id="namedview1181"
      showgrid="false"
-     inkscape:zoom="0.98333331"
-     inkscape:cx="-115.93221"
-     inkscape:cy="352.88137"
+     inkscape:zoom="5.5625732"
+     inkscape:cx="34.606286"
+     inkscape:cy="169.70563"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -598,7 +598,9 @@
      lengthAdjust="spacingAndGlyphs"
      textLength="188.97"
      style="font-size:16px;font-family:Arimo;text-anchor:middle;white-space:pre"
-     transform="matrix(0,-0.3836672,0.3836672,0,8.4828355,136.88603)">Rate constant k (1/min)</text>
+     transform="matrix(0,-0.3836672,0.3836672,0,8.4828355,136.88603)">Rate constant <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Arimo;-inkscape-font-specification:'Arimo, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan94627">k</tspan> (1/min)</text>
   <text
      id="text186"
      lengthAdjust="spacingAndGlyphs"
@@ -3442,7 +3444,7 @@
        style="stroke-width:0.28775039">rel</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.13867521px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.28775039"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.13868px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.28775"
      x="97.303352"
      y="89.735077"
      id="text1998"><tspan
@@ -3450,7 +3452,7 @@
        id="tspan1996"
        x="97.303352"
        y="89.735077"
-       style="stroke-width:0.28775039">k</tspan></text>
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.13868px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.28775">k</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.99999996px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"

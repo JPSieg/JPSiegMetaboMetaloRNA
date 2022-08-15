@@ -2,20 +2,20 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="75mm"
    height="50mm"
    viewBox="0 0 75 50"
    version="1.1"
    id="svg2311"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="Figure_3A_ILP_layout.svg">
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="Figure_3A_ILP_layout.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2305">
     <marker
@@ -92,10 +92,10 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter5034"
-       x="-0.070384614"
+       x="-0.070384612"
        width="1.1407692"
-       y="-0.073691279"
-       height="1.1473826">
+       y="-0.073691275"
+       height="1.1473825">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.21615513"
@@ -114,7 +114,6 @@
          sodipodi:ry="3.5199034"
          sodipodi:start="0"
          sodipodi:end="6.2824072"
-         d="m 83.020633,265.29105 a 3.6852679,3.5199034 0 0 1 -3.684551,3.5199 3.6852679,3.5199034 0 0 1 -3.685984,-3.51853 3.6852679,3.5199034 0 0 1 3.683117,-3.52128 3.6852679,3.5199034 0 0 1 3.687417,3.51717"
          inkscape:transform-center-x="3.674956"
          inkscape:transform-center-y="0.016712738"
          sodipodi:open="true" />
@@ -125,8 +124,8 @@
        id="filter5192"
        x="-0.20685083"
        width="1.4137017"
-       y="-0.63457632"
-       height="2.2691526">
+       y="-0.63457635"
+       height="2.2691527">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.36852681"
@@ -136,10 +135,10 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter5274"
-       x="-0.13338935"
+       x="-0.13338934"
        width="1.2667787"
-       y="-0.27668175"
-       height="1.5533634">
+       y="-0.27668174"
+       height="1.5533635">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.16172754"
@@ -153,17 +152,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="138.55669"
-     inkscape:cy="105.09152"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-291.93408"
+     inkscape:cy="-78.791898"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1848"
-     inkscape:window-height="1136"
-     inkscape:window-x="72"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata2308">
     <rdf:RDF>
@@ -172,7 +172,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -182,8 +181,8 @@
      id="layer1"
      transform="translate(0,-247)">
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.26499999, 0.26499999;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 58.516728,271.02503 -0.03622,-2.67327"
+       style="fill:none;stroke:#000000;stroke-width:0.345066;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.345066, 0.345066;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 59.635545,272.66369 -0.04716,-3.48096"
        id="path3056-0-7-5-6-8"
        inkscape:connector-curvature="0" />
     <path
@@ -224,322 +223,264 @@
     <text
        y="290.97858"
        x="6.7241616"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1771">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1771"><tspan
+         style="stroke-width:0.352778"
          x="6.7241616"
          y="290.97858"
-         id="tspan1769">G</tspan>
-    </text>
+         id="tspan1769">G</tspan></text>
     <text
        y="291.03763"
        x="9.4907598"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1775">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1775"><tspan
+         style="stroke-width:0.352778"
          x="9.4907598"
          y="291.03763"
-         id="tspan1773">A</tspan>
-    </text>
+         id="tspan1773">A</tspan></text>
     <text
        y="289.19296"
        x="11.367801"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1779">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1779"><tspan
+         style="stroke-width:0.352778"
          x="11.367801"
          y="289.19296"
-         id="tspan1777">C</tspan>
-    </text>
+         id="tspan1777">C</tspan></text>
     <text
        y="286.42569"
        x="11.277015"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1783">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1783"><tspan
+         style="stroke-width:0.352778"
          x="11.277015"
          y="286.42569"
-         id="tspan1781">G</tspan>
-    </text>
+         id="tspan1781">G</tspan></text>
     <text
        y="283.7587"
        x="11.351096"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1787">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1787"><tspan
+         style="stroke-width:0.352778"
          x="11.351096"
          y="283.7587"
-         id="tspan1785">U</tspan>
-    </text>
+         id="tspan1785">U</tspan></text>
     <text
        y="281.04156"
        x="11.423858"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1791">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1791"><tspan
+         style="stroke-width:0.352778"
          x="11.423858"
          y="281.04156"
-         id="tspan1789">A</tspan>
-    </text>
+         id="tspan1789">A</tspan></text>
     <text
        y="278.47482"
        x="11.334392"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1795">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1795"><tspan
+         style="stroke-width:0.352778"
          x="11.334392"
          y="278.47482"
-         id="tspan1793">C</tspan>
-    </text>
+         id="tspan1793">C</tspan></text>
     <text
        y="275.99216"
        x="10.183551"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1799">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1799"><tspan
+         style="stroke-width:0.352778"
          x="10.183551"
          y="275.99216"
-         id="tspan1797">G</tspan>
-    </text>
+         id="tspan1797">G</tspan></text>
     <text
        y="273.55963"
        x="11.351096"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1803">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1803"><tspan
+         style="stroke-width:0.352778"
          x="11.351096"
          y="273.55963"
-         id="tspan1801">U</tspan>
-    </text>
+         id="tspan1801">U</tspan></text>
     <text
        y="271.05969"
        x="11.440561"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1807">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1807"><tspan
+         style="stroke-width:0.352778"
          x="11.440561"
          y="271.05969"
-         id="tspan1805">A</tspan>
-    </text>
+         id="tspan1805">A</tspan></text>
     <text
        y="268.40497"
        x="10.557166"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1811">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1811"><tspan
+         style="stroke-width:0.352778"
          x="10.557166"
          y="268.40497"
-         id="tspan1809">A</tspan>
-    </text>
+         id="tspan1809">A</tspan></text>
     <text
        y="266.19839"
        x="12.176597"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1815">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1815"><tspan
+         style="stroke-width:0.352778"
          x="12.176597"
          y="266.19839"
-         id="tspan1813">U</tspan>
-    </text>
+         id="tspan1813">U</tspan></text>
     <text
        y="266.16498"
        x="14.676552"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1819">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1819"><tspan
+         style="stroke-width:0.352778"
          x="14.676552"
          y="266.16498"
-         id="tspan1817">C</tspan>
-    </text>
+         id="tspan1817">C</tspan></text>
     <text
        y="268.33813"
        x="16.361481"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1823">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1823"><tspan
+         style="stroke-width:0.352778"
          x="16.361481"
          y="268.33813"
-         id="tspan1821">G</tspan>
-    </text>
+         id="tspan1821">G</tspan></text>
     <text
        y="270.89264"
        x="15.669098"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1827">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1827"><tspan
+         style="stroke-width:0.352778"
          x="15.669098"
          y="270.89264"
-         id="tspan1825">U</tspan>
-    </text>
+         id="tspan1825">U</tspan></text>
     <text
        y="273.55963"
        x="15.741859"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1831">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1831"><tspan
+         style="stroke-width:0.352778"
          x="15.741859"
          y="273.55963"
-         id="tspan1829">A</tspan>
-    </text>
+         id="tspan1829">A</tspan></text>
     <text
        y="272.98734"
        x="18.273975"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1835">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1835"><tspan
+         style="stroke-width:0.352778"
          x="18.273975"
          y="272.98734"
-         id="tspan1833">U</tspan>
-    </text>
+         id="tspan1833">U</tspan></text>
     <text
        y="274.64197"
        x="20.441799"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1839">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1839"><tspan
+         style="stroke-width:0.352778"
          x="20.441799"
          y="274.64197"
-         id="tspan1837">A</tspan>
-    </text>
+         id="tspan1837">A</tspan></text>
     <text
        y="277.32568"
        x="20.278252"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1843">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1843"><tspan
+         style="stroke-width:0.352778"
          x="20.278252"
          y="277.32568"
-         id="tspan1841">G</tspan>
-    </text>
+         id="tspan1841">G</tspan></text>
     <text
        y="278.91345"
        x="18.307381"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1847">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1847"><tspan
+         style="stroke-width:0.352778"
          x="18.307381"
          y="278.91345"
-         id="tspan1845">C</tspan>
-    </text>
+         id="tspan1845">C</tspan></text>
     <text
        y="278.42471"
        x="15.595016"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1851">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1851"><tspan
+         style="stroke-width:0.352778"
          x="15.595016"
          y="278.42471"
-         id="tspan1849">G</tspan>
-    </text>
+         id="tspan1849">G</tspan></text>
     <text
        y="281.09171"
        x="15.669098"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1855">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1855"><tspan
+         style="stroke-width:0.352778"
          x="15.669098"
          y="281.09171"
-         id="tspan1853">U</tspan>
-    </text>
+         id="tspan1853">U</tspan></text>
     <text
        y="283.7587"
        x="15.741859"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1859">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1859"><tspan
+         style="stroke-width:0.352778"
          x="15.741859"
          y="283.7587"
-         id="tspan1857">A</tspan>
-    </text>
+         id="tspan1857">A</tspan></text>
     <text
        y="286.42569"
        x="15.669098"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1863">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1863"><tspan
+         style="stroke-width:0.352778"
          x="15.669098"
          y="286.42569"
-         id="tspan1861">C</tspan>
-    </text>
+         id="tspan1861">C</tspan></text>
     <text
        y="289.09271"
        x="15.595016"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1867">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1867"><tspan
+         style="stroke-width:0.352778"
          x="15.595016"
          y="289.09271"
-         id="tspan1865">G</tspan>
-    </text>
+         id="tspan1865">G</tspan></text>
     <text
        y="290.97858"
        x="17.480869"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1871">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1871"><tspan
+         style="stroke-width:0.352778"
          x="17.480869"
          y="290.97858"
-         id="tspan1869">G</tspan>
-    </text>
+         id="tspan1869">G</tspan></text>
     <text
        y="291.01199"
        x="20.221951"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1875">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1875"><tspan
+         style="stroke-width:0.352778"
          x="20.221951"
          y="291.01199"
-         id="tspan1873">C</tspan>
-    </text>
+         id="tspan1873">C</tspan></text>
     <text
        y="290.89505"
        x="22.911598"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1879">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1879"><tspan
+         style="stroke-width:0.352778"
          x="22.911598"
          y="290.89505"
-         id="tspan1877">A</tspan>
-    </text>
+         id="tspan1877">A</tspan></text>
     <text
        y="290.86163"
        x="25.472427"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883"><tspan
+         style="stroke-width:0.352778"
          x="25.472427"
          y="290.86163"
-         id="tspan1881">C</tspan>
-    </text>
+         id="tspan1881">C</tspan></text>
     <path
        d="m 5.0863898,290.02871 h 1.3335"
        style="fill:none;stroke:#000000;stroke-width:0.52916664;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
@@ -548,15 +489,13 @@
     <text
        y="290.97858"
        x="2.5807865"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text2115">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text2115"><tspan
+         style="stroke-width:0.352778"
          x="2.5807865 4.0518675"
          y="290.97858"
          sodipodi:role="line"
-         id="tspan2113">5´</tspan>
-    </text>
+         id="tspan2113">5´</tspan></text>
     <path
        style="opacity:0.95;fill:none;fill-opacity:1;stroke:#020a0a;stroke-width:0.33200002;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path3052"
@@ -577,14 +516,12 @@
     <text
        y="269.55246"
        x="38.457203"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-9">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883-8-9"><tspan
+         style="stroke-width:0.352778"
          x="38.457203"
          y="269.55246"
-         id="tspan1881-7-2">P</tspan>
-    </text>
+         id="tspan1881-7-2">P</tspan></text>
     <path
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 38.489446,269.33522 -3.030436,1.12353 0.624199,1.0608 c 0.08696,-0.051 -0.087,0.0511 0,0 z"
@@ -594,14 +531,12 @@
     <text
        y="272.96014"
        x="33.479305"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-2">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883-8-2"><tspan
+         style="stroke-width:0.352778"
          x="33.479305"
          y="272.96014"
-         id="tspan1881-7-3">O</tspan>
-    </text>
+         id="tspan1881-7-3">O</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 37.832642,274.88356 -2.23298,-1.47021"
@@ -625,14 +560,12 @@
     <text
        y="276.23419"
        x="41.196712"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-28">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883-8-28"><tspan
+         style="stroke-width:0.352778"
          x="41.196712"
          y="276.23419"
-         id="tspan1881-7-9">O</tspan>
-    </text>
+         id="tspan1881-7-9">O</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 45.202582,277.44082 -1.93895,-1.84071"
@@ -661,14 +594,12 @@
     <text
        y="284.85364"
        x="43.201233"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-28-2">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883-8-28-2"><tspan
+         style="stroke-width:0.352778"
          x="43.201233"
          y="284.85364"
-         id="tspan1881-7-9-9">OH</tspan>
-    </text>
+         id="tspan1881-7-9-9">OH</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 38.427252,284.25691 -0.573216,0.40569"
@@ -678,14 +609,12 @@
     <text
        y="284.6532"
        x="38.290157"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-28-9">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883-8-28-9"><tspan
+         style="stroke-width:0.352778"
          x="38.290157"
          y="284.6532"
-         id="tspan1881-7-9-4">O</tspan>
-    </text>
+         id="tspan1881-7-9-4">O</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 39.573798,259.26931 38.97782,256.66306"
@@ -699,14 +628,12 @@
     <text
        y="255.62103"
        x="41.149052"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-28-5">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883-8-28-5"><tspan
+         style="stroke-width:0.352778"
          x="41.149052"
          y="255.62103"
-         id="tspan1881-7-9-0">O</tspan>
-    </text>
+         id="tspan1881-7-9-0">O</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 45.15492,256.82765 -1.93895,-1.84071"
@@ -735,25 +662,21 @@
     <text
        y="264.24045"
        x="43.153572"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-28-2-3">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883-8-28-2-3"><tspan
+         style="stroke-width:0.352778"
          x="43.153572"
          y="264.24045"
-         id="tspan1881-7-9-9-2">OH</tspan>
-    </text>
+         id="tspan1881-7-9-9-2">OH</tspan></text>
     <text
        y="264.04001"
        x="38.242496"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-28-9-0">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883-8-28-9-0"><tspan
+         style="stroke-width:0.352778"
          x="38.242496"
          y="264.04001"
-         id="tspan1881-7-9-4-6">O</tspan>
-    </text>
+         id="tspan1881-7-9-4-6">O</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 38.97782,256.66306 -1.010613,-0.9605"
@@ -767,7 +690,7 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="47.90258"
        y="256.50848"
        id="text3415"><tspan
@@ -775,7 +698,7 @@
          id="tspan3413"
          x="47.90258"
          y="256.50848"
-         style="stroke-width:0.26458332">U</tspan></text>
+         style="stroke-width:0.264583">U</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 45.202582,277.44082 2.510394,-0.91959"
@@ -783,7 +706,7 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="47.901962"
        y="277.51343"
        id="text3434"><tspan
@@ -791,7 +714,7 @@
          id="tspan3432"
          x="47.901962"
          y="277.51343"
-         style="stroke-width:0.26458332">A</tspan></text>
+         style="stroke-width:0.264583">A</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 42.494877,270.55174 -2.24868,-1.44607"
@@ -800,14 +723,12 @@
     <text
        y="272.4238"
        x="42.559414"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-28-7">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883-8-28-7"><tspan
+         style="stroke-width:0.352778"
          x="42.559414"
          y="272.4238"
-         id="tspan1881-7-9-6">O</tspan>
-    </text>
+         id="tspan1881-7-9-6">O</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 42.128856,271.12214 -2.24868,-1.44607"
@@ -881,114 +802,102 @@
     <text
        y="270.07031"
        x="32.710903"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-2-8">
-      <tspan
-         style="stroke-width:0.35277775"
+       style="font-variant:normal;font-weight:normal;font-size:2.64583px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="text1883-8-2-8"><tspan
+         style="stroke-width:0.352778"
          x="32.710903"
          y="270.07031"
-         id="tspan1881-7-3-8">O</tspan>
-    </text>
+         id="tspan1881-7-3-8">O</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.11039548px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 33.647592,267.54419 -1.115441,0.012"
        id="path3056-0-7-4"
        inkscape:connector-curvature="0" />
     <g
-       id="g5378"
-       transform="matrix(1.0136731,0,0,1.0136731,-4.3179648,3.3075859)">
-      <g
-         transform="translate(-17.316034,2.3623512)"
-         id="g5345">
-        <g
-           id="g5040"
-           clip-path="url(#clipPath5042)"
-           transform="matrix(1,0,0,1.0309849,0,-8.0928366)">
-          <path
-             sodipodi:open="true"
-             inkscape:transform-center-y="0.016712738"
-             inkscape:transform-center-x="3.674956"
-             d="m 82.422435,264.70663 a 3.6852679,3.5199032 0 0 1 -3.684551,3.51991 3.6852679,3.5199032 0 0 1 -3.685984,-3.51854 3.6852679,3.5199032 0 0 1 3.683117,-3.52127 3.6852679,3.5199032 0 0 1 3.687417,3.51717"
-             sodipodi:end="6.2824072"
-             sodipodi:start="0"
-             sodipodi:ry="3.5199032"
-             sodipodi:rx="3.6852679"
-             sodipodi:cy="264.70663"
-             sodipodi:cx="78.737167"
-             sodipodi:type="arc"
-             id="path4682"
-             style="opacity:1;fill:#4b4bdc;fill-opacity:1;stroke:none;stroke-width:0.33200002;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter5034)" />
-          <path
-             sodipodi:open="true"
-             inkscape:transform-center-y="0.016712738"
-             inkscape:transform-center-x="3.674956"
-             d="m 83.020633,265.29105 a 3.6852679,3.5199034 0 0 1 -3.684551,3.5199 3.6852679,3.5199034 0 0 1 -3.685984,-3.51853 3.6852679,3.5199034 0 0 1 3.683117,-3.52128 3.6852679,3.5199034 0 0 1 3.687417,3.51717"
-             sodipodi:end="6.2824072"
-             sodipodi:start="0"
-             sodipodi:ry="3.5199034"
-             sodipodi:rx="3.6852679"
-             sodipodi:cy="265.29105"
-             sodipodi:cx="79.335365"
-             sodipodi:type="arc"
-             id="path4682-3"
-             style="opacity:0.95;fill:#4b4bdc;fill-opacity:1;stroke:none;stroke-width:0.33200002;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-        </g>
-        <path
-           style="opacity:1;fill:#a3a3ed;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter5192)"
-           id="path5046"
-           sodipodi:type="arc"
-           sodipodi:cx="76.268509"
-           sodipodi:cy="261.10406"
-           sodipodi:rx="2.137928"
-           sodipodi:ry="0.69689357"
-           sodipodi:start="0"
-           sodipodi:end="6.2823999"
-           sodipodi:open="true"
-           d="m 78.406437,261.10406 a 2.137928,0.69689357 0 0 1 -2.137508,0.6969 2.137928,0.69689357 0 0 1 -2.138348,-0.69662 2.137928,0.69689357 0 0 1 2.136669,-0.69717 2.137928,0.69689357 0 0 1 2.139186,0.69635"
-           transform="matrix(0.31611163,0,0,1,53.413746,2.9529389)" />
-        <path
-           style="fill:#a3a3ed;fill-opacity:1;stroke:none;stroke-width:0.14409325px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5274)"
-           d="m 79.607739,268.51621 c 0.978286,-0.17546 1.352226,-0.59986 1.352226,-0.59986 0,0 1.99216,-1.42794 0.0867,-0.47508 -1.90546,0.95287 -2.376267,0.84849 -1.927418,0.96629 0.448846,0.11778 0.488492,0.10865 0.488492,0.10865 z"
-           id="path5196"
-           inkscape:connector-curvature="0" />
-      </g>
+       id="g5040"
+       clip-path="url(#clipPath5042)"
+       transform="matrix(1.3199404,0,0,1.3608386,-45.039913,-83.504768)">
+      <path
+         sodipodi:open="true"
+         inkscape:transform-center-y="0.016712738"
+         inkscape:transform-center-x="3.674956"
+         sodipodi:end="6.2824072"
+         sodipodi:start="0"
+         sodipodi:ry="3.5199032"
+         sodipodi:rx="3.6852679"
+         sodipodi:cy="264.70663"
+         sodipodi:cx="78.737167"
+         sodipodi:type="arc"
+         id="path4682"
+         style="opacity:1;fill:#4b4bdc;fill-opacity:1;stroke:none;stroke-width:0.332;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter5034)"
+         sodipodi:arc-type="arc"
+         d="m 82.422435,264.70663 a 3.6852679,3.5199032 0 0 1 -3.684551,3.51991 3.6852679,3.5199032 0 0 1 -3.685984,-3.51854 3.6852679,3.5199032 0 0 1 3.683117,-3.52127 3.6852679,3.5199032 0 0 1 3.687417,3.51717" />
+      <path
+         sodipodi:open="true"
+         inkscape:transform-center-y="0.016712738"
+         inkscape:transform-center-x="3.674956"
+         sodipodi:end="6.2824072"
+         sodipodi:start="0"
+         sodipodi:ry="3.5199034"
+         sodipodi:rx="3.6852679"
+         sodipodi:cy="265.29105"
+         sodipodi:cx="79.335365"
+         sodipodi:type="arc"
+         id="path4682-3"
+         style="opacity:0.95;fill:#4b4bdc;fill-opacity:1;stroke:none;stroke-width:0.332;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         sodipodi:arc-type="arc"
+         d="m 83.020633,265.29105 a 3.6852679,3.5199034 0 0 1 -3.684551,3.5199 3.6852679,3.5199034 0 0 1 -3.685984,-3.51853 3.6852679,3.5199034 0 0 1 3.683117,-3.52128 3.6852679,3.5199034 0 0 1 3.687417,3.51717" />
     </g>
-    <text
-       y="276.24149"
-       x="55.501476"
-       style="font-variant:normal;font-weight:normal;font-size:4.29907274px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.57320964"
-       id="text1883-8-28-2-4">
-      <tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43925786px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.57320964"
-         x="55.501476"
-         y="276.24149"
-         id="tspan1881-7-9-9-9">Mg</tspan>
-    </text>
-    <text
-       y="274.09503"
-       x="59.642323"
-       style="font-variant:normal;font-weight:normal;font-size:2.40079021px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.32010534"
-       id="text1883-8-28-2-4-7">
-      <tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.92063224px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.32010534"
-         x="59.642323"
-         y="274.09503"
-         id="tspan1881-7-9-9-9-5">2+</tspan>
-    </text>
-    <text
-       y="267.94882"
-       x="57.402382"
-       style="font-variant:normal;font-weight:normal;font-size:2.64583325px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text1883-8-28-2-3-0">
-      <tspan
-         style="stroke-width:0.35277775"
-         x="57.402382"
-         y="267.94882"
-         id="tspan1881-7-9-9-2-4">OH</tspan>
-    </text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.11039548px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 57.686582,265.65664 -1.115441,0.012"
+       style="opacity:1;fill:#a3a3ed;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter5192)"
+       id="path5046"
+       sodipodi:type="arc"
+       sodipodi:cx="76.268509"
+       sodipodi:cy="261.10406"
+       sodipodi:rx="2.137928"
+       sodipodi:ry="0.69689357"
+       sodipodi:start="0"
+       sodipodi:end="6.2823999"
+       sodipodi:open="true"
+       transform="matrix(0.17632252,0.37816225,-1.1962934,0.55778562,357.30548,100.14816)"
+       sodipodi:arc-type="arc"
+       d="m 78.406437,261.10406 a 2.137928,0.69689357 0 0 1 -2.137508,0.6969 2.137928,0.69689357 0 0 1 -2.138348,-0.69662 2.137928,0.69689357 0 0 1 2.136669,-0.69717 2.137928,0.69689357 0 0 1 2.139186,0.69635" />
+    <path
+       style="fill:#a3a3ed;fill-opacity:1;stroke:none;stroke-width:0.144093px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5274)"
+       d="m 79.607739,268.51621 c 0.978286,-0.17546 1.352226,-0.59986 1.352226,-0.59986 0,0 1.99216,-1.42794 0.0867,-0.47508 -1.90546,0.95287 -2.376267,0.84849 -1.927418,0.96629 0.448846,0.11778 0.488492,0.10865 0.488492,0.10865 z"
+       id="path5196"
+       inkscape:connector-curvature="0"
+       transform="matrix(1.3143288,-0.12158315,0.12158315,1.3143288,-76.782934,-61.442296)" />
+    <text
+       y="279.45624"
+       x="55.709278"
+       style="font-variant:normal;font-weight:normal;font-size:5.59797px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.746397"
+       id="text1883-8-28-2-4"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.47838px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.746397;fill:#ffffff;fill-opacity:1"
+         x="55.709278"
+         y="279.45624"
+         id="tspan1881-7-9-9-9">Mg</tspan></text>
+    <text
+       y="276.66125"
+       x="61.101223"
+       style="font-variant:normal;font-weight:normal;font-size:3.12616px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.41682"
+       id="text1883-8-28-2-4-7"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.50092px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.41682;fill:#ffffff;fill-opacity:1"
+         x="61.101223"
+         y="276.66125"
+         id="tspan1881-7-9-9-9-5">2+</tspan></text>
+    <text
+       y="268.65805"
+       x="58.184513"
+       style="font-variant:normal;font-weight:normal;font-size:3.44523px;font-family:Helvetica;-inkscape-font-specification:Helvetica;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.459365"
+       id="text1883-8-28-2-3-0"><tspan
+         style="stroke-width:0.459365"
+         x="58.184513"
+         y="268.65805"
+         id="tspan1881-7-9-9-2-4">OH</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.14375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 58.554582,265.67332 -1.452456,0.0156"
        id="path3056-0-7-4-2"
        inkscape:connector-curvature="0" />
     <path

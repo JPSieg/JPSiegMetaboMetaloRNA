@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.0"
    width="194.262"
    height="148.769"
    id="svg2403"
    xml:space="preserve"
    sodipodi:docname="Figure_3B_Secondary_structure.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"><metadata
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"><metadata
    id="metadata533"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
@@ -27,14 +27,14 @@
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
    inkscape:window-width="1350"
-   inkscape:window-height="1127"
+   inkscape:window-height="729"
    id="namedview529"
    showgrid="false"
-   inkscape:zoom="4"
-   inkscape:cx="96.072508"
-   inkscape:cy="67.763282"
-   inkscape:window-x="570"
-   inkscape:window-y="31"
+   inkscape:zoom="2.8284271"
+   inkscape:cx="92.100658"
+   inkscape:cy="70.710678"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
    inkscape:window-maximized="0"
    inkscape:current-layer="svg2403"
    inkscape:pagecheckerboard="0" />
@@ -1961,7 +1961,7 @@
    x="24.524599"
    y="38.3652"
    id="text1058"
-   style="fill:#000000;fill-opacity:1;">   <tspan
+   style="fill:#000000;fill-opacity:1">   <tspan
    x="24.524599"
    y="38.3652"
    fill="#21908c"
@@ -1971,7 +1971,7 @@
    font-family="'Bitstream Vera Sans'"
    font-size="7.5px"
    id="tspan1059"
-   style="fill:#000000;fill-opacity:1;">G</tspan></text>
+   style="fill:#000000;fill-opacity:1">G</tspan></text>
 
 
 
@@ -2131,7 +2131,7 @@
    x="78.414803"
    y="42.896099"
    id="text1074"
-   style="fill:#000000;fill-opacity:1;">   <tspan
+   style="fill:#000000;fill-opacity:1">   <tspan
    x="78.414803"
    y="42.896099"
    fill="#21908c"
@@ -2141,7 +2141,7 @@
    font-family="'Bitstream Vera Sans'"
    font-size="7.5px"
    id="tspan1075"
-   style="fill:#000000;fill-opacity:1;">G</tspan></text>
+   style="fill:#000000;fill-opacity:1">G</tspan></text>
 
 
 
@@ -2154,7 +2154,7 @@
    x="84.145897"
    y="37.7318"
    id="text1076"
-   style="fill:#20ff03;fill-opacity:1;">   <tspan
+   style="fill:#20ff03;fill-opacity:1">   <tspan
    x="84.145897"
    y="37.7318"
    fill="#21908c"
@@ -2164,7 +2164,7 @@
    font-family="'Bitstream Vera Sans'"
    font-size="7.5px"
    id="tspan1077"
-   style="fill:#20ff03;fill-opacity:1;">U</tspan></text>
+   style="fill:#20ff03;fill-opacity:1">U</tspan></text>
 
 
 
@@ -2242,7 +2242,7 @@
    x="112.702"
    y="37.731701"
    id="text1084"
-   style="fill:#20ff03;fill-opacity:1;">   <tspan
+   style="fill:#20ff03;fill-opacity:1">   <tspan
    x="112.702"
    y="37.731701"
    fill="#000000"
@@ -2252,7 +2252,7 @@
    font-family="'Bitstream Vera Sans'"
    font-size="7.5px"
    id="tspan1085"
-   style="fill:#20ff03;fill-opacity:1;">U</tspan></text>
+   style="fill:#20ff03;fill-opacity:1">U</tspan></text>
 
 
 
@@ -2265,7 +2265,7 @@
    x="118.429"
    y="42.896099"
    id="text1086"
-   style="fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1;">   <tspan
+   style="fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1">   <tspan
    x="118.429"
    y="42.896099"
    fill="#21908c"
@@ -2275,7 +2275,7 @@
    font-family="'Bitstream Vera Sans'"
    font-size="7.5px"
    id="tspan1087"
-   style="fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1;">A</tspan></text>
+   style="fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1">A</tspan></text>
 
 
 
@@ -2288,7 +2288,7 @@
    x="120.85164"
    y="49.798809"
    id="text1088"
-   style="fill:#000000;fill-opacity:1;">   <tspan
+   style="fill:#000000;fill-opacity:1">   <tspan
    x="120.85164"
    y="49.798809"
    font-variant="normal"
@@ -2296,7 +2296,7 @@
    font-style="normal"
    font-size="7.5"
    id="tspan1089"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-size:7.5px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;">C</tspan></text>
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-size:7.5px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1">C</tspan></text>
 
 
 
@@ -3348,19 +3348,20 @@
 
 <text
    xml:space="preserve"
-   style="font-size:10.66666667px;line-height:1.25;font-family:sans-serif"
+   style="font-size:9.33333px;line-height:1.25;font-family:sans-serif"
    x="114.19774"
    y="106.77312"
    id="text9410"><tspan
      sodipodi:role="line"
      id="tspan9408"
      x="114.19774"
-     y="106.77312">P1</tspan></text>
+     y="106.77312"
+     style="font-size:9.33333px">P1</tspan></text>
 
 
 <text
    xml:space="preserve"
-   style="font-size:10.6667px;line-height:1.25;font-family:sans-serif"
+   style="font-size:9.33333px;line-height:1.25;font-family:sans-serif"
    x="53.033009"
    y="37.123104"
    id="text16840"><tspan
@@ -3368,12 +3369,12 @@
      id="tspan16838"
      x="53.033009"
      y="37.123104"
-     style="font-size:10.6667px">P2</tspan></text>
+     style="font-size:9.33333px">P2</tspan></text>
 
 
 <text
    xml:space="preserve"
-   style="font-size:10.6667px;line-height:1.25;font-family:sans-serif"
+   style="font-size:9.33333px;line-height:1.25;font-family:sans-serif"
    x="138.94647"
    y="49.497475"
    id="text18812"><tspan
@@ -3381,7 +3382,7 @@
      id="tspan18810"
      x="138.94647"
      y="49.497475"
-     style="font-size:10.6667px">P3</tspan></text>
+     style="font-size:9.33333px">P3</tspan></text>
 
 
 <text
@@ -3398,50 +3399,54 @@
 
 <text
    xml:space="preserve"
-   style="font-size:8px;line-height:1.25;font-family:sans-serif"
+   style="font-size:9.33333px;line-height:1.25;font-family:sans-serif"
    x="3.5355339"
    y="67.175148"
    id="text23930"><tspan
      sodipodi:role="line"
      id="tspan23928"
      x="3.5355339"
-     y="67.175148">L2</tspan></text>
+     y="67.175148"
+     style="font-size:9.33333px">L2</tspan></text>
 
 
 <text
    xml:space="preserve"
-   style="font-size:8px;line-height:1.25;font-family:sans-serif"
+   style="font-size:9.33333px;line-height:1.25;font-family:sans-serif"
    x="82.377937"
    y="24.748737"
    id="text26820"><tspan
      sodipodi:role="line"
      id="tspan26818"
      x="82.377937"
-     y="24.748737">J2/3</tspan></text>
+     y="24.748737"
+     style="font-size:9.33333px">J2/3</tspan></text>
 
 
 <text
    xml:space="preserve"
-   style="font-size:8px;line-height:1.25;font-family:sans-serif"
+   style="font-size:9.33333px;line-height:1.25;font-family:sans-serif"
    x="182.08"
    y="89.095451"
    id="text27880"><tspan
      sodipodi:role="line"
      id="tspan27878"
      x="182.08"
-     y="89.095451">L3</tspan></text>
+     y="89.095451"
+     style="font-size:9.33333px">L3</tspan></text>
 
 
 <text
    xml:space="preserve"
-   style="font-size:8px;line-height:1.25;font-family:sans-serif"
+   style="font-size:9.33333px;line-height:1.25;font-family:sans-serif"
    x="114.90485"
    y="88.034798"
    id="text29006"><tspan
      sodipodi:role="line"
      id="tspan29004"
      x="114.90485"
-     y="88.034798">J3/1</tspan></text>
+     y="88.034798"
+     style="font-size:9.33333px">J3/1</tspan></text>
 
 
 

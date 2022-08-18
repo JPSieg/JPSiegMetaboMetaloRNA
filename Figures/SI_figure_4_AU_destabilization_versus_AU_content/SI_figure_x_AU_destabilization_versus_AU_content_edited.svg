@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="svglite"
+   width="476.25pt"
+   height="230pt"
+   viewBox="0 0 476.25 230"
+   version="1.1"
+   id="svg309"
+   sodipodi:docname="SI_figure_x_AU_destabilization_versus_AU_content_edited.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   inkscape:export-filename="C:\Users\jpsie\Documents\Rpackages\JPSiegMetaboMetaloRNA\Figures\SI_figure_4_AU_destabilization_versus_AU_content\SI_figure_x_AU_destabilization_versus_AU_content.png"
+   inkscape:export-xdpi="600.09998"
+   inkscape:export-ydpi="600.09998"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview311"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.41707055"
+     inkscape:cx="264.94319"
+     inkscape:cy="-7.1930277"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg309"
+     inkscape:snap-global="false" />
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style2"><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+    <clipPath
+       id="cpNTUuNTR8MTc1LjU1fDI3LjIxfDE3My4yMA==">
+      <rect
+         x="55.540001"
+         y="27.209999"
+         width="120.01"
+         height="145.99001"
+         id="rect3465" />
+    </clipPath>
+    <clipPath
+       id="cpMTgxLjAzfDMwMS4wNHwyNy4yMXwxNzMuMjA=">
+      <rect
+         x="181.03"
+         y="27.209999"
+         width="120.01"
+         height="145.99001"
+         id="rect3518" />
+    </clipPath>
+    <clipPath
+       id="cpMzA2LjUxfDQyNi41MnwyNy4yMXwxNzMuMjA=">
+      <rect
+         x="306.51001"
+         y="27.209999"
+         width="120.01"
+         height="145.99001"
+         id="rect3571" />
+    </clipPath>
+    <clipPath
+       id="cpNTUuNTR8MTc1LjU1fDUuNDh8MjcuMjE=">
+      <rect
+         x="55.540001"
+         y="5.48"
+         width="120.01"
+         height="21.73"
+         id="rect3626" />
+    </clipPath>
+    <clipPath
+       id="cpMTgxLjAzfDMwMS4wNHw1LjQ4fDI3LjIx">
+      <rect
+         x="181.03"
+         y="5.48"
+         width="120.01"
+         height="21.73"
+         id="rect3639" />
+    </clipPath>
+    <clipPath
+       id="cpMzA2LjUxfDQyNi41Mnw1LjQ4fDI3LjIx">
+      <rect
+         x="306.51001"
+         y="5.48"
+         width="120.01"
+         height="21.73"
+         id="rect3652" />
+    </clipPath>
+    <clipPath
+       id="cpNTUuNTR8MTc1LjU1fDI3LjIxfDE3My4yMA==-3">
+      <rect
+         x="55.540001"
+         y="27.209999"
+         width="120.01"
+         height="145.99001"
+         id="rect23117" />
+    </clipPath>
+    <clipPath
+       id="cpMTgxLjAzfDMwMS4wNHwyNy4yMXwxNzMuMjA=-0">
+      <rect
+         x="181.03"
+         y="27.209999"
+         width="120.01"
+         height="145.99001"
+         id="rect23170" />
+    </clipPath>
+    <clipPath
+       id="cpMzA2LjUxfDQyNi41MnwyNy4yMXwxNzMuMjA=-7">
+      <rect
+         x="306.51001"
+         y="27.209999"
+         width="120.01"
+         height="145.99001"
+         id="rect23223" />
+    </clipPath>
+    <clipPath
+       id="cpNTUuNTR8MTc1LjU1fDUuNDh8MjcuMjE=-0">
+      <rect
+         x="55.540001"
+         y="5.48"
+         width="120.01"
+         height="21.73"
+         id="rect23278" />
+    </clipPath>
+    <clipPath
+       id="cpMTgxLjAzfDMwMS4wNHw1LjQ4fDI3LjIx-3">
+      <rect
+         x="181.03"
+         y="5.48"
+         width="120.01"
+         height="21.73"
+         id="rect23291" />
+    </clipPath>
+    <clipPath
+       id="cpMzA2LjUxfDQyNi41Mnw1LjQ4fDI3LjIx-8">
+      <rect
+         x="306.51001"
+         y="5.48"
+         width="120.01"
+         height="21.73"
+         id="rect23304" />
+    </clipPath>
+  </defs>
+  <rect
+     width="100%"
+     height="65.228508%"
+     style="fill:#ffffff;stroke:none;stroke-width:0.807642"
+     id="rect6"
+     x="-5.3947706"
+     y="3.5965235" />
+  <defs
+     id="defs11">
+    <clipPath
+       id="cpMC4wMHw0NzYuMjV8MC4wMHwzNDYuNTA=">
+      <rect
+         x="0"
+         y="0"
+         width="476.25"
+         height="346.5"
+         id="rect8" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMC4wMHw0NzYuMjV8MC4wMHwzNDYuNTA=)"
+     id="g15"
+     transform="matrix(1,0,0,0.50697141,-5.3947707,3.5965207)">
+    <rect
+       x="0"
+       y="5.6999998e-14"
+       width="476.25"
+       height="346.5"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:1.07"
+       id="rect13" />
+  </g>
+  <defs
+     id="defs20">
+    <clipPath
+       id="cpNTUuNTR8MTkwLjMwfDI3LjIxfDMwMy43MA==">
+      <rect
+         x="55.540001"
+         y="27.209999"
+         width="134.75999"
+         height="276.48999"
+         id="rect17" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMC4wMHw0NzYuMjV8MC4wMHwzNDYuNTA=)"
+     id="g68" />
+  <defs
+     id="defs73">
+    <clipPath
+       id="cpMTk1Ljc4fDMzMC41NHwyNy4yMXwzMDMuNzA=">
+      <rect
+         x="195.78"
+         y="27.209999"
+         width="134.75999"
+         height="276.48999"
+         id="rect70" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMC4wMHw0NzYuMjV8MC4wMHwzNDYuNTA=)"
+     id="g121" />
+  <defs
+     id="defs126">
+    <clipPath
+       id="cpMzM2LjAxfDQ3MC43N3wyNy4yMXwzMDMuNzA=">
+      <rect
+         x="336.01001"
+         y="27.209999"
+         width="134.75999"
+         height="276.48999"
+         id="rect123" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMC4wMHw0NzYuMjV8MC4wMHwzNDYuNTA=)"
+     id="g176" />
+  <defs
+     id="defs181">
+    <clipPath
+       id="cpNTUuNTR8MTkwLjMwfDUuNDh8MjcuMjE=">
+      <rect
+         x="55.540001"
+         y="5.48"
+         width="134.75999"
+         height="21.73"
+         id="rect178" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMC4wMHw0NzYuMjV8MC4wMHwzNDYuNTA=)"
+     id="g189" />
+  <defs
+     id="defs194">
+    <clipPath
+       id="cpMTk1Ljc4fDMzMC41NHw1LjQ4fDI3LjIx">
+      <rect
+         x="195.78"
+         y="5.48"
+         width="134.75999"
+         height="21.73"
+         id="rect191" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMC4wMHw0NzYuMjV8MC4wMHwzNDYuNTA=)"
+     id="g202" />
+  <defs
+     id="defs207">
+    <clipPath
+       id="cpMzM2LjAxfDQ3MC43N3w1LjQ4fDI3LjIx">
+      <rect
+         x="336.01001"
+         y="5.48"
+         width="134.75999"
+         height="21.73"
+         id="rect204" />
+    </clipPath>
+  </defs>
+  <text
+     transform="matrix(0,-0.53029097,1,0,24.559358,80.460141)"
+     text-anchor="middle"
+     style="font-size:16px;font-family:Arial"
+     textLength="104.02"
+     lengthAdjust="spacingAndGlyphs"
+     id="text305">(kcal/mol)</text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:1.25;font-family:sans-serif;stroke-width:0.75"
+     x="-170.55418"
+     y="27.025551"
+     id="text5790"
+     transform="rotate(-89.80887)"><tspan
+       sodipodi:role="line"
+       id="tspan5788"
+       style="font-size:16px;stroke-width:0.75"
+       x="-170.55418"
+       y="27.025551">ΔΔG</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:10.6857px;line-height:1.25;font-family:sans-serif;white-space:pre;stroke-width:0.500893"
+     x="-139.34569"
+     y="28.015823"
+     id="text5790-0"
+     transform="matrix(0.0035228,-0.94692482,1.0560383,0.00315881,0,0)"><tspan
+       sodipodi:role="line"
+       id="tspan5788-5"
+       style="font-size:10.6857px;stroke-width:0.500893"
+       x="-139.34569"
+       y="28.015823">37</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:9.52899px;line-height:1.25;font-family:sans-serif;stroke-width:0.893339"
+     x="-113.66458"
+     y="23.598625"
+     id="text6105"
+     transform="matrix(0.02084307,-1.1802829,0.84674142,0.02905341,0,0)"><tspan
+       sodipodi:role="line"
+       id="tspan6103"
+       style="stroke-width:0.893339"
+       x="-113.66458"
+       y="23.598625">o</tspan></text>
+  <g
+     id="g26069"
+     transform="translate(15.563099,13.25513)">
+    <text
+       x="50.610001"
+       y="159.95"
+       text-anchor="end"
+       style="font-size:16px;font-family:Arial"
+       textLength="27.57"
+       lengthAdjust="spacingAndGlyphs"
+       id="text23359">-0.5</text>
+    <g
+       id="g25329">
+      <g
+         clip-path="url(#cpNTUuNTR8MTc1LjU1fDI3LjIxfDE3My4yMA==-3)"
+         id="g23166">
+        <rect
+           x="55.540001"
+           y="27.209999"
+           width="120.01"
+           height="145.99001"
+           style="fill:#ffffff;stroke:none;stroke-width:1.07"
+           id="rect23122" />
+        <circle
+           cx="70.089996"
+           cy="85.699997"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23124" />
+        <circle
+           cx="93.730003"
+           cy="51.130001"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23126" />
+        <circle
+           cx="139.17999"
+           cy="96.190002"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23128" />
+        <circle
+           cx="139.17999"
+           cy="93.110001"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23130" />
+        <circle
+           cx="161"
+           cy="85.699997"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23132" />
+        <polyline
+           points="70.09,70.97 71.24,71.23 72.39,71.49 73.54,71.75 74.69,72.01 75.84,72.26 77.00,72.52 78.15,72.78 79.30,73.04 80.45,73.30 81.60,73.56 82.75,73.82 83.90,74.08 85.05,74.34 86.20,74.60 87.35,74.86 88.50,75.12 89.65,75.38 90.80,75.64 91.96,75.90 93.11,76.16 94.26,76.42 95.41,76.68 96.56,76.94 97.71,77.20 98.86,77.46 100.01,77.72 101.16,77.97 102.31,78.23 103.46,78.49 104.61,78.75 105.77,79.01 106.92,79.27 108.07,79.53 109.22,79.79 110.37,80.05 111.52,80.31 112.67,80.57 113.82,80.83 114.97,81.09 116.12,81.35 117.27,81.61 118.42,81.87 119.57,82.13 120.73,82.39 121.88,82.65 123.03,82.91 124.18,83.17 125.33,83.43 126.48,83.68 127.63,83.94 128.78,84.20 129.93,84.46 131.08,84.72 132.23,84.98 133.38,85.24 134.54,85.50 135.69,85.76 136.84,86.02 137.99,86.28 139.14,86.54 140.29,86.80 141.44,87.06 142.59,87.32 143.74,87.58 144.89,87.84 146.04,88.10 147.19,88.36 148.35,88.62 149.50,88.88 150.65,89.14 151.80,89.39 152.95,89.65 154.10,89.91 155.25,90.17 156.40,90.43 157.55,90.69 158.70,90.95 159.85,91.21 161.00,91.47 "
+           style="stroke:#3366ff;stroke-width:2.13;stroke-linecap:butt"
+           id="polyline23134" />
+        <text
+           x="61"
+           y="45.869999"
+           style="font-style:italic;font-size:11.04px;font-family:Arial"
+           textLength="5.52"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23136">y</text>
+        <text
+           x="66.510002"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23138" />
+        <text
+           x="69.540001"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="6.4400001"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23140">=</text>
+        <text
+           x="75.980003"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23142" />
+        <text
+           x="79.010002"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="6.1300001"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23144">1</text>
+        <text
+           x="87.18"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="7.54"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23146">−</text>
+        <text
+           x="96.760002"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="33.740002"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23148">0.0066</text>
+        <text
+           x="130.5"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23150" />
+        <text
+           x="133.53"
+           y="45.869999"
+           style="font-style:italic;font-size:11.04px;font-family:Arial"
+           textLength="5.52"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23152">x</text>
+        <text
+           x="61"
+           y="85.57"
+           style="font-style:italic;font-size:11.04px;font-family:Arial"
+           textLength="7.96"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23154">R</text>
+        <text
+           x="70.150002"
+           y="80.139999"
+           style="font-size:7.73px;font-family:Arial"
+           textLength="4.29"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23156">2</text>
+        <text
+           x="74.440002"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23158" />
+        <text
+           x="77.459999"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="6.4400001"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23160">=</text>
+        <text
+           x="83.910004"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23162" />
+        <text
+           x="86.93"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="21.469999"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23164">0.22</text>
+      </g>
+      <g
+         clip-path="url(#cpMTgxLjAzfDMwMS4wNHwyNy4yMXwxNzMuMjA=-0)"
+         id="g23219">
+        <rect
+           x="181.03"
+           y="27.209999"
+           width="120.01"
+           height="145.99001"
+           style="fill:#ffffff;stroke:none;stroke-width:1.07"
+           id="rect23175" />
+        <circle
+           cx="195.58"
+           cy="103.6"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23177" />
+        <circle
+           cx="219.21001"
+           cy="98.050003"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23179" />
+        <circle
+           cx="264.67001"
+           cy="89.400002"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23181" />
+        <circle
+           cx="264.67001"
+           cy="83.849998"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23183" />
+        <circle
+           cx="286.48999"
+           cy="86.32"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23185" />
+        <polyline
+           points="195.58,102.88 196.73,102.64 197.88,102.40 199.03,102.16 200.18,101.91 201.33,101.67 202.48,101.43 203.63,101.19 204.78,100.94 205.93,100.70 207.08,100.46 208.23,100.22 209.39,99.98 210.54,99.73 211.69,99.49 212.84,99.25 213.99,99.01 215.14,98.76 216.29,98.52 217.44,98.28 218.59,98.04 219.74,97.80 220.89,97.55 222.04,97.31 223.19,97.07 224.35,96.83 225.50,96.58 226.65,96.34 227.80,96.10 228.95,95.86 230.10,95.62 231.25,95.37 232.40,95.13 233.55,94.89 234.70,94.65 235.85,94.41 237.00,94.16 238.16,93.92 239.31,93.68 240.46,93.44 241.61,93.19 242.76,92.95 243.91,92.71 245.06,92.47 246.21,92.23 247.36,91.98 248.51,91.74 249.66,91.50 250.81,91.26 251.97,91.01 253.12,90.77 254.27,90.53 255.42,90.29 256.57,90.05 257.72,89.80 258.87,89.56 260.02,89.32 261.17,89.08 262.32,88.83 263.47,88.59 264.62,88.35 265.77,88.11 266.93,87.87 268.08,87.62 269.23,87.38 270.38,87.14 271.53,86.90 272.68,86.66 273.83,86.41 274.98,86.17 276.13,85.93 277.28,85.69 278.43,85.44 279.58,85.20 280.74,84.96 281.89,84.72 283.04,84.48 284.19,84.23 285.34,83.99 286.49,83.75 "
+           style="stroke:#3366ff;stroke-width:2.13;stroke-linecap:butt"
+           id="polyline23187" />
+        <text
+           x="186.48"
+           y="45.869999"
+           style="font-style:italic;font-size:11.04px;font-family:Arial"
+           textLength="5.52"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23189">y</text>
+        <text
+           x="192"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23191" />
+        <text
+           x="195.02"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="6.4400001"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23193">=</text>
+        <text
+           x="201.47"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23195" />
+        <text
+           x="204.49001"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="21.469999"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23197">0.18</text>
+        <text
+           x="228"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="7.5500002"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23199">+</text>
+        <text
+           x="237.59"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="33.740002"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23201">0.0062</text>
+        <text
+           x="271.32999"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23203" />
+        <text
+           x="274.35001"
+           y="45.869999"
+           style="font-style:italic;font-size:11.04px;font-family:Arial"
+           textLength="5.52"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23205">x</text>
+        <text
+           x="186.48"
+           y="85.57"
+           style="font-style:italic;font-size:11.04px;font-family:Arial"
+           textLength="7.96"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23207">R</text>
+        <text
+           x="195.63"
+           y="80.139999"
+           style="font-size:7.73px;font-family:Arial"
+           textLength="4.29"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23209">2</text>
+        <text
+           x="199.92"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23211" />
+        <text
+           x="202.95"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="6.4400001"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23213">=</text>
+        <text
+           x="209.39"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23215" />
+        <text
+           x="212.42"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="15.34"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23217">0.9</text>
+      </g>
+      <g
+         clip-path="url(#cpMzA2LjUxfDQyNi41MnwyNy4yMXwxNzMuMjA=-7)"
+         id="g23274">
+        <rect
+           x="306.51001"
+           y="27.209999"
+           width="120.01"
+           height="145.99001"
+           style="fill:#ffffff;stroke:none;stroke-width:1.07"
+           id="rect23228" />
+        <circle
+           cx="321.06"
+           cy="100.52"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23230" />
+        <circle
+           cx="344.70001"
+           cy="148.05"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23232" />
+        <circle
+           cx="390.16"
+           cy="123.35"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23234" />
+        <circle
+           cx="390.16"
+           cy="91.260002"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23236" />
+        <circle
+           cx="411.97"
+           cy="73.970001"
+           r="1.95"
+           style="fill:#000000;stroke-width:0.71"
+           id="circle23238" />
+        <polyline
+           points="321.06,126.38 322.21,125.95 323.36,125.52 324.51,125.09 325.66,124.66 326.81,124.23 327.97,123.79 329.12,123.36 330.27,122.93 331.42,122.50 332.57,122.07 333.72,121.64 334.87,121.21 336.02,120.77 337.17,120.34 338.32,119.91 339.47,119.48 340.62,119.05 341.78,118.62 342.93,118.18 344.08,117.75 345.23,117.32 346.38,116.89 347.53,116.46 348.68,116.03 349.83,115.60 350.98,115.16 352.13,114.73 353.28,114.30 354.43,113.87 355.59,113.44 356.74,113.01 357.89,112.57 359.04,112.14 360.19,111.71 361.34,111.28 362.49,110.85 363.64,110.42 364.79,109.99 365.94,109.55 367.09,109.12 368.24,108.69 369.39,108.26 370.55,107.83 371.70,107.40 372.85,106.96 374.00,106.53 375.15,106.10 376.30,105.67 377.45,105.24 378.60,104.81 379.75,104.38 380.90,103.94 382.05,103.51 383.20,103.08 384.36,102.65 385.51,102.22 386.66,101.79 387.81,101.35 388.96,100.92 390.11,100.49 391.26,100.06 392.41,99.63 393.56,99.20 394.71,98.77 395.86,98.33 397.01,97.90 398.16,97.47 399.32,97.04 400.47,96.61 401.62,96.18 402.77,95.74 403.92,95.31 405.07,94.88 406.22,94.45 407.37,94.02 408.52,93.59 409.67,93.16 410.82,92.72 411.97,92.29 "
+           style="stroke:#3366ff;stroke-width:2.13;stroke-linecap:butt"
+           id="polyline23240" />
+        <text
+           x="311.97"
+           y="45.869999"
+           style="font-style:italic;font-size:11.04px;font-family:Arial"
+           textLength="5.52"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23242">y</text>
+        <text
+           x="317.48001"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23244" />
+        <text
+           x="320.51001"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="6.4400001"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23246">=</text>
+        <text
+           x="326.95001"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23248" />
+        <text
+           x="329.98001"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="7.54"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23250">−</text>
+        <text
+           x="339.04999"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="21.469999"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23252">0.33</text>
+        <text
+           x="362.56"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="7.5500002"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23254">+</text>
+        <text
+           x="372.14999"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="26.780001"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23256">0.011</text>
+        <text
+           x="398.92999"
+           y="45.869999"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23258" />
+        <text
+           x="401.95001"
+           y="45.869999"
+           style="font-style:italic;font-size:11.04px;font-family:Arial"
+           textLength="5.52"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23260">x</text>
+        <text
+           x="311.97"
+           y="85.57"
+           style="font-style:italic;font-size:11.04px;font-family:Arial"
+           textLength="7.96"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23262">R</text>
+        <text
+           x="321.12"
+           y="80.139999"
+           style="font-size:7.73px;font-family:Arial"
+           textLength="4.29"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23264">2</text>
+        <text
+           x="325.41"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23266" />
+        <text
+           x="328.42999"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="6.4400001"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23268">=</text>
+        <text
+           x="334.88"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="3.02"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23270" />
+        <text
+           x="337.89999"
+           y="85.57"
+           style="font-size:11.04px;font-family:Arial"
+           textLength="21.469999"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23272">0.24</text>
+      </g>
+      <g
+         clip-path="url(#cpNTUuNTR8MTc1LjU1fDUuNDh8MjcuMjE=-0)"
+         id="g23287">
+        <rect
+           x="55.540001"
+           y="5.48"
+           width="120.01"
+           height="21.73"
+           style="fill:#ffffff;stroke-width:2.13"
+           id="rect23283" />
+        <text
+           x="92.589996"
+           y="19.889999"
+           style="font-size:14px;font-family:Arial"
+           textLength="45.91"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23285">Ecoli80</text>
+      </g>
+      <g
+         clip-path="url(#cpMTgxLjAzfDMwMS4wNHw1LjQ4fDI3LjIx-3)"
+         id="g23300">
+        <rect
+           x="181.03"
+           y="5.48"
+           width="120.01"
+           height="21.73"
+           style="fill:#ffffff;stroke-width:2.13"
+           id="rect23296" />
+        <text
+           x="216.14999"
+           y="19.889999"
+           style="font-size:14px;font-family:Arial"
+           textLength="49.759998"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23298">NTPCM</text>
+      </g>
+      <g
+         clip-path="url(#cpMzA2LjUxfDQyNi41Mnw1LjQ4fDI3LjIx-8)"
+         id="g23313">
+        <rect
+           x="306.51001"
+           y="5.48"
+           width="120.01"
+           height="21.73"
+           style="fill:#ffffff;stroke-width:2.13"
+           id="rect23309" />
+        <text
+           x="343.20001"
+           y="19.889999"
+           style="font-size:14px;font-family:Arial"
+           textLength="46.630001"
+           lengthAdjust="spacingAndGlyphs"
+           id="text23311">WMCM</text>
+      </g>
+      <polyline
+         points="55.54,173.20 175.55,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23315" />
+      <polyline
+         points="70.09,175.94 70.09,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23317" />
+      <polyline
+         points="115.55,175.94 115.55,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23319" />
+      <polyline
+         points="161.00,175.94 161.00,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23321" />
+      <text
+         x="70.089996"
+         y="189.59"
+         text-anchor="middle"
+         style="font-size:16px;font-family:Arial"
+         textLength="17.799999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23323">25</text>
+      <text
+         x="115.55"
+         y="189.59"
+         text-anchor="middle"
+         style="font-size:16px;font-family:Arial"
+         textLength="17.799999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23325">50</text>
+      <text
+         x="161"
+         y="189.59"
+         text-anchor="middle"
+         style="font-size:16px;font-family:Arial"
+         textLength="17.799999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23327">75</text>
+      <polyline
+         points="181.03,173.20 301.04,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23329" />
+      <polyline
+         points="195.58,175.94 195.58,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23331" />
+      <polyline
+         points="241.03,175.94 241.03,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23333" />
+      <polyline
+         points="286.49,175.94 286.49,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23335" />
+      <text
+         x="195.58"
+         y="189.59"
+         text-anchor="middle"
+         style="font-size:16px;font-family:Arial"
+         textLength="17.799999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23337">25</text>
+      <text
+         x="241.03"
+         y="189.59"
+         text-anchor="middle"
+         style="font-size:16px;font-family:Arial"
+         textLength="17.799999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23339">50</text>
+      <text
+         x="286.48999"
+         y="189.59"
+         text-anchor="middle"
+         style="font-size:16px;font-family:Arial"
+         textLength="17.799999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23341">75</text>
+      <polyline
+         points="306.51,173.20 426.52,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23343" />
+      <polyline
+         points="321.06,175.94 321.06,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23345" />
+      <polyline
+         points="366.52,175.94 366.52,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23347" />
+      <polyline
+         points="411.97,175.94 411.97,173.20 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23349" />
+      <text
+         x="321.06"
+         y="189.59"
+         text-anchor="middle"
+         style="font-size:16px;font-family:Arial"
+         textLength="17.799999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23351">25</text>
+      <text
+         x="366.51999"
+         y="189.59"
+         text-anchor="middle"
+         style="font-size:16px;font-family:Arial"
+         textLength="17.799999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23353">50</text>
+      <text
+         x="411.97"
+         y="189.59"
+         text-anchor="middle"
+         style="font-size:16px;font-family:Arial"
+         textLength="17.799999"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23355">75</text>
+      <polyline
+         points="55.54,173.20 55.54,27.21 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23357" />
+      <text
+         x="50.610001"
+         y="129.08"
+         text-anchor="end"
+         style="font-size:16px;font-family:Arial"
+         textLength="22.24"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23361">0.0</text>
+      <text
+         x="50.610001"
+         y="98.220001"
+         text-anchor="end"
+         style="font-size:16px;font-family:Arial"
+         textLength="22.24"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23363">0.5</text>
+      <text
+         x="50.610001"
+         y="67.349998"
+         text-anchor="end"
+         style="font-size:16px;font-family:Arial"
+         textLength="22.24"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23365">1.0</text>
+      <text
+         x="50.610001"
+         y="36.490002"
+         text-anchor="end"
+         style="font-size:16px;font-family:Arial"
+         textLength="22.24"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23367">1.5</text>
+      <polyline
+         points="52.80,154.22 55.54,154.22 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23369" />
+      <polyline
+         points="52.80,123.35 55.54,123.35 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23371" />
+      <polyline
+         points="52.80,92.49 55.54,92.49 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23373" />
+      <polyline
+         points="52.80,61.63 55.54,61.63 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23375" />
+      <polyline
+         points="52.80,30.76 55.54,30.76 "
+         style="stroke-width:1.07;stroke-linecap:butt"
+         id="polyline23377" />
+      <text
+         x="241.03"
+         y="207.14999"
+         text-anchor="middle"
+         style="font-size:16px;font-family:Arial"
+         textLength="108.48"
+         lengthAdjust="spacingAndGlyphs"
+         id="text23379">AU content (%)</text>
+    </g>
+  </g>
+</svg>

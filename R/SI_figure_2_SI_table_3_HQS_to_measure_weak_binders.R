@@ -8,9 +8,9 @@ library(ggrepel)
 
 ####Read in data####
 
-list.files("Figures/SI_Figure_X_HQS_to_measure_weak_binders")
+list.files("Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders")
 
-df.HQS = read.csv("Figures/SI_Figure_X_HQS_to_measure_weak_binders/HQS_data.csv")
+df.HQS = read.csv("Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/HQS_data.csv")
 
 head(df.HQS)
 
@@ -31,12 +31,12 @@ fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
 df$Sample = factor(df$Sample,
                    levels = c("No chelator", "Chelator"))
 
-Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
-    geom_point() +
+Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample, shape = Sample)) +
+    geom_point(size = 1.5) +
     theme_classic() +
     #geom_function(fun = fit.form, color = "black") +
   ggtitle("L-Glutamate") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
     theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -55,12 +55,12 @@ fit.form = function(Conc.Mg){
     Emission = (coef(fit)[3]*Conc.Mg/(1 + coef(fit)[3]*Conc.Mg))
 }
 
-Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
-    geom_point() +
+Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample, shape = Sample)) +
+    geom_point(size = 1.5) +
     theme_classic() +
     geom_function(fun = fit.form, color = "black") +
   ggtitle("L-Glutamate") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, by = 0.25)) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
@@ -72,7 +72,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
           axis.title.y = element_text(color = "Black", size = 18),
           legend.text = element_text(color = "Black", size = 16),
           legend.title = element_blank(),
-          legend.position = c(0.5, 0.3),
+          legend.position = c(0.75, 0.3),
           plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
 df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
@@ -101,15 +101,15 @@ Mg.free.chelator = function(Conc.Mg){
     x = Conc.Mg - (-b + sqrt((b^2) + (4*a*c)))/(2*a)
   }
 
-Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
+Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample, shape = Sample)) +
     geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
-    geom_point() +
+    geom_point(size = 1.5) +
     theme_classic() +
     geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
     #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
      scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
-    scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-    scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
+    scale_y_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
+    scale_x_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
     ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
     xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
     theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -126,7 +126,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
 Figure_Glutamate = plot_grid(Figure_Norm_Em, Figure_Mg_free, ncol = 1, align = "v")
 
 write.csv(data.frame(coef(summary(fit))),
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/No_chelator_fit_glutamate.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/No_chelator_fit_glutamate.csv",
           row.names = FALSE)
 
 df.result = data.frame(coef(summary(Fit.chelator)))
@@ -137,7 +137,7 @@ df.result = bind_rows(df.result,
                                  "Pr...t.." = NA))
 
 write.csv(df.result,
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/Kapp_fit_glutamate.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/Kapp_fit_glutamate.csv",
           row.names = FALSE)
 
 ####Analyze Glutathione data ####
@@ -157,11 +157,11 @@ fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
 df$Sample = factor(df$Sample,
                    levels = c("No chelator", "Chelator"))
 
-Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
-  geom_point() +
+Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample, shape = Sample)) +
+  geom_point(size = 1.5) +
   theme_classic() +
   #geom_function(fun = fit.form, color = "black") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -181,12 +181,12 @@ fit.form = function(Conc.Mg){
   Emission = (coef(fit)[3]*Conc.Mg/(1 + coef(fit)[3]*Conc.Mg))
 }
 
-Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
-  geom_point() +
+Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample, shape = Sample)) +
+  geom_point(size = 1.5) +
   theme_classic() +
   geom_function(fun = fit.form, color = "black") +
   ggtitle("Glutathione") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
@@ -198,7 +198,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
         legend.title = element_blank(),
-        legend.position = c(0.5, 0.3),
+        legend.position = c(0.75, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
 df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
@@ -226,15 +226,15 @@ Mg.free.chelator = function(Conc.Mg){
   x = Conc.Mg - (-b + sqrt((b^2) + (4*a*c)))/(2*a)
 }
 
-Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
+Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample, shape = Sample)) +
   geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
-  geom_point() +
+  geom_point(size = 1.5) +
   theme_classic() +
   geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
   #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
-  scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-  scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
+  scale_y_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
+  scale_x_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -251,7 +251,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
 Figure_Glutathione = plot_grid(Figure_Norm_Em, Figure_Mg_free, ncol = 1, align = "v")
 
 write.csv(data.frame(coef(summary(fit))),
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/No_chelator_fit_glutathione.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/No_chelator_fit_glutathione.csv",
           row.names = FALSE)
 
 df.result = data.frame(coef(summary(Fit.chelator)))
@@ -262,7 +262,7 @@ df.result = bind_rows(df.result,
                                  "Pr...t.." = NA))
 
 write.csv(df.result,
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/Kapp_fit_glutathione.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/Kapp_fit_glutathione.csv",
           row.names = FALSE)
 
 ####Analyze Aspartate data ####
@@ -283,12 +283,12 @@ fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
 df$Sample = factor(df$Sample,
                    levels = c("No chelator", "Chelator"))
 
-Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
-  geom_point() +
+Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample, shape = Sample)) +
+  geom_point(size = 1.5) +
   theme_classic() +
   ggtitle("L-Aspartate") +
   #geom_function(fun = fit.form, color = "black") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -307,12 +307,12 @@ fit.form = function(Conc.Mg){
   Emission = (coef(fit)[3]*Conc.Mg/(1 + coef(fit)[3]*Conc.Mg))
 }
 
-Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
-  geom_point() +
+Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample, shape = Sample)) +
+  geom_point(size = 1.5) +
   theme_classic() +
   geom_function(fun = fit.form, color = "black") +
   ggtitle("L-Aspartate") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
@@ -324,7 +324,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
         legend.title = element_blank(),
-        legend.position = c(0.5, 0.3),
+        legend.position = c(0.75, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
 df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
@@ -353,15 +353,15 @@ Mg.free.chelator = function(Conc.Mg){
   x = Conc.Mg - (-b + sqrt((b^2) + (4*a*c)))/(2*a)
 }
 
-Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
+Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample, shape = Sample)) +
   geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
-  geom_point() +
+  geom_point(size = 1.5) +
   theme_classic() +
   geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
   #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
-  scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-  scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
+  scale_y_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
+  scale_x_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -378,7 +378,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
 Figure_Aspartate = plot_grid(Figure_Norm_Em, Figure_Mg_free, ncol = 1, align = "v")
 
 write.csv(data.frame(coef(summary(fit))),
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/No_chelator_fit_aspartate.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/No_chelator_fit_aspartate.csv",
           row.names = FALSE)
 
 df.result = data.frame(coef(summary(Fit.chelator)))
@@ -389,7 +389,7 @@ df.result = bind_rows(df.result,
                                  "Pr...t.." = NA))
 
 write.csv(df.result,
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/Kapp_fit_aspartate.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/Kapp_fit_aspartate.csv",
           row.names = FALSE)
 
 ####Analyze Valine data ####
@@ -411,11 +411,11 @@ df$Sample = factor(df$Sample,
                    levels = c("No chelator", "Chelator"))
 
 
-Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
-  geom_point() +
+Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample, shape = Sample)) +
+  geom_point(size = 1.5) +
   theme_classic() +
   #geom_function(fun = fit.form, color = "black") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -434,11 +434,11 @@ fit.form = function(Conc.Mg){
   Emission = (coef(fit)[3]*Conc.Mg/(1 + coef(fit)[3]*Conc.Mg))
 }
 
-Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
-  geom_point() +
+Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample, shape = Sample)) +
+  geom_point(size = 1.5) +
   theme_classic() +
   geom_function(fun = fit.form, color = "black") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
   ggtitle("L-Valine") +
@@ -451,7 +451,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
         legend.title = element_blank(),
-        legend.position = c(0.5, 0.3),
+        legend.position = c(0.75, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
 df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
@@ -479,15 +479,15 @@ Mg.free.chelator = function(Conc.Mg){
   x = Conc.Mg - (-b + sqrt((b^2) + (4*a*c)))/(2*a)
 }
 
-Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
+Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample, shape = Sample)) +
   geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
-  geom_point() +
+  geom_point(size = 1.5) +
   theme_classic() +
   geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
   #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
-  scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-  scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
+  scale_y_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
+  scale_x_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -503,7 +503,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
 Figure_Valine = plot_grid(Figure_Norm_Em, Figure_Mg_free, ncol = 1, align = "v")
 
 write.csv(data.frame(coef(summary(fit))),
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/No_chelator_fit_valine.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/No_chelator_fit_valine.csv",
           row.names = FALSE)
 
 df.result = data.frame(coef(summary(Fit.chelator)))
@@ -514,7 +514,7 @@ df.result = bind_rows(df.result,
                                  "Pr...t.." = NA))
 
 write.csv(df.result,
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/Kapp_fit_valine.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/Kapp_fit_valine.csv",
           row.names = FALSE)
 
 
@@ -536,11 +536,11 @@ fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
 df$Sample = factor(df$Sample,
                    levels = c("No chelator", "Chelator"))
 
-Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
-  geom_point() +
+Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample, shape = Sample)) +
+  geom_point(size = 1.5) +
   theme_classic() +
   #geom_function(fun = fit.form, color = "black") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -559,12 +559,12 @@ fit.form = function(Conc.Mg){
   Emission = (coef(fit)[3]*Conc.Mg/(1 + coef(fit)[3]*Conc.Mg))
 }
 
-Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
-  geom_point() +
+Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample, shape = Sample)) +
+  geom_point(size = 1.5) +
   theme_classic() +
   geom_function(fun = fit.form, color = "black") +
   ggtitle("L-Glutamine") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
@@ -576,7 +576,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
         legend.title = element_blank(),
-        legend.position = c(0.5, 0.3),
+        legend.position = c(0.75, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
 df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
@@ -604,15 +604,15 @@ Mg.free.chelator = function(Conc.Mg){
   x = Conc.Mg - (-b + sqrt((b^2) + (4*a*c)))/(2*a)
 }
 
-Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
+Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample, shape = Sample)) +
   geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
-  geom_point() +
+  geom_point(size = 1.5) +
   theme_classic() +
   geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
   #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
-  scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-  scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
+  scale_y_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
+  scale_x_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -629,13 +629,13 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
 Figure_Glutamine = plot_grid(Figure_Norm_Em, Figure_Mg_free, ncol = 1, align = "v")
 
 write.csv(data.frame(coef(summary(fit))),
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/No_chelator_fit_glutamine.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/No_chelator_fit_glutamine.csv",
           row.names = FALSE)
 
 df.result = data.frame(NA)
 
 write.csv(df.result,
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/Kapp_fit_glutamine.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/Kapp_fit_glutamine.csv",
           row.names = FALSE)
 
 
@@ -662,11 +662,11 @@ fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
 df$Sample = factor(df$Sample,
                    levels = c("No chelator", "Chelator"))
 
-Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample)) +
-  geom_point() +
+Figure_Raw_Em = ggplot(df, aes(x = Conc.Mg, y = Emission, color = Sample, shape = Sample)) +
+  geom_point(size = 1.5) +
   theme_classic() +
   #geom_function(fun = fit.form, color = "black") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -685,12 +685,12 @@ fit.form = function(Conc.Mg){
   Emission = (coef(fit)[3]*Conc.Mg/(1 + coef(fit)[3]*Conc.Mg))
 }
 
-Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
-  geom_point() +
+Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample, shape = Sample)) +
+  geom_point(size = 1.5) +
   theme_classic() +
   geom_function(fun = fit.form, color = "black") +
   ggtitle("Pyruvic acid") +
-  ylab("HQS emmission") +
+  ylab("HQS emmission") + scale_x_continuous(trans = "log10", breaks = c(0.01, 0.1, 1.0, 10, 100), limits = c(0.01, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.25)) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
@@ -702,7 +702,7 @@ Figure_Norm_Em = ggplot(df, aes(x = Conc.Mg, y = I.norm, color =  Sample)) +
         axis.title.y = element_text(color = "Black", size = 18),
         legend.text = element_text(color = "Black", size = 16),
         legend.title = element_blank(),
-        legend.position = c(0.5, 0.3),
+        legend.position = c(0.75, 0.3),
         plot.title = element_text(hjust = 0.5, color = "Black", size = 16))
 
 df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
@@ -730,15 +730,15 @@ Mg.free.chelator = function(Conc.Mg){
   x = Conc.Mg - (-b + sqrt((b^2) + (4*a*c)))/(2*a)
 }
 
-Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample)) +
+Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = Conc.Mg, y = Mg.free, color = Sample, shape = Sample)) +
   geom_abline(slope = 1, intercept = 0, color = "black", size = 1.0) +
-  geom_point() +
+  geom_point(size = 1.5) +
   theme_classic() +
   geom_function(fun = Mg.free.chelator, color = viridis(5)[1]) +
   #geom_function(fun = Mg.free.Fru, color = viridis(5)[1]) +
    scale_color_manual(values = c("black", viridis(5)[1]), name = "Chelator") +
-  scale_y_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
-  scale_x_continuous(trans = "log10", labels = comma, limits = c(0.05, 100)) +
+  scale_y_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
+  scale_x_continuous(trans = "log10",  limits = c(0.01, 100), breaks = c(0.01, 0.1, 1.0, 10, 100), labels = c("0.01", "0.1", "1.0", "10", "100")) +
   ylab(expression("[ Free"~"Mg"^{"2+"}~"] (mM)")) +
   xlab(expression("[ Total"~"Mg"^{"2+"}~"] (mM)")) +
   theme(axis.line = element_line(colour = 'black', size = 1.5),
@@ -755,7 +755,7 @@ Figure_Mg_free = ggplot(df %>% filter(EDTA == "EDTA = 0 mM"), mapping = aes(x = 
 Figure_Pyruvate = plot_grid(Figure_Norm_Em, Figure_Mg_free, ncol = 1, align = "v")
 
 write.csv(data.frame(coef(summary(fit))),
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/No_chelator_fit_pyruvate.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/No_chelator_fit_pyruvate.csv",
           row.names = FALSE)
 
 df.result = data.frame(coef(summary(Fit.chelator)))
@@ -766,7 +766,7 @@ df.result = bind_rows(df.result,
                                  "Pr...t.." = NA))
 
 write.csv(df.result,
-          "Figures/SI_Figure_X_HQS_to_measure_weak_binders/Kapp_fit_pyruvate.csv",
+          "Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/Kapp_fit_pyruvate.csv",
           row.names = FALSE)
 
 ####Make plot####
@@ -777,8 +777,8 @@ plot_grid(Figure_Glutamate, Figure_Glutathione,
           labels = c("A", "B", "C", "D", "E", "F"),
           label_size = 20)
 
-ggsave("Figures/SI_Figure_X_HQS_to_measure_weak_binders/SI_Figure_X_HQS_binding.svg",
-       width = 6, scale = 3)
+ggsave("Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/SI_Figure_X_HQS_binding.svg",
+       width = 6, scale = 2.5)
 
-ggsave("Figures/SI_Figure_X_HQS_to_measure_weak_binders/SI_Figure_X_HQS_binding.png",
-       width = 6, scale = 3, dpi = 600)
+ggsave("Figures/SI_figure_2_SI_table_3_HQS_to_measure_weak_binders/SI_Figure_X_HQS_binding.png",
+       width = 6, scale = 2.5, dpi = 600)

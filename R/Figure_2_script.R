@@ -11,10 +11,10 @@ library(ggpubr)
 
 Figure_2/Fluorescence_data
 
-list.files("Figures/Figure_2_helix_stability")
+list.files("Figures/Figure_2_Table_3_SI_table_5_helix_stability")
 
-df = read.csv("Figures/Figure_2_helix_stability/Fluorescence_data/js5060_Helix_F_formatted.csv")
-df.Ks = read.csv("Figures/Figure_2_helix_stability/Fits_summary_Ks.csv")
+df = read.csv("Figures/Figure_2_Table_3_SI_table_5_helix_stability/Fluorescence_data/js5060_Helix_F_formatted.csv")
+df.Ks = read.csv("Figures/Figure_2_Table_3_SI_table_5_helix_stability/Fits_summary_Ks.csv")
 
 
 head(df)
@@ -67,7 +67,7 @@ raw.plot = ggplot(df %>% filter(Reading %in% readings)) +
 
 ####Make vh plots####
 
-df.Ks = read.csv("Figures/Figure_2_helix_stability/Fits_summary_Ks.csv")
+df.Ks = read.csv("Figures/Figure_2_Table_3_SI_table_5_helix_stability/Fits_summary_Ks.csv")
 
 df.Ks$Condition = factor(df.Ks$Condition,
                          levels = c("Monovalent","Ecoli80", "NTPCM", "WMCM"),
@@ -78,7 +78,7 @@ df.Ks = df.Ks %>% filter(Helix == "F")
 
 
 vh.plot = ggplot(df.Ks %>%
-                    filter(In_K_range == TRUE) %>%
+                    filter(In_Kd_range == TRUE) %>%
                     filter(SE.lnK <= K_error),
                   aes(x = invT, y = lnK,
                       ymin = lnK - SE.lnK,
@@ -104,7 +104,7 @@ vh.plot = ggplot(df.Ks %>%
 
 ####Make thermo plot####
 
-df.vh = read.csv("Figures/Figure_2_helix_stability/Fits_summary_vh.csv")
+df.vh = read.csv("Figures/Figure_2_Table_3_SI_table_5_helix_stability/Fits_summary_vh.csv")
 head(df.vh)
 
 
@@ -122,7 +122,7 @@ df.vh$Helix = factor(df.vh$Helix,
 
 df.vh$K = exp(-as.numeric(df.vh$G)/(0.00198720425864083*(273.15 + 37)))
 df.vh$SE.K = df.vh$K*as.numeric(df.vh$SE.G)/as.numeric(df.vh$G)
-dG.plot = ggplot(data = df.vh,
+dG.plot = ggplot(data = df.vh %>% filter(Method == "1 VH plot"),
        mapping = aes(x = Condition, y = G, ymin = G - 0.015*G, ymax = G + 0.015*G)) +
   facet_wrap(~Helix, nrow = 1, scales = "free") +
   geom_point(stat="identity", size = 5) +
@@ -152,9 +152,9 @@ library(rsvg)
 library(grobblR)
 library(grid)
 
-list.files("Figures/Figure_2_helix_stability")
+list.files("Figures/Figure_2_Table_3_SI_table_5_helix_stability")
 
-bitmap <- rsvg_raw('Figures/Figure_2_helix_stability/Figure_3A.svg', width = 600)
+bitmap <- rsvg_raw('Figures/Figure_2_Table_3_SI_table_5_helix_stability/Figure_3A.svg', width = 600)
 image <- ggdraw() + draw_image(bitmap)
 
 ####Make figure 3####
@@ -169,7 +169,7 @@ Figure_ABCDE = plot_grid(Figure_3ABC,
 
 Figure_ABCDE
 
-ggsave("Figures/Figure_2_helix_stability/Figure_2.svg",
+ggsave("Figures/Figure_2_Table_3_SI_table_5_helix_stability/Figure_2.svg",
        Figure_ABCDE,
        scale = 2.5,
        width = 7, height = 4.5, units = "in",

@@ -10,9 +10,9 @@ library(rsvg)
 
 #### SI Figure A CPEB3 secondary structure ####
 
-list.files("Figures/SI_Figure_X_CPEB3_tRNAphe_ILP")
+list.files("Figures/")
 
-bitmap <- rsvg_raw('Figures/SI_Figure_X_CPEB3_tRNAphe_ILP/CPEB3_secondary_structure.svg', width = 600)
+bitmap <- rsvg_raw('Figures/SI_figure_10_CPEB3_tRNAphe_ILP/CPEB3_secondary_structure.svg', width = 600)
 Figure_A <- ggdraw() + draw_image(bitmap)
 
 Figure_A
@@ -97,9 +97,9 @@ SI_figure_B
 
 #### SI Figure A tRNA secondary structure ####
 
-list.files("Figures/SI_Figure_X_CPEB3_tRNAphe_ILP")
+list.files("Figures/SI_figure_10_CPEB3_tRNAphe_ILP")
 
-bitmap <- rsvg_raw('Figures/SI_Figure_X_CPEB3_tRNAphe_ILP/tRNA_secondary_structure.svg', width = 600)
+bitmap <- rsvg_raw('Figures/SI_figure_10_CPEB3_tRNAphe_ILP/tRNA_secondary_structure.svg', width = 600)
 Figure_C <- ggdraw() + draw_image(bitmap)
 
 Figure_C
@@ -186,13 +186,13 @@ SI_figure_D
 SI_figure_X = plot_grid(Figure_A, SI_figure_B, Figure_C, SI_figure_D, labels = c("A", "B", "C", "D"),
           label_size = 20)
 
-list.files("Figures/SI_Figure_X_CPEB3_tRNAphe_ILP")
+list.files("Figures/SI_figure_10_CPEB3_tRNAphe_ILP")
 
-ggsave("Figures/SI_Figure_X_CPEB3_tRNAphe_ILP/SI_figure_x_CPEB3_tRNA_ILP.svg",
+ggsave("Figures/SI_figure_10_CPEB3_tRNAphe_ILP/SI_figure_x_CPEB3_tRNA_ILP.svg",
        SI_figure_X,
        bg = "white",
-       scale = 3)
-ggsave("Figures/SI_Figure_X_CPEB3_tRNAphe_ILP/SI_figure_x_CPEB3_tRNA_ILP.png",
+       scale = 1.5)
+ggsave("Figures/SI_figure_10_CPEB3_tRNAphe_ILP/SI_figure_x_CPEB3_tRNA_ILP.png",
        SI_figure_X,
        bg = "white",
        scale = 1.5)

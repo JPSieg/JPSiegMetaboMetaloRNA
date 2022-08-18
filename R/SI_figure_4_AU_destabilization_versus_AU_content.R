@@ -3,9 +3,9 @@ library(tidyverse)
 library(ggpubr)
 library(ggtext)
 
-list.files("Figures/Figure_x_AU_destabilization_versus_AU_content")
+list.files("Figures/SI_figure_4_AU_destabilization_versus_AU_content")
 
-df = read.csv("Figures/Figure_x_AU_destabilization_versus_AU_content/ddG_data.csv")
+df = read.csv("Figures/SI_figure_4_AU_destabilization_versus_AU_content/ddG_data.csv")
 
 head(df)
 
@@ -20,7 +20,7 @@ ggplot(df %>% filter(Condition != "2 mM free"), aes(x = AU.content, y = ddG.kcal
   stat_regline_equation(aes(label = ..eq.label..)) +
   stat_regline_equation(aes(label = ..rr.label..), label.y = 0.7) +
   theme_classic() +
-  #scale_y_continuous(limits = c(0.25, 0.75)) +
+  scale_x_continuous(limits = c(20, 80), breaks = c(25, 50, 75)) +
   xlab("AU content (%)") +
   ylab("ddG (kcal/mol)") +
   theme(axis.line = element_line(colour = 'black'),
@@ -34,9 +34,7 @@ ggplot(df %>% filter(Condition != "2 mM free"), aes(x = AU.content, y = ddG.kcal
         strip.text = element_markdown(color = "Black", size = 14),
         legend.title = element_text(color = "Black", size = 14))
 
-ggsave("Figures/Figure_x_AU_destabilization_versus_AU_content/SI_figure_x_AU_destabilization_versus_AU_content.svg")
-ggsave("Figures/Figure_x_AU_destabilization_versus_AU_content/SI_figure_x_AU_destabilization_versus_AU_content.png",
-       dpi = 600,
-       width = 4,
+ggsave("Figures/SI_figure_4_AU_destabilization_versus_AU_content/SI_figure_x_AU_destabilization_versus_AU_content.svg",
+      width = 4,
        height = 2,
        scale = 1.5)

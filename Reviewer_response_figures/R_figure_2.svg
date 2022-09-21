@@ -7,7 +7,7 @@
    version="1.1"
    id="svg1141"
    sodipodi:docname="R_figure_2.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    inkscape:export-filename="/home/jacob/Jacob/Research/Manuscripts/JPSiegMetaboMetaloRNA/Reviewer_response_figures/R_figure_2.png"
    inkscape:export-xdpi="600"
    inkscape:export-ydpi="600"
@@ -25,13 +25,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="pt"
      showgrid="false"
-     inkscape:zoom="1.0448718"
-     inkscape:cx="661.80368"
-     inkscape:cy="287.59509"
-     inkscape:window-width="1846"
-     inkscape:window-height="1136"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="0.73883594"
+     inkscape:cx="383.71171"
+     inkscape:cy="216.55687"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1141" />
   <defs
@@ -779,7 +779,10 @@
   </defs>
   <g
      clip-path="url(#cpMzEyLjAwfDYyNC4wMHwwLjAwfDQzMi4wMA==)"
-     id="g288">
+     id="g288"
+     inkscape:export-filename="C:\Users\jpsie\Documents\Rpackages\JPSiegMetaboMetaloRNA\Reviewer_response_figures\R_figure_2.png"
+     inkscape:export-xdpi="600"
+     inkscape:export-ydpi="600">
     <rect
        x="312.00"
        y="0.00"
@@ -2857,4 +2860,53 @@
        lengthAdjust="spacingAndGlyphs"
        id="text1137">C</text>
   </g>
+  <text
+     xml:space="preserve"
+     style="font-size:8.7004px;line-height:1.25;font-family:sans-serif;stroke-width:0.81566;fill:#ff0000;fill-opacity:1"
+     x="195.17087"
+     y="316.01883"
+     id="text3360"><tspan
+       sodipodi:role="line"
+       id="tspan3358"
+       style="stroke-width:0.81566;fill:#ff0000;fill-opacity:1"
+       x="195.17087"
+       y="316.01883">Biological free Mg  range</tspan><tspan
+       sodipodi:role="line"
+       style="stroke-width:0.81566;fill:#ff0000;fill-opacity:1"
+       x="195.17087"
+       y="326.89432"
+       id="tspan3890">= 0.5 mM to 3 mM</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:8.7004px;line-height:1.25;font-family:sans-serif;white-space:pre;stroke-width:0.81566;fill:#ff0000;fill-opacity:1"
+     x="232.76668"
+     y="255.15099"
+     id="text3360-9"><tspan
+       sodipodi:role="line"
+       style="stroke-width:0.81566;fill:#ff0000;fill-opacity:1"
+       x="232.76668"
+       y="255.15099"
+       id="tspan3890-7">2 mM free Mg</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:4.61507px;line-height:1.25;font-family:sans-serif;stroke-width:0.432661;fill:#ff0000;fill-opacity:1"
+     x="292.58667"
+     y="249.4325"
+     id="text6412"><tspan
+       sodipodi:role="line"
+       id="tspan6410"
+       style="stroke-width:0.432661;fill:#ff0000;fill-opacity:1"
+       x="292.58667"
+       y="249.4325">2+</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:5.34041px;line-height:1.25;font-family:sans-serif;white-space:pre;stroke-width:0.500663;fill:#ff0000;fill-opacity:1"
+     x="270.83804"
+     y="309.82458"
+     id="text6412-7"><tspan
+       sodipodi:role="line"
+       id="tspan6410-3"
+       style="stroke-width:0.500663;fill:#ff0000;fill-opacity:1"
+       x="270.83804"
+       y="309.82458">2+</tspan></text>
 </svg>

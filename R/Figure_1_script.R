@@ -200,6 +200,29 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "Eco80"),
 
   df$Mg.free = df$I.norm/(coef(fit)[3]*(1 - df$I.norm))
 
+  errorMg = function(I){
+    Imax = coef(fit)[1]
+    Imin = coef(fit)[2]
+    K = coef(fit)[3]
+    SImax = coef(summary(fit))[,2][1]
+    SImin = coef(summary(fit))[,2][2]
+    SK = coef(summary(fit))[,2][3]
+    beta =  (I - Imin)/(Imax - Imin)
+    I.minusImin = I - Imin
+    Imax.minus.Imin = Imax - Imin
+    SI.minusImin = SImin
+    SImax.minus.Imin = sqrt(SImax^2 + SImin^2)
+    Sbeta = beta*sqrt((SI.minusImin/I.minusImin)^2 + (SImax.minus.Imin/Imax.minus.Imin)^2)
+    betaK = beta*K
+    SbetaK = betaK*sqrt((Sbeta/beta)^2 + (SK/K)^2)
+    Kminus.betaK = K - betaK
+    SK.minus.betaK = sqrt(SK^2 + SbetaK^2)
+    Mg = beta/(K - beta*K)
+    SMg = Mg*sqrt((Sbeta/beta)^2 + (SK.minus.betaK/Kminus.betaK)^2)
+  }
+
+  df$freeMgError = errorMg(df$Emission)
+
   list.fit = {}
 
   for (i in 1:10){
@@ -249,7 +272,10 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "Eco80"),
                  fill = "red", alpha = 0.25) +
     annotate("segment", y = 2, yend = 2, x = 0.1, xend = 200,
              color = "red") +
-    geom_point(data = df.no_edta %>% filter(Sample == "Chelator"), mapping = aes(x = Conc.Mg, y = Mg.free), shape = "triangle") +
+    geom_pointrange(data = df.no_edta %>% filter(Sample == "Chelator"),
+               mapping = aes(x = Conc.Mg, y = Mg.free,
+                             ymin = Mg.free + freeMgError,
+                             ymax = Mg.free - freeMgError), shape = "triangle") +
     theme_classic() +
     geom_line(data = df.no_edta, mapping = aes(x = Conc.Mg, y = model),  color = "black") +
     scale_fill_viridis(option = "D") +
@@ -259,8 +285,6 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "Eco80"),
     xlab(bquote('Total'~'Mg'^'2+'~'(mM)')) +
     scale_x_continuous(trans = "log10", limits = c(0.1, 210)) +
     scale_y_continuous(lim = ylimits) +
-    geom_vline(xintercept = c(40, 200)) +
-    geom_hline(yintercept = c(11)) +
     theme(axis.line = element_line(colour = 'black'),
           axis.ticks = element_line(colour = "black"),
           axis.text.x = element_text(color = "Black", size = 16),
@@ -295,6 +319,17 @@ analyze.HQS = function(df = df.HQS %>% filter(Metabolites == "Eco80"),
   output.model$CI95 = CI95
 
   output.model$Condition = df$Metabolites[1]
+
+  fit = nls(Emission ~ (I.max - I.min)*(K*Conc.Mg/(1 + K*Conc.Mg)) + I.min,
+            df %>% filter(Sample == "No chelator"),
+            start = list(I.max = 150000, I.min = 0, K = 10),
+            trace = TRUE)
+
+  df.Mg = data.frame("Condition" = df$Metabolites[1],
+                     "Total Mg" = Mg.total,
+                     "Chelated Mg" = Mg.total - 2,
+                     "Free Mg" = 2,
+                     "Free Mg error" = Free.Mg.error)
 
   output = list(output.plot,
                 output.model,
@@ -343,7 +378,7 @@ Figure_1DG = analyze.HQS(df.HQS %>% filter(Metabolites == "Eco80"),
                          Labels = c("B", "E"),
                          xlimits = c(1, 80))
 
-
+Figure_1DG[[3]]
 
 
 Figure_1BCDEFG = plot_grid(Figure_1DG[[1]], Figure_1BE[[1]], Figure_1CF[[1]], nrow = 1)
@@ -365,4 +400,6 @@ write.csv(df.HQS.fits, "Figures/SI_Table_3_HQS_fits_in_AC/HQS_binding_K_fits.csv
 
 df.final = bind_rows(Figure_1DG[[3]],Figure_1BE[[3]], Figure_1CF[[3]])
 
-write.csv(df.final, "Figures/Table 2/HQS_results.csv")
+list.files("Figures/Figure_1")
+
+write.csv(df.final, "Figures/Figure_1/Free_concentration_data.csv", row.names = FALSE)

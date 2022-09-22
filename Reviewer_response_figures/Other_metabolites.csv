@@ -1,0 +1,103 @@
+Species,Metabolites,Concentration,Kd.app,MCM,Exp.biol.effect,Source,Notes,Mg.binding.strength,Sum.concentration
+E.coli,L-Alanine,2.55,2606.35559634375,0.001955254876731,5.09608949024654,Calculated in this work,,WMCM,2.55
+E.coli,NAD,2.55,9.12,0.45863309352518,4.18273381294964,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,5.1
+E.coli,Fructose 6-P,2.52,40.806558548807,0.117738967365328,4.80452206526934,Calculated in this work,,WMCM,7.62
+E.coli,UDP-glucose,2.5,3.3,0.943396226415094,3.11320754716981,"(1) Yamagami, R.; Huang, R.; Bevilacqua, P. C. Cellular Concentrations of Nucleotide Diphosphate-Chelated Magnesium Ions Accelerate Catalysis by RNA and DNA Enzymes. Biochemistry 2019, 58 (38), 3971–3979. https://doi.org/10.1021/acs.biochem.9b00578.",,WMCM,10.12
+E.coli,Oxidized glutathione,2.37,21.5408017490723,0.201352530407627,4.33729493918475,Predicted from chemical structure,Use Glutahione,WMCM,12.49
+E.coli,uridine,2.09,NA,NA,,,,WMCM,14.58
+E.coli,(S)-Malic acid,1.68,26.2268782657612,0.119035479884279,3.12192904023144,Calculated in this work,,WMCM,16.26
+E.coli,3-P-D-glyceric acid,1.54,7.81732818719628,0.313730980697673,2.45253803860465,Calculated in this work,,WMCM,17.8
+E.coli,Glyceric acid,1.41,159.939223608981,0.017413940471946,2.78517211905611,Calculated in this work,,WMCM,19.21
+E.coli,CoA,1.37,9.12,0.246402877697842,2.24719424460432,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,20.58
+E.coli,Citrulline,1.35,2741.24980310482,0.000984234099623,2.69803153180075,Calculated in this work,,WMCM,21.93
+E.coli,L-Threonine,1.26,1384.45334162341,0.001817587310258,2.51636482537948,Calculated in this work,,WMCM,23.19
+E.coli,Glucoseamine-6-P,1.15,5.1475268569119,0.321789626823972,1.65642074635206,Predicted from chemical structure,Use Glucose 6-P,WMCM,24.34
+E.coli,L-Serine,1.13,8696.53307761895,0.000259813922627,2.25948037215474,Calculated in this work,,WMCM,25.47
+E.coli,acetylphosphate,1.07,22.33868,0.087925885873844,1.96414822825231,Predicted from chemical structure,Use Glycerol 1-P,WMCM,26.54
+E.coli,Gluconolactone,1.04,NA,NA,,,,WMCM,27.58
+E.coli,sedoheptulose-7-phosphate,0.882,39.9575232092223,0.042042519793263,1.67991496041348,Predicted from chemical structure,Use Ribose 5-P,WMCM,28.462
+E.coli,Rib-5-P,0.787,39.9575232092223,0.037514130473127,1.49897173905375,Calculated in this work,,WMCM,29.249
+E.coli,acetyl-CoA,0.606,9.12,0.108992805755396,0.994014388489209,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,29.855
+E.coli,carb-aspartate,0.59,26.2268782657612,0.041804126864122,1.09639174627176,Predicted from chemical structure,Use malic acid,WMCM,30.445
+E.coli,L-Arginine,0.569,2534.971360026,0.000448566356692,1.13710286728661,Calculated in this work,,WMCM,31.014
+E.coli,Succinic acid,0.569,77.7956234436837,0.014261433784062,1.10947713243188,Calculated in this work,,WMCM,31.583
+E.coli,UDP-glucuronate,0.566,9.12,0.101798561151079,0.928402877697842,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,32.149
+E.coli,L-Asparagine,0.511,14753.2718321045,6.92633800060758E-05,1.02186147323999,Calculated in this work,,WMCM,32.66
+E.coli,L-Lysine,0.405,10776895.4570164,7.51607782509466E-08,0.809999849678444,Calculated in this work,,WMCM,33.065
+E.coli,L-Proline,0.385,2606.35559634375,0.000295205148055,0.769409589703889,Predicted from chemical structure,Use Alanine,WMCM,33.45
+E.coli,Homocysteine,0.37,1715.66042224781,0.000430818566007,0.739138362867986,Calculated in this work,,WMCM,33.82
+E.coli,CMP,0.36,41.2122282718472,0.016661950304217,0.686676099391566,Calculated in this work,,WMCM,34.18
+E.coli,deoxyrib-5-P,0.303,39.9575232092223,0.014443178568434,0.577113642863133,Predicted from chemical structure,Use Ribose 5-P,WMCM,34.483
+E.coli,Fumarate,0.288,444.679347275411,0.001289515630202,0.573420968739596,Calculated in this work,,WMCM,34.771
+E.coli,AMP,0.281,22.2013063502775,0.023221886945518,0.515556226108963,Calculated in this work,,WMCM,35.052
+E.coli,IMP,0.272,22.2013063502775,0.022478125441925,0.49904374911615,Predicted from chemical structure,Use AMP,WMCM,35.324
+E.coli,glyceraldehyde-3-P,0.271,22.33868,0.022269079506366,0.497461840987268,Predicted from chemical structure,Use Glycerol 1-P,WMCM,35.595
+E.coli,succinyl-CoA,0.233,9.12,0.041906474820144,0.382187050359712,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,35.828
+E.coli,Guanine,0.188,NA,NA,,,,WMCM,36.016
+E.coli,P-enolpyruvate,0.184,9.03710746015706,0.03334206913618,0.301315861727641,Calculated in this work,,WMCM,36.2
+E.coli,S-adenosyl-L-methionine,0.184,2606.35559634375,0.000141085057772,0.367717829884456,Predicted from chemical structure,Use Alanine,WMCM,36.384
+E.coli,xylulose-5-phosphate,0.181,39.9575232092223,0.008627773336259,0.344744453327482,Predicted from chemical structure,Use Ribose 5-P,WMCM,36.565
+E.coli,FAD,0.173,9.12,0.031115107913669,0.283769784172662,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,36.738
+E.coli,L-Isoleucine,0.152,2358.37156877443,0.000128793281542,0.303742413436917,Calculated in this work,,WMCM,36.89
+E.coli,L-Leucine,0.152,2583.30226661498,0.000117587797731,0.303764824404538,Calculated in this work,,WMCM,37.042
+E.coli,L-Methionine,0.145,2606.35559634375,0.000111181159657,0.289777637680685,Predicted from chemical structure,Use Alanine,WMCM,37.187
+E.coli,"2,3-dihydroxybenzoic acid",0.138,494.590262279167,0.000555790197603,0.274888419604793,Calculated in this work,,WMCM,37.325
+E.coli,NADPH,0.121,9.12,0.021762589928058,0.198474820143885,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,37.446
+E.coli,Fumarate,0.115,444.679347275411,0.000514910755115,0.228970178489769,Calculated in this work,,WMCM,37.561
+E.coli,ribulose-5-P,0.112,39.9575232092223,0.00533873267216,0.213322534655679,Predicted from chemical structure,Use Ribose 5-P,WMCM,37.673
+E.coli,D-dgluconic acid,0.0918,231.2014,0.000787302306075,0.182025395387849,Predicted from chemical structure,Use Gluconic acid,WMCM,37.7648
+E.coli,Phenylpyruvic acid,0.0898,92.0264786160451,0.001910100246691,0.175779799506618,Predicted from chemical structure,Use Pyruvic acid,WMCM,37.8546
+E.coli,NADH,0.0836,9.12,0.015035971223022,0.137128057553957,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,37.9382
+E.coli,"2,3-P-glycerate",0.0829,7.77712690296629,0.016957947017104,0.131884105965793,Calculated in this work,,WMCM,38.0211
+E.coli,"N-ACN-glucosamine-1,6-P",0.0819,9.19344563913953,0.014633563719401,0.134532872561198,Predicted from chemical structure,"Use fructose 1,6-P",WMCM,38.103
+E.coli,L-Histidine,0.0676,6.4613418681309,0.01597855306015,0.1032428938797,Calculated in this work,,WMCM,38.1706
+E.coli,Flavin,0.0537,NA,NA,,,,WMCM,38.2243
+E.coli,4-OH-benzoate,0.0522,376.0592,0.000276147227736,0.103847705544528,Predicted from chemical structure,Use Benzoic acid,WMCM,38.2765
+E.coli,dGMP,0.0507,26.91742,0.003506536890221,0.094386926219559,Predicted from chemical structure,Use GMP,WMCM,38.3272
+E.coli,erythrose-P,0.049,39.9575232092223,0.00233569554407,0.09332860891186,Predicted from chemical structure,Use Ribose 5-P,WMCM,38.3762
+E.coli,Glycerol,0.049,NA,NA,,,,WMCM,38.4252
+E.coli,N-ACN-ornithine,0.0433,10776895.4570164,8.03570789695306E-09,0.086599983928584,Predicted from chemical structure,Use Lysine,WMCM,38.4685
+E.coli,Gluconic acid,0.0416,231.2014,0.000356773158309,0.082486453683383,Calculated in this work,,WMCM,38.5101
+E.coli,Isocitrate,0.0367,4.49273918479593,0.011304935853866,0.050790128292268,Calculated in this work,,WMCM,38.5468
+E.coli,malonyl-CoA,0.0354,9.12,0.00636690647482,0.05806618705036,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,38.5822
+E.coli,cyclic-AMP,0.0352,22.2013063502775,0.00290893388072,0.064582132238561,Predicted from chemical structure,Use AMP,WMCM,38.6174
+E.coli,L-Tyrosine,0.0289,2608356.63080939,2.21595294900319E-08,0.057799955680941,Calculated in this work,,WMCM,38.6463
+E.coli,GMP,0.0237,26.91742,0.001639150380636,0.044121699238729,Calculated in this work,,WMCM,38.67
+E.coli,acetoacetyl-CoA,0.0218,9.12,0.003920863309353,0.035758273381295,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,38.6918
+E.coli,riboflavin,0.019,NA,NA,,,,WMCM,38.7108
+E.coli,L-Phenylalanine,0.0182,2606.35559634375,1.39551524535318E-05,0.036372089695093,Predicted from chemical structure,Use Alanine,WMCM,38.729
+E.coli,"1,3-P-glycerate",0.0165,7.77712690296629,0.003375224677711,0.026249550644579,Predicted from chemical structure,"Use 2,3-P-glycerate",WMCM,38.7455
+E.coli,Cytosine,0.0141,NA,NA,,,,WMCM,38.7596
+E.coli,Shikimate,0.0141,376.0592,7.4591492549315E-05,0.028050817014901,Predicted from chemical structure,Use Benzoic acid,WMCM,38.7737
+E.coli,histidinol,0.0128,NA,NA,,,,WMCM,38.7865
+E.coli,L-Tryptophan,0.0121,2606.35559634375,9.2778760817437E-06,0.024181444247837,Predicted from chemical structure,Use Alanine,WMCM,38.7986
+E.coli,dihydro-orotate,0.0119,376.0592,6.29531036409113E-05,0.023674093792718,Predicted from chemical structure,Use Benzoic acid,WMCM,38.8105
+E.coli,Quinolinate,0.0115,139.489002663691,0.000162556803476,0.022674886393048,Calculated in this work,,WMCM,38.822
+E.coli,Ornithine,0.0101,10776895.4570164,1.87437990206064E-09,0.02019999625124,Predicted from chemical structure,Use Lysine,WMCM,38.8321
+E.coli,dAMP,0.00884,22.2013063502775,0.000730539076863,0.016218921846275,Predicted from chemical structure,Use AMP,WMCM,38.84094
+E.coli,AMPS,0.00663,70.6430978306031,0.000182536268359,0.012894927463283,Calculated in this work,,WMCM,38.84757
+E.coli,myo-inositol,0.00572,NA,NA,,,,WMCM,38.85329
+E.coli,propionyl-CoA,0.00532,9.12,0.000956834532374,0.008726330935252,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,38.85861
+E.coli,ADP-glucose,0.00427,3.3,0.001611320754717,0.005317358490566,Use UDP-Glucose,,WMCM,38.86288
+E.coli,Anthranilate,0.00348,775.264633969601,8.95447920286079E-06,0.006942091041594,Calculated in this work,,WMCM,38.86636
+E.coli,deoxyadenosine,0.00282,NA,NA,,,,WMCM,38.86918
+E.coli,Cytidine,0.00259,NA,NA,,,,WMCM,38.87177
+E.coli,NADP,0.00208,9.12,0.000374100719424,0.003411798561151,Predicted from chemical structure,Use UDP-GlcNAC,WMCM,38.87385
+E.coli,Guanosine,0.00162,NA,NA,,,,WMCM,38.87547
+E.coli,Adenine,0.00147,NA,NA,,,,WMCM,38.87694
+E.coli,deoxyguanosine,0.000522,NA,NA,,,,WMCM,38.877462
+E.coli,Oxaloacetate,0.000487,128.208327526487,7.4803203335967E-06,0.000959039359333,Calculated in this work,,WMCM,38.877949
+E.coli,Adenosine,0.000131,NA,NA,,,,WMCM,38.87808
+E.coli,CTP,2.73,0.183246682639748,2.50086261136481,0.458274777270379,Calculated in this work,,NTPCM,11.8149
+E.coli,Citric acid,1.96,0.589541640253015,1.5137814117625,0.892437176474991,Calculated in this work,,NTPCM,13.7749
+E.coli,UDP,1.79,1.13655906154618,1.14137815668461,1.29724368663077,Calculated in this work,,NTPCM,15.5649
+E.coli,GDP,0.676,0.670546366038115,0.506263443763292,0.339473112473417,Calculated in this work,,NTPCM,16.2409
+E.coli,ADP,0.555,1.011565,0.368579127463628,0.372841745072745,Calculated in this work,,NTPCM,16.7959
+E.coli,a-ketoglutarate,0.443,0.014092295263046,0.439900396860555,0.00619920627889,Calculated in this work,,NTPCM,17.2389
+E.coli,dTDP,0.378,1.13655906154618,0.241028459903231,0.273943080193538,Predicted from chemical structure,Use UDP,NTPCM,17.6169
+E.coli,pRpp,0.258,1.011565,0.171339486280389,0.173321027439222,Predicted from chemical structure,Use ADP,NTPCM,17.8749
+E.coli,ITP,0.205,0.054990588360802,0.199514295745288,0.010971408509424,Predicted from chemical structure,Use ATP,NTPCM,18.0799
+E.coli,dCTP,0.0345,0.183246682639748,0.031604307726039,0.005791384547922,Predicted from chemical structure,Use CTP,NTPCM,18.1144
+E.coli,IDP,0.0238,1.011565,0.015805735556098,0.015988528887804,Predicted from chemical structure,Use ADP,NTPCM,18.1382
+E.coli,Aconitic acid,0.0161,0.589541640253015,0.012434633025192,0.007330733949616,Predicted from chemical structure,Use citric acid,NTPCM,18.1543
+E.coli,dATP,0.0155,0.054990588360802,0.015085227239278,0.000829545521444,Predicted from chemical structure,Use ATP,NTPCM,18.1698

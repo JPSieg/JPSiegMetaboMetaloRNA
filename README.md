@@ -25,3 +25,4 @@ Jacob P. Sieg1,2, Lauren McKinley1,2, Melanie Huot3,4, Neela H. Yennawar5,
 4. LICENSE: Terms of use for data and code
 5. R: Directory containing raw scripts for making each figure
 6. README.md: This document, describing what is availible here
+7. Reviewer_response_figure: Figures for the response to reviewers

@@ -9,8 +9,8 @@
    sodipodi:docname="Figure_1_edited.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    inkscape:export-filename="/home/jacob/Jacob/Research/Manuscripts/JPSiegMetaboMetaloRNA/Figures/Figure_1/Figure_1.png"
-   inkscape:export-xdpi="600.09998"
-   inkscape:export-ydpi="600.09998"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -42,9 +42,9 @@
      inkscape:window-height="1136"
      id="namedview5835"
      showgrid="false"
-     inkscape:zoom="2.1342593"
-     inkscape:cx="43.809111"
-     inkscape:cy="113.62256"
+     inkscape:zoom="3.0182984"
+     inkscape:cx="96.080625"
+     inkscape:cy="127.72097"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -4586,7 +4586,10 @@
   <g
      clip-path="url(#cpMjM3LjYwfDQ3NS4yMHw0MDUuMDB8NjQ4LjAw-6)"
      id="g3454"
-     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)"
+     inkscape:export-filename="/home/jacob/Jacob/Research/Manuscripts/JPSiegMetaboMetaloRNA/Figures/Figure_1/Figure_1_test.png"
+     inkscape:export-xdpi="600.09998"
+     inkscape:export-ydpi="600.09998">
     <rect
        x="237.60001"
        y="405"
@@ -4598,7 +4601,10 @@
   <g
      clip-path="url(#cpMzA5LjgzfDQ2OS43Mnw0MTAuNDh8NTk2LjIx-7)"
      id="g3991"
-     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)"
+     inkscape:export-filename="/home/jacob/Jacob/Research/Manuscripts/JPSiegMetaboMetaloRNA/Figures/Figure_1/Figure_1.png"
+     inkscape:export-xdpi="600.09998"
+     inkscape:export-ydpi="600.09998">
     <rect
        x="309.82999"
        y="410.48001"
@@ -5973,41 +5979,17 @@
      id="text4043"
      transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">(mM)</text>
   <text
-     transform="matrix(0,-0.31494237,0.31494237,0,84.44497,185.03934)"
-     style="font-size:16px;font-family:Arimo"
-     textLength="33.950001"
-     lengthAdjust="spacingAndGlyphs"
-     id="text4045">Free</text>
-  <text
      transform="matrix(0,-0.31494237,0.31494237,0,84.362608,179.44317)"
      style="font-size:16px;font-family:'Standard Symbols PS'"
      textLength="4"
      lengthAdjust="spacingAndGlyphs"
      id="text4047" />
   <text
-     transform="matrix(0,-0.31494237,0.31494237,0,84.242497,173.66929)"
-     style="font-size:16px;font-family:Arimo"
-     textLength="23.950001"
-     lengthAdjust="spacingAndGlyphs"
-     id="text4049">Mg</text>
-  <text
-     transform="matrix(0,-0.31494237,0.31494237,0,81.348042,165.80933)"
-     style="font-size:11.2px;font-family:Arimo"
-     textLength="16.5"
-     lengthAdjust="spacingAndGlyphs"
-     id="text4051">2+</text>
-  <text
      transform="matrix(0,-0.31494237,0.31494237,0,84.362608,165.44398)"
      style="font-size:16px;font-family:'Standard Symbols PS'"
      textLength="4"
      lengthAdjust="spacingAndGlyphs"
      id="text4053" />
-  <text
-     transform="matrix(0,-0.31494237,0.31494237,0,84.714018,160.19928)"
-     style="font-size:16px;font-family:Arimo"
-     textLength="41.880001"
-     lengthAdjust="spacingAndGlyphs"
-     id="text4055">(mM)</text>
   <text
      x="242.38"
      y="420.29999"
@@ -7202,212 +7184,210 @@
        style="stroke-width:1.07;stroke-linecap:butt"
        id="polyline4860" />
   </g>
-  <g
-     clip-path="url(#cpMC4wMHw3MTIuODB8MC4wMHw2NDguMDA=-7)"
-     id="g4930"
-     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">
-    <polyline
-       points="547.43,596.21 547.43,410.48 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4864" />
-    <text
-       x="542.5"
-       y="585.56"
-       text-anchor="end"
-       style="font-size:16px;font-family:Arimo"
-       textLength="10.18"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4866">0</text>
-    <text
-       x="542.5"
-       y="545.35999"
-       text-anchor="end"
-       style="font-size:16px;font-family:Arimo"
-       textLength="10.18"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4868">5</text>
-    <text
-       x="542.5"
-       y="505.16"
-       text-anchor="end"
-       style="font-size:16px;font-family:Arimo"
-       textLength="20.360001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4870">10</text>
-    <text
-       x="542.5"
-       y="464.95001"
-       text-anchor="end"
-       style="font-size:16px;font-family:Arimo"
-       textLength="20.360001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4872">15</text>
-    <text
-       x="542.5"
-       y="424.75"
-       text-anchor="end"
-       style="font-size:16px;font-family:Arimo"
-       textLength="20.360001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4874">20</text>
-    <polyline
-       points="544.70,579.72 547.43,579.72 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4876" />
-    <polyline
-       points="544.70,539.52 547.43,539.52 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4878" />
-    <polyline
-       points="544.70,499.32 547.43,499.32 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4880" />
-    <polyline
-       points="544.70,459.12 547.43,459.12 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4882" />
-    <polyline
-       points="544.70,418.92 547.43,418.92 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4884" />
-    <polyline
-       points="547.43,596.21 707.32,596.21 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4886" />
-    <polyline
-       points="554.70,598.95 554.70,596.21 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4888" />
-    <polyline
-       points="598.45,598.95 598.45,596.21 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4890" />
-    <polyline
-       points="642.20,598.95 642.20,596.21 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4892" />
-    <polyline
-       points="685.96,598.95 685.96,596.21 "
-       style="stroke-width:1.07;stroke-linecap:butt"
-       id="polyline4894" />
-    <text
-       x="554.70001"
-       y="612.79999"
-       text-anchor="middle"
-       style="font-size:16px;font-family:Arimo"
-       textLength="25.440001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4896">0.1</text>
-    <text
-       x="598.45001"
-       y="612.79999"
-       text-anchor="middle"
-       style="font-size:16px;font-family:Arimo"
-       textLength="25.440001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4898">1.0</text>
-    <text
-       x="642.20001"
-       y="612.79999"
-       text-anchor="middle"
-       style="font-size:16px;font-family:Arimo"
-       textLength="35.630001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4900">10.0</text>
-    <text
-       x="685.96002"
-       y="612.79999"
-       text-anchor="middle"
-       style="font-size:16px;font-family:Arimo"
-       textLength="45.810001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4902">100.0</text>
-    <text
-       x="563.53998"
-       y="635.66998"
-       style="font-size:16px;font-family:Arimo"
-       textLength="37.349998"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4904">Total</text>
-    <text
-       x="600.89001"
-       y="635.66998"
-       style="font-size:16px;font-family:'Standard Symbols PS'"
-       textLength="4"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4906" />
-    <text
-       x="604.89001"
-       y="635.66998"
-       style="font-size:16px;font-family:Arimo"
-       textLength="23.950001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4908">Mg</text>
-    <text
-       x="628.84998"
-       y="627.35999"
-       style="font-size:11.2px;font-family:Arimo"
-       textLength="16.5"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4910">2+</text>
-    <text
-       x="645.34003"
-       y="635.66998"
-       style="font-size:16px;font-family:'Standard Symbols PS'"
-       textLength="4"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4912" />
-    <text
-       x="649.34003"
-       y="635.66998"
-       style="font-size:16px;font-family:Arimo"
-       textLength="41.880001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4914">(mM)</text>
-    <text
-       transform="rotate(-90,531.385,34.095)"
-       style="font-size:16px;font-family:Arimo"
-       textLength="33.950001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4916">Free</text>
-    <text
-       transform="rotate(-90,514.41,17.12)"
-       style="font-size:16px;font-family:'Standard Symbols PS'"
-       textLength="4"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4918" />
-    <text
-       transform="rotate(-90,512.41,15.12)"
-       style="font-size:16px;font-family:Arimo"
-       textLength="23.950001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4920">Mg</text>
-    <text
-       transform="rotate(-90,496.28,7.3)"
-       style="font-size:11.2px;font-family:Arimo"
-       textLength="16.5"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4922">2+</text>
-    <text
-       transform="rotate(-90,492.185,-5.105)"
-       style="font-size:16px;font-family:'Standard Symbols PS'"
-       textLength="4"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4924" />
-    <text
-       transform="rotate(-90,490.185,-7.105)"
-       style="font-size:16px;font-family:Arimo"
-       textLength="41.880001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4926">(mM)</text>
-    <text
-       x="480.95001"
-       y="420.29999"
-       style="font-weight:bold;font-size:14px;font-family:Arimo"
-       textLength="11.49"
-       lengthAdjust="spacingAndGlyphs"
-       id="text4928">G</text>
-  </g>
+  <polyline
+     points="547.43,596.21 547.43,410.48 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4864"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <text
+     x="542.5"
+     y="585.56"
+     text-anchor="end"
+     style="font-size:16px;font-family:Arimo"
+     textLength="10.18"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4866"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">0</text>
+  <text
+     x="542.5"
+     y="545.35999"
+     text-anchor="end"
+     style="font-size:16px;font-family:Arimo"
+     textLength="10.18"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4868"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">5</text>
+  <text
+     x="542.5"
+     y="505.16"
+     text-anchor="end"
+     style="font-size:16px;font-family:Arimo"
+     textLength="20.360001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4870"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">10</text>
+  <text
+     x="542.5"
+     y="464.95001"
+     text-anchor="end"
+     style="font-size:16px;font-family:Arimo"
+     textLength="20.360001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4872"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">15</text>
+  <text
+     x="542.5"
+     y="424.75"
+     text-anchor="end"
+     style="font-size:16px;font-family:Arimo"
+     textLength="20.360001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4874"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">20</text>
+  <polyline
+     points="544.70,579.72 547.43,579.72 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4876"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <polyline
+     points="544.70,539.52 547.43,539.52 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4878"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <polyline
+     points="544.70,499.32 547.43,499.32 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4880"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <polyline
+     points="544.70,459.12 547.43,459.12 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4882"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <polyline
+     points="544.70,418.92 547.43,418.92 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4884"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <polyline
+     points="547.43,596.21 707.32,596.21 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4886"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <polyline
+     points="554.70,598.95 554.70,596.21 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4888"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <polyline
+     points="598.45,598.95 598.45,596.21 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4890"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <polyline
+     points="642.20,598.95 642.20,596.21 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4892"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <polyline
+     points="685.96,598.95 685.96,596.21 "
+     style="stroke-width:1.07;stroke-linecap:butt"
+     id="polyline4894"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <text
+     x="554.70001"
+     y="612.79999"
+     text-anchor="middle"
+     style="font-size:16px;font-family:Arimo"
+     textLength="25.440001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4896"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">0.1</text>
+  <text
+     x="598.45001"
+     y="612.79999"
+     text-anchor="middle"
+     style="font-size:16px;font-family:Arimo"
+     textLength="25.440001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4898"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">1.0</text>
+  <text
+     x="642.20001"
+     y="612.79999"
+     text-anchor="middle"
+     style="font-size:16px;font-family:Arimo"
+     textLength="35.630001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4900"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">10.0</text>
+  <text
+     x="685.96002"
+     y="612.79999"
+     text-anchor="middle"
+     style="font-size:16px;font-family:Arimo"
+     textLength="45.810001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4902"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">100.0</text>
+  <text
+     x="563.53998"
+     y="635.66998"
+     style="font-size:16px;font-family:Arimo"
+     textLength="37.349998"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4904"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">Total</text>
+  <text
+     x="600.89001"
+     y="635.66998"
+     style="font-size:16px;font-family:'Standard Symbols PS'"
+     textLength="4"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4906"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <text
+     x="604.89001"
+     y="635.66998"
+     style="font-size:16px;font-family:Arimo"
+     textLength="23.950001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4908"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">Mg</text>
+  <text
+     x="628.84998"
+     y="627.35999"
+     style="font-size:11.2px;font-family:Arimo"
+     textLength="16.5"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4910"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">2+</text>
+  <text
+     x="645.34003"
+     y="635.66998"
+     style="font-size:16px;font-family:'Standard Symbols PS'"
+     textLength="4"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4912"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)" />
+  <text
+     x="649.34003"
+     y="635.66998"
+     style="font-size:16px;font-family:Arimo"
+     textLength="41.880001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4914"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">(mM)</text>
+  <text
+     transform="matrix(0,-0.31494237,0.31494237,0,159.19292,179.44317)"
+     style="font-size:16px;font-family:'Standard Symbols PS'"
+     textLength="4"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4918" />
+  <text
+     transform="matrix(0,-0.31494237,0.31494237,0,159.19292,165.44398)"
+     style="font-size:16px;font-family:'Standard Symbols PS'"
+     textLength="4"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4924" />
+  <text
+     x="480.95001"
+     y="420.29999"
+     style="font-weight:bold;font-size:14px;font-family:Arimo"
+     textLength="11.49"
+     lengthAdjust="spacingAndGlyphs"
+     id="text4928"
+     transform="matrix(0.31494237,0,0,0.31494237,2.5752242,12.041854)">G</text>
   <path
      style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.235462px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;marker-end:url(#Arrow2Mend-2-5-4)"
      d="m 201.43906,189.78603 -0.0241,10.09981"

@@ -17,6 +17,8 @@ Jacob P. Sieg1,2, Lauren McKinley1,2, Melanie Huot3,4, Neela H. Yennawar5,
 
 ### Cite
 
+(1) Sieg, J. P.; McKinley, L. N.; Huot, M. J.; Yennawar, N. H.; Bevilacqua, P. C. The Metabolome Weakens RNA Thermodynamic Stability and Strengthens RNA Chemical Stability. Biochemistry 2022. https://doi.org/10.1021/acs.biochem.2c00488.
+
 ### Contents
 
 1. Drafts: Directory containing relevant versions of the manuscript
